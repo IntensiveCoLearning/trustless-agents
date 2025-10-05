@@ -36,14 +36,38 @@ ERC-8004, AI
 - **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
 - **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
 
+- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
+- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
+- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
+- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
+- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
+
+- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
+- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
+- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
+- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
+- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
+
+- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
+- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
+- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
+- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
+- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
+
+- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
+- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
+- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
+- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
+- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
+
 ## Registration Period
 
-- Registration Start Date: 2025-10-04
-- Registration End Date: 2025-10-07
+- Registration Start Date: 2025-10-01
+- Registration End Date: 2025-10-04
 ## Study Duration
 
-- Study Start Date: 2025-10-08
-- Study End Date: 2025-10-15
+- Study Start Date: 2025-10-05
+- Study End Date: 2025-10-10
 ## Initiator
 
 - Name: Muxin
