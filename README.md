@@ -190,10 +190,11 @@ The greatest reward is gaining knowledge!
 ✅ = Done ⭕️ = Missed ❌ = Failed
 
 <!-- START_COMMIT_TABLE -->
-| Name | 10.05 | 10.06 | 10.07 | 10.08 | 10.09 | 10.10 |
-| ------------- | ---- | ---- | ---- | ---- | ---- | ---- |
-| [muxin-web3](https://github.com/IntensiveCoLearning/trustless-agent/blob/main/muxin-web3.md) | ⭕️ |   | | | | |
+| Name | 10.13 | 10.14 | 10.15 | 10.16 | 10.17 | 10.18 | 10.19 | 10.20 | 10.21 | 10.22 | 10.23 | 10.24 | 10.25 | 10.26 | 10.27 |
+| ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| [muxin-web3](https://github.com/IntensiveCoLearning/trustless-agent/blob/main/muxin-web3.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
