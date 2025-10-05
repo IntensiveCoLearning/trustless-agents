@@ -18,14 +18,20 @@ ERC-8004, AI
 - **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
 - **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
 
+- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
+- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
+- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
+- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
+- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
+
 ## Registration Period
 
-- Registration Start Date: 2025-10-05
-- Registration End Date: 2025-10-12
+- Registration Start Date: 2025-10-01
+- Registration End Date: 2025-10-04
 ## Study Duration
 
-- Study Start Date: 2025-10-13
-- Study End Date: 2025-10-27
+- Study Start Date: 2025-10-05
+- Study End Date: 2025-10-14
 ## Initiator
 
 - Name: Muxin
@@ -84,7 +90,8 @@ The greatest reward is gaining knowledge!
 
 ## Additional Information
 
-more information
+- Registration Guide: https://www.notion.so/lxdao/Registration-Guide-283dceffe40b80e883fddfa045afef5e
+- Check-in Guide: https://www.notion.so/lxdao/Check-in-Guide-283dceffe40b80ad9936db5a15468eb5
 
 
 
