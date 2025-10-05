@@ -1,0 +1,190 @@
+name: Signup Issue Automation
+
+on:
+  issues:
+    types: [closed]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  process-signup:
+    runs-on: ubuntu-latest
+    if: github.event.action == 'closed' && github.event.issue.state_reason == 'completed' && startsWith(github.event.issue.title, 'Signup - ')
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}
+
+      - name: Verify PAT secret
+        run: |
+          if [ -z "${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}" ]; then
+            echo "❌ PAT_WITH_INVITE_PERMISSIONS secret is empty or not set"
+            exit 1
+          else
+            echo "✅ PAT_WITH_INVITE_PERMISSIONS secret is available"
+            echo "Token length: ${#PAT_TOKEN}"
+          fi
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}
+
+      - name: Test PAT functionality
+        run: |
+          echo "Testing PAT with GitHub API..."
+          response=$(curl -s -H "Authorization: token $PAT_TOKEN" https://api.github.com/user)
+          if echo "$response" | grep -q "login"; then
+            echo "✅ PAT authentication successful"
+            echo "User: $(echo "$response" | jq -r '.login')"
+          else
+            echo "❌ PAT authentication failed"
+            echo "Response: $response"
+            exit 1
+          fi
+        env:
+          PAT_TOKEN: ${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}
+
+      - name: Extract GitHub ID and process signup
+        id: extract-info
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}
+          script: |
+            // Debug: Check if token is available
+            console.log('Token available:', !!process.env.GITHUB_TOKEN);
+            console.log('Custom token available:', '${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}' !== '');
+            console.log('Token length:', '${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}'.length);
+            console.log('Token starts with ghp_:', '${{ secrets.PAT_WITH_INVITE_PERMISSIONS }}'.startsWith('ghp_'));
+
+            const { owner, repo } = context.repo;
+            const issue = context.payload.issue;
+
+            console.log('Processing signup issue:', issue.title);
+            console.log('Issue body:', issue.body);
+
+            // Extract GitHub ID from issue body
+            const githubIdMatch = issue.body.match(/GitHub\s+ID\s*:\s*([^\s\n]+)/i);
+            if (!githubIdMatch) {
+              console.error('GitHub ID not found in issue body');
+              core.setFailed('GitHub ID not found in issue body');
+              return;
+            }
+
+            const githubId = githubIdMatch[1].trim();
+            console.log('Extracted GitHub ID:', githubId);
+
+            // Validate GitHub username
+            try {
+              const { data: user } = await github.rest.users.getByUsername({
+                username: githubId
+              });
+              console.log('GitHub user found:', user.login);
+            } catch (error) {
+              console.error('Invalid GitHub username:', githubId);
+              core.setFailed(`Invalid GitHub username: ${githubId}`);
+              return;
+            }
+
+            // Extract information from issue body for creating user file
+            const nameMatch = issue.body.match(/\*\*(?:姓名|Name)[\s:：]*\*\*\s*([^\n]+)/i) || 
+                             issue.body.match(/(?:姓名|Name)[\s:：]+([^\n]+)/i);
+            const timezoneMatch = issue.body.match(/\*\*(?:时区|Timezone)[\s:：]*\*\*\s*([^\n]+)/i) ||
+                                 issue.body.match(/(?:时区|Timezone)[\s:：]+([^\n]+)/i);
+            const contactMatch = issue.body.match(/\*\*(?:Telegram)[\s:：]*\*\*\s*([^\n]+)/i) ||
+                                issue.body.match(/(?:Telegram)[\s:：]+([^\n]+)/i);
+            const introMatch = issue.body.match(/\*\*(?:自我介绍|Self-introduction)[\s:：]*\*\*\s*([^\n]+)/i) ||
+                                issue.body.match(/(?:自我介绍|Self-introduction)[\s:：]+([^\n]+)/i);
+
+            const userName = nameMatch ? nameMatch[1].trim() : githubId;
+            const userTimezone = timezoneMatch ? timezoneMatch[1].trim() : 'UTC+8';
+            const userContact = contactMatch ? contactMatch[1].trim() : '';
+            const userIntro = introMatch ? introMatch[1].trim() : '';
+
+            // Set output for next step
+            core.setOutput('github_id', githubId);
+            core.setOutput('user_name', userName);
+            core.setOutput('user_timezone', userTimezone);
+            core.setOutput('user_contact', userContact);
+            core.setOutput('user_intro', userIntro);
+            core.setOutput('issue_body', issue.body);
+
+      - name: Create user markdown file
+        env:
+          GITHUB_ID: ${{ steps.extract-info.outputs.github_id }}
+          USER_NAME: ${{ steps.extract-info.outputs.user_name }}
+          USER_TIMEZONE: ${{ steps.extract-info.outputs.user_timezone }}
+          USER_CONTACT: ${{ steps.extract-info.outputs.user_contact }}
+          USER_INTRO: ${{ steps.extract-info.outputs.user_intro }}
+        run: |
+          # Create filename
+          FILENAME="${GITHUB_ID}.md"
+
+          # Check if file already exists
+          if [ -f "$FILENAME" ]; then
+            echo "File $FILENAME already exists, skipping creation"
+            exit 0
+          fi
+
+          # Create the markdown file with formatted content based on template
+          cat > "$FILENAME" << EOF
+          ---
+          timezone: ${USER_TIMEZONE}
+          ---
+
+          # ${USER_NAME}
+
+          **GitHub ID:** ${GITHUB_ID}
+
+          **Telegram:** ${USER_CONTACT}
+
+          ## Self-introduction
+
+          ${USER_INTRO}
+
+          ## Notes
+
+          <!-- Content_START -->
+
+
+          <!-- Content_END -->
+          EOF
+
+          echo "Created file: $FILENAME"
+
+          # Configure git
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add and commit the file
+          git add "$FILENAME"
+          git commit -m "Add signup file for user: $GITHUB_ID"
+          git push
+
+      - name: Comment on issue
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const issue_number = context.payload.issue.number;
+            const githubId = '${{ steps.extract-info.outputs.github_id }}';
+
+            try {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number,
+                body: `✅ Signup processed successfully!
+
+                - ✅ @${githubId} has been invited as a collaborator with write permissions
+                - ✅ User file \`${githubId}.md\` has been created
+                - 📧 Please check your email for the collaboration invitation
+
+                Welcome to the project! 🎉`
+              });
+              console.log(`Comment posted on issue #${issue_number}`);
+            } catch (error) {
+              console.error(`Error posting comment: ${error.message}`);
+              core.setFailed(`Error posting comment: ${error.message}`);
+            }
