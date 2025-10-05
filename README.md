@@ -120,7 +120,9 @@ The greatest reward is gaining knowledge!
 <!-- START_COMMIT_TABLE -->
 | Name | 10.08 | 10.09 | 10.10 | 10.11 | 10.12 | 10.13 | 10.14 | 10.15 |
 | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| [muxin-web3](https://github.com/IntensiveCoLearning/trustless-agent/blob/main/muxin-web3.md) | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
