@@ -1,4 +1,4 @@
-# TrustlessAgent
+# Trustless Agent
 
 ## Introduction
 
@@ -11,6 +11,12 @@ ERC-8004, AI
 ## Target Audience
 
 **Different Foundations, Shared Breakthrough!** This program is ideal for:
+
+- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
+- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
+- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
+- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
+- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
 
 - **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
 - **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
