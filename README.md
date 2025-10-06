@@ -1,4 +1,4 @@
-# TrustlessAgent
+# Trustless Agent
 
 ## Introduction
 
