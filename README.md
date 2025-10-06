@@ -145,20 +145,6 @@ The greatest reward is gaining knowledge!
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- STATISTICALDATA_START -->
 ## Statistics
 
@@ -170,26 +156,3 @@ The greatest reward is gaining knowledge!
 - Failed Rate: 0.00%
 <!-- STATISTICALDATA_END -->
 
-
-## 请假规则
-
-每周请假 2 次
-
-
-
-## 报名时间
-
-- 报名开始时间：2025-10-06
-- 报名结束时间：2025-10-12
-
-## 共学时间
-
-- 共学开始时间：2025-10-13
-- 共学结束时间：2025-10-27
-
-## 发起人
-
-- 姓名：Muxin
-- GitHub ID：muxin-web3
-- Telegram：muxin_eth
-- Email：muxin333333@gmail.com
