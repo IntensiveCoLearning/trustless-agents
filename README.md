@@ -1,4 +1,4 @@
-# Trustless Agent
+# Trustless Agents
 
 ## Introduction
 
