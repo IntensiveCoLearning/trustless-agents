@@ -1,13 +1,11 @@
-# Trustless Agent
+# TrustlessAgent
 
 ## Introduction
 
-Introduction placeholder
-
+Introduction
 ## Keywords
 
 ERC-8004, AI
-
 ## Target Audience
 
 **Different Foundations, Shared Breakthrough!** This program is ideal for:
@@ -17,7 +15,6 @@ ERC-8004, AI
 - **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
 - **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
 - **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
-
 ## Registration Period
 
 - Registration Start Date: 2025-10-06
@@ -39,7 +36,6 @@ ERC-8004, AI
   [ETHPanda](https://ethpanda.org/) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/10aed40b-4786-4c2b-aaaa-b7d8a119c00e.png" />
 
 
-
 ## Leave Rules
 
 Allowed 2 days leave per week.
@@ -48,7 +44,6 @@ Allowed 2 days leave per week.
 ## Community
 
 Telegram：
-
 ## Learning Materials/Course Schedule
 
 **Module 1: The Trust Foundation — ERC-8004 Identity & Reputation Layer**
@@ -75,11 +70,9 @@ Telegram：
 - Project Demo & Code Review: Receive direct feedback from the community and mentors.
 
 
-
 ## Study Rewards
 
 The greatest reward is gaining knowledge!
-
 
 
 ## Additional Information
