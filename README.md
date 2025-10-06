@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Introduction
+This is an intensive co-learning program for developers, designed to deeply explore the technology behind decentralized AI agents. We focus on the core tech stack required to build "trustless" agents, including ERC-8004, A2A Architecture, the AP2 Protocol, and the x402 Payment Protocol. Through code-level analysis and hands-on projects, we help participants systematically master the complete framework for the next generation of AI agent collaboration and value exchange.
 ## Keywords
 
-ERC-8004, AI
+ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agent
 ## Target Audience
 
 **Different Foundations, Shared Breakthrough!** This program is ideal for:
@@ -43,7 +43,7 @@ Allowed 2 days leave per week.
 
 ## Community
 
-Telegram：
+Telegram：https://t.me/ERC8004
 ## Learning Materials/Course Schedule
 
 **Module 1: The Trust Foundation — ERC-8004 Identity & Reputation Layer**
@@ -68,6 +68,49 @@ Telegram：
 - Integrate knowledge from the first three modules to build a full-lifecycle Trustless Agent.
 - Implement the full automated workflow: from identity registration and reputation accumulation to autonomous collaboration and service settlement.
 - Project Demo & Code Review: Receive direct feedback from the community and mentors.
+
+**Links to relevant learning materials:**
+- https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098
+- https://eips.ethereum.org/EIPS/eip-8004
+
+- about A2A：https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+- ERC-8004 QA Bot: https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa
+
+- https://a2a-protocol.org/latest/
+
+- https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/
+
+- https://github.com/a2aproject/A2A
+
+- https://ai.pydantic.dev/a2a/
+
+- https://www.ibm.com/think/topics/agent2agent-protocol
+
+- https://github.com/a2aproject/a2a-samples
+
+- https://www.quillaudits.com/blog/smart-contract/erc-8004
+
+- https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879
+
+- https://github.com/vistara-apps/erc-8004-example
+
+- https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d
+
+- https://eips.ethereum.org/EIPS/eip-8004
+
+- https://github.com/isekOS/awesome-a2a-agents
+
+- https://github.com/isekOS/ISEK
+
+- https://www.isek.xyz/
+
+- https://x402.gitbook.io/x402
+
+- https://www.x402.org/
+
+- https://www.x402.org/x402-whitepaper.pdf
+
+- https://www.coinbase.com/developer-platform/products/x402
 
 
 ## Study Rewards
