@@ -1,4 +1,4 @@
-# TrustlessAgent
+# Trustless Agents
 
 ## Introduction
 
@@ -6,7 +6,7 @@ This is an intensive co-learning program for developers, designed to deeply expl
 iosadjklasdjlda
 ## Keywords
 
-ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agent
+ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
 ## Target Audience
 
 **Different Foundations, Shared Breakthrough!** This program is ideal for:
