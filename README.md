@@ -23,10 +23,10 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agent
 ## Study Duration
 
 - Study Start Date: 2025-10-13
-- Study End Date: 2025-10-27
+- Study End Date: 2025-10-26
 ## Initiator
 
-- Name: Bruce Xu
+- Name: Bruce
 - GitHub ID: brucexu-eth
 - Telegram: brucexu_eth
 - Email: brucex2710@gmail.com
