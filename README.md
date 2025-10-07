@@ -26,10 +26,10 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agent
 - Study End Date: 2025-10-26
 ## Initiator
 
-- Name: BruceXu
-- GitHub ID: brucexu-eth
-- Telegram: brucexu_eth
-- Email: brucex2710@gmail.com
+- Name: Muxin
+- GitHub ID: muxin-web3
+- Telegram: muxin_eth
+- Email: muxin333333@gmail.com
 ## Organizations
 
   [LXDAO](https://lxdao.io/) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/bafkreiay6vxsvv3ksxr75lzzt3iqy3zja3o2epuxh47ivs24p2xs3awexm.png" />
