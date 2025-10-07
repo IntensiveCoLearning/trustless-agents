@@ -1,4 +1,4 @@
-# TrustlessAgents
+# TrustlessAgent
 
 ## Introduction
 
@@ -26,7 +26,7 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agent
 - Study End Date: 2025-10-26
 ## Initiator
 
-- Name: Bruce
+- Name: BruceXu
 - GitHub ID: brucexu-eth
 - Telegram: brucexu_eth
 - Email: brucex2710@gmail.com
