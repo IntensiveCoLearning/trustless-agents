@@ -17,12 +17,12 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
 - **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
 ## Registration Period
 
-- Registration Start Date: 2025-10-05
-- Registration End Date: 2025-10-12
+- Registration Start Date: 2025-10-06
+- Registration End Date: 2025-10-14
 ## Study Duration
 
-- Study Start Date: 2025-10-12
-- Study End Date: 2025-10-26
+- Study Start Date: 2025-10-15
+- Study End Date: 2025-10-29
 ## Initiator
 
 - Name: Muxin
