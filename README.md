@@ -3,7 +3,6 @@
 ## Introduction
 
 This is an intensive co-learning program for developers, designed to deeply explore the technology behind decentralized AI agents. We focus on the core tech stack required to build "trustless" agents, including ERC-8004, A2A Architecture, the AP2 Protocol, and the x402 Payment Protocol. Through code-level analysis and hands-on projects, we help participants systematically master the complete framework for the next generation of AI agent collaboration and value exchange.
-iosadjklasdjlda
 ## Keywords
 
 ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
@@ -18,11 +17,11 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
 - **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
 ## Registration Period
 
-- Registration Start Date: 2025-10-06
+- Registration Start Date: 2025-10-05
 - Registration End Date: 2025-10-12
 ## Study Duration
 
-- Study Start Date: 2025-10-13
+- Study Start Date: 2025-10-12
 - Study End Date: 2025-10-26
 ## Initiator
 
@@ -32,7 +31,7 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
 - Email: muxin333333@gmail.com
 ## Organizations
 
-  [LXDAO](https://lxdao.io/) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/bafkreiay6vxsvv3ksxr75lzzt3iqy3zja3o2epuxh47ivs24p2xs3awexm.png" />
+  [LXDAO](lxdao.io) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/bafkreiay6vxsvv3ksxr75lzzt3iqy3zja3o2epuxh47ivs24p2xs3awexm.png" />
 
   [ETHPanda](https://ethpanda.org/) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/10aed40b-4786-4c2b-aaaa-b7d8a119c00e.png" />
 
