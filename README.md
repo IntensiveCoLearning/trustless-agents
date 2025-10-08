@@ -172,27 +172,3 @@ The greatest reward is gaining knowledge!
 <!-- STATISTICALDATA_END -->
 
 
-
-## 介绍
-
-This is an intensive co-learning program for developers, designed to deeply explore the technology behind decentralized AI agents. We focus on the core tech stack required to build "trustless" agents, including ERC-8004, A2A Architecture, the AP2 Protocol, and the x402 Payment Protocol. Through code-level analysis and hands-on projects, we help participants systematically master the complete framework for the next generation of AI agent collaboration and value exchange.
-iosadjklasdjlda
-## 请假规则
-
-每周请假 2 次
-
-
-## 报名时间
-
-- 报名开始时间：2025-10-06
-- 报名结束时间：2025-10-12
-## 共学时间
-
-- 共学开始时间：2025-10-13
-- 共学结束时间：2025-10-26
-## 发起人
-
-- 姓名：Muxin
-- GitHub ID：muxin-web3
-- Telegram：muxin_eth
-- Email：muxin333333@gmail.com
