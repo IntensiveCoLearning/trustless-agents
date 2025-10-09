@@ -2,21 +2,19 @@
 
 ## Introduction
 
-This is an Intensive CoLearning program for AI agent developers, designed to deeply explore the technology behind Decentralized and Trustless AI agents. We focus on the core tech stack required to build "Trustless" agents, including ERC-8004, A2A Architecture, the AP2 Protocol, and the x402 Payment Protocol. Through code-level analysis and hands-on projects, we help participants systematically master the complete framework for the next generation of AI agent collaboration and value exchange.
+An Intensive CoLearning program for AI agent developers to explore the core tech stack behind Decentralized and Trustless Agents — including ERC-8004, A2A, AP2, and x402. Through self check-ins, workshops, and example projects, participants will master the framework for next-generation agent collaboration and value exchange.
 
-This is the Phase 1 of "Let’s Build Trustless Agents" events, co-hosted by [LXDAO](https://x.com/LXDAO_Official) and [ETHPanda](https://x.com/ETHPanda_Org), with special support from EF dAI team.
+Phase 1 of **“Let’s Build Trustless Agents”**, co-hosted by [LXDAO](https://x.com/LXDAO_Official) and [ETHPanda](https://x.com/ETHPanda_Org), with special support from the EF dAI team. Community -> <https://t.me/ERC8004>
 ## Keywords
 
 ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents, AI Agents
 ## Target Audience
 
-This program is ideal for:
-
-- **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
-- **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
-- **Web3 Product Managers & Entrepreneurs**: Aiming to explore next-generation dApps and business models within the A2A ecosystem.
-- **Seasoned Tech Enthusiasts**: With a strong interest in cryptography, distributed systems, and agent economics.
-- **Motivated Learners**: Even from diverse backgrounds, if you have strong motivation and a solid computer science foundation, we welcome you to join!
+* **AI Agent & Ethereum Developers**: Expanding Ethereum’s capabilities into decentralized AI.
+* **AI/ML Engineers & Researchers**: Building trustless, verifiable, and autonomous AI agents.
+* **Web3 PMs**: Exploring next-gen AI × ETH dApps and A2A architectures.
+* **AI Startups**: Share projects and insights with the community and foundations — and connect with peers.
+* **Motivated Learners**: Dive into the frontier of AI × ETH.
 ## Registration Period
 
 - Registration Start Date: 2025-10-05
