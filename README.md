@@ -173,7 +173,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | [muxin-web3](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/muxin-web3.md) | | | | | | | | | | | | | | | |
 | [brucexu-eth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/brucexu-eth.md) | | | | | | | | | | | | | | | |
+| [diandian42](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/diandian42.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
