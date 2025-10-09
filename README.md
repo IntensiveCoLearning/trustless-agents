@@ -175,7 +175,10 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [brucexu-eth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/brucexu-eth.md) | | | | | | | | | | | | | | | |
 | [diandian42](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/diandian42.md) | | | | | | | | | | | | | | | |
 | [cmu-ruoyan-lgl](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/cmu-ruoyan-lgl.md) | | | | | | | | | | | | | | | |
+| [debugzhao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/debugzhao.md) | | | | | | | | | | | | | | | |
+| [machiwachi](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/machiwachi.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
