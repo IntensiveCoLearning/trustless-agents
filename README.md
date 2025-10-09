@@ -2,13 +2,15 @@
 
 ## Introduction
 
-This is an intensive co-learning program for developers, designed to deeply explore the technology behind decentralized AI agents. We focus on the core tech stack required to build "trustless" agents, including ERC-8004, A2A Architecture, the AP2 Protocol, and the x402 Payment Protocol. Through code-level analysis and hands-on projects, we help participants systematically master the complete framework for the next generation of AI agent collaboration and value exchange.
+This is an Intensive CoLearning program for AI agent developers, designed to deeply explore the technology behind Decentralized and Trustless AI agents. We focus on the core tech stack required to build "Trustless" agents, including ERC-8004, A2A Architecture, the AP2 Protocol, and the x402 Payment Protocol. Through code-level analysis and hands-on projects, we help participants systematically master the complete framework for the next generation of AI agent collaboration and value exchange.
+
+This is the Phase 1 of "Let’s Build Trustless Agents" events, co-hosted by [LXDAO](https://x.com/LXDAO_Official) and [ETHPanda](https://x.com/ETHPanda_Org), with special support from EF dAI team.
 ## Keywords
 
-ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
+ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents, AI Agents
 ## Target Audience
 
-**Different Foundations, Shared Breakthrough!** This program is ideal for:
+This program is ideal for:
 
 - **Ethereum Developers**: Looking to expand smart contract capabilities into the decentralized AI space.
 - **AI/ML Engineers & Researchers**: Eager to learn how to build trustless, verifiable, and economically autonomous AI agents.
@@ -31,7 +33,7 @@ ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents
 - Email: brucex2710@gmail.com
 ## Organizations
 
-  [LXDAO](lxdao.io) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/bafkreiay6vxsvv3ksxr75lzzt3iqy3zja3o2epuxh47ivs24p2xs3awexm.png" />
+  [LXDAO](https://lxdao.io/) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/bafkreiay6vxsvv3ksxr75lzzt3iqy3zja3o2epuxh47ivs24p2xs3awexm.png" />
 
   [ETHPanda](https://ethpanda.org/) <img alt="organization-logo" height="60px" width="60px" src="https://cdn.lxdao.io/10aed40b-4786-4c2b-aaaa-b7d8a119c00e.png" />
 
