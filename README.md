@@ -103,6 +103,8 @@ ERC-8004 Trustless Agents Example <https://github.com/vistara-apps/erc-8004-exam
 
 **Welcome to propose more ideas and examples!**
 
+---
+
 ### 🎯 Learning Challenges & Discussion Questions
 
 **Challenge 1: On-Chain vs Off-Chain Data**
@@ -153,8 +155,6 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 - Join the community for any questions: <https://t.me/ERC8004>
 - Registration Guide: <https://www.notion.so/lxdao/Registration-Guide-283dceffe40b80e883fddfa045afef5e>
 - Check-in Guide: <https://www.notion.so/lxdao/Check-in-Guide-283dceffe40b80ad9936db5a15468eb5>
-
-
 
 
 
