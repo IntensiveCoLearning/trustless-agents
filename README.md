@@ -4,7 +4,7 @@
 
 An Intensive CoLearning program for AI agent developers to explore the core tech stack behind Decentralized and Trustless Agents — including ERC-8004, A2A, AP2, and x402. Through self check-ins, workshops, and example projects, participants will master the framework for next-generation agent collaboration and value exchange.
 
-Phase 1 of **“Let’s Build Trustless Agents”**, co-hosted by [LXDAO](https://x.com/LXDAO_Official) and [ETHPanda](https://x.com/ETHPanda_Org), with special support from the EF dAI team. Community -> <https://t.me/ERC8004>
+Phase 1 of [**“Let’s Build Trustless Agents”**](https://x.com/LXDAO_Official/status/1976217136478793741), co-hosted by [LXDAO](https://x.com/LXDAO_Official) and [ETHPanda](https://x.com/ETHPanda_Org), with special support from the EF dAI team. Community -> <https://t.me/ERC8004>
 ## Keywords
 
 ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents, AI Agents
