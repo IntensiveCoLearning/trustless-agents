@@ -99,7 +99,7 @@ Telegram：https://t.me/ERC8004
 
 ERC-8004 Trustless Agents Example <https://github.com/vistara-apps/erc-8004-example>.
 
-@mayurc9Arena SDK with 8004 identities + A2A + ChaosChain integration for receipt logged on-chain and payment released on verification. <https://github.com/vistara-apps/agent-arena-v1>
+Arena SDK with 8004 identities + A2A + ChaosChain integration for receipt logged on-chain and payment released on verification. <https://github.com/vistara-apps/agent-arena-v1>
 
 **Welcome to propose more ideas and examples!**
 
