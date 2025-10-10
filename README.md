@@ -230,7 +230,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Darkells](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Darkells.md) | | | | | | | | | | | | | | | |
 | [Juicewithice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Juicewithice.md) | | | | | | | | | | | | | | | |
 | [only4sim](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/only4sim.md) | | | | | | | | | | | | | | | |
+| [Frederick2313072](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Frederick2313072.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
