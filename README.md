@@ -268,7 +268,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Pigitaiko](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Pigitaiko.md) | | | | | | | | | | | | | | | |
 | [ohadbachner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ohadbachner.md) | | | | | | | | | | | | | | | |
 | [Wenpiner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Wenpiner.md) | | | | | | | | | | | | | | | |
+| [Swiftevo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Swiftevo.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
