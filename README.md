@@ -213,7 +213,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Nancy0209](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Nancy0209.md) | | | | | | | | | | | | | | | |
 | [0xJayzee](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xJayzee.md) | | | | | | | | | | | | | | | |
 | [zhcqiu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zhcqiu.md) | | | | | | | | | | | | | | | |
+| [KamisAyaka](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KamisAyaka.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
