@@ -188,7 +188,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ShawnX-F](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ShawnX-F.md) | | | | | | | | | | | | | | | |
 | [t19971104](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/t19971104.md) | | | | | | | | | | | | | | | |
 | [sparkyish](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sparkyish.md) | | | | | | | | | | | | | | | |
+| [liwnldutng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/liwnldutng.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
