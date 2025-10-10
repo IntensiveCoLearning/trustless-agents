@@ -246,7 +246,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [peewee92](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/peewee92.md) | | | | | | | | | | | | | | | |
 | [HeliosLz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/HeliosLz.md) | | | | | | | | | | | | | | | |
 | [wureny](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wureny.md) | | | | | | | | | | | | | | | |
+| [Kevin-Yuax](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Kevin-Yuax.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
