@@ -209,7 +209,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [mabinhan911-gif](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/mabinhan911-gif.md) | | | | | | | | | | | | | | | |
 | [JackCC703](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JackCC703.md) | | | | | | | | | | | | | | | |
 | [TomakoDoven](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TomakoDoven.md) | | | | | | | | | | | | | | | |
+| [sudeepb02](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sudeepb02.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
