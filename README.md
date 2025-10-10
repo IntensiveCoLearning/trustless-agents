@@ -196,7 +196,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | | | | | | | | | | | | | | | |
 | [Sakkana](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Sakkana.md) | | | | | | | | | | | | | | | |
 | [TAnNbR](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TAnNbR.md) | | | | | | | | | | | | | | | |
+| [Waiting-Chai](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Waiting-Chai.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
