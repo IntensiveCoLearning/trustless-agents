@@ -258,7 +258,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Duamixu1](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Duamixu1.md) | | | | | | | | | | | | | | | |
 | [jemoker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jemoker.md) | | | | | | | | | | | | | | | |
 | [zylg-create](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zylg-create.md) | | | | | | | | | | | | | | | |
+| [daxang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/daxang.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
