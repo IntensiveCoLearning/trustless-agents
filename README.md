@@ -185,7 +185,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [didshow](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/didshow.md) | | | | | | | | | | | | | | | |
 | [adv0r](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/adv0r.md) | | | | | | | | | | | | | | | |
 | [0xElonC](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xElonC.md) | | | | | | | | | | | | | | | |
+| [ShawnX-F](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ShawnX-F.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
