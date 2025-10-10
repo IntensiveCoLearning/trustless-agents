@@ -261,7 +261,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [daxang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/daxang.md) | | | | | | | | | | | | | | | |
 | [bilgute](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/bilgute.md) | | | | | | | | | | | | | | | |
 | [ekarth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ekarth.md) | | | | | | | | | | | | | | | |
+| [tikpen](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/tikpen.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
