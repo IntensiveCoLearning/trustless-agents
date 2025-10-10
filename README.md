@@ -260,7 +260,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [zylg-create](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zylg-create.md) | | | | | | | | | | | | | | | |
 | [daxang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/daxang.md) | | | | | | | | | | | | | | | |
 | [bilgute](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/bilgute.md) | | | | | | | | | | | | | | | |
+| [ekarth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ekarth.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
