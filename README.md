@@ -236,7 +236,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [script-money](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/script-money.md) | | | | | | | | | | | | | | | |
 | [GitWoody](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/GitWoody.md) | | | | | | | | | | | | | | | |
 | [Thomas-YHS](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Thomas-YHS.md) | | | | | | | | | | | | | | | |
+| [kevinsslin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kevinsslin.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
