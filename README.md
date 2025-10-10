@@ -250,7 +250,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [jackysense](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jackysense.md) | | | | | | | | | | | | | | | |
 | [seegithubun](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/seegithubun.md) | | | | | | | | | | | | | | | |
 | [holybao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/holybao.md) | | | | | | | | | | | | | | | |
+| [xmdszzz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xmdszzz.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
