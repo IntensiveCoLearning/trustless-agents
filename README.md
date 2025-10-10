@@ -220,7 +220,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [buzhidaoa8848-hash](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/buzhidaoa8848-hash.md) | | | | | | | | | | | | | | | |
 | [nocb](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/nocb.md) | | | | | | | | | | | | | | | |
 | [linghuccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/linghuccc.md) | | | | | | | | | | | | | | | |
+| [slucifersz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/slucifersz.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
