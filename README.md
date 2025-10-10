@@ -206,7 +206,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [RanX557](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RanX557.md) | | | | | | | | | | | | | | | |
 | [hanksfanAI](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hanksfanAI.md) | | | | | | | | | | | | | | | |
 | [fffuuuming](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/fffuuuming.md) | | | | | | | | | | | | | | | |
+| [mabinhan911-gif](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/mabinhan911-gif.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
