@@ -265,7 +265,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Insomnia501](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Insomnia501.md) | | | | | | | | | | | | | | | |
 | [0xNezha](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xNezha.md) | | | | | | | | | | | | | | | |
 | [leonvking0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leonvking0.md) | | | | | | | | | | | | | | | |
+| [Pigitaiko](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Pigitaiko.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
