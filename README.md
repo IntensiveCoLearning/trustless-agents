@@ -229,7 +229,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Tengfei-Ma13206](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Tengfei-Ma13206.md) | | | | | | | | | | | | | | | |
 | [Darkells](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Darkells.md) | | | | | | | | | | | | | | | |
 | [Juicewithice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Juicewithice.md) | | | | | | | | | | | | | | | |
+| [only4sim](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/only4sim.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
