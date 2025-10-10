@@ -244,7 +244,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [niko4570](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/niko4570.md) | | | | | | | | | | | | | | | |
 | [JiuFang-Java](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JiuFang-Java.md) | | | | | | | | | | | | | | | |
 | [peewee92](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/peewee92.md) | | | | | | | | | | | | | | | |
+| [HeliosLz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/HeliosLz.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
