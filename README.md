@@ -262,7 +262,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [bilgute](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/bilgute.md) | | | | | | | | | | | | | | | |
 | [ekarth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ekarth.md) | | | | | | | | | | | | | | | |
 | [tikpen](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/tikpen.md) | | | | | | | | | | | | | | | |
+| [Insomnia501](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Insomnia501.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
