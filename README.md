@@ -181,7 +181,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [0x1bdat](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0x1bdat.md) | | | | | | | | | | | | | | | |
 | [preston4896](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/preston4896.md) | | | | | | | | | | | | | | | |
 | [Huggin423](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Huggin423.md) | | | | | | | | | | | | | | | |
+| [advanture917](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/advanture917.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
