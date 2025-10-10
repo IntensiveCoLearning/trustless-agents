@@ -252,7 +252,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [holybao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/holybao.md) | | | | | | | | | | | | | | | |
 | [xmdszzz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xmdszzz.md) | | | | | | | | | | | | | | | |
 | [peianwang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/peianwang.md) | | | | | | | | | | | | | | | |
+| [Lemonadeccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Lemonadeccc.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
