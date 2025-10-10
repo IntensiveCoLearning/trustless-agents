@@ -224,7 +224,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [luffythink](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/luffythink.md) | | | | | | | | | | | | | | | |
 | [wang-jin-bin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wang-jin-bin.md) | | | | | | | | | | | | | | | |
 | [Link-990](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Link-990.md) | | | | | | | | | | | | | | | |
+| [SU-AN-coder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SU-AN-coder.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
