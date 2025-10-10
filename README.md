@@ -255,7 +255,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Lemonadeccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Lemonadeccc.md) | | | | | | | | | | | | | | | |
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Coooder-Crypto.md) | | | | | | | | | | | | | | | |
 | [jeffishjeff](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jeffishjeff.md) | | | | | | | | | | | | | | | |
+| [Duamixu1](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Duamixu1.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
