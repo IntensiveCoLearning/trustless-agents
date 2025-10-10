@@ -231,7 +231,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Juicewithice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Juicewithice.md) | | | | | | | | | | | | | | | |
 | [only4sim](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/only4sim.md) | | | | | | | | | | | | | | | |
 | [Frederick2313072](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Frederick2313072.md) | | | | | | | | | | | | | | | |
+| [lilexi-bot](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lilexi-bot.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
