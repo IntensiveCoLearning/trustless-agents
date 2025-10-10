@@ -239,7 +239,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [kevinsslin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kevinsslin.md) | | | | | | | | | | | | | | | |
 | [HuixuLiu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/HuixuLiu.md) | | | | | | | | | | | | | | | |
 | [ShiningRay](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ShiningRay.md) | | | | | | | | | | | | | | | |
+| [0xIncognito](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xIncognito.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
