@@ -249,7 +249,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Kevin-Yuax](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Kevin-Yuax.md) | | | | | | | | | | | | | | | |
 | [jackysense](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jackysense.md) | | | | | | | | | | | | | | | |
 | [seegithubun](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/seegithubun.md) | | | | | | | | | | | | | | | |
+| [holybao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/holybao.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
