@@ -215,7 +215,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [zhcqiu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zhcqiu.md) | | | | | | | | | | | | | | | |
 | [KamisAyaka](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KamisAyaka.md) | | | | | | | | | | | | | | | |
 | [Failover97](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Failover97.md) | | | | | | | | | | | | | | | |
+| [huaigu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/huaigu.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
