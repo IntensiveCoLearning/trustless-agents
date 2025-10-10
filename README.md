@@ -223,7 +223,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [slucifersz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/slucifersz.md) | | | | | | | | | | | | | | | |
 | [luffythink](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/luffythink.md) | | | | | | | | | | | | | | | |
 | [wang-jin-bin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wang-jin-bin.md) | | | | | | | | | | | | | | | |
+| [Link-990](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Link-990.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
