@@ -202,7 +202,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [thenameisdevair](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/thenameisdevair.md) | | | | | | | | | | | | | | | |
 | [k66inthesky](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/k66inthesky.md) | | | | | | | | | | | | | | | |
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MRzzz-cyber.md) | | | | | | | | | | | | | | | |
+| [kuove](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kuove.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
