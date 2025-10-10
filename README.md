@@ -204,7 +204,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MRzzz-cyber.md) | | | | | | | | | | | | | | | |
 | [kuove](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kuove.md) | | | | | | | | | | | | | | | |
 | [RanX557](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RanX557.md) | | | | | | | | | | | | | | | |
+| [hanksfanAI](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hanksfanAI.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
