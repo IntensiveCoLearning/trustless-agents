@@ -191,7 +191,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [liwnldutng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/liwnldutng.md) | | | | | | | | | | | | | | | |
 | [yhzhongc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/yhzhongc.md) | | | | | | | | | | | | | | | |
 | [JNHFlow21](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JNHFlow21.md) | | | | | | | | | | | | | | | |
+| [velinussage](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/velinussage.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
