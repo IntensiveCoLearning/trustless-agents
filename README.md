@@ -177,7 +177,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [cmu-ruoyan-lgl](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/cmu-ruoyan-lgl.md) | | | | | | | | | | | | | | | |
 | [debugzhao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/debugzhao.md) | | | | | | | | | | | | | | | |
 | [machiwachi](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/machiwachi.md) | | | | | | | | | | | | | | | |
+| [kaka666111](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kaka666111.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
