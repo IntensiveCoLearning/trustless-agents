@@ -242,7 +242,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [0xIncognito](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xIncognito.md) | | | | | | | | | | | | | | | |
 | [istvanej](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/istvanej.md) | | | | | | | | | | | | | | | |
 | [niko4570](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/niko4570.md) | | | | | | | | | | | | | | | |
+| [JiuFang-Java](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JiuFang-Java.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
