@@ -194,7 +194,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [velinussage](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/velinussage.md) | | | | | | | | | | | | | | | |
 | [NehharShah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/NehharShah.md) | | | | | | | | | | | | | | | |
 | [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | | | | | | | | | | | | | | | |
+| [Sakkana](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Sakkana.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
