@@ -227,7 +227,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [SU-AN-coder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SU-AN-coder.md) | | | | | | | | | | | | | | | |
 | [Elorze](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Elorze.md) | | | | | | | | | | | | | | | |
 | [Tengfei-Ma13206](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Tengfei-Ma13206.md) | | | | | | | | | | | | | | | |
+| [Darkells](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Darkells.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
