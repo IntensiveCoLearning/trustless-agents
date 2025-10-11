@@ -285,7 +285,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [OS-Lihua](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/OS-Lihua.md) | | | | | | | | | | | | | | | |
 | [sheep3gold](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sheep3gold.md) | | | | | | | | | | | | | | | |
 | [sanshuihe](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sanshuihe.md) | | | | | | | | | | | | | | | |
+| [yrd241](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/yrd241.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
