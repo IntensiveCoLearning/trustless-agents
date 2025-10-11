@@ -298,7 +298,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [syslink](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/syslink.md) | | | | | | | | | | | | | | | |
 | [moraqaq](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/moraqaq.md) | | | | | | | | | | | | | | | |
 | [TecSong](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TecSong.md) | | | | | | | | | | | | | | | |
+| [LastHopeOfGPNU](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/LastHopeOfGPNU.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
