@@ -278,7 +278,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [voidovo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/voidovo.md) | | | | | | | | | | | | | | | |
 | [weifengHuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/weifengHuang.md) | | | | | | | | | | | | | | | |
 | [Floydwish](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Floydwish.md) | | | | | | | | | | | | | | | |
+| [JoyWQ](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JoyWQ.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
