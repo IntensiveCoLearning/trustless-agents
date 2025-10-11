@@ -282,7 +282,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [xiaodongQ](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xiaodongQ.md) | | | | | | | | | | | | | | | |
 | [atomlink-ye](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/atomlink-ye.md) | | | | | | | | | | | | | | | |
 | [imtypist](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/imtypist.md) | | | | | | | | | | | | | | | |
+| [OS-Lihua](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/OS-Lihua.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
