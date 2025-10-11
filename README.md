@@ -293,7 +293,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [henrycyberbio](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/henrycyberbio.md) | | | | | | | | | | | | | | | |
 | [Ylim314](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Ylim314.md) | | | | | | | | | | | | | | | |
 | [KL35kkk](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KL35kkk.md) | | | | | | | | | | | | | | | |
+| [Usernyagah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Usernyagah.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
