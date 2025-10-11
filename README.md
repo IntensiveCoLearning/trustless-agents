@@ -286,7 +286,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [sheep3gold](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sheep3gold.md) | | | | | | | | | | | | | | | |
 | [sanshuihe](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sanshuihe.md) | | | | | | | | | | | | | | | |
 | [yrd241](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/yrd241.md) | | | | | | | | | | | | | | | |
+| [pillowtalk-Qy](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/pillowtalk-Qy.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
