@@ -274,7 +274,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [kiwifruits686](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kiwifruits686.md) | | | | | | | | | | | | | | | |
 | [BiscuitCoder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BiscuitCoder.md) | | | | | | | | | | | | | | | |
 | [lehotle](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lehotle.md) | | | | | | | | | | | | | | | |
+| [0xClareYang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xClareYang.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
