@@ -273,7 +273,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ciconia11](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ciconia11.md) | | | | | | | | | | | | | | | |
 | [kiwifruits686](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kiwifruits686.md) | | | | | | | | | | | | | | | |
 | [BiscuitCoder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BiscuitCoder.md) | | | | | | | | | | | | | | | |
+| [lehotle](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lehotle.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
