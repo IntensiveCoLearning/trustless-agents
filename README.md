@@ -308,7 +308,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ErianDeath](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ErianDeath.md) | | | | | | | | | | | | | | | |
 | [Evelyn2044](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Evelyn2044.md) | | | | | | | | | | | | | | | |
 | [12365448949845](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/12365448949845.md) | | | | | | | | | | | | | | | |
+| [dianezhang0409-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dianezhang0409-cyber.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
