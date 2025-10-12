@@ -303,7 +303,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Viven901](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Viven901.md) | | | | | | | | | | | | | | | |
 | [ruilinz698](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ruilinz698.md) | | | | | | | | | | | | | | | |
 | [jickfeng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jickfeng.md) | | | | | | | | | | | | | | | |
+| [quentinawu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/quentinawu.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
