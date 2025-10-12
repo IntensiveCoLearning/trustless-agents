@@ -300,7 +300,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [TecSong](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TecSong.md) | | | | | | | | | | | | | | | |
 | [LastHopeOfGPNU](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/LastHopeOfGPNU.md) | | | | | | | | | | | | | | | |
 | [carmen0208](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/carmen0208.md) | | | | | | | | | | | | | | | |
+| [Viven901](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Viven901.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
