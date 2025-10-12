@@ -301,7 +301,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [LastHopeOfGPNU](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/LastHopeOfGPNU.md) | | | | | | | | | | | | | | | |
 | [carmen0208](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/carmen0208.md) | | | | | | | | | | | | | | | |
 | [Viven901](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Viven901.md) | | | | | | | | | | | | | | | |
+| [ruilinz698](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ruilinz698.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
