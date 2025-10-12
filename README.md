@@ -304,7 +304,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ruilinz698](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ruilinz698.md) | | | | | | | | | | | | | | | |
 | [jickfeng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jickfeng.md) | | | | | | | | | | | | | | | |
 | [quentinawu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/quentinawu.md) | | | | | | | | | | | | | | | |
+| [timerring](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/timerring.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
