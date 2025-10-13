@@ -315,7 +315,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [muzhi-hac](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/muzhi-hac.md) | | | | | | | | | | | | | | | |
 | [02Liao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/02Liao.md) | | | | | | | | | | | | | | | |
 | [wkarry450-max](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wkarry450-max.md) | | | | | | | | | | | | | | | |
+| [xuruohan709-glitch](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xuruohan709-glitch.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
