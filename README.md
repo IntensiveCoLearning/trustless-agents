@@ -311,7 +311,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [dianezhang0409-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dianezhang0409-cyber.md) | | | | | | | | | | | | | | | |
 | [SunWeb3Sec](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SunWeb3Sec.md) | | | | | | | | | | | | | | | |
 | [Ra1nt](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Ra1nt.md) | | | | | | | | | | | | | | | |
+| [268946lee](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/268946lee.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
