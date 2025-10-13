@@ -312,7 +312,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [SunWeb3Sec](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SunWeb3Sec.md) | | | | | | | | | | | | | | | |
 | [Ra1nt](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Ra1nt.md) | | | | | | | | | | | | | | | |
 | [268946lee](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/268946lee.md) | | | | | | | | | | | | | | | |
+| [muzhi-hac](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/muzhi-hac.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
