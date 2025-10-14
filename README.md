@@ -321,7 +321,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [0xJokker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xJokker.md) | | | | | | | | | | | | | | | |
 | [Stovedove](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Stovedove.md) | | | | | | | | | | | | | | | |
 | [PooMuerte1](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/PooMuerte1.md) | | | | | | | | | | | | | | | |
+| [Felipe-Tabares](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Felipe-Tabares.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
