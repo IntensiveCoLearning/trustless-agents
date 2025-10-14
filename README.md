@@ -410,7 +410,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [SofiaSukh](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SofiaSukh.md) | | | | | | | | | | | | | | |
 | [ayushgupta0610](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ayushgupta0610.md) |   | | | | | | | | | | | | | |
 | [dersteppenwolfruowen-316](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dersteppenwolfruowen-316.md) | | | | | | | | | | | | | | |
+| [xfajarr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xfajarr.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
