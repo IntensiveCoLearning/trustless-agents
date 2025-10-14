@@ -326,7 +326,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [qingfengzxr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/qingfengzxr.md) | | | | | | | | | | | | | | | |
 | [0xultravioleta](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xultravioleta.md) | | | | | | | | | | | | | | | |
 | [neal-zhu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/neal-zhu.md) | | | | | | | | | | | | | | | |
+| [rayjun](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/rayjun.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
