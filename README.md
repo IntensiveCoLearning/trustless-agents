@@ -319,7 +319,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [andres9238](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/andres9238.md) | | | | | | | | | | | | | | | |
 | [josdanhl](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/josdanhl.md) | | | | | | | | | | | | | | | |
 | [0xJokker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xJokker.md) | | | | | | | | | | | | | | | |
+| [Stovedove](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Stovedove.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
