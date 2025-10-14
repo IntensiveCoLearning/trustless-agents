@@ -318,7 +318,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [xuruohan709-glitch](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xuruohan709-glitch.md) | | | | | | | | | | | | | | | |
 | [andres9238](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/andres9238.md) | | | | | | | | | | | | | | | |
 | [josdanhl](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/josdanhl.md) | | | | | | | | | | | | | | | |
+| [0xJokker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xJokker.md) | | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
