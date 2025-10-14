@@ -312,7 +312,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [0xNezha](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xNezha.md) |   | | | | | | | | | | | | | |
 | [leonvking0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leonvking0.md) |   | | | | | | | | | | | | | |
 | [Pigitaiko](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Pigitaiko.md) | | | | | | | | | | | | | | |
-| [ohadbachner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ohadbachner.md) | | | | | | | | | | | | | | |
+| [ohadbachner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ohadbachner.md) |   | | | | | | | | | | | | | |
 | [Wenpiner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Wenpiner.md) |   | | | | | | | | | | | | | |
 | [Swiftevo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Swiftevo.md) |   | | | | | | | | | | | | | |
 | [0xhirugohan](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xhirugohan.md) |   | | | | | | | | | | | | | |
@@ -412,7 +412,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [dersteppenwolfruowen-316](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dersteppenwolfruowen-316.md) | | | | | | | | | | | | | | |
 | [xfajarr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xfajarr.md) |   | | | | | | | | | | | | | |
 | [matteoscurati](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/matteoscurati.md) | | | | | | | | | | | | | | |
+| [shun12306](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/shun12306.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
