@@ -406,7 +406,10 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Yuan-Chen-Haku](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Yuan-Chen-Haku.md) | | | | | | | | | | | | | | |
 | [adoniscyrilnew](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/adoniscyrilnew.md) | | | | | | | | | | | | | | |
 | [eira950915-hash](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/eira950915-hash.md) | | | | | | | | | | | | | | |
+| [RyanKung](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RyanKung.md) | | | | | | | | | | | | | | |
+| [SofiaSukh](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SofiaSukh.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
