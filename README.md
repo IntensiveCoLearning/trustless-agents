@@ -130,8 +130,54 @@ Arena SDK with 8004 identities + A2A + ChaosChain integration for receipt logged
 **Welcome to add more challenges and questions!**
 
 ---
+
+### Coding Challenge: Trustless Agent “Hello World”
+
+**Objective**
+Ship a minimal, runnable demo that proves identity, discovery, deterministic service, third-party validation, and optional tokenized pay-per-call.
+
+**Build**
+
+* Three agents:
+
+  * **Server** provides a simple deterministic service over an input.
+  * **Validator** independently recomputes and records a pass/fail outcome.
+  * **Client** discovers the Server, invokes it, requests validation, then prints final status.
+* Two tiny registries:
+
+  * **Identity** links agent identifiers to JSON descriptors (name, version, tags, endpoints, optional price).
+  * **Verification** stores validation outcomes tied to a service receipt.
+* JSON descriptors for all agents.
+
+**Flow**
+
+1. Start a local chain.
+2. Deploy registries and agents.
+3. Register Server and Validator with descriptor URLs.
+4. Client discovers Server by identifier or tag.
+5. Client calls Server and receives a deterministic result plus a receipt reference.
+6. Client asks Validator to verify; Validator records the outcome.
+7. Client prints `STATUS: VERIFIED` or `FAILED`.
+
+**Acceptance**
+
+* Visible agent addresses, identifiers, and descriptor URLs.
+* Identity entries exist.
+* A receipt reference is produced.
+* A verification record indicates success.
+* Final console line shows `STATUS: VERIFIED`.
+
+**Optional**
+
+* Token pay-per-call.
+* Tag-based discovery.
+* Simple reputation counter on successful validations.
+
+
+---
 ### Sponsors
 
+- **Unibase**: The first high-performance decentralized Ai memory layer - empowering Al agents with long-term memory and interoperability. [X (Twitter)](https://x.com/Unibase_AI) | [Website](https://www.unibase.com)
 - **SlowMist**: A blockchain security firm specializing in smart contract audits, on-chain tracking, and threat intelligence. [X (Twitter)](https://x.com/SlowMist_Team) | [Website](https://www.slowmist.com/)
 
 ### Community Supporters
