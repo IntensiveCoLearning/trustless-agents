@@ -10,11 +10,10 @@ timezone: UTC-5
 
 ## Self-introduction
 
-I am a software engineering student and member of UltravioletaDAO LLC. We promote education about Web 3, focusing on decentralized governance. We like to explore new technologies, so we carry out vibe-coding projects using the latest technologies.
+I am a software engineering student and member of UltravioletaDAO LLC. We promote education about Web 3, focusing on decentralized governance. We like to explore new technologies, so we carry out vibe-coding projects using the latest technologies. We would love to learn much more about the world of agents because we know that it will be our inevitable future as developers.
 
 ## Notes
 
 <!-- Content_START -->
-
 
 <!-- Content_END -->

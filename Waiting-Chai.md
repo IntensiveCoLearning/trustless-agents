@@ -11,10 +11,11 @@ timezone: UTC+8
 ## Self-introduction
 
 love open source;
+love rust;
+love web3;
 
 ## Notes
 
 <!-- Content_START -->
-
 
 <!-- Content_END -->
