@@ -396,7 +396,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [r3tsina](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/r3tsina.md) | | | | | | | | | | | | | | |
 | [15998431520](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/15998431520.md) | | | | | | | | | | | | | | |
 | [zx4fypgz4j-web](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zx4fypgz4j-web.md) | | | | | | | | | | | | | | |
+| [lonniexu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lonniexu.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
