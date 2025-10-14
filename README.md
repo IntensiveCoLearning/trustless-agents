@@ -418,7 +418,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [0xlauu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xlauu.md) |   | | | | | | | | | | | | | |
 | [zoeyz3](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zoeyz3.md) |   | | | | | | | | | | | | | |
 | [seanonchain](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/seanonchain.md) | | | | | | | | | | | | | | |
+| [julianotowers](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/julianotowers.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
