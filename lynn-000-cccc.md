@@ -11,6 +11,7 @@ timezone: UTC+8
 ## Self-introduction
 
 hello, im lynn ~
+I have interested in ERC-8004
 
 ## Notes
 
