@@ -388,7 +388,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Melocaramel0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Melocaramel0.md) | | | | | | | | | | | | | | |
 | [SkySommer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SkySommer.md) | | | | | | | | | | | | | | |
 | [kimo-ice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kimo-ice.md) | | | | | | | | | | | | | | |
+| [0xalejolr420-boop](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xalejolr420-boop.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
