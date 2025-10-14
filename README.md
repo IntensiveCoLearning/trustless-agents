@@ -385,7 +385,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [davidrodr1guez](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/davidrodr1guez.md) | | | | | | | | | | | | | | |
 | [CHENFANGC](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/CHENFANGC.md) | | | | | | | | | | | | | | |
 | [joyc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/joyc.md) | | | | | | | | | | | | | | |
+| [Melocaramel0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Melocaramel0.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
