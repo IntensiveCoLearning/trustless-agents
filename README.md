@@ -378,7 +378,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [chenyllove001](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/chenyllove001.md) | | | | | | | | | | | | | | |
 | [gyc567](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/gyc567.md) | | | | | | | | | | | | | | |
 | [kelvinqin7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kelvinqin7.md) | | | | | | | | | | | | | | |
+| [lukema95](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lukema95.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
