@@ -376,7 +376,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [WandQ](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/WandQ.md) | | | | | | | | | | | | | | |
 | [BrianHuang813](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrianHuang813.md) | | | | | | | | | | | | | | |
 | [chenyllove001](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/chenyllove001.md) | | | | | | | | | | | | | | |
+| [gyc567](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/gyc567.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
