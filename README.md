@@ -398,7 +398,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [zx4fypgz4j-web](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zx4fypgz4j-web.md) | | | | | | | | | | | | | | |
 | [lonniexu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lonniexu.md) | | | | | | | | | | | | | | |
 | [Y4NG666](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Y4NG666.md) | | | | | | | | | | | | | | |
+| [Aurora-Stack](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Aurora-Stack.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
