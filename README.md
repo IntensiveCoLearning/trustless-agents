@@ -382,7 +382,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [leopc999](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leopc999.md) | | | | | | | | | | | | | | |
 | [wwk123](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wwk123.md) | | | | | | | | | | | | | | |
 | [acpm444-hub](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/acpm444-hub.md) | | | | | | | | | | | | | | |
+| [davidrodr1guez](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/davidrodr1guez.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
