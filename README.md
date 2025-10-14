@@ -400,7 +400,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Y4NG666](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Y4NG666.md) | | | | | | | | | | | | | | |
 | [Aurora-Stack](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Aurora-Stack.md) | | | | | | | | | | | | | | |
 | [taiaiJiaZhi](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/taiaiJiaZhi.md) | | | | | | | | | | | | | | |
+| [0xSidddd](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xSidddd.md) | | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
