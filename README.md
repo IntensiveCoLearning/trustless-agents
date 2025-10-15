@@ -412,7 +412,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [dersteppenwolfruowen-316](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dersteppenwolfruowen-316.md) | ⭕️ | | | | | | | | | | | | | |
 | [xfajarr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xfajarr.md) |   | | | | | | | | | | | | | |
 | [matteoscurati](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/matteoscurati.md) |   | | | | | | | | | | | | | |
-| [shun12306](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/shun12306.md) |   | | | | | | | | | | | | | |
+| [shun12306](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/shun12306.md) | ✅ | | | | | | | | | | | | | |
 | [Night-heron-eba](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Night-heron-eba.md) |   | | | | | | | | | | | | | |
 | [SJW1111011](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SJW1111011.md) |   | | | | | | | | | | | | | |
 | [0xlauu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xlauu.md) |   | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
