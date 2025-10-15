@@ -422,8 +422,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [hold4coin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hold4coin.md) |   | | | | | | | | | | | | | |
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) | ✅ | | | | | | | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
-| [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) |   | | | | | | | | | | | | | |
+| [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
