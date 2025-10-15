@@ -278,7 +278,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [only4sim](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/only4sim.md) |   | | | | | | | | | | | | | |
 | [Frederick2313072](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Frederick2313072.md) |   | | | | | | | | | | | | | |
 | [lilexi-bot](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lilexi-bot.md) |   | | | | | | | | | | | | | |
-| [wukong988](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wukong988.md) |   | | | | | | | | | | | | | |
+| [wukong988](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wukong988.md) | ✅ | | | | | | | | | | | | | |
 | [script-money](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/script-money.md) |   | | | | | | | | | | | | | |
 | [GitWoody](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/GitWoody.md) | ✅ | | | | | | | | | | | | | |
 | [Thomas-YHS](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Thomas-YHS.md) |   | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
