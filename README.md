@@ -244,7 +244,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [TAnNbR](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TAnNbR.md) |   | | | | | | | | | | | | | |
 | [Waiting-Chai](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Waiting-Chai.md) |   | | | | | | | | | | | | | |
 | [internetofaiagent](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/internetofaiagent.md) |   | | | | | | | | | | | | | |
-| [sunhuachuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sunhuachuang.md) |   | | | | | | | | | | | | | |
+| [sunhuachuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sunhuachuang.md) | ✅ | | | | | | | | | | | | | |
 | [thenameisdevair](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/thenameisdevair.md) |   | | | | | | | | | | | | | |
 | [k66inthesky](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/k66inthesky.md) |   | | | | | | | | | | | | | |
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MRzzz-cyber.md) |   | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
