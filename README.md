@@ -355,7 +355,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Evelyn2044](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Evelyn2044.md) |   | | | | | | | | | | | | | |
 | [12365448949845](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/12365448949845.md) |   | | | | | | | | | | | | | |
 | [dianezhang0409-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dianezhang0409-cyber.md) |   | | | | | | | | | | | | | |
-| [SunWeb3Sec](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SunWeb3Sec.md) |   | | | | | | | | | | | | | |
+| [SunWeb3Sec](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SunWeb3Sec.md) | ✅ | | | | | | | | | | | | | |
 | [Ra1nt](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Ra1nt.md) |   | | | | | | | | | | | | | |
 | [268946lee](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/268946lee.md) |   | | | | | | | | | | | | | |
 | [muzhi-hac](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/muzhi-hac.md) |   | | | | | | | | | | | | | |
@@ -423,6 +423,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) |   | | | | | | | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
