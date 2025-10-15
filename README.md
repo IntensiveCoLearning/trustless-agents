@@ -281,7 +281,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [wukong988](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wukong988.md) | ✅ |   | | | | | | | | | | | | |
 | [script-money](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/script-money.md) | ⭕️ |   | | | | | | | | | | | | |
 | [GitWoody](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/GitWoody.md) | ✅ |   | | | | | | | | | | | | |
-| [Thomas-YHS](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Thomas-YHS.md) | ✅ | | | | | | | | | | | | | |
+| [Thomas-YHS](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Thomas-YHS.md) | ✅ |   | | | | | | | | | | | | |
 | [kevinsslin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kevinsslin.md) | ⭕️ |   | | | | | | | | | | | | |
 | [HuixuLiu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/HuixuLiu.md) | ⭕️ |   | | | | | | | | | | | | |
 | [ShiningRay](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ShiningRay.md) | ✅ |   | | | | | | | | | | | | |
@@ -312,10 +312,10 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [0xNezha](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xNezha.md) | ⭕️ |   | | | | | | | | | | | | |
 | [leonvking0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leonvking0.md) | ⭕️ |   | | | | | | | | | | | | |
 | [Pigitaiko](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Pigitaiko.md) |   | | | | | | | | | | | | | |
-| [ohadbachner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ohadbachner.md) |   | | | | | | | | | | | | | |
+| [ohadbachner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ohadbachner.md) | ⭕️ |   | | | | | | | | | | | | |
 | [Wenpiner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Wenpiner.md) | ⭕️ |   | | | | | | | | | | | | |
 | [Swiftevo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Swiftevo.md) | ✅ |   | | | | | | | | | | | | |
-| [0xhirugohan](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xhirugohan.md) | ✅ | | | | | | | | | | | | | |
+| [0xhirugohan](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xhirugohan.md) | ✅ |   | | | | | | | | | | | | |
 | [ciconia11](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ciconia11.md) | ⭕️ |   | | | | | | | | | | | | |
 | [kiwifruits686](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kiwifruits686.md) | ⭕️ |   | | | | | | | | | | | | |
 | [BiscuitCoder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BiscuitCoder.md) | ⭕️ |   | | | | | | | | | | | | |
@@ -410,7 +410,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [SofiaSukh](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SofiaSukh.md) |   | | | | | | | | | | | | | |
 | [ayushgupta0610](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ayushgupta0610.md) | ⭕️ |   | | | | | | | | | | | | |
 | [dersteppenwolfruowen-316](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/dersteppenwolfruowen-316.md) | ⭕️ | | | | | | | | | | | | | |
-| [xfajarr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xfajarr.md) |   | | | | | | | | | | | | | |
+| [xfajarr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xfajarr.md) | ⭕️ |   | | | | | | | | | | | | |
 | [matteoscurati](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/matteoscurati.md) |   | | | | | | | | | | | | | |
 | [shun12306](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/shun12306.md) | ✅ |   | | | | | | | | | | | | |
 | [Night-heron-eba](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Night-heron-eba.md) | ⭕️ |   | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) | ⭕️ |   | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ |   | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
