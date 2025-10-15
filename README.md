@@ -239,7 +239,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [JNHFlow21](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JNHFlow21.md) |   | | | | | | | | | | | | | |
 | [velinussage](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/velinussage.md) | ⭕️ | | | | | | | | | | | | | |
 | [NehharShah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/NehharShah.md) | ⭕️ | | | | | | | | | | | | | |
-| [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) |   | | | | | | | | | | | | | |
+| [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | ✅ | | | | | | | | | | | | | |
 | [Sakkana](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Sakkana.md) |   | | | | | | | | | | | | | |
 | [TAnNbR](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TAnNbR.md) |   | | | | | | | | | | | | | |
 | [Waiting-Chai](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Waiting-Chai.md) |   | | | | | | | | | | | | | |
@@ -393,7 +393,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BromdenX](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BromdenX.md) |   | | | | | | | | | | | | | |
 | [mmchougule](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/mmchougule.md) | ⭕️ | | | | | | | | | | | | | |
 | [RowanWang6](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RowanWang6.md) |   | | | | | | | | | | | | | |
-| [r3tsina](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/r3tsina.md) |   | | | | | | | | | | | | | |
+| [r3tsina](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/r3tsina.md) | ✅ | | | | | | | | | | | | | |
 | [15998431520](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/15998431520.md) |   | | | | | | | | | | | | | |
 | [zx4fypgz4j-web](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zx4fypgz4j-web.md) |   | | | | | | | | | | | | | |
 | [lonniexu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lonniexu.md) |   | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
