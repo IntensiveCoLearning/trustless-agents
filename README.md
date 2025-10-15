@@ -340,7 +340,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Ylim314](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Ylim314.md) |   | | | | | | | | | | | | | |
 | [KL35kkk](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KL35kkk.md) | ✅ | | | | | | | | | | | | | |
 | [Usernyagah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Usernyagah.md) |   | | | | | | | | | | | | | |
-| [ssw123455](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ssw123455.md) |   | | | | | | | | | | | | | |
+| [ssw123455](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ssw123455.md) | ✅ | | | | | | | | | | | | | |
 | [syslink](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/syslink.md) |   | | | | | | | | | | | | | |
 | [moraqaq](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/moraqaq.md) |   | | | | | | | | | | | | | |
 | [TecSong](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TecSong.md) |   | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
