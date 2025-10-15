@@ -253,7 +253,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [hanksfanAI](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hanksfanAI.md) |   | | | | | | | | | | | | | |
 | [fffuuuming](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/fffuuuming.md) |   | | | | | | | | | | | | | |
 | [mabinhan911-gif](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/mabinhan911-gif.md) |   | | | | | | | | | | | | | |
-| [JackCC703](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JackCC703.md) |   | | | | | | | | | | | | | |
+| [JackCC703](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JackCC703.md) | ✅ | | | | | | | | | | | | | |
 | [TomakoDoven](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TomakoDoven.md) |   | | | | | | | | | | | | | |
 | [sudeepb02](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sudeepb02.md) |   | | | | | | | | | | | | | |
 | [Nancy0209](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Nancy0209.md) |   | | | | | | | | | | | | | |
@@ -423,6 +423,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) |   | | | | | | | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
