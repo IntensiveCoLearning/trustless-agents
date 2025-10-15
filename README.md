@@ -266,7 +266,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [buzhidaoa8848-hash](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/buzhidaoa8848-hash.md) |   | | | | | | | | | | | | | |
 | [nocb](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/nocb.md) |   | | | | | | | | | | | | | |
 | [linghuccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/linghuccc.md) | ✅ | | | | | | | | | | | | | |
-| [slucifersz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/slucifersz.md) |   | | | | | | | | | | | | | |
+| [slucifersz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/slucifersz.md) | ✅ | | | | | | | | | | | | | |
 | [luffythink](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/luffythink.md) |   | | | | | | | | | | | | | |
 | [wang-jin-bin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wang-jin-bin.md) |   | | | | | | | | | | | | | |
 | [Link-990](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Link-990.md) |   | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
