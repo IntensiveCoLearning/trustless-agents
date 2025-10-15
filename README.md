@@ -420,7 +420,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [seanonchain](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/seanonchain.md) | | | | | | | | | | | | | | |
 | [julianotowers](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/julianotowers.md) | | | | | | | | | | | | | | |
 | [hold4coin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hold4coin.md) |   | | | | | | | | | | | | | |
+| [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
