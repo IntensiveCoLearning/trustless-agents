@@ -315,7 +315,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ohadbachner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ohadbachner.md) |   | | | | | | | | | | | | | |
 | [Wenpiner](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Wenpiner.md) |   | | | | | | | | | | | | | |
 | [Swiftevo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Swiftevo.md) |   | | | | | | | | | | | | | |
-| [0xhirugohan](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xhirugohan.md) |   | | | | | | | | | | | | | |
+| [0xhirugohan](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xhirugohan.md) | ✅ | | | | | | | | | | | | | |
 | [ciconia11](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ciconia11.md) |   | | | | | | | | | | | | | |
 | [kiwifruits686](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kiwifruits686.md) |   | | | | | | | | | | | | | |
 | [BiscuitCoder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BiscuitCoder.md) |   | | | | | | | | | | | | | |
@@ -423,6 +423,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) |   | | | | | | | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
