@@ -55,5 +55,17 @@ A2A目前的问题：
 🧱 **生态系统稀缺** —— 还缺少足够多的公共 Agent、工具和示例，导致开发者难以体验到多 Agent 协作的真正价值。
 
 🚧 **开发者门槛较高** —— 实现 A2A 通信目前需要自建服务、配置复杂的元数据（如 .well-known/agent.json），对普通开发者来说还不够友好。
+
+[https://www.youtube.com/watch?v=mFkw3p5qSuA&t=13s：](https://www.youtube.com/watch?v=mFkw3p5qSuA&t=13s：)
+
+这个视频是A2A更全面的介绍，指导如何搭建自己的A2A项目。
+
+A2A的缺点：有些大语言模型可能并不靠谱，但是只要套了一个代理，它就会被无条件信任。所以需要额外的质量保证机制来补充身份认证的不足。
+
+[https://www.youtube.com/watch?v=8HqeY5v0ohM：](https://www.youtube.com/watch?v=8HqeY5v0ohM：)
+
+介绍了三种AI Agent Framework：AutoGen CrewAI LangGraph。
+
+AutoGen难用，LangGraph依赖生态。看起来CrewAI最好上手。
 <!-- DAILY_CHECKIN_2025-10-15_END -->
 <!-- Content_END -->
