@@ -361,7 +361,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [muzhi-hac](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/muzhi-hac.md) |   | | | | | | | | | | | | | |
 | [02Liao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/02Liao.md) |   | | | | | | | | | | | | | |
 | [wkarry450-max](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wkarry450-max.md) |   | | | | | | | | | | | | | |
-| [xuruohan709-glitch](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xuruohan709-glitch.md) |   | | | | | | | | | | | | | |
+| [xuruohan709-glitch](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xuruohan709-glitch.md) | ✅ | | | | | | | | | | | | | |
 | [andres9238](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/andres9238.md) | ⭕️ | | | | | | | | | | | | | |
 | [josdanhl](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/josdanhl.md) |   | | | | | | | | | | | | | |
 | [0xJokker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xJokker.md) | ⭕️ | | | | | | | | | | | | | |
@@ -424,6 +424,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) |   | | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
