@@ -16,17 +16,12 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 <!-- Content_START -->
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
-Test new note
-
-# 2025-10-16
-
-today i have learned
-
-dsafaefdsa
+Finish the rest of Validation
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 First day has started!
@@ -235,6 +230,12 @@ TODO ---
     
 -   How to implement admin of an agent, if owner of agent is the NFT owner. We might have multiple admins for managing one agent. And we need to think about the use case in a company.
 <!-- DAILY_CHECKIN_2025-10-15_END -->
+
+# 2025-10-16
+
+
+# 2025-10-15
+
 
 # 2025-10-16
 
