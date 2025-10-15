@@ -64,8 +64,83 @@ e.部署易用：每条链只装一个注册表，代理在 A 链注册，也能
 -   **身份注册表、信誉注册表和验证注册表**
     
 
+核心关系图如下
+
+```
+┌────────────────────────┐
+│     Identity Registry   │
+│   (ERC-721 Agent NFTs)  │
+│    ↓ 唯一身份与URI       │
+└────────────┬───────────┘
+             │ agentId
+             │
+┌────────────▼───────────┐
+│   Reputation Registry   │
+│   链上评分与反馈记录     │
+│   （信任信号层）        │
+└────────────┬───────────┘
+             │ 验证/引用
+┌────────────▼───────────┐
+│   Validation Registry   │
+│   验证结果与证明层       │
+└────────────────────────┘
+```
+
 _1.身份注册表_
 
-# ，
+a.将每个 Agent 注册为一个 **ERC-721 NFT**
+
+b.agentId = tokenId
+
+c.NFT的所有权即代表代理的控制权
+
+d.`tokenURI` 指向代理的链下注册文件（JSON 结构，描述代理能力、端点、信任模型等等）
+
+| 项目 | 内容 |
+| --- | --- |
+| 标准扩展 | ERC-721 + ERC721URIStorage |
+| 唯一标识 | eip155:chainId:registryAddress:agentId |
+| 注册文件（JSON） | 含代理名称、描述、端点（A2A/MCP/DID）、支持的信任模式等 |
+| 链上函数 | register(), setMetadata(), getMetadata() |
+| 链下数据 | tokenURI 指向的 JSON 文件（可在 IPFS/HTTPS 等存储） |
+| 事件 | Registered, MetadataSet |
+| 可组合性 | 因为是 ERC-721，Agent 可与 NFT 市场、钱包等生态直接兼容 |
+
+_2.信誉注册表_
+
+a.提供一个了链上反馈与授权系统
+
+b.用户或代理可为某个`agentId` 提供评分（0~100分）
+
+c.反馈可附带链下文件 URI（如 IPFS）（透明度更高 审计性更强）
+
+d.允许撤销与追加响应，实现声誉的治理与修正
+
+| 项目 | 内容 |
+| --- | --- |
+| 依赖 | IdentityRegistry（确保 agentId 有效） |
+| 反馈结构 | score, tag1, tag2, fileURI, fileHash |
+| 反馈签名 | feedbackAuth（EIP-191 / ERC-1271）授权机制 |
+| 事件 | NewFeedback, FeedbackRevoked, ResponseAppended |
+| 撤销功能 | 用户可撤销旧反馈（防止垃圾和错误评价） |
+| 扩展性 | feedback 文件中可加入 x402 支付凭证、上下文、任务信息等 |
+
+_3.验证注册表_
+
+a.代理可以请求验证任务结果
+
+b.Validator可基于 zkML、TEE、或质押机制提供链上验证结果
+
+c.通过事件与记录建立可追踪的验证链
+
+| 项目 | 内容 |
+| --- | --- |
+| 验证请求 | validationRequest(validatorAddress, agentId, requestUri, requestHash) |
+| 验证响应 | validationResponse(requestHash, response, responseUri, responseHash, tag) |
+| 响应值 | 0–100（可二值/多级） |
+| 链下数据 | requestUri / responseUri（例如 IPFS 审计报告） |
+| 事件 | ValidationRequest, ValidationResponse |
+| 查询函数 | getValidationStatus(), getSummary() |
+| 可组合性 | 任何验证器协议（TEE、zk、质押）都能接入 |
 <!-- DAILY_CHECKIN_2025-10-15_END -->
 <!-- Content_END -->
