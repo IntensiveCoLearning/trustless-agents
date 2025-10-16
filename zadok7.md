@@ -16,10 +16,13 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 <!-- Content_START -->
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+# 2025.10.15
 
 
 # 2025.10.15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+# 2025.10.15
+
 ## The 3 Trust Models Broken Down
 
 ### **Trust Model 1: Reputation**
@@ -30,12 +33,12 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
     
 -   **Validation method**: Social consensus
     
--   **Example**: "This agent has 4.8 stars from 1,200 reviews"
+-   **Example**: “This agent has 4.8 stars from 1,200 reviews”
     
 
 * * *
 
-### **Trust Model 2: Crypto-economic**
+### **Trust Model 2: Crypto-economic (think money and math for trust-less)**
 
 This model includes TWO validation methods:
 
@@ -43,11 +46,11 @@ This model includes TWO validation methods:
 
 -   Validators stake money (e.g., $10,000 in ETH)
     
--   They re-run the agent's computation to verify correctness
+-   They re-run the agent’s computation to verify correctness
     
 -   If they certify incorrectly, they lose their stake
     
--   Example: "3 validators staked $50K total and confirmed this result"
+-   Example: “3 validators staked $50K total and confirmed this result”
     
 
 **Method B: zkML proofs**
@@ -56,14 +59,14 @@ This model includes TWO validation methods:
     
 -   Math guarantees the work was done correctly
     
--   Doesn't reveal private inputs/data
+-   Doesn’t reveal private inputs/data
     
--   Example: "Agent provided zero-knowledge proof that it processed your medical data using Model X"
+-   Example: “Agent provided zero-knowledge proof that it processed your medical data using Model X”
     
 
 * * *
 
-### **Trust Model 3: TEE Attestation**
+### **Trust Model 3: TEE Attestation (think hardware based trust-less)**
 
 -   **What it includes**: TEE oracles (secure hardware)
     
@@ -71,9 +74,65 @@ This model includes TWO validation methods:
     
 -   Hardware cryptographically signs that specific code ran in isolated environment
     
--   Can't be hacked or inspected, even by the server owner
+-   Can’t be hacked or inspected, even by the server owner
     
--   **Example**: "Intel SGX attestation confirms agent ran in secure enclave"
+-   **Example**: “Intel SGX/Nitro Enclaves attestation confirms agent ran in secure enclave”
+<!-- DAILY_CHECKIN_2025-10-15_END -->
+<!-- Content_END -->
+## The 3 Trust Models Broken Down
+
+### **Trust Model 1: Reputation**
+
+-   **What it includes**: Client feedback scores (0-100)
+    
+-   **How it works**: Like Yelp/Uber ratings - clients rate the agent after task completion
+    
+-   **Validation method**: Social consensus
+    
+-   **Example**: “This agent has 4.8 stars from 1,200 reviews”
+    
+
+* * *
+
+### **Trust Model 2: Crypto-economic (think money and math for trust-less)**
+
+This model includes TWO validation methods:
+
+**Method A: Stake-secured re-execution**
+
+-   Validators stake money (e.g., $10,000 in ETH)
+    
+-   They re-run the agent’s computation to verify correctness
+    
+-   If they certify incorrectly, they lose their stake
+    
+-   Example: “3 validators staked $50K total and confirmed this result”
+    
+
+**Method B: zkML proofs**
+
+-   Agent provides cryptographic proof it ran specific computation
+    
+-   Math guarantees the work was done correctly
+    
+-   Doesn’t reveal private inputs/data
+    
+-   Example: “Agent provided zero-knowledge proof that it processed your medical data using Model X”
+    
+
+* * *
+
+### **Trust Model 3: TEE Attestation (think hardware based trust-less)**
+
+-   **What it includes**: TEE oracles (secure hardware)
+    
+-   **How it works**: Code runs inside tamper-proof hardware (Intel SGX, AWS Nitro Enclaves)
+    
+-   Hardware cryptographically signs that specific code ran in isolated environment
+    
+-   Can’t be hacked or inspected, even by the server owner
+    
+-   **Example**: “Intel SGX/Nitro Enclaves attestation confirms agent ran in secure enclave”
 <!-- DAILY_CHECKIN_2025-10-15_END -->
 <!-- Content_END -->
 ## The 3 Trust Models Broken Down
