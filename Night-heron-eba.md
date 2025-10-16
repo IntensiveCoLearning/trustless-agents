@@ -17,6 +17,6 @@ timezone: UTC+8
 <!-- Content_START -->
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
-##
+阅读[EIP-8004 Official Standard](https://eips.ethereum.org/EIPS/eip-8004)
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 <!-- Content_END -->
