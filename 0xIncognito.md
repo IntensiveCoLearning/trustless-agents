@@ -14,8 +14,14 @@ Open to learn new techniques.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+今天听了 ERC-8004 相关的 workshop 会议，稍微多了一些了解吧
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 # 2025.10.15
