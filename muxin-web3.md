@@ -18,15 +18,22 @@ test
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 I’m testing something for updating the study notes. 111111222222
 
--   test
+-   test1
     
--   test
+-   test2
     
--   test
+-   test3
+    
+
+| 1 | 2 | 3 |
+| --- | --- | --- |
+|   |   |   |
+|   |   |   |
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
