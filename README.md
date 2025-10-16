@@ -405,7 +405,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [lynn-000-cccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lynn-000-cccc.md) | ⭕️ |   | | | | | | | | | | | | |
 | [Yuan-Chen-Haku](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Yuan-Chen-Haku.md) | ⭕️ |   | | | | | | | | | | | | |
 | [adoniscyrilnew](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/adoniscyrilnew.md) | ✅ |   | | | | | | | | | | | | |
-| [eira950915-hash](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/eira950915-hash.md) | ⭕️ |   | | | | | | | | | | | | |
+| [eira950915-hash](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/eira950915-hash.md) | ⭕️ | ✅ | | | | | | | | | | | | |
 | [RyanKung](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RyanKung.md) | ⭕️ |   | | | | | | | | | | | | |
 | [SofiaSukh](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SofiaSukh.md) | ⭕️ |   | | | | | | | | | | | | |
 | [ayushgupta0610](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ayushgupta0610.md) | ⭕️ |   | | | | | | | | | | | | |
@@ -425,6 +425,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ |   | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
