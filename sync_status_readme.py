@@ -64,18 +64,44 @@ def get_date_range():
 
 
 def get_user_timezone(file_content):
-    yaml_match = re.search(r'---\s*\ntimezone:\s*(\S+)\s*\n---', file_content)
+    yaml_match = re.search(r'---\s*\ntimezone:\s*([^\n]+)\s*\n---', file_content)
     if yaml_match:
-        timezone_str = yaml_match.group(1)
+        timezone_str = yaml_match.group(1).strip()
+        # 1) Try IANA timezone names directly (e.g., "Asia/Kolkata")
         try:
             return pytz.timezone(timezone_str)
         except pytz.exceptions.UnknownTimeZoneError:
-            try:
-                offset = int(timezone_str[3:])  # Extract the offset value
-                return pytz.FixedOffset(offset * 60)  # Offset in minutes
-            except ValueError:
-                logging.warning(f"Invalid timezone format: {timezone_str}. Using default {DEFAULT_TIMEZONE}.")
-                return pytz.timezone(DEFAULT_TIMEZONE)
+            pass
+
+        # 2) Support UTC/GMT fixed offsets like UTC+5:30, UTC-3, UTC+0530, GMT+9, etc.
+        s = timezone_str.strip().upper().replace("UTC ", "UTC").replace("GMT ", "GMT")
+
+        # Special case: plain UTC/GMT
+        if s in ("UTC", "GMT", "Z"):
+            return pytz.UTC
+
+        # Match formats: UTC+H, UTC+HH, UTC+H:MM, UTC+HH:MM, UTC+HHMM (and GMT variants)
+        m = re.match(r'^(?:UTC|GMT)\s*([+-])\s*(\d{1,2})(?::?(\d{2}))?$', s)
+        if m:
+            sign = 1 if m.group(1) == '+' else -1
+            hours = int(m.group(2))
+            minutes = int(m.group(3)) if m.group(3) else 0
+            total_minutes = sign * (hours * 60 + minutes)
+            return pytz.FixedOffset(total_minutes)
+
+        # Match decimal hours like UTC+5.5 or UTC-3.75
+        m = re.match(r'^(?:UTC|GMT)\s*([+-])\s*(\d{1,2})\.(\d+)$', s)
+        if m:
+            sign = 1 if m.group(1) == '+' else -1
+            hours = int(m.group(2))
+            frac = float('0.' + m.group(3))
+            minutes = int(round(frac * 60))
+            total_minutes = sign * (hours * 60 + minutes)
+            return pytz.FixedOffset(total_minutes)
+
+        logging.warning(f"Invalid timezone format: {timezone_str}. Using default {DEFAULT_TIMEZONE}.")
+        return pytz.timezone(DEFAULT_TIMEZONE)
+
     return pytz.timezone(DEFAULT_TIMEZONE)
 
 
@@ -155,19 +181,26 @@ def get_user_study_status(nickname):
             file_content = file.read()
         user_tz = get_user_timezone(file_content)
         logging.info(f"File content length for {nickname}: {len(file_content)} user_tz: {user_tz}")
-        current_date = datetime.now(user_tz).replace(hour=0, minute=0, second=0, microsecond=0)
+        now_local = datetime.now(user_tz)
 
         for date in get_date_range():
-            # 直接比较 UTC 日期，避免时区转换问题
-            utc_date = date.astimezone(user_tz).replace(hour=0, minute=0, second=0, microsecond=0)
-            user_current_date = current_date
-          
-            if utc_date.date() == user_current_date.date():
-                user_status[date] = "✅" if check_md_content(file_content, date, user_tz) else " "
-            elif utc_date.date() > user_current_date.date():
+            # Treat each UTC program day as a 24h window [start_utc, next_start_utc)
+            start_utc = date.replace(hour=0, minute=0, second=0, microsecond=0)
+            next_start_utc = (start_utc + timedelta(days=1))
+
+            # Convert window edges into user's local time for boundary checks
+            start_local = start_utc.astimezone(user_tz)
+            end_local = next_start_utc.astimezone(user_tz)
+
+            if now_local < start_local:
+                # Future day for this user
                 user_status[date] = " "
-            else:
+            elif now_local >= end_local:
+                # Past day: must be ✅ or ⭕️
                 user_status[date] = "✅" if check_md_content(file_content, date, user_tz) else "⭕️"
+            else:
+                # In-progress (today for this user): show ✅ if already posted, else blank
+                user_status[date] = "✅" if check_md_content(file_content, date, user_tz) else " "
         logging.info(f"Successfully processed file for user: {nickname}")
     except FileNotFoundError:
         logging.error(f"Error: Could not find file {file_name}")
@@ -285,21 +318,27 @@ def generate_user_row(user):
 
     user_tz = get_user_timezone(file_content)
 
-    user_current_day = datetime.now(user_tz).replace(hour=0, minute=0, second=0, microsecond=0)
+    now_local = datetime.now(user_tz)
     date_range = get_date_range()
     
     for i, date in enumerate(date_range):
-        user_datetime = date.astimezone(pytz.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+        # UTC window for the program day
+        start_utc = date.astimezone(pytz.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+        next_start_utc = start_utc + timedelta(days=1)
+        # Localized boundaries
+        start_local = start_utc.astimezone(user_tz)
+        end_local = next_start_utc.astimezone(user_tz)
         
         if is_eliminated:
             new_row += " |"
             continue
         
-        if user_datetime.date() > user_current_day.date():
+        # Future day for this user
+        if now_local < start_local:
             new_row += " |"
             continue
             
-        days_from_start = (user_datetime.date() - START_DATE.date()).days
+        days_from_start = (start_utc.date() - START_DATE.date()).days
         week_number = days_from_start // 7
         
         cycle_start_day = week_number * 7
@@ -308,14 +347,15 @@ def generate_user_row(user):
         absent_count = 0
         for day_idx in range(cycle_start_day, min(cycle_end_day + 1, i + 1)):
             if day_idx < len(date_range):
-                check_date = date_range[day_idx].astimezone(pytz.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
-                check_date_local = check_date.astimezone(user_tz).replace(hour=0, minute=0, second=0, microsecond=0)
-                if check_date.date() <= user_current_day.date():
-                    status = user_status.get(check_date, "⭕️")
+                check_start_utc = date_range[day_idx].astimezone(pytz.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
+                check_end_local = (check_start_utc + timedelta(days=1)).astimezone(user_tz)
+                # Only count days that have fully ended in user's local time
+                if now_local >= check_end_local:
+                    status = user_status.get(check_start_utc, "⭕️")
                     if status == "⭕️":
                         absent_count += 1
         
-        current_status = user_status.get(user_datetime, "⭕️")
+        current_status = user_status.get(start_utc, "⭕️")
         
         if absent_count > 2:
             is_eliminated = True
