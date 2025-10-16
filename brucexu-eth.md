@@ -16,11 +16,68 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 <!-- Content_START -->
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
-Finish the rest of Validation
+## **Validation Registry**
+
+**This registry enables agents to request verification of their work and allows validator smart contracts to provide responses that can be tracked on-chain**.
+
+After an agent finishes the task, they can call "validationRequest" on this contract. External "validator" can check whether the work was done correctly.
+
+This function MUST be called by the owner or operator of _agentId_. TODO, multi-owners or company cases?
+
+```
+function validationRequest(address validatorAddress, uint256 agentId, string requestUri, bytes32 requestHash) external
+```
+
+TODO How does zkML proof, a TEE oracle, or a stake-secured re-execution network work for validation?
+
+Validators -> validationResponse to give feedback and check result.
+
+```
+function validationResponse(bytes32 requestHash, uint8 response, string responseUri, bytes32 responseHash, bytes32 tag) external
+```
+
+TODO what is unit8 response used for? A: The _response_ is a value between 0 and 100, which can be used as binary (0 for failed, 100 for passed) or with intermediate values for validations with a spectrum of outcomes.
+
+This function MUST be called by the _validatorAddress_ specified in the original request. TODO Service Agents specify the validatorAddress when request validation? How can they know which validator can help? If they specify one validator, is it trustless?
+
+They both on-chain events. The entire audit trail—who asked for validation, who validated, when, and what the outcome was—lives on Ethereum (or the chosen L2).
+
+That makes the result tamper-proof and composable: reputation systems, insurance funds, or downstream contracts can _trustlessly_ reference the validation outcome without needing an off-chain oracle.
+
+The workflow might be:
+
+1.  Server agent finishes a translation task -> validationRequest()
+    
+2.  Validator contract re-executes the model with the given inputs and checks a zk proof?? -> validationResponse()
+    
+3.  Client agent (or any dApp) reads the registry and releases payment only if passed == true.
+    
+
+TODO Validator need to re-executes the model, cost twice tokens. And the model might return differently, how to generate or check the zk proof and give a passed signal?
+
+## **Rationale**
+
+-   Agent communication protocols: AI primitives (MCP, A2A) and Web3 primitives such as wallet addresses, DIDs, and ENS names.
+    
+-   Feedback
+    
+-   **Gas Sponsorship**: Since clients don’t need to be registered anymore, any application can implement frictionless feedback leveraging [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702). TODO build a demo that use 7702 to sponsor the gas for agent?
+    
+-   **Deployment**: We expect the registries to be deployed with singletons per chain. **Note that an agent registered and receiving feedback on chain A can still operate and transact on other chains.** Agents can also be registered on multiple chains if desired. TODO interop or cross chain deployment issue. How to archive "an agent registered and receiving feedback on chain A can still operate and transact on other chains?"
+    
+
+## Questions:
+
+-   Privacy? if the agent will ask validator to verify their work?
+    
+-   How to build a validator?
+    
+-   Because agent uri and the service behind it might change, how can we make sure they are trustless always? What if they got hacked and replaced?
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
@@ -230,6 +287,12 @@ TODO ---
     
 -   How to implement admin of an agent, if owner of agent is the NFT owner. We might have multiple admins for managing one agent. And we need to think about the use case in a company.
 <!-- DAILY_CHECKIN_2025-10-15_END -->
+
+# 2025-10-16
+
+
+# 2025-10-15
+
 
 # 2025-10-16
 
