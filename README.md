@@ -249,7 +249,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [k66inthesky](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/k66inthesky.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MRzzz-cyber.md) | ✅ |   | | | | | | | | | | | | |
 | [kuove](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kuove.md) | ⭕️ |   | | | | | | | | | | | | |
-| [RanX557](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RanX557.md) | ✅ |   | | | | | | | | | | | | |
+| [RanX557](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RanX557.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [hanksfanAI](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hanksfanAI.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [fffuuuming](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/fffuuuming.md) | ⭕️ |   | | | | | | | | | | | | |
 | [mabinhan911-gif](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/mabinhan911-gif.md) | ⭕️ |   | | | | | | | | | | | | |
@@ -425,6 +425,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ |   | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
