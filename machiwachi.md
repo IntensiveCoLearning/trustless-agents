@@ -14,8 +14,14 @@ Building some AI agent related apps, talk with AI in various topics on hourly ba
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+昨天下午听了Workshop，最大的收获是TEE会扮演越来越重要的角色。EigenLayer这样的基于经济模型的信誉体系也会扮演越来越重要的角色
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 和大模型老师一起学习了ERC8004的协议设计，并构想了一些适用场景。个人感悟：
 
 1.  协议框架其实更偏向于体系化声誉系统，和 AI Agents 关系并有没那么大。这套体系放在其他地方，例如DAO治理的评价系统，甚至于外卖骑手的履约能力，都是可以的。
