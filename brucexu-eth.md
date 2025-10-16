@@ -16,11 +16,11 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 <!-- Content_START -->
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
-## **Validation Registry**
+## **Validation Registry1**
 
 **This registry enables agents to request verification of their work and allows validator smart contracts to provide responses that can be tracked on-chain**.
 
-After an agent finishes the task, they can call "validationRequest" on this contract. External "validator" can check whether the work was done correctly.
+After an agent finishes the task, they can call “validationRequest” on this contract. External “validator” can check whether the work was done correctly.
 
 This function MUST be called by the owner or operator of _agentId_. TODO, multi-owners or company cases?
 
@@ -63,7 +63,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
     
 -   **Gas Sponsorship**: Since clients don’t need to be registered anymore, any application can implement frictionless feedback leveraging [EIP-7702](https://eips.ethereum.org/EIPS/eip-7702). TODO build a demo that use 7702 to sponsor the gas for agent?
     
--   **Deployment**: We expect the registries to be deployed with singletons per chain. **Note that an agent registered and receiving feedback on chain A can still operate and transact on other chains.** Agents can also be registered on multiple chains if desired. TODO interop or cross chain deployment issue. How to archive "an agent registered and receiving feedback on chain A can still operate and transact on other chains?"
+-   **Deployment**: We expect the registries to be deployed with singletons per chain. **Note that an agent registered and receiving feedback on chain A can still operate and transact on other chains.** Agents can also be registered on multiple chains if desired. TODO interop or cross chain deployment issue. How to archive “an agent registered and receiving feedback on chain A can still operate and transact on other chains?”
     
 
 ## Questions:
@@ -77,6 +77,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
@@ -222,7 +223,10 @@ TODO ---
 -   TODO build the demo with AA accounts.
     
 -   How to implement admin of an agent, if owner of agent is the NFT owner. We might have multiple admins for managing one agent. And we need to think about the use case in a company.
-
-
 <!-- DAILY_CHECKIN_2025-10-15_END -->
+
+# 2025-10-16
+
+
+# 2025-10-15
 <!-- Content_END -->
