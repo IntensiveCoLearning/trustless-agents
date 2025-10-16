@@ -419,12 +419,13 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [zoeyz3](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zoeyz3.md) | ⭕️ |   | | | | | | | | | | | | |
 | [seanonchain](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/seanonchain.md) | ⭕️ |   | | | | | | | | | | | | |
 | [julianotowers](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/julianotowers.md) | ⭕️ |   | | | | | | | | | | | | |
-| [hold4coin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hold4coin.md) | ⭕️ |   | | | | | | | | | | | | |
+| [hold4coin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/hold4coin.md) | ⭕️ | ✅ | | | | | | | | | | | | |
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) | ✅ |   | | | | | | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) | ⭕️ |   | | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ |   | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
