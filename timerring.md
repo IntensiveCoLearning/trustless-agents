@@ -20,6 +20,15 @@ Keep Buidler
 
 # 2025.10.15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
+
+# 2025.10.16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+The ERC-8004 is not reinvent the wheel. The protocol not only expands A2A, but also bases trust assumptions on what builders are already thinking about. So, Stake-secured validation? Use \[EigenLayer\](https://blog.eigencloud.xyz/introducing-verifiable-agents-on-eigenlayer/). TEE attestations? Check out \[Phala\](https://phala.com/) its \[paper\](https://arxiv.org/pdf/2409.03992) and \[Near.AI\](https://near.ai/).
+
+And there are already some [DeAI](https://deai.directory/) .
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+<!-- Content_END -->
 ## ERC-8004: Trustless Agents Notes
 
 ### I. Core Objective and Motivation
