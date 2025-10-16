@@ -225,7 +225,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [machiwachi](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/machiwachi.md) | ✅ |   | | | | | | | | | | | | |
 | [kaka666111](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kaka666111.md) | ⭕️ |   | | | | | | | | | | | | |
 | [0x1bdat](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0x1bdat.md) | ⭕️ |   | | | | | | | | | | | | |
-| [preston4896](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/preston4896.md) | ⭕️ |   | | | | | | | | | | | | |
+| [preston4896](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/preston4896.md) | ⭕️ | ✅ | | | | | | | | | | | | |
 | [Huggin423](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Huggin423.md) | ⭕️ |   | | | | | | | | | | | | |
 | [advanture917](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/advanture917.md) | ✅ |   | | | | | | | | | | | | |
 | [didshow](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/didshow.md) | ⭕️ |   | | | | | | | | | | | | |
@@ -425,6 +425,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ |   | | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ⭕️ | | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
