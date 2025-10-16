@@ -259,7 +259,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Nancy0209](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Nancy0209.md) | ✅ |   | | | | | | | | | | | | |
 | [0xJayzee](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xJayzee.md) | ⭕️ |   | | | | | | | | | | | | |
 | [zhcqiu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zhcqiu.md) | ⭕️ |   | | | | | | | | | | | | |
-| [KamisAyaka](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KamisAyaka.md) | ✅ |   | | | | | | | | | | | | |
+| [KamisAyaka](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KamisAyaka.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [Failover97](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Failover97.md) | ⭕️ |   | | | | | | | | | | | | |
 | [huaigu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/huaigu.md) | ⭕️ |   | | | | | | | | | | | | |
 | [MoonHub0503](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MoonHub0503.md) | ✅ |   | | | | | | | | | | | | |
@@ -425,6 +425,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ |   | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
