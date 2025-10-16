@@ -14,20 +14,89 @@ Keep Buidler
 
 ## Notes
 <!-- Content_START -->
-# 2025-10-15
-<!-- DAILY_CHECKIN_2025-10-15_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+This is the sequences diagram that I summarize from the official erc 8004 examples:
 
+```
+sequenceDiagram
+    participant User as User/Client
+    participant Alice as Server Agent<br/>(Alice - local)
+    participant Bob as Validator Agent<br/>(Bob - local)
+    participant Charlie as Client Agent<br/>(Charlie - local)
+    participant IR as IdentityRegistry<br/>(on-chain contract)
+    participant RR as ReputationRegistry<br/>(on-chain contract)
+    participant VR as ValidationRegistry<br/>(on-chain contract)
+    participant Storage as Local Storage<br/>(data/, validations/)
+    
+    Note over User,Storage: Step 1: Deploy contracts
+    User->>IR: Deploy IdentityRegistry
+    User->>RR: Deploy ReputationRegistry
+    User->>VR: Deploy ValidationRegistry
+    
+    Note over User,Storage: Steps 2-3: Agent registration
+    Alice->>IR: newAgent("alice.example.com", 0xAAA)
+    IR-->>Alice: agentId = 1
+    IR->>IR: emit AgentRegistered(1)
+    
+    Bob->>IR: newAgent("bob.example.com", 0xBBB)
+    IR-->>Bob: agentId = 2
+    IR->>IR: emit AgentRegistered(2)
+    
+    Charlie->>IR: newAgent("charlie.example.com", 0xCCC)
+    IR-->>Charlie: agentId = 3
+    IR->>IR: emit AgentRegistered(3)
+    
+    Note over User,Storage: Step 4: Market analysis workflow
+    Alice->>Alice: analyze_market()<br/>CrewAI multi-agent workflow
+    Alice->>Alice: Senior Market Analyst<br/>Analyze BTC trend
+    Alice->>Alice: Risk Assessment Reviewer<br/>Assess risks
+    Alice->>Storage: Write analysis result<br/>data/btc_analysis.json
+    
+    Note over User,Storage: Step 5: Request validation
+    Alice->>VR: validationRequest(<br/>validatorId=2,<br/>serverId=1,<br/>dataHash)
+    VR->>VR: Record validation request
+    VR->>VR: emit ValidationRequestEvent(2, 1, dataHash)
+    
+    Note over User,Storage: Step 6: AI-driven validation
+    Bob->>VR: Read validation request
+    Bob->>Storage: Read analysis file<br/>data/btc_analysis.json
+    Bob->>Bob: validate_analysis()<br/>CrewAI validation workflow
+    Bob->>Bob: Senior Validator<br/>Review methodology
+    Bob->>Bob: QA Specialist<br/>Final assessment
+    Bob->>Storage: Write validation result<br/>validations/validation_result.json
+    
+    Note over User,Storage: Step 7: Submit validation response
+    Bob->>VR: validationResponse(<br/>dataHash,<br/>score=96)
+    VR->>VR: Record validation score
+    VR->>VR: emit ValidationResponseEvent(2, 1, dataHash, 96)
+    
+    Note over User,Storage: Step 8: Feedback authorization
+    Charlie->>RR: acceptFeedback(<br/>clientId=3,<br/>serverId=1)
+    RR->>RR: Record authorization relation
+    RR->>RR: emit AuthFeedback(3, 1, feedbackAuthId)
+    
+    Note over User,Storage: Step 9: Audit trail
+    User->>IR: getAgent(1, 2, 3)
+    IR-->>User: Return agent info
+    User->>VR: getValidationResponse(dataHash)
+    VR-->>User: Return validation score 96
+    User->>RR: isFeedbackAuthorized(3, 1)
+    RR-->>User: Return authorization status
+```
+<!-- DAILY_CHECKIN_2025-10-17_END -->
 
-# 2025.10.15
-<!-- DAILY_CHECKIN_2025-10-15_START -->
-
-
-# 2025.10.16
+# 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 The ERC-8004 is not reinvent the wheel. The protocol not only expands A2A, but also bases trust assumptions on what builders are already thinking about. So, Stake-secured validation? Use \[EigenLayer\](https://blog.eigencloud.xyz/introducing-verifiable-agents-on-eigenlayer/). TEE attestations? Check out \[Phala\](https://phala.com/) its \[paper\](https://arxiv.org/pdf/2409.03992) and \[Near.AI\](https://near.ai/).
 
 And there are already some [DeAI](https://deai.directory/) .
 <!-- DAILY_CHECKIN_2025-10-16_END -->
+
+<!-- DAILY_CHECKIN_2025-10-15_START -->
+
+<!-- DAILY_CHECKIN_2025-10-15_START -->
 <!-- Content_END -->
 ## ERC-8004: Trustless Agents Notes
 
