@@ -14,8 +14,14 @@ LXDAO成员，参加了web3实习计划，想要All-in Crypto加AI这一块，�
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+今天参加了Trustless workshop的分享会，但是对Trustless Agents的理解还不是很到位，明天腾出时间看一下详情
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 > This protocol proposes to use blockchains to **discover, choose, and interact with agents across organizational boundaries** without pre-existing trust, thus **enabling open-ended agent economies**. Trust models are pluggable and tiered, with security proportional to value at risk, from low-stake tasks like ordering pizza to high-stake tasks like medical diagnosis. Developers can choose from three trust models: reputation systems using client feedback, validation via stake-secured re-execution , zkML proofs, or TEE oracles.
 
 信任模型具有可插拔性（pluggable）与分层性（tiered），其安全级别与任务的风险价值成正比。也就是说，系统会根据任务的重要程度（价值风险的高低）采用不同的安全与信任机制：**从低风险的任务（如点披萨）到高风险的任务（如医疗诊断），所需的安全验证强度逐步递增。**
