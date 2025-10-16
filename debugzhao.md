@@ -14,8 +14,31 @@ curious about everything
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+-   **A2A协议**
+    
+
+_1.为何采用它_
+
+Agent协作之间没有统一的规则，A2A协议提供AI代理之间“开放沟通标准”，使得不同框架（如 TensorFlow、PyTorch）、不同公司开发的 AI 代理，能无缝通信、一起协作
+
+eg：A 代理负责数据分析，B 代理负责生成报告，二者通过 A2A 高效配合
+
+_2.解决问题场景示例_
+
+用户使用AI Agent来货币换算服务
+
+Currency Conversion Agent：专注于执行 “不同货币间的汇率查询与换算”，是 A2A 协议中的 “功能型代理”，和AI Assistant之间通过A2A协议进行通信。
+
+Request和Result：代表用户与 AI 助手、AI 助手与代理之间的 “数据交互”，A2A 协议会规定这些交互的标准格式，确保不同代理能顺畅沟通。
+
+ps: A2A带来的优势：靠 HTTPS 实现安全协作（代理互不可见）、打破Agent代理孤岛实现互作、保留代理自主权、标准化沟通降低集成复杂度、支持长时间运行协作与流式处理。
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 **5W模型快速了解ERC-8004**
 
 -   What — ERC-8004 是什么？
