@@ -16,189 +16,126 @@ timezone: UTC+8
 <!-- Content_START -->
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
-LangChain 是一个 LLM 领域非常流行的框架，基于 LangChain 框架和\[教程\]([https://docs.langchain.com/oss/python/langchain/quickstart)做了一个小尝试。](https://docs.langchain.com/oss/python/langchain/quickstart\)做了一个小尝试。)
+LangChain 是一个 LLM 领域非常流行的框架，基于 LangChain 框架和[教程](https://docs.langchain.com/oss/python/langchain/quickstart)做了一个小尝试。
 
 根据 Agent 开发的三个要件进行设计
 
-\- 人设
-
-\- 工具
-
-\- 模型
+-   人设
+    
+-   工具
+    
+-   模型
+    
 
 首先是人设：
 
-\`\`\`python
-
-system\_prompt = """你是一个优秀的天气预报员和美食家，有时候会说谐音梗.
-
+```
+system_prompt = """你是一个优秀的天气预报员和美食家，有时候会说谐音梗.
 你可以使用以下工具：
 
-\- get\_weather\_for\_location: 用于获取特定位置的天气
+- get_weather_for_location: 用于获取特定位置的天气
+- get_user_location: 用于获取用户的位置
+- get_food_recommendation: 用于根据天气推荐食物
 
-\- get\_user\_location: 用于获取用户的位置
-
-\- get\_food\_recommendation: 用于根据天气推荐食物
-
-如果用户问你天气，确保你知道位置。使用 get\_user\_location 工具来找到他们的位置，再用 get\_weather\_for\_location 工具来获取天气。
-
-如果用户问你吃什么，在你知道天气的情况下，然后用 get\_food\_recommendation 工具来推荐好吃的。
-
+如果用户问你天气，确保你知道位置。使用 get_user_location 工具来找到他们的位置，再用 get_weather_for_location 工具来获取天气。
+如果用户问你吃什么，在你知道天气的情况下，然后用 get_food_recommendation 工具来推荐好吃的。
 如果没问想吃什么，就别推荐食物。"""
-
-\`\`\`
+```
 
 工具：
 
-\`\`\`PYTHON
+```
+def get_user_location() -> str:
+    """Retrieve user information based on user ID."""
+    user_id = random.choice(["1", "2"])
+    return "上海" if user_id == "1" else "加利福尼亚"
 
-def get\_user\_location() -> str:
 
-"""Retrieve user information based on user ID."""
+def get_weather_for_location(city: str) -> str:
+    """Get weather for a given city."""
+    if city.lower() == "上海":
+        return "现在上海出大太阳！"
+    elif city.lower() == "加利福尼亚":
+        return "加利福尼亚正在下雨！"
+    return f"{city}的天气总是很晴朗的！"
 
-user\_id = random.choice(\["1", "2"\])
 
-return "上海" if user\_id == "1" else "加利福尼亚"
-
-def get\_weather\_for\_location(city: str) -> str:
-
-"""Get weather for a given city."""
-
-if city.lower() == "上海":
-
-return "现在上海出大太阳！"
-
-elif city.lower() == "加利福尼亚":
-
-return "加利福尼亚正在下雨！"
-
-return f"{city}的天气总是很晴朗的！"
-
-def get\_food\_recommendation(weather: str) -> str:
-
-"""Get food recommendation based on weather."""
-
-if "晴朗" in weather:
-
-return "吃冰淇淋怎么样？"
-
-elif "雨" in weather:
-
-return "一碗热汤听起来很不错！"
-
-else:
-
-return "也许来一杯好茶？"
-
-\`\`\`
+def get_food_recommendation(weather: str) -> str:
+    """Get food recommendation based on weather."""
+    if "晴朗" in weather:
+        return "吃冰淇淋怎么样？"
+    elif "雨" in weather:
+        return "一碗热汤听起来很不错！"
+    else:
+        return "也许来一杯好茶？"
+```
 
 模型和一些配置：
 
-\`\`\`PYTHON
-
+```
 @dataclass
-
 class Context:
+    """Custom runtime context schema."""
+    user_id: str
 
-"""Custom runtime context schema."""
+os.environ["GOOGLE_API_KEY"] = ""
 
-user\_id: str
-
-os.environ\["GOOGLE\_API\_KEY"\] = ""
-
-model = init\_chat\_model(
-
-"google\_genai:gemini-2.0-flash-lite",
-
-timeout=10,
-
-max\_tokens=1000,
-
+model = init_chat_model(
+    "google_genai:gemini-2.0-flash-lite",
+    timeout=10,
+    max_tokens=1000,
 )
 
 checkpointer = InMemorySaver()
-
-agent = create\_agent(
-
-model=model,
-
-system\_prompt=system\_prompt,
-
-context\_schema=Context,
-
-tools=\[get\_user\_location, get\_weather\_for\_location, get\_food\_recommendation\],
-
-checkpointer=checkpointer,
-
+agent = create_agent(
+    model=model,
+    system_prompt=system_prompt,
+    context_schema=Context,
+    tools=[get_user_location, get_weather_for_location, get_food_recommendation],
+    checkpointer=checkpointer,
 )
 
-config = {"configurable": {"thread\_id": "1"}}
-
-\`\`\`
+config = {"configurable": {"thread_id": "1"}}
+```
 
 让我们试一下吧！
 
-\`\`\`PYTHON
-
+```
 q1 = "现在外面什么天气？"
-
 print(f"User: {q1}")
-
 response = agent.invoke(
-
-{"messages": {"role": "user", "content": q1}},
-
-config=config,
-
-context=Context(user\_id="1"),
-
+    {"messages": {"role": "user", "content": q1}},
+    config=config,
+    context=Context(user_id="1"),
 )
 
-ai\_messages = \[msg for msg in response\["messages"\] if msg.type == "ai"\]
-
-if ai\_messages:
-
-print("> ", ai\_messages\[-1\].content)
+ai_messages = [msg for msg in response["messages"] if msg.type == "ai"]
+if ai_messages:
+    print("> ", ai_messages[-1].content)
 
 q2 = "那我该吃点什么？"
-
 print(f"User: {q2}")
-
 response = agent.invoke(
-
-{"messages": {"role": "user", "content": q2}},
-
-config=config,
-
-context=Context(user\_id="1"),
-
+    {"messages": {"role": "user", "content": q2}},
+    config=config,
+    context=Context(user_id="1"),
 )
+ai_messages = [msg for msg in response["messages"] if msg.type == "ai"]
+if ai_messages:
+    print("> ", ai_messages[-1].content)
+```
 
-ai\_messages = \[msg for msg in response\["messages"\] if msg.type == "ai"\]
-
-if ai\_messages:
-
-print("> ", ai\_messages\[-1\].content)
-
-\`\`\`
-
-\`\`\`CMD
-
-\=== Example Conversation ===
-
+```
 User: 现在外面什么天气？
-
-\> 上海现在出大太阳！ 阳光明媚，适合出去玩耍，你心情是不是也阳光起来了？☀️
-
+>  上海现在出大太阳！ 阳光明媚，适合出去玩耍，你心情是不是也阳光起来了？☀️
 User: 那我该吃点什么？
-
-\> 阳光明媚，不如来一杯清新的茶，让心情也跟着舒畅起来吧！ 🍵
-
-\`\`\`
+>  阳光明媚，不如来一杯清新的茶，让心情也跟着舒畅起来吧！ 🍵
+```
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 框架基于 \[一堂課搞懂 AI Agent 的原理|李宏毅\]([https://www.youtube.com/watch?v=M2Yg1kwPpts](https://www.youtube.com/watch?v=M2Yg1kwPpts)) 总结，以 AI Agent 发展和目前面临（2025年）的问题为主要内容
 
