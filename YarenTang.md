@@ -14,8 +14,44 @@ bring self to web3
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+## 整体运行流程
+
+1.  **注册身份** → Agent 在 Identity Registry 注册。
+    
+2.  **发布任务** → Client Agent 找到 Server Agent。
+    
+3.  **执行任务** → Server Agent 完成工作。
+    
+4.  **请求验证** → Validator Agent 验证任务结果。
+    
+5.  **提交反馈** → Client Agent 授权反馈给 Server。
+    
+6.  **形成信誉** → 所有验证和反馈可在链上查询。
+    
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/YarenTang/images/2025-10-16-1760620679303-image.png)![输出图片](https://chatgpt.com/backend-api/estuary/content?id=file-TZoFvf2JBjRdPjMVtgwCbz&ts=489061&p=fs&cid=1&sig=693ed7e57f68aa86fec43da6d1a947541789fcdf26e5c892ef3dd5ed4833f4c3&v=0)
+
+| 特点 | 对开发者的好处 |
+| --- | --- |
+
+| 轻量级设计 | 只把必要的信任信息放链上，不烧 gas |
+
+| 可插拔信任模型 | 可以选用“反馈制”或“质押制”验证 |
+
+| 与 A2A 完全兼容 | 可直接在 A2A AgentCard 中添加链上身份字段 |
+
+| 防伪造身份 | 使用签名和 CAIP-10 地址确保唯一性 |
+
+| 开放生态 | 任意语言、框架的 Agent 都能接入 |
+
+| 支持经济激励 | 可以结合 x402 支付协议进行结算 |
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 # ERC 8004
 
 
