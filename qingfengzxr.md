@@ -14,8 +14,36 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+## 1.阅读了其他同学的笔记，获得了对ERC-8004的一些新的想法。
+
+## **This Protocol Enables**
+
+-   Agent discovery (capabilities, communication endpoints, supported trust models, etc.)
+    
+-   Marketplaces and agent explorers to be created.
+    
+-   Builds reputation systems; all feedback becomes public goods.
+    
+
+## **Security Considerations**
+
+-   Sybil attacks to manipulate feedback are possible to inflate fake agents.
+    
+-   Audit trail thanks to immutability.
+    
+-   Validation incentives and slashing are managed by other protocols.
+    
+-   Capabilities cannot be guaranteed based on what the agents describe. The three trust models (reputation, validation, and TEE attestation) are designed to support this verification need.
+    
+
+## 2.
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 首先阅读了EIP-8004的提案内容：[https://eips.ethereum.org/EIPS/eip-8004。](https://eips.ethereum.org/EIPS/eip-8004。)
 
 了解到了EIP-8004是对于A2A协议的一个扩展，以加入使用区块链技术来实现TrustLess的目标。协议主要利用TokenURI来进行链下协作，信任问题则由链上解决。
@@ -32,4 +60,6 @@ timezone: UTC+8
 
 **Validation Registry** - Generic hooks for requesting and recording independent validators checks (e.g. stakers re-running the job, zkML verifiers, TEE oracles, trusted judges).
 <!-- DAILY_CHECKIN_2025-10-15_END -->
+
+# 2025.10.15
 <!-- Content_END -->
