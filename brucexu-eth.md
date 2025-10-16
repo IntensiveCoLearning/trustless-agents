@@ -225,8 +225,4 @@ TODO ---
 -   How to implement admin of an agent, if owner of agent is the NFT owner. We might have multiple admins for managing one agent. And we need to think about the use case in a company.
 <!-- DAILY_CHECKIN_2025-10-15_END -->
 
-# 2025-10-16
-
-
-# 2025-10-15
 <!-- Content_END -->

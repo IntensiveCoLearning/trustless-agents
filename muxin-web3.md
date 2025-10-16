@@ -14,8 +14,29 @@ test
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+I’m testing something for updating the study notes. 111111222222
+
+-   test1
+    
+-   test2
+    
+-   test3
+    
+
+| 1 | 2 | 3 |
+| --- | --- | --- |
+|   |   |   |
+|   |   |   |
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
+
+
+
 Today I learned the ERC-8004 protocol: [https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004)  
   
 ERC-8004 defines a standard for creating, discovering, and trusting autonomous agents without centralized control. It introduces three on-chain registries to manage agents’ identity, reputation, and validation.
