@@ -15,6 +15,10 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+参加了第一次课程会议
 
-
+了解ERC-8004基本概念，尝试使用
+<!-- DAILY_CHECKIN_2025-10-16_END -->
 <!-- Content_END -->
