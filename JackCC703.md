@@ -14,8 +14,20 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+今天部署了ERC-8004合约并与之交互了
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-16-1760614208342-image.png)
+
+并且在本地部署
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-16-1760614283552-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-16-1760614330679-image.png)
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 ### Problems Solved by ERC-8004
 
 1.  **Agent Discovery Challenge**: Existing protocols cannot efficiently discover cross-organizational agents in a trustless environment. ERC-8004 provides portable NFT identifiers and registration files through the Identity Registry (based on ERC-721), achieving globally unique and browsable agent discovery.
