@@ -287,7 +287,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ShiningRay](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ShiningRay.md) | ✅ |   | | | | | | | | | | | | |
 | [0xIncognito](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xIncognito.md) | ✅ |   | | | | | | | | | | | | |
 | [istvanej](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/istvanej.md) | ⭕️ |   | | | | | | | | | | | | |
-| [niko4570](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/niko4570.md) | ✅ |   | | | | | | | | | | | | |
+| [niko4570](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/niko4570.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [JiuFang-Java](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JiuFang-Java.md) | ⭕️ |   | | | | | | | | | | | | |
 | [peewee92](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/peewee92.md) | ⭕️ |   | | | | | | | | | | | | |
 | [HeliosLz](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/HeliosLz.md) | ⭕️ |   | | | | | | | | | | | | |
@@ -425,6 +425,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ⭕️ | | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
