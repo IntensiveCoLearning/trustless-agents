@@ -117,7 +117,7 @@ Arena SDK with 8004 identities + A2A + ChaosChain integration for receipt logged
 
 **Challenge 3: Reputation Design**
 
-**Question**: How would you design a reputation system that avoids a single score but still provides useful information for users?
+**Question**: How would you design a reputation system that avoids a single score but still provides useful information for users? Who is eligible to initiate an evaluation?
 
 **Challenge 4: Verification Methods**
 
@@ -127,9 +127,33 @@ Arena SDK with 8004 identities + A2A + ChaosChain integration for receipt logged
 
 **Question**: Should ERC-8004 include payment mechanisms in the core standard, or keep them as external extensions?
 
+**Challenge 6: Limited Supply**
+
+**Question**: Should ERC-8004 have a limited supply of agents? Unlimited supply is great for discoverability, but it doesn't allow for creativity and differentiation.
+
+**Resources:**
+- [ERC-8041: Fixed-Supply Agent NFT Collections](https://github.com/ethereum/ERCs/pull/1237)
+- [TG: https://t.me/+DruU9zL6tDQ5OTJh](https://t.me/+DruU9zL6tDQ5OTJh)
+
 **Welcome to add more challenges and questions!**
 
 ---
+
+### Coding Challenge: Interacting with an Agent on the testnet
+
+**Objective**
+Register an agent on the testnet and verify it.
+
+**Build**
+
+* Use the 8004 singletons on the testnet:
+  - Sepolia:
+    - Identity: <https://sepolia.etherscan.io/address/0x8004a6090Cd10A7288092483047B097295Fb8847>
+    - Reputation: <https://sepolia.etherscan.io/address/0x8004B8FD1A363aa02fDC07635C0c5F94f6Af5B7E>
+    - Validation: <https://sepolia.etherscan.io/address/0x8004CB39f29c09145F24Ad9dDe2A108C1A2cdfC5>
+* Use the 8004 SDK to register the agent.
+* Use the 8004 SDK to verify the agent.
+* Use the 8004 SDK to interact with the agent.
 
 ### Coding Challenge: Trustless Agent “Hello World”
 
@@ -173,6 +197,39 @@ Ship a minimal, runnable demo that proves identity, discovery, deterministic ser
 * Tag-based discovery.
 * Simple reputation counter on successful validations.
 
+---
+### 🎮TESTNET and reference code
+
+8004 singletons are available on Testnet, so you can start building on it. Clap to Leonard @lentan & all the 8004 contributors for making this happen 🙏👏
+
+Source code: <https://github.com/erc-8004/erc-8004-contracts>
+
+Sepolia
+- Identity: <https://sepolia.etherscan.io/address/0x8004a6090Cd10A7288092483047B097295Fb8847>
+- Reputation: <https://sepolia.etherscan.io/address/0x8004B8FD1A363aa02fDC07635C0c5F94f6Af5B7E>
+- Validation: <https://sepolia.etherscan.io/address/0x8004CB39f29c09145F24Ad9dDe2A108C1A2cdfC5>
+
+Read the source code and please 🚨test the contracts. We need your feedback🫶 to improve them and prepare for the mainnet release!
+
+Contracts on the testnet are subject to change/update, and the contract keys are directly owned by the 8004 team. If you need the contracts on other testnets/chains, just reach out to @lentan so we can coordinate with the blockchain maintenance teams and publish the addresses here and in the ERC-8004 repo.
+
+### 🚀PRODUCTION
+
+We plan to release on Mainnet by the end of Oct. Ideally, we want to deploy the singletons on *every* L2 where developers are interested in building. We are also excited about deploying on other EVM-compatible L1s and, potentially, on non-EVM ecosystems.
+
+Production proxy contract governance will be shared by multiple parties (multi-sig) and *not controlled by the 8004 team*. Please coordinate with Davide Crapis davide.crapis@ethereum.org on this topic.
+
+### TOOLING (Community curated)
+
+JS SDKs
+https://github.com/ChaosChain/chaoschain/tree/main/packages/sdk (thanks @sumeetchougule and ChaosChain!)
+https://github.com/tetratorus/erc-8004-js
+
+Python SDKs
+https://github.com/tetratorus/erc-8004-py
+https://pypi.org/project/chaoschain-sdk/
+
+More SDKs and structured docs coming VERY soon.
 
 ---
 ### Sponsors
