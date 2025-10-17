@@ -14,8 +14,116 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+# Identity Registry Learning Notes
+
+## Today’s Goals
+
+-   Understand the design principle of **“on-chain minimalism, off-chain richness.”**
+    
+-   Learn how **ERC-721 +** `tokenURI` serves as an **identity anchor.**
+    
+-   Develop your project’s **ID naming strategy** (trade-offs among ENS / DID / URL / Domain).
+    
+
+## Key Concepts
+
+-   **Minimize on-chain data:**  
+    Only store verifiable pointers and ownership on-chain.  
+    Keep all other capabilities, keys, endpoints, and payment options off-chain (in a JSON descriptor).
+    
+-   **Identity as NFT:**  
+    Each `tokenId` = one agent identity.  
+    `ownerOf(tokenId)` = controller of that identity.
+    
+-   `tokenURI` **as the source of truth:**  
+    Points to an off-chain file (IPFS / Arweave / HTTPS).  
+    May contain public keys, service capabilities, payment options, and cross-references (ENS / DID / URL / Domain).
+    
+-   **Versioning and rotation:**  
+    Append `?v=date` or `#v=commit` for auditability.  
+    Key rotation records are stored off-chain, while updates are announced via on-chain events.
+    
+-   **Portability and interoperability:**  
+    Maintain at least one **Primary ID** and a **mapping table** to avoid vendor lock-in by any single naming system.
+    
+
+## Interface and Flow (Conceptual)
+
+-   **Interface:**  
+    `registerAgent(agent, uri) → tokenId`;  
+    `tokenURI(tokenId)`;  
+    `ownerOf(tokenId)`;  
+    Events: `AgentRegistered`, `AgentURIUpdated`.
+    
+-   **Flow:**  
+    Registration → Query `tokenURI` to retrieve the Agent Card → Emit update events for indexers upon data changes.
+    
+
+## Security and Governance Notes
+
+-   **Ownership control:** Only `ownerOf(tokenId)` can update the `uri`.
+    
+-   **Availability:** Ensure long-term accessibility of the JSON (`IPFS + pin`, `Arweave`, or version-controlled HTTPS).
+    
+-   **Auditability:** JSON should include version, publish time, and previous hash; emit events to mark version updates.
+    
+-   **Compatibility:** Reserve ENS/DID fields and consider multi-chain mirror URIs.
+    
+-   **Privacy:** Only expose public keys/endpoints; keep sensitive keys or credentials hashed or signed, not in plaintext.
+    
+
+## Your Project’s “5-Line Naming Strategy” (Replace with your own)
+
+1.  **Primary ID:** Choose one (ENS / DID / URL / Domain) as your main external identifier.
+    
+2.  **Mapping:** Maintain a mapping table and verification method (signature/TXT record) for 2–3 other identifiers in `descriptor.json`.
+    
+3.  **URI Policy:** `tokenURI` points to IPFS (primary) + HTTPS (backup), with versioned filenames (e.g., `card.v2025-10-15.json`).
+    
+4.  **Versioning Standard:** Each update must include `version`, `prev_hash`, and `changelog`, and emit `AgentURIUpdated` on-chain.
+    
+5.  **Key Rotation:** JSON maintains `keys[{kid, use, alg, jwk_fingerprint, valid_from, valid_to, rotate_sig}]`.
+    
+
+## Example: `descriptor.json` (Structure Sample — Customize as Needed)
+
+```
+{
+  "id_primary": "ens:youragent.eth",
+  "mappings": {
+    "did": "did:pkh:eip155:1:0xYourAddr",
+    "url": "https://agents.example.com/youragent",
+    "domain": "youragent.example.com"
+  },
+  "version": "2025-10-15",
+  "prev_hash": "0x...",
+  "capabilities": ["translate.v1", "route.v1"],
+  "endpoints": {
+    "jsonrpc": "https://api.example.com/rpc"
+  },
+  "payments": {
+    "eip3009": true,
+    "x402": true
+  },
+  "keys": [
+    {
+      "kid": "2025-q4",
+      "use": "sign",
+      "alg": "secp256k1",
+      "jwk_fingerprint": "sha256-...",
+      "valid_from": "2025-10-01T00:00:00Z",
+      "rotate_sig": "0xRotationSignature"
+    }
+  ]
+}
+```
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 # 2025.10.16
