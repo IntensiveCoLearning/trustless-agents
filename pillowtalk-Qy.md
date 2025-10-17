@@ -14,8 +14,28 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+1.🧠 对比表
+
+| 模式 | 特征 | 代表协议 | 典型业务 |
+| --- | --- | --- | --- |
+| 链上 (On-Chain) | 信任、结算、身份 | ERC-8004 Identity/Validation、x402 | 注册、验证、加密支付 |
+| 链下 (Off-Chain) | 性能、隐私、逻辑 | A2A、ISEK 本地代理 | 任务执行、协作、声誉计算 |
+| 结合 (Hybrid) | 信任 + 效率 | ERC-8004 + A2A + x402 | 智能代理协作、API 收费、AI 服务撮合 |
+
+2.身份注册表维护三个关键映射，以实现高效的代理发现：
+
+-   **AgentID → Agent Details** : 通过唯一标识符直接查找
+    
+-   **AgentDomain → AgentID**：符合[**RFC 8615 的**](https://www.rfc-editor.org/rfc/rfc8615)域解析
+    
+-   **AgentAddress → AgentID**：以太坊地址到代理的映射
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 在 ERC-8004、ISEK、A2A、x402 这些协议的体系中，“链上（on-chain）”和“链下（off-chain）”是核心概念，它们的区别主要体现在**数据的存储位置、信任机制、成本与性能**等方面：
 
 * * *
@@ -98,6 +118,7 @@ ERC-8004 采用\*\*“链上最小化 + 链下扩展”\*\*的混合模式：
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
