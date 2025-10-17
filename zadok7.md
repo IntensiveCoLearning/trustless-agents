@@ -14,8 +14,79 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+**ERC-7701 (Sponsored Interactions)**
+
+-   Lets apps pre-approve and sponsor user actions
+    
+-   Works without full wallet or ETH setup
+    
+-   Ideal for onboarding, feedback, and micro-interactions
+    
+
+**Use Cases:**
+
+-   Gasless feedback for ERC-8004 agents
+    
+-   Voting or attestations from non-registered users
+    
+-   Onboarding flows without wallet popups
+    
+-   Sponsored validation or scoring in DAOs
+    
+-   Pay-per-interaction systems (e.g., x402) without user gas fees
+    
+
+## ERC-7702 (Sponsored Interactions)
+
+-   Lets apps pre-approve and sponsor user actions
+    
+-   Works without full wallet or ETH setup
+    
+-   Ideal for onboarding, feedback, and micro-interactions
+    
+
+### Use Cases Ideas: \* Why ERC-7701 and EC-8004 work well together!
+
+**Gasless feedback for ERC-8004 agents**
+
+-   Users can rate agents without owning ETH for gas
+    
+-   **→ EIP-8004 Integration**: App sponsors `giveFeedback()` calls to Reputation Registry, removing friction for clients to leave reviews after using an agent
+    
+
+**Voting or attestations from non-registered users**
+
+-   Anyone can participate without blockchain setup
+    
+-   **→ EIP-8004 Integration**: Sponsored `appendResponse()` calls let community members flag spam reviews or vouch for agents without paying gas
+    
+
+**Onboarding flows without wallet popups**
+
+-   Smoother UX for new users trying agents
+    
+-   **→ EIP-8004 Integration**: First-time users can interact with agents and leave feedback immediately; app sponsors their first few transactions to the Reputation Registry
+    
+
+**Sponsored validation or scoring in DAOs**
+
+-   DAO members can validate without gas costs
+    
+-   **→ EIP-8004 Integration**: DAOs can sponsor `validationResponse()` calls, allowing community validators to verify agent work without individual gas payments to Validation Registry
+    
+
+**Pay-per-interaction systems (e.g., x402) without user gas fees**
+
+-   Users pay for service but not blockchain fees
+    
+-   **→ EIP-8004 Integration**: User pays agent for task (x402 proof), but marketplace/app sponsors the `giveFeedback()` transaction, so user only pays once
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 # 2025.10.15
 
 
