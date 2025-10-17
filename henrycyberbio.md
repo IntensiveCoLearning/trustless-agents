@@ -14,8 +14,31 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+**ERC-8004 无需信任的代理**
+
+2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
+
+8004 提出了三个 Registries 注册表去试图解决 Agent 信任问题\[^1\]：
+
+-   身份注册表 Identity registry
+    
+-   信誉注册表 Reputation registry
+    
+-   验证注册表 Validation registry
+    
+
+\[^1\]: \[ERC-8004: Trustless Agents | EIP\]([https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004))
+
+\[^2\]: \[ERC-8004 and the Agent Economy | Jinming\]([https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d))
+
+\[^3\]: \[\[Vol3\]和Virtuals一起聊以太坊AI Agent 标准 ERC-8004！ft. Wee Kee(Virtuals) | Leo |ZhiXiong Pan| Fatbro|ETHTAO\]([https://www.youtube.com/watch?v=67rC3P8eL\_U](https://www.youtube.com/watch?v=67rC3P8eL_U))
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 LangChain 是一个 LLM 领域非常流行的框架，基于 LangChain 框架和[教程](https://docs.langchain.com/oss/python/langchain/quickstart)做了一个小尝试。
 
 根据 Agent 开发的三个要件进行设计
@@ -135,6 +158,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 框架基于 \[一堂課搞懂 AI Agent 的原理|李宏毅\]([https://www.youtube.com/watch?v=M2Yg1kwPpts](https://www.youtube.com/watch?v=M2Yg1kwPpts)) 总结，以 AI Agent 发展和目前面临（2025年）的问题为主要内容
