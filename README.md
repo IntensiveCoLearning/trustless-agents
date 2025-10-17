@@ -439,7 +439,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [gyc567](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/gyc567.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
 | [kelvinqin7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kelvinqin7.md) | ⭕️ | ✅ |   | | | | | | | | | | | |
 | [lukema95](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lukema95.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
-| [leopc999](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leopc999.md) | ✅ | ✅ |   | | | | | | | | | | | |
+| [leopc999](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leopc999.md) | ✅ | ✅ | ✅ | | | | | | | | | | | |
 | [wwk123](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wwk123.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
 | [acpm444-hub](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/acpm444-hub.md) | ⭕️ | ✅ |   | | | | | | | | | | | |
 | [davidrodr1guez](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/davidrodr1guez.md) | ✅ | ✅ |   | | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ |   | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ |   | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
