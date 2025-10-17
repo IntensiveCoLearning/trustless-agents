@@ -14,8 +14,24 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
-# 2025.10.15
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+[https://www.youtube.com/watch?v=8lsJ7zLa2Pk：](https://www.youtube.com/watch?v=8lsJ7zLa2Pk：)
+
+更详细地介绍了三种AI AGENT FRAMEWORK：
+
+AUTOGEN:
+
+中心化分布式，异步消息传递框架。邮箱式，消息流形式，每个agent内部都有收到什么信息要怎么回答。这里的agent是一个完整的人物，不可拆分为更小的单元；这些agent内部由不同的逻辑单元构成，有点类似于LANGRAPH的node，但它是封装在agent的程序控制流与消息循环里的，是隐藏的、不可见的。
+
+LANGRAPH:
+
+可编程图。一个agent由多个负责不同功能的node构成，这些node之间构成图一样的结构。
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 [https://www.youtube.com/watch?v=VChRPFUzJGA](https://www.youtube.com/watch?v=VChRPFUzJGA):
 
 MCP 是一种让 AI 能安全访问外部工具和数据的开放协议，相当于 AI 的通用接口。
