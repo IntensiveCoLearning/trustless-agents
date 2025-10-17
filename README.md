@@ -46,6 +46,8 @@ Allowed 2 days leave per week.
 Telegram：https://t.me/ERC8004
 ## Learning Materials/Course Schedule
 
+Recommended 14 days learning plans: <https://lxdao.notion.site/Trustless-Agents-CoLearning-14-daily-learning-plans-28cdceffe40b807590bfdbf7ccd356ae>
+
 ### **Module 1: The Trust Foundation — ERC-8004 Identity & Reputation Layer**
 
 - In-depth analysis of the ERC-8004 standard: Identity Registry, Reputation Registry, and Verification Registry.
