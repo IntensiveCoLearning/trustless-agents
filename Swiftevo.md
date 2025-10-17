@@ -14,13 +14,27 @@ Swift Evo
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+[https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)  
+  
+透過 bot 學習整個佈署的流程，了解當中不明白的專業名語及工具，一一拆解以下兩部份。明天繼續下一步部份的學習。  
+  
+第1部安裝 hardhat  
+bash npm install --save-dev hardhat npx hardhat init  
+  
+第2部建立專案結構 lua my-agent-project/ ├─ contracts/ │ └─ IdentityRegistry.sol ├─ scripts/ │ └─ deploy.js ├─ test/ │ └─ test\_identity.js ├─ hardhat.config.js └─ package.json
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 參加了 workshop ，對於 ERC 8004 的整理流程有了進一步理解，也提出了關於注冊的相關問題
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 一無所知的第一天  
   
