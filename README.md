@@ -59,6 +59,7 @@ Telegram：https://t.me/ERC8004
 - [Medium - ERC-8004 Story & Next Steps](https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879)
 - [Vistara Apps - ERC-8004 Example](https://github.com/vistara-apps/erc-8004-example)
 - [HashKey Capital - ERC-8004 & Agent Economy](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
+- [awesome-erc8004](https://github.com/sudeepb02/awesome-erc8004) from [Sudeep Biswas](https://x.com/sudeepb02/status/1975290481488896015)
 
 ### **Module 2: The Collaboration Language — A2A Architecture & AP2 Protocol**
 
