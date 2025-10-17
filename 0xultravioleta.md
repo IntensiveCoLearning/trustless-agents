@@ -15,8 +15,131 @@ timezone: UTC-5
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-16
+<!-- DAILY_CHECKIN_2025-10-16_START -->
+# Day 2 — ERC-8004 (Trustless Agents) — Study Notes
+
+**Sources**
+
+-   Ethereum Magicians thread: [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098/97](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098/97)
+    
+-   QuillAudits overview: [https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
+    
+
+* * *
+
+## TL;DR
+
+-   **ERC-8004 = trust layer** that **extends the agent protocol** to let participants **discover, choose, and interact** with agents **across organizational boundaries** with **no prior trust**.
+    
+-   **3 on-chain registries:** Identity, Reputation, Validation.
+    
+-   **Goal:** discover agents and **establish trust** via **reputation** and **validation**.
+    
+
+* * *
+
+## Core Ideas
+
+-   **No previous trust required** between parties.
+    
+-   **Separation of concerns:**
+    
+    -   **On-chain:** the 3 core registries (identity, reputation, validation).
+        
+    -   **Off-chain:** application-specific logic.
+        
+-   **Open development:** collaboration with Linux Foundation and A2S ecosystem to refine the spec.
+    
+-   **Wide tech support:** ConsenSys, Nethermind, Google, Ethereum Foundation, EigenLabs, etc.
+    
+
+* * *
+
+## From the QuillAudits Article
+
+-   **Focus:** convergence of **AI + blockchain**.
+    
+-   **Advancement:** extends **A2S** protocol with **blockchain-based trust mechanisms**.
+    
+-   **Foundation for an agentic economy**: coordinate **trustlessly** across **untrusted networks**.
+    
+-   **Hybrid standard:**
+    
+    -   **Adds data on-chain**; **delegates complex ops off-chain**.
+        
+    -   Central components remain **on-chain**.
+        
+-   **Fixes A2S trust gaps:** A2S assumed pre-existing trust and worked mainly **within org boundaries** (e.g., Alice (auditor) can’t verify Bob (DeFi) across orgs).
+    
+-   **Benefits:** eliminates trust bottlenecks, enables discovery of reputable providers, ensures quality, **portable reputation**, **validation at scale**.
+    
+-   (Context note from article) **Global AI market** projection to **$1.8T by 2030**.
+    
+
+* * *
+
+## Trust Models (by Risk Tier)
+
+-   **Reputation-based (Low risk):**
+    
+    -   Simple tasks (e.g., content creation).
+        
+    -   **Social consensus** via accumulated feedback.
+        
+-   **Crypto-economic validation (Medium risk):**
+    
+    -   Financial tx or smart-contract operations.
+        
+    -   Validators **stake economic value** → strong incentives for honest behavior.
+        
+-   **Cryptographic verification (High risk):**
+    
+    -   Critical applications.
+        
+    -   **TEE attestations** (and other cryptographic proofs).
+        
+
+* * *
+
+## Security Considerations
+
+**Threats**
+
+-   Domain squatting / frontrunning
+    
+-   Unauthorized feedback
+    
+-   Storage bloat & DoS
+    
+-   Sybil attack creation
+    
+
+**Mitigations**
+
+-   **Commit-reveal** scheme for domain registrations
+    
+-   **Restrict** `msg.sender` for who can post feedback
+    
+-   **Auto-expiry** for ingested items + **rate limits** on validation requests
+    
+-   **Bond / token burn** for identity registration
+    
+
+* * *
+
+## Open Questions / Doubts
+
+-   How will the protocol handle the **diversity of off-chain logic** while staying **secure, verifiable, and compatible**?
+    
+-   Metrics & scoring: are there **detailed weighting mechanisms**? Is **rating cooling/decay** considered?
+    
+-   **Sybil/manipulation resistance:** how does the system **prevent gaming** while establishing trust **without historical data**?
+<!-- DAILY_CHECKIN_2025-10-16_END -->
+
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 # Today I learned about ERC 8004
 
 ERC 8004 is a protocol that aims to ultimately provide an identity registry, reputation registry, and a validation registry.
