@@ -14,8 +14,16 @@ web2算法工程师，web3业余爱好者
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+one question:
+
+How can we continuously verify the integrity of the agent associated with an Agent Card, ensuring its underlying behavior or security posture has not been compromised since the last known safe interaction?
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 # 2025.10.15
