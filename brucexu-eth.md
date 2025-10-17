@@ -14,8 +14,14 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+Yesterday's recording has been uploaded.
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 ## **Validation Registry1**
 
 **This registry enables agents to request verification of their work and allows validator smart contracts to provide responses that can be tracked on-chain**.
@@ -77,6 +83,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
@@ -224,5 +231,4 @@ TODO ---
     
 -   How to implement admin of an agent, if owner of agent is the NFT owner. We might have multiple admins for managing one agent. And we need to think about the use case in a company.
 <!-- DAILY_CHECKIN_2025-10-15_END -->
-
 <!-- Content_END -->
