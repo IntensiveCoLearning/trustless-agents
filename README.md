@@ -402,7 +402,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Usernyagah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Usernyagah.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
 | [ssw123455](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ssw123455.md) | ✅ | ✅ |   | | | | | | | | | | | |
 | [syslink](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/syslink.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
-| [moraqaq](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/moraqaq.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
+| [moraqaq](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/moraqaq.md) | ⭕️ | ⭕️ | ✅ | | | | | | | | | | | |
 | [TecSong](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TecSong.md) | ✅ | ⭕️ |   | | | | | | | | | | | |
 | [LastHopeOfGPNU](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/LastHopeOfGPNU.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
 | [carmen0208](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/carmen0208.md) | ⭕️ | ⭕️ |   | | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ |   | | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ |   | | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
