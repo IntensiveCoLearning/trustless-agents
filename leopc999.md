@@ -14,8 +14,109 @@ A web3 enthusiast in AI.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+今天阅读了 QuillAudits 文章《ERC-8004: Infrastructure for Autonomous AI Agents》。
+
+* * *
+
+## 一、QuillAudits 视角：ERC-8004 的定位与价值
+
+### 1\. 从 A2A 协议到区块链信任层的演进
+
+-   QuillAudits 提到，Google 的 Agent-to-Agent (A2A) 协议（Agent Cards, JSON-RPC 通信, 能力协商等）确实在组织内部发挥了作用，但它默认假设通信方之间已有信任关系。QuillAudits 认为，这在跨组织、链上 / 跨平台的 Agent 生态中无法成立。
+    
+-   ERC-8004 的提出，则正是为了填补 “Agent 通信协议 + 信任机制”之间的空白：让 Agent 之间在没有预先信任的情况下也能进行合作。
+    
+-   从 QuillAudits 的表述看，他们强调的是：ERC-8004 不是单纯的 token / 能力协议，而是“信任基础设施”（trust backbone / trust layer）。
+    
+
+### 2\. 轻量链上 + 重量链下 = 混合设计（Hybrid Architecture）
+
+-   QuillAudits 特别指出 ERC-8004 在设计上的**轻量链上**取向：链上只存储关键的授权 / 索引 / 校验逻辑，而把大多数声誉数据 / 验证细节 / Agent Card / 反馈文件都放在链下（通过 URI 引用）
+    
+-   这种设计有两个好处：
+    
+    1.  **减少 gas 成本 / 链上负担**
+        
+    2.  **更灵活 / 可扩展**：链下系统可以随意使用复杂的评分算法或验证逻辑，而不被链上效率约束
+        
+-   在 QuillAudits 的解读里，Reputation Registry 本身不保存实际评分数据，而只负责“**反馈授权（feedback authorization）**”的链上记录。真实的声誉计算留给链下系统。
+    
+-   类似地，Validation Registry 是一个通用钩子（hook），允许对某个数据 / 任务请求发出验证请求 / 记录响应。它不限定验证协议细节，而允许多种验证机制共存（staking 重运行、TEE attestation、密码学证明等）。
+    
+
+### 3\. 分层信任模型（Tiered Trust Models）
+
+QuillAudits 引入一个“信任分层”概念，强调对不同风险 / 任务价值要用不同信任级别：
+
+| 风险 / 任务价值级别 | 建议信任机制 |
+| --- | --- |
+| 低风险 / 日常任务 | 基于 Reputation（评价 / 反馈） 即可 |
+| 中风险 / 涉及价值 / 资金 | 加入 Crypto-Economic 验证机制：验证者需抵押 / 被惩罚以保证诚实性 |
+| 高风险 / 关键任务 | 使用 可信执行环境 (TEE) 证明 / 硬件证明 / 加密证明，以提供更强的保证 |
+
+这种方式强调：信任机制应该与任务价值成正比，不要总用最严苛的方法，也不要总用最宽松的方法。
+
+* * *
+
+## 二、QuillAudits 补充的风险 / 安全考量 & 攻击向量
+
+QuillAudits 在文章末尾列了几个他们认为设计者必须特别注意 / 防范的攻击 / 安全风险点。整理如下，并适当补充我的理解。
+
+| 风险 | 描述 | 缓解 / 对策 |
+| --- | --- | --- |
+| Domain 抢注 / 前置（Front-Running） | 在 AgentDomain 注册时，有人可能监测到交易池，然后抢在你之前注册同一个域名（domain squatting） | 使用 commit–reveal 机制 或隐藏提交（即先提交哈希、稍后公开）来防止抢注 |
+| 反馈授权滥用 | 如果 AcceptFeedback(agentClient, agentServer) 没有权限检查，任何地址都能调用这个接口，生成假的 AuthFeedback 记录，污染反馈授权体系 | 在合约里加入权限校验，比如仅 msg.sender == serverAgentAddress 才能生成授权，确保只有被评价的 Agent 本身或其授权方可以发授权 |
+| 存储膨胀 / DoS 攻击 | 如果 ValidationRequest 被大量调用，则请求记录会在链上长期占用存储（直到超时 /清除），可能导致未来 gas / 存储成本变高或恶意阻塞 | 设计超时清除（expire）机制、限制每个 AgentServerID 可挂起请求数、对提交请求收取保证金 / bond 并在完成后返还 |
+| Sybil 身份滥用 | 恶意方可批量注册 Agent 身份（Domain + 地址）来操纵声誉系统 / 做协调攻击 | 要求注册时最低保证金 / 销毁 /锁定 / probation 期后返还；或者通过零知识证明 / 唯一性签名机制限制一个经济实体能控制的身份数量 |
+
+QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，很值得在真是部署实现时一一考虑。
+
+* * *
+
+## 三、QuillAudits 解读的新增视角总结
+
+1.  **定位侧重点：信任基础设施，而非能力 / 通信协议**
+    
+    -   强调 ERC-8004 是为 Agent 生态提供信任层，构建信誉、验证机制基础。
+        
+    -   它与 A2A / 能力协议 / 任务调度协议并不冲突，而是互补。
+        
+2.  **链上 ↔ 链下 混合架构是关键设计权衡**
+    
+    -   链上尽可能简洁，只做授权 / 索引 / 事件记录
+        
+    -   链下承担复杂评分 / 反馈 / 验证细节
+        
+    -   这样能在保持透明 / 可组合性的基础上，提高效率、扩展性、灵活性。
+        
+3.  **信任模型按业务价值分层**
+    
+    -   不是所有任务都要求最高级验证机制
+        
+    -   低风险任务只依赖评价，重要任务依赖 staking / 硬件证明
+        
+    -   这种分层信任设计让系统更实用、成本更可控
+        
+4.  **现实风险 / 攻击场景不可忽略**
+    
+    -   抢注、授权滥用、存储 bloat、Sybil 等都是现实攻击路径
+        
+    -   在实现时，不仅要遵照 ERC-8004 的接口规范，也要在合约层、经济机制层做防护设计
+        
+5.  **实现示例 / 伪代码**
+    
+    -   文章里给出了 Identity Registry / Reputation Registry / Validation Registry 的伪代码示例（简化版）
+        
+    -   特别在 Reputation Registry 部分，只做 `AcceptFeedback`，而不直接存评分数据，是一种“授权记录 + 反馈在链下”的轻量化方案
+        
+    -   在 Validation Registry 中，用 mapping 存 request，再在验证回应时做清除、emit event 等。
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 # 构建无信任代理（Trustless Agents）：ERC-8004 Workshop
 
 本次会议围绕“无信任代理（Trustless Agents）”相关的 ERC-8004 标准展开，涵盖标准背景、核心功能、技术实现及后续规划，我参会后，对核心内容进行了总结。
@@ -85,6 +186,7 @@ A web3 enthusiast in AI.
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 \# ERC-8004 学习笔记：Trustless Agents 标准
 
