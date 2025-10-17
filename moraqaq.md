@@ -15,6 +15,26 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
-
-
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+-   **ERC-8004** is a **proposed Ethereum standard** that defines a **trustless discovery framework** for autonomous AI agents, built upon Google's Agent-to-Agent (A2A) protocol.
+    
+-   Its design is **intentionally lean** and does not directly solve trust but facilitates visibility, allowing the ecosystem to build diverse trust solutions.
+    
+-   The standard is built on **three core onchain registries**: **Identity**, **Reputation**, and **Validation**.
+    
+-   The **Identity registry** links an agent's unique ID to its off-chain capabilities file (skills, protocols, trust models).
+    
+-   The **Reputation registry** uses **onchain authorization events** for accepted jobs, creating an audit trail for off-chain feedback history.
+    
+-   **Flexible Trust Models** are supported, ranging from social consensus (simple tasks) to **crypto-economic validation** (staking capital) and **cryptographic validation** (TEE/ZK) for critical applications.
+    
+-   **ROFL (Runtime Off-chain Logic)**, a **TEE framework**, is a key mechanism for cryptographic validation, ensuring **compute integrity** and **confidentiality** for sensitive AI workloads.
+    
+-   ROFL enables **truly trustless agents** by separating the creator from the agent, allowing users to trust the code.
+    
+-   ERC-8004 is complemented by the **x402 payment protocol**, which is already live in A2A and championed by organizations like Cloudflare for agent-to-agent payments across the internet.
+    
+-   The standard is moving toward a stable v2 specification, including support for **NFT-based agent ownership (ERC-721)** and cleaner integration with x402.
+<!-- DAILY_CHECKIN_2025-10-17_END -->
 <!-- Content_END -->
