@@ -17,8 +17,14 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+![ERC-8004_ 無信任代理 (1).png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/k66inthesky/images/2025-10-17-1760714327882-ERC-8004_________1_.png)
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 > 閱讀 [https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004)  
 > **目標**：讓 AI 代理能在不同組織之間安全協作，不需要事先信任任何對方，支持自動發現、選擇與互動，推進去中心化的 agent 經濟。
 
@@ -80,6 +86,9 @@ Q&A
         
     -   Macro提到IFPS創建者Protocol Labs正為ERC-8004社區提供免費的IFPS託管服務。
 <!-- DAILY_CHECKIN_2025-10-16_END -->
+
+# 2025-10-16
+
 
 # 2025-10-15
 ## 名詞摘要(ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents, AI Agents):
