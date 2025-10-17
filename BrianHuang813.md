@@ -65,11 +65,12 @@ agent呼叫validationRequest( )來請求驗證，且必須由擁有者來呼叫�
 
 目的：建立可被驗證的驗證層
 
-| 功能 | 合約型別 | 實作基礎 |
-| 身份註冊 | ERC-721 | register() → 建立 Agent NFT |
-| 聲譽註冊 | Custom Contract | submitFeedback() + getSummary() |
-| 驗證註冊 | Custom Contract | validationRequest() + validationResponse() |
+| 功能 | 合約型別 | 實作基礎 | | 身份註冊 | ERC-721 | register() → 建立 Agent NFT | | 聲譽註冊 | Custom Contract | submitFeedback() + getSummary() | | 驗證註冊 | Custom Contract | validationRequest() + validationResponse() |
 
 外部資料（例如回饋文件、驗證報告）通常放在 **IPFS / Arweave**，鏈上只儲存 URI + Hash。
+
+問題：
+
+有沒有可能讓鏈上存有更多數據，畢竟既然這些數據是經過驗證可信任的，如果這些數據可以供其他合約使用的話會不會可以擴展更多可能性？
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 <!-- Content_END -->
