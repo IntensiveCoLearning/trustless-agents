@@ -149,6 +149,23 @@ def get_content_for_date(content, start_pos):
         return content[start_pos:start_pos + next_date_match.start()]
     return content[start_pos:]
 
+def get_local_day_bounds_for_label(label_date, user_tz):
+    """
+    Given a program label date (UTC tz-aware datetime) and a user's timezone,
+    compute the start and end of that calendar day in the user's local time.
+
+    Example: label 2024-10-17 and Asia/Shanghai ->
+    local_start = 2024-10-17 00:00+08:00, local_end = 2024-10-18 00:00+08:00.
+    """
+    try:
+        local_start_naive = datetime(label_date.year, label_date.month, label_date.day, 0, 0, 0)
+        local_start = user_tz.localize(local_start_naive)
+    except Exception:
+        # Fallback: construct with tzinfo if localize is unavailable
+        local_start = datetime(label_date.year, label_date.month, label_date.day, 0, 0, 0, tzinfo=user_tz)
+    local_end = local_start + timedelta(days=1)
+    return local_start, local_end
+
 
 def check_md_content(file_content, date, user_tz):
     """
@@ -157,16 +174,18 @@ def check_md_content(file_content, date, user_tz):
     try:
         content = extract_content_between_markers(file_content)
         # 直接使用 UTC 日期进行匹配，因为用户写日期标题时使用的是标准日期格式
-        utc_date = date.replace(hour=0, minute=0, second=0, microsecond=0)
-        current_date_match = find_date_in_content(content, utc_date)
+        # Use the label date directly for matching (the table header uses the same
+        # calendar date regardless of timezone).
+        label_date = date.replace(hour=0, minute=0, second=0, microsecond=0)
+        current_date_match = find_date_in_content(content, label_date)
 
         if not current_date_match:
-            logging.info(f"No match found for date {utc_date.strftime('%Y-%m-%d')}")
+            logging.info(f"No match found for date {label_date.strftime('%Y-%m-%d')}")
             return False
 
         date_content = get_content_for_date(content, current_date_match.end())
         date_content = re.sub(r'\s', '', date_content)
-        logging.info(f"Content length for {utc_date.strftime('%Y-%m-%d')}: {len(date_content)}")
+        logging.info(f"Content length for {label_date.strftime('%Y-%m-%d')}: {len(date_content)}")
         return len(date_content) > 10
     except Exception as e:
         logging.error(f"Error in check_md_content: {str(e)}")
@@ -184,23 +203,21 @@ def get_user_study_status(nickname):
         now_local = datetime.now(user_tz)
 
         for date in get_date_range():
-            # Treat each UTC program day as a 24h window [start_utc, next_start_utc)
+            # Keyed by UTC midnight for consistency across the script
             start_utc = date.replace(hour=0, minute=0, second=0, microsecond=0)
-            next_start_utc = (start_utc + timedelta(days=1))
 
-            # Convert window edges into user's local time for boundary checks
-            start_local = start_utc.astimezone(user_tz)
-            end_local = next_start_utc.astimezone(user_tz)
+            # Use the user's local calendar day boundaries for the label date
+            start_local, end_local = get_local_day_bounds_for_label(date, user_tz)
 
             if now_local < start_local:
                 # Future day for this user
-                user_status[date] = " "
+                user_status[start_utc] = " "
             elif now_local >= end_local:
-                # Past day: must be ✅ or ⭕️
-                user_status[date] = "✅" if check_md_content(file_content, date, user_tz) else "⭕️"
+                # Past day in user's local time
+                user_status[start_utc] = "✅" if check_md_content(file_content, date, user_tz) else "⭕️"
             else:
                 # In-progress (today for this user): show ✅ if already posted, else blank
-                user_status[date] = "✅" if check_md_content(file_content, date, user_tz) else " "
+                user_status[start_utc] = "✅" if check_md_content(file_content, date, user_tz) else " "
         logging.info(f"Successfully processed file for user: {nickname}")
     except FileNotFoundError:
         logging.error(f"Error: Could not find file {file_name}")
@@ -322,18 +339,16 @@ def generate_user_row(user):
     date_range = get_date_range()
     
     for i, date in enumerate(date_range):
-        # UTC window for the program day
+        # UTC key for this program label day
         start_utc = date.astimezone(pytz.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
-        next_start_utc = start_utc + timedelta(days=1)
-        # Localized boundaries
-        start_local = start_utc.astimezone(user_tz)
-        end_local = next_start_utc.astimezone(user_tz)
+        # Local day boundaries for this label date
+        start_local, end_local = get_local_day_bounds_for_label(date, user_tz)
         
         if is_eliminated:
             new_row += " |"
             continue
         
-        # Future day for this user
+        # Future day for this user (based on local midnight)
         if now_local < start_local:
             new_row += " |"
             continue
@@ -348,7 +363,8 @@ def generate_user_row(user):
         for day_idx in range(cycle_start_day, min(cycle_end_day + 1, i + 1)):
             if day_idx < len(date_range):
                 check_start_utc = date_range[day_idx].astimezone(pytz.UTC).replace(hour=0, minute=0, second=0, microsecond=0)
-                check_end_local = (check_start_utc + timedelta(days=1)).astimezone(user_tz)
+                # End of the label day in user's local timezone
+                _, check_end_local = get_local_day_bounds_for_label(date_range[day_idx], user_tz)
                 # Only count days that have fully ended in user's local time
                 if now_local >= check_end_local:
                     status = user_status.get(check_start_utc, "⭕️")
