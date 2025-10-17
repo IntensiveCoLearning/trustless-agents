@@ -15,8 +15,24 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
+
+重要笔记：
+
+The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aims to solidify Ethereum’s position as the substrate for AI coordination.
+
+-   MCP created a universal framework for accessing tools
+    
+-   A2A built a universal communication layer for web2 agents to interoperate with one another
+    
+-   ERC-8004 serves as a blueprint to unlock new revenue streams and enhance user experience through trustless, interoperable agent-to-agent coordination using Ethereum.
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 学习主题：[https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004)
 
 重要笔记：
