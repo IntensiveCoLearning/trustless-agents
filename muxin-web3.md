@@ -16,19 +16,8 @@ test
 <!-- Content_START -->
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
-I’m testing something for updating the study notes. test
+![image](https://github.com/user-attachments/assets/25f30523-2dc5-4721-bce8-80d4ea9c36c7)
 
--   test1
-    
--   test2
-    
--   test3
-    
-
-| 1 | 2 | 3 |
-| --- | --- | --- |
-|   |   |   |
-|   |   |   |
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
