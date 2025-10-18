@@ -14,13 +14,42 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+[https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
+
+Some notes from forum, credits from their authors:
+
+Reputons are a standard defined: [RFC 7071 - A Media Type for Reputation Interchange](https://datatracker.ietf.org/doc/html/rfc7071)
+
+Creating a single (aggregate) reputation score is dangerous. ?
+
+TODO validation logic is a bit complex
+
+Could you please include a simple Solidity example (e.g., two agents ordering a pizza) showing how the ERC is used for escrowed payment? (for understandable historical reasons)?
+
+we need to create an ETH denominated economy in the AI agents space, just like we did with NFTs. I believe the best way forward is to create capable AI agents, who will perform valuable tasks and have them demand payment in ETH.
+
+**Single domain well known location:** I might want to host many agents at different URLs in the same domain. This would be possible in A2A, wouldn’t it? So my suggestion would be to use URLs rather than domains as the way to point to the agent.
+
+The protocol doesn’t cover payments. We considered requiring payment proofs for giving feedback. We know some groups are working on an A2A payment extension for agents, based on x402. We like this approach and are connecting with them to ensure that their extension and ours (ERC-8004) work perfectly together.
+
+But payment proofs should be referenceable in Reputation: what we can standardize is the hook: allow Feedback/Rating records to carry a lightweight reference to a payment proof so indexers can correlate economic activity with feedback.
+
+How validation works in simple use case
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/brucexu-eth/images/2025-10-18-1760748356648-image.png)
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 ## **Validation Registry1**
 
@@ -83,6 +112,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
