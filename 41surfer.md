@@ -14,8 +14,14 @@ interest in AI and do want to know more about it "+web3"
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+ERC-8004 引入了三个轻量级的链上注册表，作为跨组织代理交互的信任支柱。与试图将所有事务都处理在链上的传统区块链协议不同，ERC-8004 采用了一种混合方法，只在链上存储必要的信任相关数据，同时将复杂的操作委托给链下基础设施。
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 # 2025.10.15
