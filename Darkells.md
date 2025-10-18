@@ -14,8 +14,26 @@ You'll never feel ready because ready isn't a feeling, it's a decision.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+## What is the A2A?
+
+A2A Protocol (Agent-to-Agent Protocol) is an open-source communication standard jointly developed by Google and over 50 partners (including the Linux Foundation). It is designed to enable AI agents to autonomously perform discovery, authentication, skill publishing, message passing, and task coordination.
+
+Built upon the Model Context Protocol (MCP) — which is used to list capabilities such as prompts, tools, and completions — A2A focuses on agent collaboration in open environments, allowing agents from different organizations to cooperate without centralized intermediaries.
+
+**Core Components and Functions:**
+
+-   **AgentCards:** Standardized profiles where agents publish their skills, endpoints (such as MCP or A2A hooks), and capabilities.
+    
+-   **Task Lifecycle:** Manages authentication, direct messaging, and end-to-end task orchestration, supporting complex workflows (e.g., one agent hiring another to complete a subtask).
+    
+-   **Use Cases:** Enables the emerging **agent economy** in AI-driven applications, such as **DeFi automation**, **real-world asset (RWA) tokenization**, or **multi-agent research**, where agents can dynamically negotiate, execute, and verify tasks.
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 Reputation is a core component of the ERC-8004 trust model and is implemented through a reputation registry, a standardized interface for publishing and querying feedback reputation signals, helping agents accumulate a verifiable history of their behavior.
 
 Question: How to ensure the reliability of agent reputation and prevent malicious reviews？
@@ -31,6 +49,7 @@ Question: How to ensure the reliability of agent reputation and prevent maliciou
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 simple flow:
 
@@ -67,6 +86,7 @@ TODO Agent life cycle and version management
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 This is a very cutting-edge, and for me, very challenging course. On the first day, I will start by understanding the main content of EIP-8004, which is essentially a 'reputation system'.
