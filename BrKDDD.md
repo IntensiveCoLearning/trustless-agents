@@ -14,16 +14,23 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+打卡
+
+反复观看了workshop
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 打卡，今天参加了workshop
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
 
+
 打卡，第一天开学
 <!-- DAILY_CHECKIN_2025-10-15_END -->
-
-# 2025.10.15
 <!-- Content_END -->
