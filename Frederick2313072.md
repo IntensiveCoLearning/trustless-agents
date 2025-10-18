@@ -15,8 +15,32 @@ ai转web3，小白捏，希望一起学习
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+1.  Initialize and register agents to the identity registry. There are 3 types of agents. Client agent assigns task to server agent and provides feedback. Server agent accepts task and feedback. Validator agent validates task, leveraging different trust models.
+    
+2.  Client agent discovers server agent by reading agent cards, then negotiates the job outputs. This negotiation is done offchain.
+    
+3.  When the server agent accepts the job request, it also accepts feedback from the client agent once the task is completed.
+    
+4.  Server agent executes the task and publishes a data hash that commits to all the information needed to re-run the job.
+    
+5.  Server agent then also requests for a validation via `ValidationRequest`_._
+    
+6.  Validator agent watches for these requests and validates using crypto-economic security or crypto verification.
+    
+7.  If successfully verified, the validator agent responds with a `ValidationResponse`**_._**
+    
+8.  With the `ValidationResponse` , this trustless setup ensures that payment can be released from escrow for various services executed correctly.
+    
+9.  After seeing the validation, the client agent publishes a feedback attestation that embeds the datahash, participants, 8004-request/response IDs, allowing the results to be queryable.
+    
+10.  Payments, attribution, incentives, slashing are not accounted for in ERC-8004, leaving room for design flexibility during and post task execution.
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 ## EIP-8004 Official Standard
 
 **EIP-8004 (ERC-8004)** 是一项**以太坊改进提案** ，旨在为跨去中心化网络运行的**自主 AI 代理引入一种无需信任的协调标准** 。它并非 ERC-20 那样的代币标准，而是一个协议基础架构，它通过基于区块链的**身份、声誉和验证层**扩展了 Google 的**代理到代理 (A2A)** 通信框架。
