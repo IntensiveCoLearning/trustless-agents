@@ -14,8 +14,16 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+运行的时候一直在报错，排查不出原因
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-18-1760763722256-image.png)
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 ## **ERC-8004目标**
 
 **ERC-8004** 旨在解决代理跨越组织边界进行交互时的信任问题，提供一个标准的发现框架，使自治 AI 代理能够去信任地发现和交易。
@@ -38,6 +46,7 @@ timezone: UTC+8
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
+
 今天部署了ERC-8004合约并与之交互了
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-16-1760614208342-image.png)
@@ -49,6 +58,7 @@ timezone: UTC+8
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 ### Problems Solved by ERC-8004
