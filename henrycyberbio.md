@@ -14,8 +14,72 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+## 身份注册表
+
+用于识别 Agent 并确保唯一性，该注册表扩展了\[ERC-721\]([https://eips.ethereum.org/EIPS/eip-721)，也就是用于发布NFT的标准，只是](https://eips.ethereum.org/EIPS/eip-721\)，也就是用于发布NFT的标准，只是将`tokenId`)`tokenId` 换成了 `agentId`，且 Agent 的链上所有权可以像交易 NFT 一样交易，目标是兼容所有 EVM 链和所有 NFT 应用。
+
+具体而言，身份注册表需要维护一`agent-card.json`文件确定识别元数据：
+
+```
+{
+  "type": "https://eips.ethereum.org/EIPS/eip-8004#registration-v1",
+  "name": "myAgentName",
+  "description": "A natural language description of the Agent, which MAY include what it does, how it works, pricing, and interaction methods",
+  "image": "https://example.com/agentimage.png",
+
+  "endpoints":[
+      ...,
+  ]
+  "registrations": [
+    {
+      "agentId": 22,
+      "agentRegistry": "eip155:1:{identityRegistry}"
+    }
+  ],
+  "supportedTrust": [
+    "reputation"
+    "crypto-economic",
+    "tee-attestation"
+  ]
+}
+```
+
+其中 `endpoint` 字段最为重要，可以指向 A2A 代理卡、MCP 端点、ENS 代理名称、DID 或代理的钱包（即使代理未注册的链）等
+
+这个文件同时也是A2A协议的标准
+
+### 示例
+
+假设我将我开发的 Agent 部署到我的私人服务器，并通过域名 `example.agent.eth.fun` 公开，那我就该在路径 `example.agent.eth.fun\.well-known\`下放`agent-card.json`
+
+```
+{  
+  ..., 
+  "registrations": [
+    {
+      "AgentID": 22,
+      "AgentAddress": "eip155:1:0x1234...",
+      "signature": "签名，用于证明该地址的所有权"
+    }
+  ],
+  "trustModels": ["feedback", "validation"],
+  "FeedbackDataURI": "https://example.agent.eth.fun/feedback.json",
+  "ValidationRequestsURI": "https://example.agent.eth.fun/validation_requests.json"
+}
+```
+
+其中`AgentAddress` 是 Agent 拥有者的账户地址
+
+在合约端注册时，调用 `NewAgent("example.agent.eth.fun", <你的以太坊地址>)`
+
+这样，其他 Agent 就可以通过 ERC-8004 的 Identity Registry 使用 `ResolveByDomain("example.agent.eth.fun")` 查询到你的 AgentID 与地址
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -38,6 +102,7 @@ timezone: UTC+8
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 LangChain 是一个 LLM 领域非常流行的框架，基于 LangChain 框架和[教程](https://docs.langchain.com/oss/python/langchain/quickstart)做了一个小尝试。
 
@@ -158,6 +223,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
