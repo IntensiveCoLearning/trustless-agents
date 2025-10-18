@@ -306,7 +306,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [internetofaiagent](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/internetofaiagent.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [sunhuachuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sunhuachuang.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | |
 | [thenameisdevair](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/thenameisdevair.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [k66inthesky](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/k66inthesky.md) | ✅ | ✅ | ✅ |   | | | | | | | | | | |
+| [k66inthesky](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/k66inthesky.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | |
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MRzzz-cyber.md) | ✅ | ⭕️ | ⭕️ |   | | | | | | | | | | |
 | [kuove](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kuove.md) | ⭕️ | ✅ | ✅ |   | | | | | | | | | | |
 | [RanX557](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/RanX557.md) | ✅ | ✅ | ⭕️ |   | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ |   | | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
