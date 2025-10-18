@@ -15,8 +15,86 @@ timezone: UTC-5
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-17
+<!-- DAILY_CHECKIN_2025-10-17_START -->
+# Day 3 — Notes (Oct 17, 2025)
+
+## 📖 Reading
+
+**Article:** _The Story Behind ERC-8004 & Next Steps_ — Survival Tech  
+**Link:** [https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879](https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879)
+
+### Key Learnings
+
+-   **Motivation & early traction:** ERC-8004 emerged as a critical proposal to bypass AI oligarchies and centralized platform gatekeeping, enabling a **distributed economy of agents**.
+    
+-   **Common language between AI projects:** It defines a protocol for **discovering and communicating** with agents across different organizations using standardized agent descriptors.
+    
+-   **On-chain entry, off-chain logic:** The standard keeps **core registries (identity, reputation, validation)** on-chain, while allowing **application-specific logic** to be handled **off-chain**.
+    
+-   **Permissionless & privacy-focused:** It promotes **censorship resistance**, **composability**, and **trustless interaction** — ideal for the AI + Web3 era.
+    
+-   **Decentralized registry system:** Not a global central server, but **per-chain singletons** acting as common entry points for discovery and interaction.
+    
+
+* * *
+
+## 🛠 Hands-on
+
+**Repo:** [https://github.com/vistara-apps/erc-8004-example](https://github.com/vistara-apps/erc-8004-example)
+
+### What I did today
+
+-   Since I’m on **Windows**, I had to **dockerize** the project to isolate environments and install all dependencies without issues.
+    
+
+### What I expect to learn from this repo
+
+-   ✅ How to implement **smart contracts in Solidity** to manage **identity, reputation, and validation** using ERC‑8004.
+    
+-   ✅ How to connect a **Python backend** with a **React frontend** for decentralized apps that handle agent logic.
+    
+-   ✅ How to deploy contracts with **Foundry** and explore the **validation flow** in distributed systems.
+    
+
+* * *
+
+## 🧠 My Understanding (Summary)
+
+-   ERC‑8004 standardizes how agents are **discovered, chosen, and trusted** with **no prior trust** required.
+    
+-   It keeps the **core trust layer** on-chain while allowing rich **off-chain logic** for complex reputation and validation flows.
+    
+-   It’s gaining traction as a **foundational building block** for the emerging AI x Web3 ecosystem.
+    
+
+* * *
+
+## ❓ Open Questions
+
+-   How will the protocol handle **off-chain logic verification** to ensure **security, compatibility, and auditability**?
+    
+-   Are there plans for **decay mechanisms**, **weighting models**, or **anti-manipulation protections** in the reputation system?
+    
+-   What are best practices for **anchoring off-chain attestations** or feedback in a Sybil-resistant way?
+    
+
+* * *
+
+## 🔜 Next Steps
+
+-   Finalize Docker setup and run local tests.
+    
+-   Deploy the registries to a testnet using Foundry.
+    
+-   Test a minimal circuit: **register agent → send feedback → query reputation → simulate validation**.
+    
+-   Document all commands and configuration for reproducibility.
+<!-- DAILY_CHECKIN_2025-10-17_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 # Day 2 — ERC-8004 (Trustless Agents) — Study Notes
 
 **Sources**
@@ -139,6 +217,7 @@ timezone: UTC-5
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 # Today I learned about ERC 8004
 
