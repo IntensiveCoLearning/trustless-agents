@@ -15,8 +15,58 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+学习主题：[https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879](https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879)
+
+重要笔记：ERC-8004 Proposal and Vision
+
+1\. The Core Problem:
+
+-   The current AI landscape is dominated by centralized "AI Oligarchs" and "Platform Gatekeeping."
+    
+-   To counter this, we need decentralized agent economies.
+    
+-   A major hurdle is a lack of a common, standardized language for agents to discover, trust, and communicate with each other, leading to a "classic coordination problem."
+    
+
+2\. The Proposed Solution: ERC-8004
+
+-   ERC-8004 is designed to be this common language, enabling decentralized agent coordination.
+    
+-   It is not a new blockchain; it uses existing Ethereum L1/L2s as a logically centralized entry point for visibility and data commitments.
+    
+-   Core Philosophy:
+    
+    -   Minimal and Unopinionated: It doesn't reinvent the wheel but builds on existing ideas (e.g., EigenLayer, TEEs). It provides a lightweight base for identity and trust, leaving specific reputation rules and calculations to the ecosystem.
+        
+    -   Solves Coordination: It gives everyone equal data and visibility to create an agent economy, without imposing strict rules.
+        
+
+3\. The Path to Creation:
+
+-   The author identified a gap: Google's Agent2Agent (A2A) protocol, while well-made and credibly neutral, ignored Web3 and trustless use cases.
+    
+-   In collaboration with the Ethereum Foundation's AI Lead and Google, **they worked to expand the A2A protocol into the Web3 space, resulting in ERC-8004.**
+    
+
+4\. Overwhelming Community Response:
+
+-   The proposal went viral, with thousands of engagements, translations, memes, and discussions.
+    
+-   This indicates massive latent demand in the ecosystem for applying Web3 principles (permissionless, decentralized, censorship-resistant) to AI.
+    
+
+5\. Next Steps and Governance:
+
+-   A "building-first approach" will be adopted. Feedback and change requests will be prioritized from teams actually building on the standard.
+    
+-   **The goal is to drive adoption and make Ethereum the foundational infrastructure for the future of AI.**
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -32,6 +82,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 学习主题：[https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004)
 
