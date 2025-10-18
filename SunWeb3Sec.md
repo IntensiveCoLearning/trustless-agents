@@ -14,8 +14,139 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+# Reputation Registry
+
+**Objective:** Avoid the “single score” anti-pattern; build a **composable, multi-dimensional** reputation model.
+
+* * *
+
+## Recommended 3 Dimensions (common for security/audit/agents)
+
+-   **Reliability (Completion Rate):** Tasks delivered on-spec and on-time.
+    
+-   **Consistency (Reconciliation):** Output matches verifiable sources (recompute/TEE/zk).
+    
+-   **Performance:** Latency percentiles (P50/P95), cost/throughput.
+    
+
+> For risk/fraud: consider Precision/Recall instead of Performance.
+
+* * *
+
+## Event → Score Mapping (templates)
+
+### A) Reliability (Completion Rate)
+
+-   **Events:** `TaskCompletedOnTime` / `TaskLate(<10%)` / `TaskLate(≥10%)` / `TaskRejected`
+    
+-   **Scores:**
+    
+    -   On-time: **100**
+        
+    -   Slightly late (<10% SLA): **80**
+        
+    -   Heavily late (≥10% SLA): **40**
+        
+    -   Rejected: **0** (tag: `spec-mismatch`)
+        
+-   **Aggregation:** `score = EMA(last_N, decay=0.9)`
+    
+
+### B) Consistency (Reconciliation)
+
+-   **Events:** `ProofVerified(zk|tee|recompute)` / `ProofFailed` / `NoProof`
+    
+-   **Scores:**
+    
+    -   `zk` verified: **100**
+        
+    -   `tee` verified: **90**
+        
+    -   `recompute` verified: **80**
+        
+    -   Failed: **20** (tag: `proof-fail`)
+        
+    -   No proof: **60**
+        
+-   **Weighting by strength:** `zk:1.0, tee:0.9, recompute:0.8, none:0.6`
+    
+
+### C) Performance
+
+-   **Events:** `LatencyMeasured(ms)`, `CostMeasured($/100 calls)`
+    
+-   **Scores (example):**
+    
+    -   Latency: P50 ≤ 500ms → **90**; 500–1500ms → linearly down to **60**; >1500ms → **40**
+        
+    -   Cost: ≤ baseline → **+10**; 1–2× → **0**; >2× → **−10**
+        
+-   **Aggregation:** `perf = clamp(latency_score + cost_adj, 0, 100)`
+    
+
+* * *
+
+## Data Design (minimal, production-friendly)
+
+**Off-chain (IPFS/Arweave recommended):** full feedback JSON
+
+```
+{
+  "dimension": "reliability|consistency|performance",
+  "event": "TaskCompletedOnTime|ProofVerified|LatencyMeasured",
+  "raw": { "p50": 420, "p95": 1350, "cost_per_100": 0.72 },
+  "score": 86,
+  "tags": ["dim:performance","p95","low-cost"],
+  "evidence_uri": "ipfs://.../feedback.json",
+  "evidence_hash": "0x...",
+  "client": "0xClient...",
+  "agentId": 123,
+  "timestamp": "2025-10-17T09:00:00Z"
+}
+```
+
+**On-chain (ERC-8004 Reputation):**
+
+-   `giveFeedback(agentId, score, tag1, tag2, uri, hash, feedbackAuth)`
+    
+-   `tag1/tag2` examples: `dim:reliability | dim:consistency | dim:performance`, `p95 | zk | tee | spec-mismatch`
+    
+
+* * *
+
+## Aggregation & UI (practical)
+
+-   **Radar chart:** three axes (0–100).
+    
+-   **Scenario weights:**
+    
+    -   Matching/Trading: `w_perf=0.5, w_rel=0.3, w_cons=0.2`
+        
+    -   Audit/Forensics: `w_cons=0.6, w_rel=0.3, w_perf=0.1`
+        
+-   **Optional overall rank:** `overall = Σ (w_i * dim_i)` (for sorting only; never replace dimension view).
+    
+-   **Time decay:** `weight = exp(-λ * age_days)` (e.g., λ = 0.02).
+    
+
+* * *
+
+## Anti-Abuse & Trust (minimum controls)
+
+-   **Pre-authorization:** accept feedback only with agent-issued `feedbackAuth`.
+    
+-   **Rater weighting:** whitelist/stake-weighted `clientAddress` (partners, auditors, KOLs).
+    
+-   **Spot checks:** sample high-impact scores for `ProofVerified`.
+    
+-   **Data minimization:** on-chain = score + index (URI+hash); keep sensitive data off-chain.
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -121,8 +252,9 @@ timezone: UTC+8
 ```
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
-# 2025.10.16
+# 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 ## 10/16 Workshop Summary — ERC-8004
 
 ### 1\. Core Objective
@@ -288,8 +420,9 @@ Sepolia
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SunWeb3Sec/images/2025-10-16-1760603077585-image.png)
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
-# 2025.10.15
+# 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 ERC-8004 Overview & Trust Layer Primer
 
 Objective (today)
