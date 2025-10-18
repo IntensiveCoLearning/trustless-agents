@@ -14,8 +14,43 @@ Keep Buidler
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+Based on the web page content, here is a detailed explanation of the **Agent2Agent (A2A) Protocol** using Markdown:
+
+# Agent2Agent (A2A) Protocol
+
+The **A2A Protocol** is an open standard designed to enable seamless communication and collaboration between $\\text{AI}$ agents. It was developed by Google and then donated to the [Linux Foundation](https://a2a-protocol.org/latest/).
+
+## What it does
+
+In a world where AI agents are built using diverse frameworks and by different vendors, A2A provides a **common language** to break down silos and foster **interoperability**.
+
+It allows agents (remote, local, and human) to communicate, regardless of the framework they are built with (such as [ADK](https://google.github.io/adk-docs/)) or the tools they are equipped with (such as [MCP](https://modelcontextprotocol.io/)).
+
+## Why use the A2A Protocol?
+
+The key benefits of using the protocol include:
+
+-   **Interoperability:** It connects agents built on different platforms (like $\\text{LangGraph}$, $\\text{CrewAI}$, $\\text{Semantic Kernel}$, or custom solutions) to create powerful, composite $\\text{AI}$ systems.
+    
+-   **Complex Workflows:** Agents can delegate sub-tasks, exchange information, and coordinate actions to solve complex problems that a single agent cannot.
+    
+-   **Secure & Opaque:** Agents interact without needing to share internal memory, tools, or proprietary logic, ensuring security and preserving intellectual property.
+    
+
+## A2A and Model Context Protocol (MCP)
+
+A2A and Model Context Protocol (MCP) are **complementary standards**:
+
+-   **Model Context Protocol (MCP)** provides **agent-to-tool communication**. It standardizes how an agent connects to its tools, $\\text{APIs}$, and resources to get information.
+    
+-   **A2A** provides **agent-to-agent communication**. It acts as a universal, decentralized standard—the "public internet"—that allows $\\text{AI}$ agents (including those using $\\text{MCP}$) to interoperate, collaborate, and share their findings.
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 This is the sequences diagram that I summarize from the official erc 8004 examples:
 
 ```
@@ -88,6 +123,7 @@ sequenceDiagram
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 The ERC-8004 is not reinvent the wheel. The protocol not only expands A2A, but also bases trust assumptions on what builders are already thinking about. So, Stake-secured validation? Use \[EigenLayer\](https://blog.eigencloud.xyz/introducing-verifiable-agents-on-eigenlayer/). TEE attestations? Check out \[Phala\](https://phala.com/) its \[paper\](https://arxiv.org/pdf/2409.03992) and \[Near.AI\](https://near.ai/).
 
