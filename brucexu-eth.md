@@ -39,16 +39,29 @@ But payment proofs should be referenceable in Reputation: what we can standardiz
 How validation works in simple use case
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/brucexu-eth/images/2025-10-18-1760748356648-image.png)
+
+Some ideas about validation:
+
+-   Validation used for verify the agents have done something, esp to the external system
+    
+-   Validator might be provided by the service providers, or Independent, or others. But the validation will trust that validator's response
+    
+-   Other contracts like Escrow contracts relies on the validation to send tokens
+    
+
+TODO make a fake hotel booking demo with validation logic, and protect the privacy, remove the private hotel booking info.
 <!-- DAILY_CHECKIN_2025-10-18_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 ## **Validation Registry1**
@@ -112,6 +125,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
