@@ -14,8 +14,79 @@ bring self to web3
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+## A2A 协议概述
+
+A2A（Agent-to-Agent）协议是由 Google 提出的开放标准，旨在实现 AI 代理之间的安全通信和协作。 其核心组件是 Agent Card（代理卡片），这是一种 JSON 格式的描述文件，包含代理的身份、能力、技能、服务端点和认证信息。
+
+### 主要组成部分
+
+-   **身份信息**：包括 `name`、`description` 和 `provider`。
+    
+-   **服务端点**：指定 A2A 服务的 `url`。
+    
+-   **A2A 能力**：列出支持的功能，如 `streaming` 或 `pushNotifications`。
+    
+-   **认证信息**：详细说明所需的认证机制（例如 "Bearer"、"OAuth2"）。
+    
+-   **技能**：描述代理的任务，使用 `AgentSkill` 对象，包括 `id`、`name`、`description`、`inputModes`、`outputModes` 和 `examples`。
+    
+
+客户端代理使用 Agent Card 来确定代理的适用性、构建请求并确保安全通信。  
+  
+
+## 构建简单代理并创建 Agent Card
+
+1.  **创建代理服务**：实现一个简单的 HTTP 服务，响应基本的请求，例如返回 "Hello, World!"。
+    
+2.  **编写 Agent Card**：创建一个 JSON 文件，描述代理的身份、能力和技能。以下为测试示例：
+    
+    ```
+    {
+      "name": "Hello World Agent",
+      "description": "Just a hello world agent",
+      "url": "http://localhost:9999/",
+      "version": "1.0.0",
+      "capabilities": {
+        "streaming": true
+      },
+      "defaultInputModes": ["text"],
+      "defaultOutputModes": ["text"],
+      "skills": [
+        {
+          "id": "hello_world",
+          "name": "Returns hello world",
+          "description": "just returns hello world",
+          "inputModes": ["text"],
+          "outputModes": ["text"],
+          "examples": ["hi", "hello world"]
+        }
+      ]
+    }
+    ```
+    
+3.  **部署代理服务**：将代理服务部署到可访问的服务器上，并确保 Agent Card 可通过 `/.well-known/agent.json` 路径访问。
+    
+4.  **注册代理**：根据 A2A 协议的要求，使用适当的机制将代理注册到 A2A 系统中。
+    
+
+### Vistara 提供了一个完整的 ERC-8004 信任代理标准示例，展示了 AI 代理如何在组织边界之间进行无信任交互。 该示例包括：
+
+-   **ERC-8004 注册合约**：身份、声誉和验证注册表。
+    
+-   **AI 代理**：使用 CrewAI 进行复杂的市场分析和验证。
+    
+-   **无信任交互**：代理在没有预先信任的情况下进行发现、验证和反馈。
+    
+-   **完整的审计追踪**：基于区块链的问责制和透明度。
+    
+-   **多代理工作流**：协作 AI 系统共同工作。
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 # ERC-8004 Demo
 
 ##   
@@ -349,6 +420,7 @@ console.log("Agent Trusted:", trusted);
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
+
 ## 整体运行流程
 
 1.  **注册身份** → Agent 在 Identity Registry 注册。
@@ -376,6 +448,7 @@ console.log("Agent Trusted:", trusted);
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
