@@ -17,6 +17,115 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+> 分析程式碼[erc-8004-contracts\]([https://github.com/erc-8004/erc-8004-contracts](https://github.com/erc-8004/erc-8004-contracts)
+```
+erc-8004-contracts/
+├── contracts/                    # 智能合約原始碼
+│   ├── IdentityRegistry.sol
+│   ├── ReputationRegistry.sol
+│   ├── ValidationRegistry.sol
+│   └── upgradeable/              # 可升級版本
+│       ├── IdentityRegistryUpgradeable.sol
+│       ├── ReputationRegistryUpgradeable.sol
+│       └── ValidationRegistryUpgradeable.sol
+├── test/                         # 測試檔案
+│   ├── IdentityRegistry.test.ts
+│   ├── IdentityRegistryUpgradeable.test.ts
+│   ├── ReputationRegistry.test.ts
+│   ├── ReputationRegistryUpgradeable.test.ts
+│   ├── ValidationRegistry.test.ts
+│   └── ValidationRegistryUpgradeable.test.ts
+├── hardhat.config.ts            # Hardhat 設定
+├── package.json                 # 相關依賴
+└── tsconfig.json               # TypeScript 設定
+```
+## 如何運用?
+### **IdentityRegistry.sol**
+1. Agent
+   ```
+   // 代理人註冊自己
+   await identityRegistry.register("ipfs://QmMyProfile");
+   ```
+2. Agent Owner
+   ```
+   // 更新自己的資訊
+    await identityRegistry.setMetadata(agentId, "agentName", "0x416c696365"); // "Alice"
+    await identityRegistry.setAgentUri(agentId, "ipfs://QmNewProfile");
+   ```
+3. 查Agent資訊
+   ```
+    const tokenURI = await identityRegistry.tokenURI(agentId);
+    const agentName = await identityRegistry.getMetadata(agentId, "agentName");
+   ```
+4. 監聽註冊事件
+   ```
+    identityRegistry.on("Registered", (agentId, tokenURI, owner) => {
+        // 將新代理人加入索引
+        indexNewAgent(agentId, tokenURI, owner);
+    });
+   ``` 
+### **ReputationRegistry.sol**
++ ECDSA橢圓曲線數位簽章
++ 用訊息雜湊工具用於EIP-191簽章
++ 驗證走EOA或ERC-1271(ERC-1271智能合約的簽章介面: IERC-1271)
++ `address private immutable identityRegistry;`: 部署後無法更改的申正註冊表地址
++ NewFeedback(新回饋事件)、FeedbackRevoked(回饋撤銷事件)、ResponseAppended(回應添加事件)
++ 值得一提的是: `Feedback`、`FeedbackAuth`的結構，後者還包含`身份註冊表地址`
+
+
+  1. 寫入: `giveFeeback()`、`revokeFeedback(uint256 agentId, uint64 feedbackIndex))`、`appendResponse()`
+  2. 查詢: `getIdentityRegistry`、`getLastIndex(uint256 agentId, address clientAddress)`、`readFeedback`、`getSummary`、`readAllFeedback`、`getResponseCount`、`getClients(uint256 agentId)`
+
+#### 用在哪?
+    + A: Client
+    ```
+    // 場景：使用AI代理服務後給予評分
+    await reputationRegistry.giveFeedback(
+        agentId,           // 代理人ID
+        95,               // 評分
+        "0x616900000...", // tag1: "ai"
+        "0x636f646500...", // tag2: "code"  
+        "ipfs://feedback", // 回饋URI
+        "0x123...",       // 回饋雜湊
+        feedbackAuthBytes  // 授權簽章
+    );
+    ```
+    + A: 代理人/所有者
+      ```/
+      / 場景：代理人預先簽署授權，允許特定客戶給回饋
+    const auth = {
+        agentId: 0,
+        clientAddress: "0x123...",
+        indexLimit: 5,
+        expiry: Math.floor(Date.now() / 1000) + 3600, // 1小時後過期
+        chainId: 1,
+        identityRegistry: registryAddress,
+        signerAddress: agentOwner
+    };
+    ```
+    + 回應者
+    ```
+    // 場景：第三方對回饋提供額外資訊
+    await reputationRegistry.appendResponse(
+        agentId,
+        clientAddress, 
+        feedbackIndex,
+        "ipfs://response",
+        "0xabc..."
+    );
+    ```
+
+### **ValidationRegistry.sol**
++ 含`身分註冊表介面`、``、``、``、``
++ `response`、`responseUri`、`tag`
+
+## 為什麼要這樣設計?
+1. 防止Sybil攻擊和刷評機制(例: 防惡意刷好評)
+   > 解法: 多重身份驗證
+2.  gas fee降低(bytes32 取代 string)
+
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 ![ERC-8004_ 無信任代理 (1).png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/k66inthesky/images/2025-10-17-1760714327882-ERC-8004_________1_.png)
