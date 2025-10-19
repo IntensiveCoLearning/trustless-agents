@@ -15,8 +15,161 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+参考@点点
+
+**三、实操：为 Agent 创建链上身份并实现简单链下声誉反馈机制**
+
+**（一）前置准备**
+
+NaN. **开发环境搭建**：
+
+-   安装 Truffle 或 Hardhat 开发框架（本文以 Hardhat 为例），用于智能合约的编译、部署与测试；
+    
+-   配置以太坊测试网络（如 Goerli、Sepolia），获取测试 ETH（通过测试网水龙头），用于支付合约部署与交易 Gas 费；
+    
+-   安装 MetaMask 钱包，创建测试账户，用于作为 Agent 的关联地址。
+    
+
+NaN. **依赖资源准备**：
+
+-   从 EIP-8004 官方标准（参考 “资源” 部分）获取 ERC-8004 智能合约接口代码（IERC8004Identity.sol、IERC8004Reputation.sol、IERC8004Verification.sol）；
+    
+-   准备 IPFS 节点或使用 Pinata 等 IPFS 服务，用于存储 Agent 身份元数据。
+    
+
+**（二）步骤 1：为 Agent 创建链上身份**
+
+**1\. 编写 Agent 身份元数据**
+
+Agent 的身份元数据需包含以下核心信息（以 JSON 格式为例）：
+
+```
+{
+  "agentName": "TaskExecutorAgent",
+  "agentType": "Service Agent",
+  "description": "An Agent specialized in executing on-chain tasks such as data verification and asset transfer",
+  "associatedAddresses": ["0x1234567890abcdef1234567890abcdef12345678"], // MetaMask测试账户地址
+  "owner": "0xabcdef1234567890abcdef1234567890abcdef12", // Agent所有者地址
+  "creationTime": "2024-XX-XXTXX:XX:XXZ"
+}
+
+```
+
+将该 JSON 文件上传至 IPFS，获取元数据哈希（如`QmXf8dGp8z7y6Z9a5Y7b3c2d1e4f5g6h7j8k9l0m1n2o3p4`）。
+
+**2\. 部署 ERC-8004 身份注册表合约**
+
+-   在 Hardhat 项目中创建`ERC8004Identity.sol`合约，实现 IERC8004Identity 接口定义的`registerIdentity`、`updateIdentityMetadata`等核心函数（可参考 Vistara Apps 提供的 ERC-8004 示例代码，简化开发）；
+    
+-   编写部署脚本（deploy.js）：
+    
+
+```
+const hre = require("hardhat");
+
+async function main() {
+  const identityContractAddress = "0x9876543210fedcba9876543210fedcba98765432";
+  const identityContract = await hre.ethers.getContractAt("ERC8004Identity", identityContractAddress);
+  const [deployer] = await hre.ethers.getSigners(); // 使用MetaMask测试账户（需配置Hardhat与MetaMask连接）
+
+  const metadataHash = "QmXf8dGp8z7y6Z9a5Y7b3c2d1e4f5g6h7j8k9l0m1n2o3p4";
+  const associatedAddresses = ["0x1234567890abcdef1234567890abcdef12345678"];
+
+  const tx = await identityContract.connect(deployer).registerIdentity(metadataHash, associatedAddresses);
+  await tx.wait();
+  console.log("Agent identity registered successfully!");
+
+  // 查询注册后的Identity ID（假设合约有getIdentityIdByAddress函数）
+  const identityId = await identityContract.getIdentityIdByAddress(associatedAddresses[0]);
+  console.log("Agent Identity ID:", identityId.toString());
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
+
+```
+
+-   执行部署命令：`npx hardhat run scripts/deploy.js --network sepolia`，记录部署后的合约地址（如`0x9876543210fedcba9876543210fedcba98765432`）。
+    
+
+**3\. 调用合约注册 Agent 身份**
+
+-   编写交互脚本（registerAgent.js），通过 MetaMask 测试账户调用`registerIdentity`函数：
+    
+
+```
+const hre = require("hardhat");
+
+async function main() {
+  const identityContractAddress = "0x9876543210fedcba9876543210fedcba98765432";
+  const identityContract = await hre.ethers.getContractAt("ERC8004Identity", identityContractAddress);
+  const [deployer] = await hre.ethers.getSigners(); // 使用MetaMask测试账户（需配置Hardhat与MetaMask连接）
+
+  const metadataHash = "QmXf8dGp8z7y6Z9a5Y7b3c2d1e4f5g6h7j8k9l0m1n2o3p4";
+  const associatedAddresses = ["0x1234567890abcdef1234567890abcdef12345678"];
+
+  const tx = await identityContract.connect(deployer).registerIdentity(metadataHash, associatedAddresses);
+  await tx.wait();
+  console.log("Agent identity registered successfully!");
+
+  // 查询注册后的Identity ID（假设合约有getIdentityIdByAddress函数）
+  const identityId = await identityContract.getIdentityIdByAddress(associatedAddresses[0]);
+  console.log("Agent Identity ID:", identityId.toString());
+}
+
+main().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});
+
+```
+
+-   执行交互命令：`npx hardhat run scripts/registerAgent.js --network sepolia`，完成 Agent 链上身份注册，记录 Identity ID（如`123`）。
+    
+
+**（三）步骤 2：实现简单链下声誉反馈机制**
+
+由于链上存储成本较高，对于高频、轻量级的声誉反馈（如用户对 Agent 服务的评分、简短评价），可采用 “链下存储 + 链上哈希存证” 的方式实现，兼顾成本与可信度。
+
+**1\. 设计链下声誉反馈数据结构**
+
+每个声誉反馈记录包含以下信息（JSON 格式）：
+
+```
+{
+  "feedbackId": "fb-123456", // 反馈唯一标识
+  "agentIdentityId": "123", // 被反馈Agent的Identity ID
+  "feedbackProvider": "0xabc123def456abc123def456abc123def456abc1", // 反馈发起方地址
+  "score": 4, // 评分（1-5分）
+  "comment": "The Agent completed the task quickly, but the result had a small error", // 评价内容
+  "feedbackTime": "2024-XX-XXTXX:XX:XXZ",
+  "signature": "0x...", // 反馈发起方对该反馈记录的签名，用于验证真实性
+  "metadataHash": "QmY7a9b8c7d6e5f4g3h2j1k0l9m8n7o6p5q4r3s2t1u0v" // 反馈记录的IPFS哈希
+}
+
+```
+
+**2\. 搭建链下声誉反馈系统（简易版）**
+
+-   **前端界面**：使用 HTML+JavaScript 搭建简单页面，提供 “输入 Agent Identity ID”“选择评分（1-5 分）”“填写评价内容” 的表单，用户提交后调用 MetaMask 签名该反馈记录；
+    
+-   **后端服务**：使用 Node.js+Express 搭建后端，接收前端提交的签名后反馈记录，验证签名真实性（通过 ethers.js 的`verifyMessage`函数），验证通过后将反馈记录上传至 IPFS，获取 metadataHash；
+    
+-   **链上存证**：后端调用 ERC-8004 声誉注册表合约的`recordReputation`函数，将 “评分转化的分数变更”（如 4 分对应 + 4 分，2 分对应 - 1 分）、反馈记录的 metadataHash 作为 reason 参数，完成声誉分数的链上更新与反馈记录的哈希存证。
+    
+
+**3\. 声誉反馈查询与展示**
+
+-   用户可在前端输入 Agent 的 Identity ID，前端调用后端接口查询该 Agent 的所有链下声誉反馈记录（从 IPFS 获取），同时调用链上合约查询当前声誉分数，综合展示 Agent 的声誉情况（如 “当前分数：108 分，共收到 5 条反馈，平均评分 4.2 分”）。
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 参考@点点
 
 **Module 1：信任基础 ——ERC-8004 身份与声誉层学习笔记**
@@ -112,6 +265,7 @@ NaN. 验证结果查询：其他主体可查询特定 Identity ID 的验证记�
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 参加了第一次课程会议
 
