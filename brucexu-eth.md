@@ -14,8 +14,160 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+[https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
+
+ERC-8004 Trustless Agents represents a fundamental breakthrough extending Google's proven Agent-to-Agent (A2A) protocol with blockchain-based trust mechanisms that enable autonomous agents to discover, validate, and collaborate across untrusted networks.
+
+Agentic Economy
+
+However, as adoption grew across leading technology firms, a critical limitation emerged, the protocol assumed trust between communicating agents. This worked perfectly within organizational boundaries where IT departments could establish trust relationships, but it prevented the emergence of a truly open agent economy.
+
+One of ERC-8004's most sophisticated features is its tiered security architecture, where trust mechanisms scale with the value at risk. This addresses the fundamental insight that ordering pizza requires different security guarantees than medical diagnosis.
+
+![Blank (1).webp](https://www.quillaudits.com/_next/image?url=https%3A%2F%2Fambitious-kindness-505c138052.media.strapiapp.com%2FBlank_1_17ecc28b4a.webp&w=1920&q=75)
+
+For simple tasks, such as content creation or basic queries, social consensus based on accumulated client feedback provides sufficient security.
+
+For financial transactions or smart contract operations, validators must stake economic value that can be slashed for incorrect validations.
+
+Validator checks and validates the result from the Service Agent for Client Agent to execute further operations, like release the fund, etc. So Validator will be very important for building trustless. TODO Validators will have a marketplace, for different cases and scenoria. This can be a public goods for LXDAO.
+
+### **Cryptographic Verification (High Stakes)**
+
+For critical applications, Trusted Execution Environment (TEE) attestations provide cryptographic guarantees that computations executed correctly in secure hardware enclaves. TEEs offer several critical properties:
+
+-   **Integrity**: Cryptographic proof that code executed as intended
+    
+-   **Confidentiality**: Private data remains encrypted even from cloud providers
+    
+-   **Remote Attestation**: Third parties can verify execution environment authenticity
+    
+
+TEE（Trusted Execution Environment，可信执行环境）是处理器里一块受硬件保护的隔离区域。它让代码和数据在“加密内存”里运行，操作系统、云管理员、恶意软件都看不见、改不了；还可用“远程证明”向外界证明自己运行的是哪段代码。TEE 不是 ERC-8004 的一部分，但可作为 **validator 的实现手段**。它给 validator 提供“在硬件隔离里跑校验逻辑 + 远程证明”的能力，用来降低对单一运营方的信任。
+
+关系与分层
+
+-   ERC-8004 定义接口：`validationRequest(...)` → off-chain 校验 → `validationResponse(...)`。
+    
+-   validator 的职责：拿到 `requestUri/requestHash`，执行校验，回写结果。
+    
+-   TEE 的作用：让这段校验逻辑在受硬件保护的环境中运行，并产出可验证的 **attestation**（证明“确实用这段代码、在可接受的TCB版本上、针对这笔请求计算了这个结果”）
+    
+
+三种常见落地模式
+
+1.  纯信任型
+    
+    -   直接信任某个 validator 地址（公司/社区运营）。无需 TEE/zk。实现简单，信任重。
+        
+2.  **TEE-backed validator（常用）**
+    
+    -   校验代码部署在 TEE（SGX/TDX/SEV/TrustZone 或机密虚机）中。
+        
+    -   输出包含：结果摘要 + TEE 证明（绑定 `requestHash` 与代码测量值 H）。
+        
+    -   上链做法：
+        
+        -   最简：合约只存 `responseHash/tag`；证明放 `responseUri`，由审计者或仲裁合约离链验证。
+            
+        -   强校验：用预言机把厂商证明链验证后，喂给合约一个可链上验证的签名/布尔值；或把“允许的测量值/公钥”登记在链上做白名单校验。
+            
+3.  ZK-validator
+    
+    -   用 zk 生成可链上验证的证明。信任最小，但对通用校验成本高。可与 TEE 组合（如 zktls/zkDCAP 把 TEE 证明压成可链上验证的简证）。
+        
+
+最小工作流（以“验证外卖订单是否成立”为例）
+
+1.  Registry 记录允许的 validator 列表，以及可选的 **TEE 测量值 H 或 enclave 公钥**。
+    
+2.  Agent 调 `validationRequest(validatorAddress, agentId, requestUri, requestHash)`。
+    
+3.  validator 的 **TEE** 拉取 `requestUri`，校验 `requestHash`，调用商家 API/签名票据，完成校验。
+    
+4.  TEE 生成 attestation，把 {`requestHash`, 结果摘要, nonce, TCB版本} 绑定在证明里。
+    
+5.  validator 调 `validationResponse(..., responseUri, responseHash, tag)`；`responseUri` 中含 attestation。
+    
+6.  需要链上强校验时，由预言机/仲裁合约核验 attestation 是否匹配登记的测量值/公钥，再认可该响应。
+    
+
+关键设计点
+
+-   `validatorAddress` 仍是一个正常地址（EOA/合约）。TEE 只改变其**实现与证明**，不改变地址形态。
+    
+-   绑定与防重放：把 `requestHash`、区块高度/截止时间写进 TEE 证明或响应摘要。
+    
+
+The security model must address three critical dimensions: **establishing trust without prior relationships**, maintaining **reputation integrity across organizational boundaries**, and **validating authenticity in adversarial environments**.
+
+[https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879](https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879)
+
+That’s why I was happy in June when Google [donated](https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/) their Agent2Agent protocol to the Linux Foundation to make it credibly neutral, with many BigTech companies jumping on board. I was happy… until I studied the specs (very well done, btw) and realized Web3/trustless use cases were ignored. **A2A assumes usage within organizations** — discovery and trust assumptions were overlooked.
+
+Stake-secured validation? Look at [EigenLayer](https://blog.eigencloud.xyz/introducing-verifiable-agents-on-eigenlayer/). TEE attestations? Check out [Phala](https://phala.network/) and [Near.AI](http://Near.AI).
+
+[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
+
+## **How it Works**
+
+1.  Initialize and register agents to the identity registry. There are 3 types of agents. Client agent assigns task to server agent and provides feedback. Server agent accepts task and feedback. Validator agent validates task, leveraging different trust models.
+    
+2.  Client agent discovers server agent by reading agent cards, then negotiates the job outputs. This negotiation is done offchain.
+    
+3.  When the server agent accepts the job request, it also accepts feedback from the client agent once the task is completed.
+    
+4.  Server agent executes the task and publishes a data hash that commits to all the information needed to re-run the job.
+    
+5.  Server agent then also requests for a validation via `ValidationRequest`_._
+    
+6.  Validator agent watches for these requests and validates using crypto-economic security or crypto verification.
+    
+7.  If successfully verified, the validator agent responds with a `ValidationResponse`**_._**
+    
+8.  With the `ValidationResponse` , this trustless setup ensures that payment can be released from escrow for various services executed correctly.
+    
+9.  After seeing the validation, the client agent publishes a feedback attestation that embeds the datahash, participants, 8004-request/response IDs, allowing the results to be queryable.
+    
+10.  Payments, attribution, incentives, slashing are not accounted for in ERC-8004, leaving room for design flexibility during and post task execution.
+     
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/brucexu-eth/images/2025-10-19-1760834568350-image.png)
+
+（Generated with ChatGPT)
+
+TEE attestation proofs：安全的 validator 代码读取官方第三方数据等，确保中间内容和数据没有被篡改。
+
+zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、握手正确性、会话内容的完整性）转化为一份 **零知识证明**。验证者在不见明文、不信任第三方的前提下，确认“这些字节确实来自某域名在某次真实的 TLS 会话”。
+
+典型用法（最小例）
+
+-   你想让合约相信“[https://api.example.com](https://api.example.com) 返回的价格=123”。
+    
+-   你与服务器完成 TLS 1.3，会话中抽取“价格字段”和“时间戳”，生成 zkTLS 证明并绑定域名与会话摘要。
+    
+-   合约验证证明后采信该价格，无需喂价预言机，也不泄露其它响应内容。
+    
+
+优势与限制
+
+-   优势：无需信任硬件或单一喂价方；可在链上直接验证来源与完整性
+    
+-   限制：电路复杂与证明成本高；对 TLS 版本与特性有子集支持；需处理证书根信任与新鲜度策略。
+    
+
+## **Key Beneficiaries**
+
+-   **Restaking services:** ERC-8004’s Validation Registry gives restaking networks a neutral hook to prove that an agent’s job was checked (or challenged) and to post the outcome. Restaking network like EigenCloud can route validations through their crypto-economic model via an AVS. Slashing will be governed by each AVS.
+    
+-   **TEEs and proof systems:** ERC-8004 explicitly supports a crypto-verifiable trust model: agents run tasks in TEEs (e.g., Intel SGX-based TEEs) and/or attach ZK proofs; validators then post a `ValidationResponse` that others can verify. In practice, TEEs give fast execution with remote attestation, while zk-coprocessors make those claims succinct and chain-verifiable—ideal for model inference checks, confidential data use, or re-running heavy computations off-chain.
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -56,11 +208,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -125,6 +279,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
