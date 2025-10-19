@@ -14,8 +14,20 @@ a builder who currently learning and focusing on the research part
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+almost done with the EIP discussion, few takeaways:  
+\- it's a singleton (I just realized what does it mean), its literally one contract on each chain. so no need to deploy it multiple times  
+\- I can understand some of the concern, but I also can understand the tradeoff and the scope focus  
+  
+ps, this is my first time reading almost everything from the ethereum magician discussions, and I can see the variety of people when discussing about this ERC.  
+  
+hopefully can finish it by tomorrow and then continue on the blog posts and VoD
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 slow progress on weekend, will go full on Monday. I just finished 25% of the ERC-8004 discussion. In overview, I could see the concern being discussed like what to put on-chain vs off-chain. also about scoring/reputation modularity. I don't really know much the detail but I think I can keep it up later.  
   
 I would love to see the scoring or reputation in action.
@@ -23,6 +35,7 @@ I would love to see the scoring or reputation in action.
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 I just finished reading the EIP-8004 but this note is not summary about it yet. It makes sense that the ERC-8004 uses existing standards/protocols such as MCP and A2A. And also it's pretty flexible and extendable into any other upcoming protocol as well.  
   
@@ -37,6 +50,7 @@ Planning to continue on the EIP discussion, that is pretty long. And then on the
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
 
+
 I've listed all the resources I need for the upcoming 2 weeks but mostly it's from this page.  
   
 Today I plan to mainly finish the EIP and read the discussion part. Hopefully can manage into the blog posts.
@@ -46,6 +60,7 @@ Also attended the sharing session, so glad to attend because I can see it direct
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
