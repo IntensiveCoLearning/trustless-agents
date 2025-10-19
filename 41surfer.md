@@ -14,8 +14,26 @@ interest in AI and do want to know more about it "+web3"
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+**Agent2Agent (A2A) 协议**是由 Google 开发并捐赠给 Linux 基金会的开放标准，旨在实现 AI 代理之间的无缝通信和协作。
+
+在代理由不同供应商使用不同框架构建的世界中，A2A 提供了一种通用语言，打破了孤岛并促进了互操作性。
+
+A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建强大代理应用程序的互补标准：
+
+-   **模型上下文协议 (MCP)**：提供[代理到工具的通信](https://cloud.google.com/discover/what-is-model-context-protocol)。它是一种补充标准，用于标准化代理如何连接到其工具、API 和资源以获取信息。
+    
+-   **IBM ACP**：[纳入 A2A 协议](https://github.com/orgs/i-am-bee/discussions/5)
+    
+-   **Cisco agntcy**：用于构建单个复杂代理系统的内部逻辑的框架，通常具有主管/专家结构。
+    
+-   **A2A**：提供代理间通信。作为一种通用的去中心化标准，A2A 充当公共互联网，允许[人工智能代理](https://cloud.google.com/discover/what-are-ai-agents)（包括使用 MCP 或使用 agntcy 等框架构建的代理）进行互操作、协作并共享其发现
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 ## ERC-8004 引入了三个轻量级的链上注册表，作为跨组织代理交互的信任支柱。与试图将所有事务都处理在链上的传统区块链协议不同，ERC-8004 采用了一种混合方法，只在链上存储必要的信任相关数据，同时将复杂的操作委托给链下基础设施。
 
 预计到 2030 年，全球人工智能市场规模将达到 1.8 万亿美元，其中自主代理交互将占到这一增长的很大一部分。然而，当前的信任瓶颈阻碍了代理进入更广泛的专业服务经济领域。ERC-8004 通过提供标准化的信任机制，打破了这一瓶颈，该机制可适用于从简单任务到关键任务操作的各种场景。
@@ -36,6 +54,7 @@ interest in AI and do want to know more about it "+web3"
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
