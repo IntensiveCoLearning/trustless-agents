@@ -14,8 +14,73 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+Here’s a concise summary you can use:
+
+* * *
+
+### **A2A (Agent-to-Agent) Protocol Summary**
+
+**A2A** is a standardized protocol that enables **secure, interoperable communication between AI agents**, regardless of their framework or platform. It allows agents to collaborate seamlessly while maintaining autonomy and protecting proprietary logic.
+
+**Key Benefits**
+
+-   **Secure collaboration:** Uses HTTPS and opaque operations for privacy.
+    
+-   **Interoperability:** Connects agents across different ecosystems.
+    
+-   **Autonomy:** Agents retain their own reasoning and capabilities.
+    
+-   **Simplified integration:** Reduces custom connection work.
+    
+-   **Supports long operations:** Handles streaming and asynchronous tasks.
+    
+
+**Design Principles**
+
+-   Built on familiar web standards (HTTP, JSON-RPC, SSE).
+    
+-   Enterprise-ready with authentication, tracing, and monitoring.
+    
+-   Asynchronous and modality-independent (works beyond text).
+    
+-   Opaque execution ensures IP and data protection.
+    
+
+**Place in the AI Stack**
+
+-   **A2A:** Standardizes agent-to-agent communication.
+    
+-   **MCP (Model Context Protocol):** Connects models to tools and data.
+    
+-   **Frameworks (e.g., ADK, LangGraph):** Build and manage agents.
+    
+-   **Models (LLMs):** Perform reasoning and generation.
+    
+
+**A2A vs MCP**
+
+-   **A2A** focuses on **multi-agent collaboration**.
+    
+-   **MCP** focuses on **connecting models with tools and data**.  
+    They complement each other in the AI ecosystem.
+    
+
+**Lifecycle Overview**
+
+1.  Agent discovery
+    
+2.  Authentication
+    
+3.  API communication
+    
+4.  Long-running or streaming operations
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 1.  初始化代理并将其注册到身份注册表。有 3 种类型的代理。客户端代理将任务分配给服务器代理并提供反馈。服务器代理接受任务和反馈。验证器代理利用不同的信任模型验证任务。
     
 2.  客户端代理通过读取代理卡来发现服务器代理，然后协商作业输出。这种谈判是在链下完成的。
@@ -39,6 +104,7 @@ timezone: UTC+8
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 ### **一、协议核心目标与信任模型**
 
