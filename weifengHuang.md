@@ -14,8 +14,16 @@ I’m a software engineer with a strong interest in Web3, AI, and automation. I�
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+Today, I continued reading the MCP-related protocols and examined their implementation in the official **Chrome DevTools MCP** repository.
+
+In addition, I successfully ran the local environment for the repository [**vistara-apps/erc-8004-example**](https://github.com/vistara-apps/erc-8004-example), although the **agent** component still requires further review and understanding.
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 Today I explored **Google’s A2A protocol** and compared it with **Model Context Protocol (MCP)**.
 
 Although I’ve used several MCP-based tools before, I wasn’t very familiar with its underlying design, so I took a deeper look into the **architecture and transport layers** of MCP.
@@ -31,6 +39,7 @@ This is achieved through the **client layer**, which interprets the model’s in
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 ### [**1\. Discussion on Ethereum Magicians (ERC-8004 Thread)**](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098/9)
 
@@ -92,6 +101,7 @@ ERC-8004 defines **three roles**, not three mandatory components to build:
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/weifengHuang/images/2025-10-15-1760541719099-image.png)
