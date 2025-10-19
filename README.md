@@ -410,7 +410,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ruilinz698](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ruilinz698.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [jickfeng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jickfeng.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [quentinawu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/quentinawu.md) | ⭕️ | ⭕️ | ✅ | ✅ |   | | | | | | | | | |
-| [timerring](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/timerring.md) | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | |
+| [timerring](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/timerring.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | | | | | | | | | |
 | [ErianDeath](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ErianDeath.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Evelyn2044](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Evelyn2044.md) | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | | |
 | [12365448949845](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/12365448949845.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
