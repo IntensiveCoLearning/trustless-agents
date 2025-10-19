@@ -17,19 +17,27 @@ python, C/C++
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+It is Sunday today.
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 Keep reading the document and check the discussions.
 <!-- DAILY_CHECKIN_2025-10-18_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 It's been a busy day, and I only checked others' notes for learning. Nothing more.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 ERC-8004 extends Google’s **Agent-to-Agent (A2A)** protocol by adding a **blockchain-based trust layer**, allowing autonomous agents to interact, verify each other, and build reputation **without centralized control or pre-existing trust**.
@@ -48,6 +56,7 @@ Agents register via the Identity Registry, communicate and exchange tasks using 
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
