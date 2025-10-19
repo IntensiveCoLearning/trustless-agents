@@ -24,4 +24,10 @@ genesis day, 8004 will be more important in the future.
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 everyone can submit reputation is not good
 <!-- DAILY_CHECKIN_2025-10-18_END -->
+
+
+# 2025.10.19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+client did is required
+<!-- DAILY_CHECKIN_2025-10-19_END -->
 <!-- Content_END -->
