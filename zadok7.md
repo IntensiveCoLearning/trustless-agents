@@ -14,8 +14,18 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+\-Important philosophy behind design:  
+  
+Basically: [**ERC-8004**](https://eips.ethereum.org/EIPS/eip-8004) **solves the coordination problem by giving everyone equal data and visibility to create an agent economy**, while leaving specific reputation calculation rules and trust thresholds to the ecosystem.
+
+Key insight.. A2A didn't solve cross organizational trust, ERC-8004 does!
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 **ERC-7701 (Sponsored Interactions)**
 
 -   Lets apps pre-approve and sponsor user actions
@@ -86,6 +96,7 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 # 2025.10.15
 
