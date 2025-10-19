@@ -15,8 +15,154 @@ timezone: UTC-5
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-18
+<!-- DAILY_CHECKIN_2025-10-18_START -->
+**October 18 — ERC-8004 Example (Containerized Demo)**
+
+Today I fully focused on the [https://github.com/vistara-apps/erc-8004-example](https://github.com/vistara-apps/erc-8004-example).  
+So basically the demo works after containerizing it, and this is basically what it is:
+
+We have 3 agents: Alice (server), Bob (validator), and Charlie (the client).  
+They have their own duties:
+
+-   Alice is a crypto market analyst agent
+    
+-   Bob is a quality checker, a validator agent, gives a score
+    
+-   Charlie is the client agent and can give feedback and is authorized to give Alice feedback
+    
+
+**Act 1**  
+Alice, Bob, and Charlie don’t know each other, so they register on-chain via the identity registry in order to prove they are legit.  
+They each get their own agent id (like a business license), so now everyone can know they are real agents.
+
+**Act 2**  
+Alice does her job: she receives a request from Charlie to analyze BTC.  
+She deep dives regarding price trends, support levels, resistances, and makes a conclusion (market is bearish).
+
+**Act 3**  
+The problem is that Alice is new, so no one knows her, no reputation.  
+Alice hires a validator (Bob, who is registered as validator) by:
+
+-   Creating a fingerprint of her work
+    
+-   Paying Bob for validation
+    
+-   Storing the analysis so Bob can review it
+    
+
+**Act 4**  
+Bob receives the analysis request and checks:
+
+-   All required info present?
+    
+-   Good methodology?
+    
+-   Logical conclusion?
+    
+-   Proper risk warnings included?
+    
+-   Meets professional standards?
+    
+
+Then he gives a verdict: 100/100 in this case, and records it in the blockchain, making it immutable.
+
+**Act 5**  
+Alice is happy with Bob's validation and now wants the client to give feedback,  
+so she authorizes Charlie to give feedback about her service.  
+Charlie can now rate Alice. These ratings will build Alice's reputation.  
+Future customers can see these reviews.
+
+**Happy ending**  
+Now when someone asks, can we trust Alice the analyst? They can check the blockchain to find:
+
+-   She's a registered agent
+    
+-   Her work has been validated
+    
+-   She has an authorized feedback system
+    
+-   She completed an audit trail for all the transactions
+    
+
+Initially no one trusted anyone, but the blockchain proved everything.
+
+**Traditional vs ERC-8004**  
+Thinking back to the traditional world:
+
+-   Alice would have needed a university degree
+    
+-   Bob would need to be certified by a certain authority
+    
+-   Charlie would need to use a trusted platform like Yelp or something
+    
+
+These are the reasons ERC-8004 matters.  
+With ERC-8004:
+
+-   No central authority needed
+    
+-   Agents can work with "strangers" safely
+    
+-   Everything is transparent and verifiable
+    
+-   Reputation becomes portable — Alice can take it anywhere
+    
+
+This is the foundation for agents to hire each other, validate work, build reputation — all without humans managing every interaction and creating new economies.
+
+**Found some gaps and questions in the current demo:**
+
+**Who rates Bob?**  
+In the demo, no one is rating Bob.  
+So that Bob is not cheating? Alice?  
+What if Bob is rating all 100/100?  
+Alice could rate Bob back on his validation services.
+
+**Who rates Charlie?**  
+Alice is not rating Charlie in the demo.  
+In real-world thinking (like eBay), it should be reciprocal.  
+Sellers rate buyers and vice versa.  
+Alice could rate Charlie on stuff like:
+
+-   Did he pay on time?
+    
+-   Was his feedback fair?
+    
+-   Was he "easy" to work with?
+    
+
+**What's the difference between Bob's score vs Charlie's feedback?**
+
+**Bob's validation score:**  
+Objectively assesses quality of work, completeness, methodology, accuracy, professionalism.  
+Basically scores: is this work technically sound?  
+Scores: 0–100
+
+**Charlie's feedback score:**  
+Assesses usefulness, timeliness, communication, value.  
+Basically scores: did this work help me? Was the service good?  
+Scores: 1–5
+
+**In real-world examples:**  
+Bob would be a health inspector of a restaurant, ensuring cleanliness, if kitchen is safe, etc.  
+Charlie would be a Yelp reviewer — was the food good?
+
+The scores from Bob and Charlie do not aggregate.  
+They are completely separate and have different purposes.
+
+Bob's score is stored in the validation registry, so people can forever query:  
+What score did Alice get in the BTC analysis? → 100/100
+
+Charlie's score authorization from Alice is stored in the reputation registry contract,  
+but the actual ratings are stored off-chain in this demo.
+
+Basically we can ask: is Charlie authorized to review Alice? → Yes!
+<!-- DAILY_CHECKIN_2025-10-18_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 # Day 3 — Notes (Oct 17, 2025)
 
 ## 📖 Reading
@@ -94,6 +240,7 @@ timezone: UTC-5
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 # Day 2 — ERC-8004 (Trustless Agents) — Study Notes
 
@@ -217,6 +364,7 @@ timezone: UTC-5
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 # Today I learned about ERC 8004
