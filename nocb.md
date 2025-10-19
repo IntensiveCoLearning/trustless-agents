@@ -15,8 +15,45 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+## 什么是x402协议
+
+**AI时代的支付基础设施。**
+
+参考：[https://www.techflowpost.com/article/detail\_28602.html](https://www.techflowpost.com/article/detail_28602.html)
+
+HTTP 402 标准，开发了一套完整的支付协议
+
+通过x402协议，当AI访问需要付费的API时，会收到402状态码和支付要求，然后自动用USDC完成支付，整个过程无需人类干预。
+
+### 先看一个典型的x402交易是如何完成的。
+
+1.  当用户或AI访问一个收费资源时，服务器返回402状态码，同时告诉你：这个服务要0.1 USDC，请付款到这个地址。
+    
+2.  客户端看到后，自动发起USDC转账。
+    
+3.  服务器确认收到钱，立即提供服务。
+    
+
+### 这和传统支付有什么区别？
+
+传统支付网关需要你注册账户、绑定银行卡、通过各种验证。每笔交易都要经过银行、卡组织、支付公司等多个环节，最快也要等T+1才能结算。手续费通常在2-3%，还有各种隐藏费用。
+
+x402完全不同。没有账户体系，不需要注册，任何有钱包的人或AI都能直接支付。支付即结算，收款方几秒内就能拿到钱（取决于用什么链）。最关键的是，协议层面零手续费。
+
+### landscope
+
+![G3c7wAIXYAAJwaK.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/nocb/images/2025-10-19-1760879415197-G3c7wAIXYAAJwaK.jpg)
+
+比如 Firecrawl 提供网页数据抓取API，准备用x402按次收费。
+
+Pinata是最大的IPFS服务商，计划对存储服务启用x402支付。
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 ## 可能的应用场景
 
 ### AI 代理自由市场（ISEK 网络）
@@ -49,6 +86,7 @@ timezone: UTC+8
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 ERC-8004 协议的**作用**是为人工智能代理（AI Agents）提供一个**去中心化、可验证的信任层（trust layer）**，让不同组织或网络中的智能体能够在**无需预先信任的情况下安全地发现、验证并协作**。
 
 这个协议**为什么 可以解决信任问题** ？ 可能的场景是怎样的 ？
@@ -69,6 +107,7 @@ ERC-8004 提出的**核心机制**，正是用 **去中心化的身份 + 声誉 
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 ## ERC-8004
