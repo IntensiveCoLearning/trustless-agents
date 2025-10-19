@@ -299,7 +299,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [JNHFlow21](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JNHFlow21.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [velinussage](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/velinussage.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [NehharShah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/NehharShah.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | ✅ | ⭕️ | ⭕️ | ✅ |   | | | | | | | | | |
+| [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | | | | | | | | | |
 | [Sakkana](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Sakkana.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [TAnNbR](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TAnNbR.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Waiting-Chai](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Waiting-Chai.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -365,7 +365,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [jemoker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jemoker.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [zylg-create](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zylg-create.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [daxang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/daxang.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | |
-| [bilgute](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/bilgute.md) | ⭕️ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
+| [bilgute](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/bilgute.md) | ⭕️ | ✅ | ⭕️ | ✅ | ❌ | | | | | | | | | |
 | [ekarth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ekarth.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [tikpen](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/tikpen.md) | ✅ | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | |
 | [Insomnia501](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Insomnia501.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -444,7 +444,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [acpm444-hub](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/acpm444-hub.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | |
 | [davidrodr1guez](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/davidrodr1guez.md) | ✅ | ✅ | ⭕️ | ⭕️ |   | | | | | | | | | |
 | [CHENFANGC](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/CHENFANGC.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [joyc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/joyc.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ | | | | | | | | | |
+| [joyc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/joyc.md) | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | | |
 | [Melocaramel0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Melocaramel0.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [SkySommer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SkySommer.md) | ⭕️ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 | [kimo-ice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kimo-ice.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
