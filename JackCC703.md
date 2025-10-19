@@ -14,8 +14,55 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+**Agent Payments Protocol (AP2) 的安全使用框架**
+
+-   **AP2 概述：** 它是 Agent2Agent (A2A) 和 Model Context Protocol (MCP) 的开放扩展，通过可验证凭证（VCs）形式的加密签名“授权书”（Mandates）来建立信任，而非仅依赖概率性 AI 推理。
+    
+-   **核心安全机制：** 使用签名授权书来要求确定的用户批准，以对抗 AI 幻觉和虚假交易。
+    
+-   **实施最佳实践包括：**
+    
+    -   **密钥管理：** 使用 TPM/HSM 进行签名；每 90 天轮换密钥；通过 DID 方法撤销受损密钥。
+        
+    -   **授权书验证：** 交易前验证商户签名；签署后检查哈希匹配。
+        
+    -   **注册表设置：** 使用类似于以太坊的账本为代理构建允许列表。
+        
+    -   **加密：** 对授权书有效载荷使用 AES-GCM-256；对跨角色传输使用 PGP。
+        
+    -   **升级协议：** 集成 3DS2；对于 Android，利用 GMSCore DPC 进行生物识别确认。
+        
+    -   **日志记录：** 将授权书存储在防篡改账本中；包括时间戳和代理 ID。
+        
+
+**目标：** 使开发者能够安全部署 AP2，同时促进代理商务创新。
+
+**Google Agent Payments Protocol (AP2) 公告要点**
+
+-   **发布方和日期：** Google Cloud 于 2025 年 9 月 16 日宣布。
+    
+-   **定义：** AP2 是一个开放、共享的协议，旨在安全地发起和执行由 AI 代理主导的跨平台支付交易，为代理和商户提供通用语言，防止生态系统碎片化。
+    
+-   **互操作性：** 它是 Agent2Agent (A2A) 协议和 Model Context Protocol (MCP) 的开放扩展。
+    
+-   **核心安全机制：**
+    
+    -   **授权书（Mandates）：** AP2 通过使用“授权书”（经过加密签名的防篡改数字合同）来构建信任。
+        
+    -   **可验证证据：** 授权书以可验证凭证（VCs）签名，作为用户指令的可验证证据，是每笔交易的基础。
+        
+-   **支持的支付类型：** 支持多种支付方式，包括信用卡、借记卡、稳定币和实时银行转账。
+    
+-   **生态合作：** 协议的发布得到了包括 Mastercard、American Express、PayPal、Coinbase、Adyen 等 60 多家公司的支持与贡献。
+    
+-   **重要性：** AP2 旨在解决现有支付系统在 AI 代理进行交易时出现的授权、真实性和问责制等挑战，为 AI 驱动的商务建立安全、可互操作的生态系统。
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 运行的时候一直在报错，排查不出原因
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-18-1760763722256-image.png)
@@ -23,6 +70,7 @@ timezone: UTC+8
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 ## **ERC-8004目标**
 
@@ -47,6 +95,7 @@ timezone: UTC+8
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
 
+
 今天部署了ERC-8004合约并与之交互了
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/JackCC703/images/2025-10-16-1760614208342-image.png)
@@ -58,6 +107,7 @@ timezone: UTC+8
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
