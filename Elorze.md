@@ -14,8 +14,34 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+10.11爆仓事件：极端市场，脚本或AI驱动的机器人可能因为连锁反应放大风险。
+
+REA相关的life3.0创世经济，AI驱动的
+
+bitseek eth 上海 workshop:
+
+1、turstless AI agents
+
+AI\*ETH：如何让一个AI代理在链上自证身份、能力和清白。和ERC8004强相关
+
+怎么解决验证的问题？
+
+2、AUTONOMOUS DEFI OPS
+
+财务助手，在黑天鹅时间下保护我们的财产
+
+3、公共物品
+
+让AI从“顾问”升级乘一个可信任的执行者。
+
+bitseek模型API：https://bitseek-gitbook.vercel.app
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 [https://www.youtube.com/watch?v=8lsJ7zLa2Pk：](https://www.youtube.com/watch?v=8lsJ7zLa2Pk：)
 
 更详细地介绍了三种AI AGENT FRAMEWORK：
@@ -31,6 +57,7 @@ LANGRAPH:
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 [https://www.youtube.com/watch?v=VChRPFUzJGA](https://www.youtube.com/watch?v=VChRPFUzJGA):
 
