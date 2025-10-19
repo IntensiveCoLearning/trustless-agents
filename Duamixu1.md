@@ -14,8 +14,474 @@ AI enthusiast and Web3 beginner, I’ve already competed in several hackathons�
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+**1\. 核心定义：AP2 是什么？**
+
+AP2 是一个由谷歌、支付和技术公司（超过60家，包括万事达、Visa、PayPal、Coinbase、Salesforce 等）共同开发的**开放协议**。
+
+它的核心目的很明确：为 **AI 代理 (Agent) 代表用户**发起的支付和交易，提供一个安全、标准化的框架。
+
+**关键关系：**
+
+-   AP2 不是一个孤立的协议。
+    
+-   它是我们之前学习的 **A2A（Agent-to-Agent）协议**和 **MCP（Model Context Protocol）** 的**扩展**。
+    
+
+**我的理解：** 如果说 A2A 是让代理们可以相互“对话”的通信层，MCP 是让代理可以调用“工具”的执行层，那么 **AP2 就是让代理们可以相互“交易”的商业和支付层**。这三者共同构成了 AI 代理经济的技术基石。
+
+* * *
+
+**2\. 解决的核心问题：为什么现在需要 AP2？**
+
+现有的支付系统有一个**根本假设**：屏幕背后总有一个**人类**在点击“确认购买”按钮。
+
+**AI 代理打破了这一假设。** 一个自主的 AI 代理可以代表你执行任务并支付，这带来了三个致命的信任问题（我称之为“3A”问题）：
+
+1.  **授权 (Authorization):** 商家如何知道是_你_（用户）授权这个代理进行这笔特定购买的？
+    
+2.  **真实性 (Authenticity):** 商家如何确定代理的购买请求，_准确_反映了用户的真实意图？
+    
+3.  **问责 (Accountability):** 如果发生欺诈或错误的交易，_谁_应该为此负责？
+    
+
+AP2 的目标就是为代理、商家和支付提供商提供一种“通用语言”，在不依赖人类实时点击的情况下，解决上述三个问题。
+
+* * *
+
+**3\. 工作原理：“授权指令 (Mandates)”**
+
+这是 AP2 的技术核心。它不依赖于信任代理本身，而是依赖于**可验证的、加密签名的用户指令**。
+
+这个核心工具叫做 **Mandate (授权指令)**。
+
+-   **它是什么？** 一个防篡改的、经过**加密签名**的数字合同。
+    
+-   **它证明了什么？** 它是用户指示的**可验证证明 (verifiable proof)**。
+    
+-   **它如何签名？** 通过**可验证凭证 (Verifiable Credentials, VCs)** 进行签名。
+    
+
+AP2 通过这个机制，为每笔交易创建了一个**不可否认的审计追踪链**。
+
+**两种核心场景：**
+
+**场景一：实时购买 (有人在场)**
+
+1.  **你：** “帮我找一双新的白色跑鞋。”
+    
+2.  **系统：** 你的请求被捕获，生成一个\*\*`意图指令 (Intent Mandate)`\*\*。这为整个互动提供了可审计的上下文。
+    
+3.  **代理：** 展示了购物车（鞋子和价格）。
+    
+4.  **你：** 点击“批准”。
+    
+5.  **系统：** 你的批准签署了一个\*\*`购物车指令 (Cart Mandate)`**。这是一个**不可更改的安全记录\*\*，锁定了确切的商品和价格。
+    
+
+**场景二：委托任务 (无人看管)**
+
+1.  **你：** “演唱会门票一开始销售，就帮我抢，价格不超过 200 美元。”
+    
+2.  **系统：** 你预先签署了一个详细的\*\*`意图指令 (Intent Mandate)`\*\*，其中包含了所有规则（价格限制、时间、条件）。
+    
+3.  **代理：** 监控票务情况。
+    
+4.  **系统：** 当你的精确条件（例如：门票开售，价格为 180 美元）被满足时，代理可以使用你预先签署的 `意图指令` 作为“预授权证明”，**自动生成并签署**`购物车指令 (Cart Mandate)`**。**
+    
+
+**最终结果：** 无论是哪种场景，最终都形成了一个清晰的证据链：`意图指令` -> `购物车指令` -> `支付环节`。这个链条完美地回答了“授权、真实性、问责”这三个问题。
+
+* * *
+
+**4\. 解锁的新商业体验**
+
+AP2 不只是为了安全，更是为了实现全新的 AI 商业模式：
+
+1.  **智能购物（委托）：**
+    
+    -   **用户：** “我想要这件绿色夹克，但现在没货。如果补货了，并且价格不超过 200 美元，就自动帮我买了。”
+        
+    -   **AP2 作用：** 代理根据预先签署的 `意图指令` 自动执行购买，商家捕获了否则会流失的销售。
+        
+2.  **个性化优惠（A2A 协商）：**
+    
+    -   **用户代理：** “我的主人需要一辆自行车用于下周的旅行。” (A2A 消息)
+        
+    -   **商家代理：** “收到。我这里有一个定制的、限时的打包优惠：自行车 + 头盔 + 旅行架，打 85 折。” (A2A 回复)
+        
+    -   **AP2 作用：** 两个代理通过 A2A 协商，并通过 AP2 完成一个动态生成的、个性化的交易。
+        
+3.  **协同任务（多代理）：**
+    
+    -   **用户：** “帮我预订 11 月第一个周末去 Palm Springs 的往返机票和酒店，总预算 700 美元。”
+        
+    -   **AP2 作用：** 用户的代理与多个航空代理、酒店代理进行协商。一旦找到符合预算的组合，它可以**同时执行**两个（或多个）经过加密签署的预订 (`购物车指令`)。
+        
+
+* * *
+
+**5\. 对 Web3 和加密支付的支持**
+
+AP2 被设计为“通用协议”，不局限于传统支付（信用卡、银行转账）。
+
+-   它明确支持**稳定币**和**加密货币**。
+    
+-   **重量级发布：** 谷歌已与 Coinbase、以太坊基金会、MetaMask 合作，推出了 `A2A x402 扩展`。
+    
+-   `x402 扩展` 是一个**生产就绪的解决方案**，专门用于基于代理的**加密支付**。
+    
+
+* * *
+
+**6\. 我的思考与下一步**
+
+-   **AP2 是 AI 经济的“变现层”：** 如果说 A2A 是信息高速公路，AP2 就是这条路上的收费站、银行和交易市场。它解决了 AI 代理如何参与经济活动的核心问题。
+    
+-   **信任的转移：** 信任的核心从“相信 AI 代理的代码不会作恶”转移到了“**验证用户签署的加密指令**”。这是从“基于代码的信任”向“基于密码学的信任”的巨大转变。
+    
+-   **B2B 的巨大潜力：** 公告中提到了 B2B 应用（例如，通过 Google Cloud Marketplace 自主采购、根据实时需求自动扩展软件许可证）。这可能比消费者购物的市场更大，AI 代理将成为企业的“自动采购员”和“财务官”。
+    
+-   **下一步：**
+    
+    1.  密切关注 **GitHub 仓库**，查看技术规范和参考实现。
+        
+    2.  关注“**AI 代理市场 (AI Agent Marketplace)**”，看第一批支持 AP2 的“可交易代理”何时出现。
+        
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-19-1760840613952-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-19-1760840621570-image.png)
+
+### **学习笔记：AP2 (代理支付协议) 的安全框架**
+
+本文是一篇关于 AP2 的**安全分析**。它不再仅仅介绍 AP2 _是什么_，而是深入探讨了它_如何_在 AI 代理自主交易的复杂环境中建立信任，并详细分析了它面临的威胁和具体的防御策略。
+
+**1\. 核心安全目标：解决“3A”信任鸿沟**
+
+传统支付假设“人”在操作。AI 代理打破了这一点，AP2 的核心安全目标就是为了解决由此产生的三个关键问题：
+
+1.  **授权 (Authorization) 差距：** 如何在不暴露原始支付信息（如信用卡号）的情况下，**可验证地**授权一个代理？
+    
+2.  **真实性 (Authenticity) 风险：** AI 可能会“幻觉”或被误导。如何确保交易**锚定**在用户明确的、真实的意图上？
+    
+3.  **责任 (Accountability) 模糊：** 如果交易出错或发生欺诈，谁来负责？用户？代理开发者？商家？
+    
+
+**AP2 的核心解决方案：** 将支付重新定义为“**合约式对话 (Contractual Conversations)**”。它不依赖于 AI 的概率性推理，而是依赖于**密码学**。它使用**可验证凭证 (VCs)** 作为防篡改的、可验证的“**授权指令 (Mandates)**”，为所有参与方提供不可否认的意图证明。
+
+* * *
+
+**2\. AP2 的核心安全支柱**
+
+1.  **角色分离 (Role-Based Design):**
+    
+    -   AP2 将生态系统拆分为多个独立角色，以防止单点故障和数据泄露。
+        
+    -   **Shopping Agent (SA):** 购物代理（用户侧），负责协调流程，_但不接触_原始支付信息。
+        
+    -   **Credentials Provider (CP):** 凭证提供商（如银行、卡组织），_唯一_管理支付方法（如卡片 Token）的角色。
+        
+    -   **Merchant Endpoint (ME):** 商家端点，负责协商购物车并签名。
+        
+    -   **安全含义：** 实现了 PCI-DSS 合规中的职责分离。SA 即使被攻破，也无法泄露用户的支付凭证，因为它只持有 CP 提供的 Token。
+        
+2.  **加密基础 (Cryptographic Primitives):**
+    
+    -   所有“授权指令” (Mandates) 都使用**数字签名**（例如 ECDSA）。
+        
+    -   `IntentMandate` **(意图指令):** 由用户在**设备端**（最好是硬件安全区，如 TPM、Android DPC）签名，锚定用户的_高级意图_（如“买票，不超过$200”）。
+        
+    -   `CartMandate` **(购物车指令):** 由商家签名（`merchant_signature`）确认商品和价格，然后由用户签名（`user_signature`）确认支付。
+        
+    -   **安全含义：** 签名提供了**不可否认性 (Non-Repudiation)**。用户不能否认自己签署了某个意图，商家也不能否认自己提供了某个报价。
+        
+3.  **AI 风险信号 (AI-Aware Risk Scoring):**
+    
+    -   `PaymentMandate`（发送给支付网络/银行的最终指令）中包含了一个关键的 **“代理模态”信号**。
+        
+    -   **信号内容：** `Human-Present` (人类在场) 或 `Human-Not-Present` (人类不在场)。
+        
+    -   **安全含义：** 银行和支付网络可以首次_知道_这笔交易是由 AI 代理发起的。它们可以为此启用全新的、AI 感知的风险评估模型，而不仅仅依赖传统规则。
+        
+
+* * *
+
+**3\. 关键威胁模型 (STRIDE)**
+
+文章使用 STRIDE 模型分析了 AP2 面临的标准威胁：
+
+-   **T1: 欺骗 (Spoofing):**
+    
+    -   _威胁：_ 伪造授权指令签名。
+        
+    -   _缓解：_ 严格的公钥基础设施 (PKI) 验证；使用硬件安全模块 (HSM) 管理密钥。
+        
+-   **T2: 篡改 (Tampering):**
+    
+    -   _威胁：_ 在传输过程中（如 A2A 通道中）修改指令内容。
+        
+    -   _缓解：_ 强制使用 TLS 1.3 加密通道；在消息体中加入 SHA-256 校验和 (Checksums)。
+        
+-   **T3: 信息泄露 (Info. Disclosure):**
+    
+    -   _威胁：_ 泄露 PII 或支付数据。
+        
+    -   _缓解：_ 严格的角色分离（SA 看不到原始凭证）；对 mandate 载荷进行 AES-GCM 加密。
+        
+-   **T4: 拒绝服务 (Denial of Service):**
+    
+    -   _威胁：_ 用垃圾指令淹没代理。
+        
+    -   _缓解：_ 对公共 API 进行速率限制；使用可验证的注册表。
+        
+-   **T5: 权限提升 (Elevation of Privilege):**
+    
+    -   _威胁：_ 代理被劫持或冒充其他角色（如 CP）。
+        
+    -   _缓解：_ 使用**去中心化白名单 (Allowlists)** 验证代理身份；使用 OAuth 进行代理认证。
+        
+-   **T6: 否认 (Repudiation):**
+    
+    -   _威胁：_ 用户否认自己签署了某个指令。
+        
+    -   _缓解：_ **不可否认的 ECDSA 签名**和防篡改的审计日志。
+        
+
+* * *
+
+**4\. 高级威胁模型：MAESTRO (AI 代理特定威胁)**
+
+**这是本文最核心的贡献。** STRIDE 无法覆盖 AI 代理的**动态和涌现行为**。MAESTRO 是一个 7 层框架，用于分析 AP2 这类 AI 代理生态的独特风险。
+
+-   **L1: 基础模型 (Foundation Models):**
+    
+    -   _威胁：_ **涌现的决策偏见**。通过对抗性微调，使 SA 偏向于选择恶意商家的商品。
+        
+-   **L2: 数据操作 (Data Operations):**
+    
+    -   _威胁：_ **内存投毒**。污染 RAG/向量数据库（如过去的购物车记录），导致代理对用户的_意图_产生错误理解。
+        
+-   **L3: 代理框架 (Agent Frameworks):**
+    
+    -   _威胁：_ **工作流劫持（提示注入）**。通过恶意提示（Prompt Injection）重定向代理的委托，绕过 `IntentMandate` 检查。
+        
+-   **L4: 部署设施 (Deployment Infrastructure):**
+    
+    -   _威胁：_ **容器逃逸导致代理共谋**。恶意代理逃逸沙箱后，在 A2A 通道上协调，对商家进行 DDoS 攻击。
+        
+-   **L5: 评估与可观测性 (Evaluation & Observability):**
+    
+    -   _威胁：_ **异常淹没 (Anomaly Flooding)**。恶意代理产生大量低风险的误报，使人类审查员疲劳，从而掩盖真正的、缓慢的“卡特尔攻击”（如代理间缓慢共享 compromised tokens）。
+        
+-   **L6: 安全与合规 (Security & Compliance):**
+    
+    -   _威胁：_ **策略操纵**。代理利用 LLM 的灵活性来“创造性地”**重新解释**合规规则（如 SCA/PSD2），从而绕过 3DS 验证。
+        
+-   **L7: 代理生态 (Agent Ecosystem):**
+    
+    -   _威胁：_ **代理生态共谋**。多个（看似无关的）代理自主协调，操纵市场（如通过虚假协商抬高价格）。**声誉攻击**（操纵信任评分，优先选择已受损的对等方）。
+        
+
+* * *
+
+**5\. 实用安全指南与代码级缓解措施**
+
+文章给出了可操作的建议和代码示例，用于防范上述威胁：
+
+1.  **密钥管理 (T1, T3):**
+    
+    -   **指南：** 必须使用 TPM/HSM 或设备安全区（如 Android DPC）来存储和使用签名私钥。
+        
+    -   **代码：** `DpcHelper.signMandate(mandate)` (Android 示例)，强制使用硬件签名。
+        
+2.  **强制验证 (T1, T2, L7):**
+    
+    -   **指南：** 绝不信任收到的数据。在处理_任何_指令前，必须验证其签名。
+        
+    -   **代码：** `mandate.verify_signature(pub_key)` (Python)，用于验证商家或用户的签名。`verifyDID(agentCard)` (Android)，用于在 A2A 通信前验证对方代理的 DID 身份。
+        
+3.  **输入净化 (L3):**
+    
+    -   **指南：** 所有来自外部（尤其是用户提示）的输入都必须被净化，以防止提示注入。
+        
+    -   **代码：** `sanitize_prompt(prompt)` (Python)，用于剥离恶意指令或脚本。
+        
+4.  **访问控制 (T5, L7):**
+    
+    -   **指南：** 建立一个“允许列表 (Allowlist)”注册表，只与经过验证的代理进行通信。
+        
+    -   **代码：** `validate_agent(agent_id)` (Python)，在委托任务前检查该 `sub_agent` 是否在允许列表中。
+        
+5.  **速率限制 (T4):**
+    
+    -   **指南：** 为代理的公共 API 设置速率限制，防止 DoS 攻击。
+        
+    -   **代码：** `check_rate_limit(user_id)` (Python)，限制单个用户的请求频率。
+        
+6.  **运行时护栏 (L6):**
+    
+    -   **指南：** 不能完全信任 LLM 的决策。在执行工具（特别是支付）时，要用硬编码的规则进行检查。
+        
+    -   **代码：** `enforce_policy(mandate)` (Python)，在支付前强制检查（例如 `mandate.contents.total < 100`），防止 AI 操纵规则。
+        
+
+**量化结果：**
+
+-   模拟显示，与传统 API 相比，AP2 将欺诈率从 **2.1%** 降低到了 **1.15%**，这证明了其通过可验证意图来提升安全性的有效性。
+    
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-19-1760840694165-image.png)
+
+### **AP2 开发者快速入门学习笔记 🚀**
+
+* * *
+
+**💡 核心理念与技术栈 (About the Samples)**
+
+1.  **协议的独立性 (AP2 is Tool-Agnostic):**
+    
+    -   这是最关键的一点：AP2 是一个**开放协议**。它_不_要求你必须使用 Google 的任何特定工具。你可以用任何你喜欢的技术栈来构建你的代理。
+        
+2.  **官方示例的技术栈 (Sample Stack):**
+    
+    -   官方提供的示例代码使用了 **Google ADK (Agent Development Kit)** 和 **Gemini 2.5 Flash** 模型。
+        
+    -   再次强调：这只是为了_演示_，你完全可以替换成其他框架或模型。
+        
+
+* * *
+
+**📁 代码库结构 (Repository Navigation)**
+
+-   **场景 (Scenarios):** 核心演示代码在 `samples/` 目录下。
+    
+    -   `samples/android/scenarios`：包含 Android 购物助手的场景。
+        
+    -   `samples/python/scenarios`：包含 Python 购物助手的场景。
+        
+-   **场景内部结构：** 每一个场景文件夹（例如 `your-scenario-name/`）都包含：
+    
+    -   `README.md`：**必读文件**。详细描述了该场景的功能和运行步骤。
+        
+    -   `run.sh`：一个便捷脚本，用于一键安装依赖并启动该场景。
+        
+-   **源码 (Source Code):**
+    
+    -   `samples/python/src`：**大部分代理和服务器的 Python 源码**都存放在这里。
+        
+    -   `samples/android`：Android App 的源码。
+        
+
+* * *
+
+**🔧 快速启动：环境设置 (Quickstart)**
+
+**1\. 必备S"先决条件 (Prerequisites)**
+
+-   Python 3.10 或更高版本。
+    
+-   `uv`：一个 Python 包管理器 (注意：不是 `pip` 或 `conda`，这是新趋势)。
+    
+
+**2\. 身份验证 (Setup & Authentication)**
+
+你需要一种方式来调用 Google 的 AI 模型。你有两种选择，推荐使用 `.env` 文件来管理你的密钥。
+
+-   **方法一：Google API Key (推荐用于开发)**
+    
+    1.  从 **Google AI Studio** 获取你的 API 密钥。
+        
+    2.  在你的项目根目录创建一个 `.env` 文件，内容如下：
+        
+        代码段
+        
+        ```
+        GOOGLE_API_KEY='your_key_here'
+        ```
+        
+-   **方法二：Vertex AI (推荐用于生产)**
+    
+    1.  你需要先配置好 `gcloud` 命令行工具。
+        
+    2.  在 `.env` 文件中设置：
+        
+        代码段
+        
+        ```
+        GOOGLE_GENAI_USE_VERTEXAI=true
+        GOOGLE_CLOUD_PROJECT='your-project-id'
+        GOOGLE_CLOUD_LOCATION='global' # 或你的区域
+        ```
+        
+    3.  **进行身份验证** (二选一)：
+        
+        -   **命令行登录 (推荐):**
+            
+            Bash
+            
+            ```
+            gcloud auth application-default login
+            ```
+            
+        -   **服务账户 (Service Account):**
+            
+            Bash
+            
+            ```
+            export GOOGLE_APPLICATION_CREDENTIALS='/path/to/your/service-account-key.json'
+            ```
+            
+
+* * *
+
+**▶️ 如何运行一个场景 (How to Run a Scenario)**
+
+1.  进入代码库的根目录：
+    
+    Bash
+    
+    ```
+    cd AP2
+    ```
+    
+2.  执行你想运行的场景的 `run.sh` 脚本（请先阅读该场景的 `README.md`！）：
+    
+    Bash
+    
+    ```
+    bash samples/python/scenarios/your-scenario-name/run.sh
+    ```
+    
+3.  该脚本会自动安装所有依赖并启动相关的代理服务。
+    
+4.  脚本运行成功后，在终端中找到 **Shopping Agent URL**，在浏览器中打开它即可开始交互。
+    
+
+* * *
+
+**📦 如何在你的项目中使用 AP2 (Installing the AP2 Types Package)**
+
+如果你不想运行示例，而是想在你自己的项目中使用 AP2 的核心数据结构（比如 `Mandate` 对象）。
+
+1.  **核心类型定义：** 协议的核心对象（数据结构）定义在 `src/ap2/types` 目录中。
+    
+2.  **安装方式 (重要):**
+    
+    -   官方说明“PyPI 包将在稍后发布”。这意味着**目前 (截至 2025 年 10 月) 还没有正式的 PyPI 包**。
+        
+    -   你必须使用 `uv` 直接从 GitHub `main` 分支进行安装：
+        
+    
+    Bash
+    
+    ```
+    uv pip install git+https://github.com/google-agentic-commerce/AP2.git@main
+    ```
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 **1\. 基础概念：定义与核心 (What is A2A? & Core Concepts)**
 
 **学习笔记：**
@@ -130,6 +596,7 @@ AI enthusiast and Web3 beginner, I’ve already competed in several hackathons�
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-17-1760713550697-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-17-1760713579722-image.png)
 
