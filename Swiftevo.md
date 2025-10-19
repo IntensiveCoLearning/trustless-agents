@@ -14,8 +14,18 @@ Swift Evo
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+[https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)
+
+繼續和AI對話，學習 8004 的 coding ；同時嘗試了解 MCP, A2A 與 ADK 的分別  
+  
+[https://codelabs.developers.google.com/codelabs/currency-agent?hl=zh\_tw#0](https://codelabs.developers.google.com/codelabs/currency-agent?hl=zh_tw#0)
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 [https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)
 
 透過 bot 學習整個佈署的流程，了解當中不明白的專業名語及工具，一一拆解以下兩部份。明天繼續下一步部份的學習。
@@ -33,11 +43,13 @@ bash npm install --save-dev hardhat npx hardhat init
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
 
+
 參加了 workshop ，對於 ERC 8004 的整理流程有了進一步理解，也提出了關於注冊的相關問題
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
