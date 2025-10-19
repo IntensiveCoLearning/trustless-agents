@@ -14,8 +14,75 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+[https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
+
+To maximize the benefits from agentic AI, it is critical for these agents to be able to collaborate in a dynamic, multi-agent ecosystem across siloed data systems and applications.
+
+The A2A protocol will allow AI agents to communicate with each other, securely exchange information, and coordinate actions on top of various enterprise platforms or applications.
+
+-   **Secure by default**: A2A is designed to support enterprise-grade authentication and authorization, with parity to OpenAPI’s authentication schemes at launch.
+    
+
+A2A facilitates communication between a "client" agent and a “remote” agent. A client agent is responsible for formulating and communicating tasks, while the remote agent is responsible for acting on those tasks in an attempt to provide the correct information or take the correct action.
+
+several key capabilities:
+
+-   **Capability discovery:** Agents can advertise their capabilities using an “Agent Card” in JSON format, allowing the client agent to identify the best agent that can perform a task and leverage A2A to communicate with the remote agent.
+    
+
+-   **Task management:** The communication between a client and remote agent is oriented towards task completion, in which agents work to fulfill end-user requests. This “task” object is defined by the protocol and has a lifecycle. It can be completed immediately or, for long-running tasks, each of the agents can communicate to stay in sync with each other on the latest status of completing a task. The output of a task is known as an “artifact.”
+    
+
+-   **Collaboration:** Agents can send each other messages to communicate context, replies, artifacts, or user instructions.
+    
+
+-   **User experience negotiation:** Each message includes “parts,” which is a fully formed piece of content, like a generated image. Each part has a specified content type, allowing client and remote agents to negotiate the correct format needed and explicitly include negotiations of the user’s UI capabilities–e.g., iframes, video, web forms, and more.
+    
+
+[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
+
+A2A is situated within a broader agent stack, which includes:
+
+-   **A2A:** Standardizes communication among agents deployed in different organizations and developed using diverse frameworks.
+    
+-   **MCP:** Connects models to data and external resources.
+    
+-   **Frameworks (like ADK):** Provide toolkits for constructing agents.
+    
+-   **Models:** Fundamental to an agent's reasoning, these can be any Large Language Model (LLM).
+    
+
+### A2A Request Lifecycle[¶](https://a2a-protocol.org/latest/topics/what-is-a2a/#a2a-request-lifecycle)
+
+The A2A request lifecycle is a sequence that details the four main steps a request follows: agent discovery, authentication, `sendMessage` API, and `sendMessageStream` API.
+
+## Core Actors in A2A Interactions[¶](https://a2a-protocol.org/latest/topics/key-concepts/#core-actors-in-a2a-interactions)
+
+-   **User**: The end user, which can be a human operator or an automated service. The user initiates a request or defines a goal that requires assistance from one or more AI agents.
+    
+-   **A2A Client (Client Agent)**: An application, service, or another AI agent that acts on behalf of the user. The client initiates communication using the A2A protocol.
+    
+-   **A2A Server (Remote Agent)**: An AI agent or an agentic system that exposes an HTTP endpoint implementing the A2A protocol. It receives requests from clients, processes tasks, and returns results or status updates. From the client's perspective, the remote agent operates as an _opaque_ (black-box) system, meaning its internal workings, memory, or tools are not exposed.
+    
+
+## Fundamental Communication Elements[¶](https://a2a-protocol.org/latest/topics/key-concepts/#fundamental-communication-elements)
+
+The following table describes the fundamental communication elements in A2A:
+
+| Element | Description | Key Purpose |
+| --- | --- | --- |
+| Agent Card | A JSON metadata document describing an agent's identity, capabilities, endpoint, skills, and authentication requirements. | Enables clients to discover agents and understand how to interact with them securely and effectively. |
+| Task | A stateful unit of work initiated by an agent, with a unique ID and defined lifecycle. | Facilitates tracking of long-running operations and enables multi-turn interactions and collaboration. |
+| Message | A single turn of communication between a client and an agent, containing content and a role ("user" or "agent"). | Conveys instructions, context, questions, answers, or status updates that are not necessarily formal artifacts. |
+| Part | The fundamental content container (for example, TextPart, FilePart, DataPart) used within Messages and Artifacts. | Provides flexibility for agents to exchange various content types within messages and artifacts. |
+| Artifact | A tangible output generated by an agent during a task (for example, a document, image, or structured data). | Delivers the concrete results of an agent's work, ensuring structured and retrievable outputs. |
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 [https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
 
 ERC-8004 Trustless Agents represents a fundamental breakthrough extending Google's proven Agent-to-Agent (A2A) protocol with blockchain-based trust mechanisms that enable autonomous agents to discover, validate, and collaborate across untrusted networks.
@@ -168,6 +235,7 @@ zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、�
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -209,11 +277,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -279,6 +349,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
