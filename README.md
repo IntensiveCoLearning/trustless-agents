@@ -331,7 +331,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [wang-jin-bin](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wang-jin-bin.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Link-990](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Link-990.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [SU-AN-coder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SU-AN-coder.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | |
-| [Elorze](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Elorze.md) | ✅ | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | |
+| [Elorze](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Elorze.md) | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | | | | | | | | | |
 | [Tengfei-Ma13206](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Tengfei-Ma13206.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Darkells](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Darkells.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | |
 | [Juicewithice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Juicewithice.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -430,7 +430,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Felipe-Tabares](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Felipe-Tabares.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [DavidZapataOh](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/DavidZapataOh.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [qingfengzxr](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/qingfengzxr.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | |
-| [0xultravioleta](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xultravioleta.md) | ✅ | ✅ | ✅ | ✅ | | | | | | | | | | |
+| [0xultravioleta](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xultravioleta.md) | ✅ | ✅ | ✅ | ✅ |   | | | | | | | | | |
 | [neal-zhu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/neal-zhu.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [rayjun](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/rayjun.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [WandQ](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/WandQ.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -442,13 +442,13 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [leopc999](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/leopc999.md) | ✅ | ✅ | ✅ | ⭕️ |   | | | | | | | | | |
 | [wwk123](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/wwk123.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [acpm444-hub](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/acpm444-hub.md) | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | | |
-| [davidrodr1guez](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/davidrodr1guez.md) | ✅ | ✅ | ⭕️ |   | | | | | | | | | | |
+| [davidrodr1guez](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/davidrodr1guez.md) | ✅ | ✅ | ⭕️ | ⭕️ |   | | | | | | | | | |
 | [CHENFANGC](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/CHENFANGC.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [joyc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/joyc.md) | ✅ | ⭕️ | ✅ | ✅ |   | | | | | | | | | |
 | [Melocaramel0](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Melocaramel0.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [SkySommer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/SkySommer.md) | ⭕️ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 | [kimo-ice](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kimo-ice.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
-| [0xalejolr420-boop](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xalejolr420-boop.md) | ⭕️ | ✅ | ⭕️ |   | | | | | | | | | | |
+| [0xalejolr420-boop](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xalejolr420-boop.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | |
 | [tumiao233](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/tumiao233.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [BromdenX](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BromdenX.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [mmchougule](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/mmchougule.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -483,8 +483,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
-| [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | | | | | | | | | | |
+| [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
