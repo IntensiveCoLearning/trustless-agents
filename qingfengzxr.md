@@ -14,8 +14,15 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+观看ERC-8004的Workshop:  
+[https://www.bilibili.com/video/BV1ChWkzvEdf/?vd\_source=a5b3dc7305ae6e3f310852f7273a82a2](https://www.bilibili.com/video/BV1ChWkzvEdf/?vd_source=a5b3dc7305ae6e3f310852f7273a82a2)
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 ## 什么是A2A协议？
 
 The A2A protocol is an open standard that enables seamless communication and collaboration between AI agents. It provides a common language for agents built using diverse frameworks and by different vendors, fostering interoperability and breaking down silos. Agents are autonomous problem-solvers that act independently within their environment. A2A allows agents from different developers, built on different frameworks, and owned by different organizations to unite and work together.
@@ -61,6 +68,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
+
 ## 1.阅读了其他同学的笔记，获得了对ERC-8004的一些新的想法。
 
 ## **This Protocol Enables**
@@ -88,6 +96,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 首先阅读了EIP-8004的提案内容：[https://eips.ethereum.org/EIPS/eip-8004。](https://eips.ethereum.org/EIPS/eip-8004。)
