@@ -14,8 +14,118 @@ I’m a software engineer with a strong interest in Web3, AI, and automation. I�
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+Today I continued studying the A2A protocol, focusing on **Agent Cards**, and examined two examples — one simple and one complex, real-world case.
+
+```
+{
+  "protocolVersion": "0.3.0",
+  "name": "Hello World Agent",
+  "description": "Simple text skill",
+  "url": "https://hello.example.com/a2a/v1",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "capabilities": { "streaming": true },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "skills": [{ "id": "hello", "name": "Say Hello", "description": "Returns greeting" }]
+}
+```
+
+```
+{
+  "protocolVersion": "0.3.0",
+  "name": "ProcureGuard – Purchasing Risk Auditor",
+  "description": "Performs risk checks on purchase orders/invoices, sanctions screening for suppliers, and orchestrates RPA actions (e.g., hold/freeze, evidence collection).",
+  "url": "https://procureguard.example.com/a2a/v1",
+  "preferredTransport": "JSONRPC",
+  "additionalInterfaces": [
+    { "url": "https://procureguard.example.com/a2a/v1",  "transport": "JSONRPC" },
+    { "url": "https://procureguard.example.com/a2a/grpc", "transport": "GRPC"   },
+    { "url": "https://procureguard.example.com/a2a/rest", "transport": "HTTP+JSON" }
+  ],
+  "provider": { "organization": "Example Fintech Ltd.", "url": "https://fintech.example.com" },
+  "iconUrl": "https://procureguard.example.com/icon.png",
+  "version": "1.2.3",
+  "documentationUrl": "https://docs.fintech.example.com/procureguard",
+  "capabilities": { "streaming": true, "pushNotifications": true, "stateTransitionHistory": true },
+  "securitySchemes": {
+    "oauth": {
+      "type": "oauth2",
+      "flows": {
+        "clientCredentials": {
+          "tokenUrl": "https://auth.example.com/oauth/token",
+          "scopes": {
+            "a2a.call": "Call A2A endpoints",
+            "risk.read": "Read risk reports",
+            "rpa.invoke": "Invoke RPA actions"
+          }
+        }
+      }
+    },
+    "api-key": { "type": "apiKey", "in": "header", "name": "X-API-Key" },
+    "mtls": { "type": "mutualTLS" }
+  },
+  "security": [
+    { "oauth": ["a2a.call", "risk.read"] },
+    { "api-key": [], "mtls": [] }
+  ],
+  "defaultInputModes":  ["application/json", "text/plain"],
+  "defaultOutputModes": ["application/json", "application/pdf"],
+  "skills": [
+    {
+      "id": "invoice-risk-check",
+      "name": "Invoice & PO Risk Check",
+      "description": "Validate invoice/PO consistency, anomaly scoring (amount splits, repeated vendors), contract linkage, VAT checks.",
+      "tags": ["risk", "invoice", "po", "finance", "compliance"],
+      "examples": [
+        "Check risks for PO #A-2025-0912 and Invoice INV-88901.",
+        "{\"poId\":\"A-2025-0912\",\"invoiceId\":\"INV-88901\",\"rules\":[\"split-detect\",\"vat-valid\"],\"attachments\":[\"a2a:file:po.pdf\",\"a2a:file:inv.pdf\"]}"
+      ],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json", "application/pdf"]
+    },
+    {
+      "id": "supplier-sanctions-screening",
+      "name": "Supplier Sanctions & Watchlist Screening",
+      "description": "Screen supplier against global sanctions (OFAC, EU), PEP lists, adverse media; return evidence bundle.",
+      "tags": ["kyb", "sanctions", "compliance"],
+      "examples": [
+        "Screen supplier CN-8821 with legal name and registration number.",
+        "{\"supplierId\":\"CN-8821\",\"legalName\":\"Hangzhou ABC Tech Co., Ltd.\",\"registrationNo\":\"91330100MA...\"}"
+      ],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    },
+    {
+      "id": "rpa-bot-orchestration",
+      "name": "RPA Bot Orchestration",
+      "description": "Trigger RPA bots to freeze PO, request extra docs from requester, or escalate to compliance.",
+      "tags": ["rpa", "workflow", "orchestration"],
+      "examples": [
+        "Freeze PO A-2025-0912 and notify requester for missing contract.",
+        "{\"action\":\"freeze-po\",\"poId\":\"A-2025-0912\",\"reason\":\"missing-contract\"}"
+      ],
+      "inputModes": ["application/json"],
+      "outputModes": ["application/json"]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": true,
+  "signatures": [
+    {
+      "protected": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpPU0UiLCJraWQiOiJrZXktMSJ9",
+      "signature": "m2T6yPqP...k39Q",
+      "header": { "kid": "key-1", "jku": "https://procureguard.example.com/jwks.json" }
+    }
+  ]
+}
+```
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 Today, I continued reading the MCP-related protocols and examined their implementation in the official **Chrome DevTools MCP** repository.
 
 In addition, I successfully ran the local environment for the repository [**vistara-apps/erc-8004-example**](https://github.com/vistara-apps/erc-8004-example), although the **agent** component still requires further review and understanding.
@@ -23,6 +133,7 @@ In addition, I successfully ran the local environment for the repository [**vist
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 Today I explored **Google’s A2A protocol** and compared it with **Model Context Protocol (MCP)**.
 
@@ -39,6 +150,7 @@ This is achieved through the **client layer**, which interprets the model’s in
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 ### [**1\. Discussion on Ethereum Magicians (ERC-8004 Thread)**](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098/9)
@@ -101,6 +213,7 @@ ERC-8004 defines **three roles**, not three mandatory components to build:
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
