@@ -15,8 +15,20 @@ ai转web3，小白捏，希望一起学习
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+## Core Actors in A2A Interactions[¶](https://a2a-protocol.org/latest/topics/key-concepts/#core-actors-in-a2a-interactions)
+
+-   **User**: The end user, which can be a human operator or an automated service. The user initiates a request or defines a goal that requires assistance from one or more AI agents.
+    
+-   **A2A Client (Client Agent)**: An application, service, or another AI agent that acts on behalf of the user. The client initiates communication using the A2A protocol.
+    
+-   **A2A Server (Remote Agent)**: An AI agent or an agentic system that exposes an HTTP endpoint implementing the A2A protocol. It receives requests from clients, processes tasks, and returns results or status updates. From the client's perspective, the remote agent operates as an _opaque_ (black-box) system, meaning its internal workings, memory, or tools are not exposed.
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 1.  Initialize and register agents to the identity registry. There are 3 types of agents. Client agent assigns task to server agent and provides feedback. Server agent accepts task and feedback. Validator agent validates task, leveraging different trust models.
     
 2.  Client agent discovers server agent by reading agent cards, then negotiates the job outputs. This negotiation is done offchain.
@@ -40,6 +52,7 @@ ai转web3，小白捏，希望一起学习
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 ## EIP-8004 Official Standard
 
