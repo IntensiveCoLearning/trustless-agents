@@ -14,8 +14,34 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+### 信誉注册表
+
+我们知道在 A2A 协议中，用户侧的 Agent 被称为 _客户端 Agent_ ，当客户端 Agent 在完成服务后可以发布一个反馈证明
+
+```
+function giveFeedback(uint256 agentId, uint8 score, bytes32 tag1, bytes32 tag2, string calldata fileuri, bytes32 calldata filehash, bytes memory feedbackAuth) external
+```
+
+必须的参数是 `agentId` 和 `score`，分别是已注册的 Agent 的 id 和评分
+
+也可以撤销反馈，作为黑箱交易的空间hhh
+
+```
+function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
+```
+
+### 验证注册表
+
+验证注册表更加有趣，是用于验证 _远程客户端_ 的工作是否完成的。目前常见用例是 zkML（Zero Knowledge Machine Learning，零知识机器学习） 和 TEE （Trusted Execution Environment，可信执行环境）
+
+前者是通过_零知识证明_的方法，在不暴露模型本身或输入数据的情况下，证明推理结果是正确的；后者则是依靠硬件，在普通计算机或服务器的 CPU 内部划出一个安全屋，让代码在里面运行时，外部系统（包括操作系统、云平台管理员，甚至黑客）都无法窥探或篡改其中的内容
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 ## 身份注册表
 
 用于识别 Agent 并确保唯一性，该注册表扩展了\[ERC-721\]([https://eips.ethereum.org/EIPS/eip-721)，也就是用于发布NFT的标准，只是](https://eips.ethereum.org/EIPS/eip-721\)，也就是用于发布NFT的标准，只是将`tokenId`)`tokenId` 换成了 `agentId`，且 Agent 的链上所有权可以像交易 NFT 一样交易，目标是兼容所有 EVM 链和所有 NFT 应用。
@@ -80,6 +106,7 @@ timezone: UTC+8
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -102,6 +129,7 @@ timezone: UTC+8
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 LangChain 是一个 LLM 领域非常流行的框架，基于 LangChain 框架和[教程](https://docs.langchain.com/oss/python/langchain/quickstart)做了一个小尝试。
@@ -223,6 +251,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
