@@ -14,8 +14,113 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+[https://www.x402.org/](https://www.x402.org/)
+
+An open protocol for internet-native payments. **The best way to accept digital payments.**
+
+Built around the [HTTP 402](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402) status code, **x402 enables users to pay for resources via API** without registration, emails, OAuth, or complex signatures.
+
+### **1 Line of Code to Accept Digital Dollars**
+
+```
+paymentMiddleware("0xYourAddress", {"/your-endpoint": "$0.01"});
+```
+
+TODO this is a bad example, doesn't make things easier.
+
+If a request arrives without payment, the server responds with HTTP 402, prompting the client to pay and retry.
+
+```
+HTTP/1.1 402 Payment Required
+```
+
+x402 allows any web developer to accept crypto payments without the complexity of having to interact with the blockchain.
+
+TODO build a x402 demo and trigger the digital payment.
+
+Seems server will return a 402 code, and client need to capture it and handle, like popup the metamask modal, etc.
+
+[https://x402.gitbook.io/x402](https://x402.gitbook.io/x402)
+
+With x402, any web service can require payment before serving a response, using crypto-native payments for speed, privacy, and efficiency.
+
+### Why Use x402?
+
+x402 addresses key limitations of existing payment systems:
+
+-   **High fees and friction** with traditional credit cards and fiat payment processors
+    
+-   **Incompatibility with machine-to-machine payments**, such as AI agents
+    
+-   **Lack of support for micropayments**, making it difficult to monetize usage-based services
+    
+
+### What Can You Build?
+
+x402 enables a range of use cases, including:
+
+-   API services paid per request
+    
+-   AI agents that autonomously pay for API access
+    
+-   [Paywalls](https://x.com/MurrLincoln/status/1935406976881803601) for digital content
+    
+-   Microservices and tooling monetized via microtransactions
+    
+-   Proxy services that aggregate and resell API capabilities
+    
+
+### How Does It Work?
+
+At a high level, the flow is simple:
+
+1.  A buyer requests a resource from a server.
+    
+2.  If payment is required, the server responds with `402 Payment Required`, including payment instructions.
+    
+3.  The buyer prepares and submits a payment payload.
+    
+4.  The server verifies and settles the payment using an x402 facilitator's /verify and /settle endpoints.
+    
+5.  If payment is valid, the server provides the requested resource.
+    
+
+For more detail, see:
+
+-   Client / Server
+    
+-   Facilitator
+    
+-   HTTP 402
+    
+
+TODO crypto payment friendly. seems need to have some validators or validation service, for checking the tx.
+
+### Why x402 Uses HTTP 402
+
+The primary purpose of HTTP 402 is to enable frictionless, API-native payments for accessing web resources, especially for:
+
+-   Machine-to-machine (M2M) payments (e.g., AI agents).
+    
+-   Pay-per-use models such as API calls or paywalled content.
+    
+-   Micropayments without account creation or traditional payment rails.
+    
+
+Using the 402 status code keeps x402 protocol natively web-compatible and easy to integrate into any HTTP-based service.
+
+TODO build a demo for purchasing ticket with x402 payment + agents registered on erc8004 and provide feedback.
+
+TODO run this demo [https://x402.gitbook.io/x402/getting-started/quickstart-for-sellers](https://x402.gitbook.io/x402/getting-started/quickstart-for-sellers) and [https://x402.gitbook.io/x402/getting-started/quickstart-for-buyers](https://x402.gitbook.io/x402/getting-started/quickstart-for-buyers)
+
+TODO check [https://github.com/coinbase/x402/blob/main/README.md](https://github.com/coinbase/x402/blob/main/README.md)
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 [https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 To maximize the benefits from agentic AI, it is critical for these agents to be able to collaborate in a dynamic, multi-agent ecosystem across siloed data systems and applications.
@@ -82,6 +187,7 @@ The following table describes the fundamental communication elements in A2A:
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 [https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
 
@@ -236,6 +342,7 @@ zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、�
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
 
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -278,11 +385,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -349,6 +458,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
