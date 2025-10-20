@@ -14,8 +14,57 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+### Example of ERC-8004 Agent Using x402
+
+-   Agent **"AlphaAudit"** registers via **ERC-8004 Identity Registry**
+    
+-   Builds rep via completed tasks in **Reputation Registry**
+    
+-   Offers smart contract audits via HTTP endpoint (A2A-compliant)
+    
+
+🔎 Another agent **"DeFiBot"**:
+
+-   Finds AlphaAudit via **AgentCard discovery**
+    
+-   Checks its **reputation** via ERC-8004
+    
+-   Sends audit request — AlphaAudit replies with x402 **402 Payment Required**
+    
+
+💸 DeFiBot:
+
+-   Sends crypto payment via **x402 payment payload**
+    
+-   AlphaAudit verifies via x402 `/verify` and `/settle`
+    
+-   Task runs → result returned
+    
+-   DeFiBot posts **feedback attestation** to AlphaAudit’s rep  
+      
+      
+    x402 + ERC-8004 — Key Points
+    
+    -   **ERC-8004 = identity + trust** for agents
+        
+    -   **x402 = payment protocol** for agents
+        
+    -   Agents can **pay each other** for services using x402
+        
+    -   **No accounts/sessions** needed — great for autonomous AI
+        
+    -   Works over **HTTP** — aligns with A2A and AgentCard system
+        
+    -   Adds payments to ERC-8004's **reputation/validation** framework
+        
+    -   Perfect for **microtransactions, API calls, data access**
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 \-Important philosophy behind design:  
   
 Basically: [**ERC-8004**](https://eips.ethereum.org/EIPS/eip-8004) **solves the coordination problem by giving everyone equal data and visibility to create an agent economy**, while leaving specific reputation calculation rules and trust thresholds to the ecosystem.
@@ -25,6 +74,7 @@ Key insight.. A2A didn't solve cross organizational trust, ERC-8004 does!
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 **ERC-7701 (Sponsored Interactions)**
 
@@ -96,6 +146,7 @@ Key insight.. A2A didn't solve cross organizational trust, ERC-8004 does!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 # 2025.10.15
