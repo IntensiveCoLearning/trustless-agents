@@ -15,13 +15,20 @@ coming to study the tech and code
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+但我好像已经死了
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 我来也！！！！不能死掉哈哈哈，今天用GitHub搞了一下代码感觉好有意思，晚点来补课
 <!-- DAILY_CHECKIN_2025-10-18_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 我来惹，续一下命，看完workshop还是不咋懂哈哈哈，具体实现路径其实比较难，我参与一下嘻嘻
 
