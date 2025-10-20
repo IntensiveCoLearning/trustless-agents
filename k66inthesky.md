@@ -17,6 +17,17 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+> 我去玩[ERC-8004的SDK](https://pypi.org/project/chaoschain-sdk/)啦! chaoschain-sdk做的，簡單寫了隻`main.py`。
+> 看SDK架構設計
+<img width="449" height="507" alt="image" src="https://github.com/user-attachments/assets/8c8e1264-e809-4d96-b732-051b365c0450" />
+
++ 附圖(目前我卡在x402 payment，另外IPFS也不work)
+> <img width="1277" height="1012" alt="image" src="https://github.com/user-attachments/assets/ae004950-1749-4aaf-afdb-2907ad7ae06a" />
+> <img width="1075" height="224" alt="image" src="https://github.com/user-attachments/assets/fcda5248-45d6-489c-9376-70ab8d5b1b4b" />
+
+> 明天再來看程式碼問題在哪
+
 # 2025-10-18
 > 分析程式碼[erc-8004-contracts\]([https://github.com/erc-8004/erc-8004-contracts](https://github.com/erc-8004/erc-8004-contracts)
 ```
