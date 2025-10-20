@@ -14,8 +14,186 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+# Run ERC-8004 Example
+
+**Goal:** Read, run, and modify the official example.
+
+**Deep Read:** Vistara `erc-8004-example` on GitHub.
+
+**Must-do:** Change the example’s agent metadata to your project name **and** add **one custom event** (emit a reputation event).
+
+**Check-in:** See the checklist at the end.
+
+* * *
+
+## 0) Prerequisite
+
+-   Git + Node.js (or Python, depending on the repo’s README)
+    
+-   Local chain tool (Foundry Anvil or Hardhat)
+    
+-   Testnet wallet + RPC (only if deploying to a testnet)
+    
+-   Basic understanding of ERC-8004 (Identity / Reputation / Validation)
+    
+
+* * *
+
+## 1) Clone & Install
+
+```bash
+git clone <https://github.com/vistara-apps/erc-8004-example.git>
+cd erc-8004-example
+
+# If Node-based
+npm install
+
+# If Python-based (only if the repo uses it)
+python3 -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+
+```
+
+> If the repo includes .env.example, copy it to .env and fill in RPC/private key values.
+
+* * *
+
+## 2) Start Local Chain & Deploy
+
+```bash
+# Terminal A: start local chain
+anvil
+
+# Terminal B: in project root, run the repo’s deploy script (examples)
+npm run deploy:local
+# or
+python scripts/deploy_registries.py
+
+```
+
+Expect contract addresses for **Identity**, **Reputation**, and **Validation** registries printed to the console.
+
+* * *
+
+## 3) Edit Agent Metadata (make it YOUR project)
+
+1.  Locate the **Agent registration file** used for `tokenURI` (e.g., `agent.json`, `registration.json`, or similar).
+    
+2.  Update fields to your project details: `name`, `description`, `image`, and `endpoints` (A2A, MCP, `agentWallet`, etc.).
+    
+3.  Re-run the registration/update script so **Identity Registry** points to your updated URI.
+    
+
+* * *
+
+## 4) Add ONE Custom Event (emit a reputation event)
+
+**Why:** When you submit feedback to the Reputation Registry, also emit your **own** event so frontends/indexers (e.g., subgraph) can quickly pick up “new feedback” signals.
+
+### A) Minimal Solidity wrapper (example)
+
+```solidity
+interface IReputationRegistry {
+    function giveFeedback(
+        uint256 agentId,
+        uint8 score,
+        string calldata tag1,
+        string calldata tag2,
+        string calldata uri,
+        bytes32 uriHash
+    ) external;
+}
+
+contract MyReputationEmitter {
+    event FeedbackEmitted(
+        uint256 indexed agentId,
+        address indexed rater,
+        uint8 score,
+        string tag1,
+        string tag2,
+        string uri,
+        bytes32 uriHash,
+        uint256 blocktime
+    );
+
+    IReputationRegistry public rep;
+
+    constructor(address reputationRegistry) {
+        rep = IReputationRegistry(reputationRegistry);
+    }
+
+    function rateAgent(
+        uint256 agentId,
+        uint8 score,
+        string calldata tag1,
+        string calldata tag2,
+        string calldata uri,
+        bytes32 uriHash
+    ) external {
+        // 1) Write feedback to ERC-8004 Reputation Registry
+        rep.giveFeedback(agentId, score, tag1, tag2, uri, uriHash);
+
+        // 2) Emit your custom app-level event
+        emit FeedbackEmitted(
+            agentId, msg.sender, score, tag1, tag2, uri, uriHash, block.timestamp
+        );
+    }
+}
+
+```
+
+> Match function names/params to the actual repo implementation if they differ.
+
+### B) Rebuild & Redeploy
+
+```bash
+# Build
+npm run build   # or: forge build
+
+# Deploy your app contract (pass Reputation Registry address)
+npm run deploy:app
+
+```
+
+### C) Trigger a Feedback Write (local test)
+
+```bash
+# Example script/command (replace values)
+npm run rate:local -- --agent 1 --score 90 --tag1 dim:reliability --tag2 p95 \\
+  --uri ipfs://Qm.../feedback.json --hash 0xabc...
+
+# Inspect logs:
+# 1) Reputation Registry feedback event
+# 2) Your custom FeedbackEmitted event
+
+```
+
+* * *
+
+## 5) (Optional) Wire in Validation
+
+After a job completes, call the Validation Registry (`reexec` / `tee` / `zk`) and, once a verifier records the result, feed that outcome into Reputation weighting in your frontend/analytics.
+
+![](https://www.notion.so/image/attachment%3A278ced13-86b8-4621-b813-0d16a9b0757c%3A%E6%88%AA%E5%9C%96_2025-10-19_%E4%B8%8B%E5%8D%884.28.00.png?table=block&id=29189567-61f8-800e-aad4-c817687b9f6a&spaceId=e1d778da-d6ef-4312-ac13-45806910b423&width=2000&userId=034eced9-3c9f-49ca-8915-181cae2454d9&cache=v2)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SunWeb3Sec/images/2025-10-20-1760957769670-image.png)
+
+✅ Contracts deployed successfully
+
+✅ 3 agents registered (Alice: ID 1, Bob: ID 2, Charlie: ID 3)
+
+✅ Market analysis completed for BTC
+
+✅ Validation workflow executed (Score: 100/100)
+
+✅ Custom reputation event integrated
+
+✅ Complete blockchain audit trail generated
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 # Validation Registry (Third-Party Verification Hooks)
 
 ## Why it matters
@@ -130,6 +308,7 @@ function recordResult(
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 # Reputation Registry
 
@@ -263,6 +442,7 @@ function recordResult(
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -370,6 +550,7 @@ function recordResult(
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 ## 10/16 Workshop Summary — ERC-8004
@@ -539,6 +720,7 @@ Sepolia
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 ERC-8004 Overview & Trust Layer Primer
