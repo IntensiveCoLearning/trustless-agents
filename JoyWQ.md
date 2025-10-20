@@ -14,8 +14,22 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+1.  将之前的js代码等效地迁移为python
+    
+2.  增加A2A的JSON描述文件
+    
+3.  增加A2A交互的握手逻辑
+    
+4.  增加简单的链下声誉计算逻辑
+    
+5.  测试并进行部分的问题修复
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 1.  **学习A2A协议**
     
 
@@ -731,6 +745,7 @@ Charlie:
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 ## **一、了解声誉分析、ZK及TEE在EIP8004里的应用：**
 
 ```
@@ -859,6 +874,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
 
+
 1.  阅读erc-8004官方标准及hashkey的文章
     
 2.  核心内容梳理：
@@ -874,6 +890,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
