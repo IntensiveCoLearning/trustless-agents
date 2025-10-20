@@ -14,8 +14,14 @@ Building some AI agent related apps, talk with AI in various topics on hourly ba
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+今天还在参加 ethshanghai 的活动。晚上和朋友吃饭介绍了 dAI 的发展前沿综述。算是用行业外朋友也能挺清楚的语言解释了行业内正在努力的方向
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 今天来 ETHPANDA 参加活动，主要和一些黑客松参赛选手交流，看到了很多 ERC8004 的用例。
 
 另外今天还看了一下最新的进展：
@@ -54,11 +60,13 @@ v2 规范计划集成 MCP（多代理协作协议）和 ERC-721 代理所有权�
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 昨天下午听了Workshop，最大的收获是TEE会扮演越来越重要的角色。EigenLayer这样的基于经济模型的信誉体系也会扮演越来越重要的角色
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 和大模型老师一起学习了ERC8004的协议设计，并构想了一些适用场景。个人感悟：
