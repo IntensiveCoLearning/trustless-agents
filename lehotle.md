@@ -17,13 +17,20 @@ python, C/C++
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+Checked A2A protocol
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 It is Sunday today.
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 Keep reading the document and check the discussions.
 <!-- DAILY_CHECKIN_2025-10-18_END -->
@@ -32,11 +39,13 @@ Keep reading the document and check the discussions.
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 It's been a busy day, and I only checked others' notes for learning. Nothing more.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -56,6 +65,7 @@ Agents register via the Identity Registry, communicate and exchange tasks using 
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
