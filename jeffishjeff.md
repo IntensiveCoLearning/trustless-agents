@@ -14,8 +14,18 @@ Learning web3
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+Moving on to A2A
+
+The A2A protocol is an open standard developed to enable autonomous AI agents—potentially built by different vendors or operating on different platforms—to _discover each other_, _communicate securely_, and _collaborate on tasks_ in a unified way. It introduces the concept of an “Agent Card” (a JSON profile that describes an agent’s capabilities, endpoints and security requirements), and defines a task-lifecycle model in which a “client” agent issues a task and a “remote” agent performs it, with real-time updates, streaming modality support (text, audio, video) and well-defined message schemas. 
+
+A2A is built with five key principles: leveraging existing web standards (HTTP, JSON-RPC, SSE) to reduce integration friction; being secure by default (authentication, authorization, auditability); supporting long-running workflows (not just instant calls); being modality-agnostic (not limited to text); and promoting agent-centric collaboration (rather than isolated tool-invocations). The goal is to move beyond isolated AI “agents” and instead enable an ecosystem of interoperable, specialized agents that can coordinate across organizational and technical boundaries.
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 More on ERC8004, watched the 1st community call and ETH Panda call.
 
 Points on deployment / operational side:
@@ -30,6 +40,7 @@ Points on deployment / operational side:
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
 
+
 ### Learning ERC-8004
 
 ERC-8004, also known as **“Trustless Agents,”** is a proposed Ethereum standard designed to enable autonomous or AI-driven agents to safely interact, transact, and collaborate with each other **without requiring pre-established trust**. It builds on the earlier Agent-to-Agent (A2A) protocol by introducing a **lightweight on-chain trust framework**, allowing agents from different domains or organizations to coordinate in an open ecosystem.
@@ -41,6 +52,7 @@ The motivation behind ERC-8004 is the rise of the **machine economy**—a world 
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 Deep dive on a couple ERC-8004 nuances:
 
