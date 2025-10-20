@@ -14,8 +14,63 @@ timezone: UTC+0
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+x402 的核心价值在于**自动化支付流程**。开发者不需要手动处理复杂的支付逻辑，x402 提供的辅助工具包（Helper Packages）会自动完成以下工作：
+
+1.  **发起请求**。
+    
+2.  如果收到 `402 Payment Required`（需要付款）的响应，自动解析付款要求。
+    
+3.  使用开发者提供的钱包，**在链上（Onchain）授权并支付**所需款项（如 USDC）。
+    
+4.  **带着“支付证明”自动重试**原始请求，最终成功获取付费资源。
+    
+
+### 实施步骤
+
+1.  **前提条件**：
+    
+    -   一个拥有 USDC 的加密钱包（支持 EVM 或 Solana）。
+        
+    -   Node.js (npm) 或 Python (pip) 环境。
+        
+    -   一个受 x402 保护的服务端点。
+        
+2.  **安装依赖 (Step 1)**：
+    
+    -   **Node.js**: 安装 `x402-axios` 或 `x402-fetch`。
+        
+    -   **Python**: 安装 `x402`。
+        
+3.  **创建钱包客户端 (Step 2)**：
+    
+    -   这是发起链上支付的“签名者”。
+        
+    -   **推荐方式**：使用 **CDP（Coinbase Developer Platform）的服务器钱包**。
+        
+    -   **备选方式**：使用独立的库，如 `viem` (Node.js) 或 `eth-account` (Python)。
+        
+4.  **自动发起付费请求 (Step 3)**：
+    
+    -   开发者不需要更改太多代码，只需使用 x402 提供的“包装器”（wrapper）或“拦截器”（interceptor）。
+        
+    -   **Node.js**: 使用 `wrapFetchWithPayment(fetch, account)` 或 `withPaymentInterceptor(axios, account)`。
+        
+    -   **Python**: 使用 `x402HttpxClient(account=...)` (异步) 或 `x402_requests(account)` (同步)。
+        
+    -   配置完成后，所有发向受保护端点的请求都会自动处理 402 支付流程。
+        
+5.  **服务发现 (Step 4 - 可选)**：
+    
+    -   这是一个高级功能，特别强调了其对\*\*“自主代理”（Autonomous Agents）\*\*的强大作用。
+        
+    -   代理不需要硬编码（Hardcoding）服务端点，而是可以通过查询 **"x402 Bazaar"** 来动态发现有哪些可用的付费服务，了解它们的功能，然后自主决定是否付费使用。
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 HashKey Capital Insights 的文章总结：
 
 这篇文章从**机构和Web3生态的角度**分析了 **ERC-8004** 的重要性，将其视为在以太坊（机构资本的首选层）上构建“代理经济”所必需的**信任层**。
@@ -89,6 +144,7 @@ ERC-8004 是一个基础性蓝图，它通过在以太坊上建立一个无需�
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 **ERC-8004（无需信任的代理）** 提案背后的故事、动机以及接下来的计划。
 
 ### 诞生的背景和动机
@@ -136,6 +192,7 @@ ERC-8004 是一个基础性蓝图，它通过在以太坊上建立一个无需�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 # **ERC-8004: Trustless Agents - Discover agents and establish trust through reputation and validation**
@@ -242,6 +299,7 @@ ERC-8004 是一个基础性蓝图，它通过在以太坊上建立一个无需�
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 # **ERC-8004: Infrastructure for Autonomous AI Agents  
