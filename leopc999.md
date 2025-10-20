@@ -14,8 +14,99 @@ A web3 enthusiast in AI.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+# x402 本地测试
+
+**目标**：在本地暴露一个付费保护的 endpoint（Seller），用 Buyer 触发 **402 → 完成支付 → 返回真实响应**，并在服务端看到成功日志（`402 → success logs`）。
+
+* * *
+
+## 快速步骤
+
+1.  安装依赖
+    
+
+```bash
+npm install x402-express x402-fetch @coinbase/cdp-sdk dotenv
+```
+
+2.  Seller（简化 Express）
+    
+
+```js
+// server.js
+import express from "express";
+import { paymentMiddleware } from "x402-express";
+
+const app = express();
+app.use(paymentMiddleware("0xReceiverAddr", {
+  "GET /weather": { price: "$0.001", network: "base-sepolia" }
+}, { url: "https://x402.org/facilitator" }));
+
+app.get("/weather", (req,res) => {
+  console.log("payment verified — serving resource");
+  res.json({ weather: "sunny", temp: 70 });
+});
+app.listen(4021, ()=>console.log("http://localhost:4021"));
+```
+
+3.  启动服务并验证初次响应（应返回 402）：
+    
+
+```bash
+node server.js
+curl -i http://localhost:4021/weather   # expect HTTP/1.1 402 Payment Required
+```
+
+4.  Buyer（自动付费并重试）
+    
+
+```js
+// buyer.js
+import { wrapFetchWithPayment } from "x402-fetch";
+import { CdpClient } from "@coinbase/cdp-sdk";
+
+const cdp = new CdpClient();
+const acct = await cdp.evm.createAccount();
+const fetchWithPayment = wrapFetchWithPayment(fetch, acct);
+const res = await fetchWithPayment("http://localhost:4021/weather");
+console.log(await res.json()); // paid response
+```
+
+5.  Check-in 期待结果：
+    
+
+-   第一次 `curl` 返回 **402**（payment instructions）。
+    
+-   运行 Buyer 脚本后，服务端日志显示 `payment verified — serving resource`，Buyer 收到真实 JSON 响应（完成：**402 → success logs**）。
+    
+
+* * *
+
+## 快速故障排查
+
+-   若 `curl` 返回 200：确认中间件挂载位置与路由路径一致。
+    
+-   Buyer 无法付费：确认 wallet/account 可签名并有测试资产，或使用 CDP Server Wallet。
+    
+-   Facilitator 验证失败：检查中间件 facilitator URL（测试环境使用 `https://x402.org/facilitator`）。
+    
+
+* * *
+
+## Checklist（最小）
+
+-   安装依赖
+    
+-   启动 seller，curl 得到 402
+    
+-   运行 buyer，拿到真实响应并在 server 看到成功日志
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 # **A2A → AP2** 协议内容学习
 
 > 阅读了 A2A 官方文档（[https://a2a-protocol.org/](https://a2a-protocol.org/)）、Google AP2 发布博客（[https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol](https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol)）、Cloud Security Alliance 对 AP2 的安全分析（[https://cloudsecurityalliance.org/blog/2025/10/06/secure-use-of-the-agent-payments-protocol-ap2-a-framework-for-trustworthy-ai-driven-transactions](https://cloudsecurityalliance.org/blog/2025/10/06/secure-use-of-the-agent-payments-protocol-ap2-a-framework-for-trustworthy-ai-driven-transactions)）。进行如下总结。
@@ -155,6 +246,7 @@ A web3 enthusiast in AI.
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 今天阅读了 QuillAudits 文章《ERC-8004: Infrastructure for Autonomous AI Agents》。
 
 * * *
@@ -257,6 +349,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
 
+
 # 构建无信任代理（Trustless Agents）：ERC-8004 Workshop
 
 本次会议围绕“无信任代理（Trustless Agents）”相关的 ERC-8004 标准展开，涵盖标准背景、核心功能、技术实现及后续规划，我参会后，对核心内容进行了总结。
@@ -326,6 +419,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
