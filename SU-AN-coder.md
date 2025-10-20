@@ -14,8 +14,411 @@ I am a college student currently studying, aiming to become a DePIN engineer. I 
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+## **去中心化AI模型市场演示代理**
+
+### **核心概念**
+
+构建一个允许AI代理发布、发现和付费使用机器学习模型的市场，集成A2A发现、AP2支付和x402 API支付墙
+
+### **1\. 项目架构**
+
+solidity
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.19;
+
+// 自定义模型市场合约
+contract ModelMarketplace {
+    event ModelPublished(
+        uint256 indexed agentId,
+        string modelId,
+        string modelType,
+        uint256 price,
+        string endpoint,
+        string description
+    );
+    
+    event ModelPurchased(
+        uint256 indexed buyerAgentId,
+        uint256 indexed sellerAgentId,
+        string modelId,
+        uint256 price,
+        bytes32 paymentReference
+    );
+    
+    struct ModelListing {
+        uint256 agentId;
+        string modelId;
+        string modelType; // "llama2", "whisper", "stable-diffusion"
+        uint256 price;
+        string endpoint;
+        bool active;
+    }
+    
+    mapping(string => ModelListing) public models;
+    string[] public modelIds;
+    
+    IReputationRegistry public reputationRegistry;
+    
+    constructor(address _reputationRegistry) {
+        reputationRegistry = IReputationRegistry(_reputationRegistry);
+    }
+    
+    function publishModel(
+        string memory modelId,
+        string memory modelType,
+        uint256 price,
+        string memory endpoint,
+        string memory description
+    ) external {
+        // 获取调用者代理ID（简化实现）
+        uint256 agentId = getCallerAgentId();
+        
+        models[modelId] = ModelListing({
+            agentId: agentId,
+            modelId: modelId,
+            modelType: modelType,
+            price: price,
+            endpoint: endpoint,
+            active: true
+        });
+        
+        modelIds.push(modelId);
+        
+        emit ModelPublished(agentId, modelId, modelType, price, endpoint, description);
+    }
+}
+```
+
+### **2\. 自定义代理元数据配置**
+
+json
+
+```
+{
+  "name": "AI-Model-Marketplace-Agent",
+  "description": "Decentralized marketplace for AI model inference services",
+  "version": "1.0.0",
+  "endpoints": {
+    "modelDiscovery": "https://marketplace-agent.com/api/models",
+    "inference": "https://marketplace-agent.com/api/inference",
+    "payment": "https://marketplace-agent.com/api/payment"
+  },
+  "supportedModels": ["llama2-7b", "whisper-large", "stable-diffusion-xl"],
+  "pricing": "dynamic",
+  "agentWallet": "0x742d35Cc6634C0532925a3b8D...",
+  "metadata": {
+    "serviceLevel": "99.9%",
+    "maxConcurrentRequests": 100,
+    "avgResponseTime": "2.5s"
+  }
+}
+```
+
+### **3\. x402 支付墙集成**
+
+javascript
+
+```
+// 模型推理API - 集成x402支付
+const express = require('express');
+const app = express();
+
+app.post('/api/inference/:modelId', async (req, res) => {
+    const { modelId } = req.params;
+    const { input } = req.body;
+    
+    // 获取模型定价
+    const modelPrice = await getModelPrice(modelId);
+    const paymentRef = generatePaymentReference();
+    
+    // 检查支付状态
+    const isPaid = await checkPaymentStatus(paymentRef);
+    
+    if (!isPaid) {
+        // 返回402支付要求
+        return res.status(402).set({
+            'Pay': `AP2; address="${process.env.AGENT_WALLET}"; value="${modelPrice}"; chain-id=1; ref="${paymentRef}"`,
+            'Pay-Link': `<https://${req.hostname}/api/pay/${paymentRef}>; rel="payment"`,
+            'Model-Id': modelId,
+            'Price-Wei': modelPrice.toString()
+        }).json({
+            error: "Payment required",
+            modelId,
+            price: modelPrice,
+            paymentReference: paymentRef
+        });
+    }
+    
+    // 执行模型推理
+    try {
+        const result = await runModelInference(modelId, input);
+        res.json({
+            success: true,
+            modelId,
+            result,
+            usage: { tokens: result.usage }
+        });
+    } catch (error) {
+        res.status(500).json({ error: "Inference failed" });
+    }
+});
+```
+
+### **4\. 增强信誉事件系统**
+
+solidity
+
+```
+// 增强的信誉事件发射器
+contract ModelMarketReputation {
+    event ModelQualityFeedback(
+        uint256 indexed agentId,
+        address indexed rater,
+        string modelId,
+        uint8 inferenceQuality,
+        uint8 responseTime,
+        uint8 accuracy,
+        string feedbackUri,
+        uint256 timestamp
+    );
+    
+    event ServiceLevelViolation(
+        uint256 indexed agentId,
+        string modelId,
+        uint256 expectedResponseTime,
+        uint256 actualResponseTime,
+        uint256 blockNumber
+    );
+    
+    function submitModelFeedback(
+        uint256 agentId,
+        string memory modelId,
+        uint8 inferenceQuality,
+        uint8 responseTime,
+        uint8 accuracy,
+        string memory feedbackUri
+    ) external {
+        // 提交到标准信誉注册表
+        reputationRegistry.giveFeedback(
+            agentId,
+            calculateOverallScore(inferenceQuality, responseTime, accuracy),
+            "model:quality",
+            "model:performance",
+            feedbackUri,
+            keccak256(abi.encodePacked(modelId))
+        );
+        
+        // 发射自定义模型质量事件
+        emit ModelQualityFeedback(
+            agentId,
+            msg.sender,
+            modelId,
+            inferenceQuality,
+            responseTime,
+            accuracy,
+            feedbackUri,
+            block.timestamp
+        );
+    }
+    
+    function reportSlowResponse(
+        uint256 agentId,
+        string memory modelId,
+        uint256 expectedMs,
+        uint256 actualMs
+    ) external {
+        emit ServiceLevelViolation(
+            agentId,
+            modelId,
+            expectedMs,
+            actualMs,
+            block.number
+        );
+    }
+    
+    function calculateOverallScore(
+        uint8 quality,
+        uint8 responseTime,
+        uint8 accuracy
+    ) internal pure returns (uint8) {
+        return (quality + responseTime + accuracy) / 3;
+    }
+}
+```
+
+### **5\. 模型发现与验证工作流**
+
+javascript
+
+```
+// 模型发现API
+app.get('/api/models', async (req, res) => {
+    const { type, minReputation, maxPrice } = req.query;
+    
+    // 从链上获取可用模型
+    const availableModels = await getAvailableModelsFromChain();
+    
+    // 过滤基于查询参数
+    const filteredModels = await Promise.all(
+        availableModels.map(async model => {
+            const reputation = await getAgentReputation(model.agentId);
+            const meetsReputation = !minReputation || reputation >= minReputation;
+            const meetsPrice = !maxPrice || model.price <= maxPrice;
+            const meetsType = !type || model.modelType === type;
+            
+            return meetsReputation && meetsPrice && meetsType ? model : null;
+        })
+    );
+    
+    const result = filteredModels.filter(Boolean);
+    
+    res.json({
+        models: result,
+        count: result.length,
+        query: { type, minReputation, maxPrice }
+    });
+});
+
+// 验证工作流集成
+async function verifyModelProvider(agentId) {
+    // 调用验证注册表
+    const verification = await verificationRegistry.verify(
+        agentId,
+        "tee", // TEE证明验证
+        "0x" // 验证数据
+    );
+    
+    if (ververified) {
+        // 增强信誉评分
+        await reputationRegistry.giveFeedback(
+            agentId,
+            95, // 验证奖励分数
+            "capability:verified",
+            "security:tee",
+            "ipfs://QmVerificationProof",
+            keccak256(abi.encodePacked("tee-verified"))
+        );
+    }
+    
+    return verification.verified;
+}
+```
+
+### **6\. 部署和测试脚本**
+
+javascript
+
+```
+// scripts/deploy-marketplace.js
+async function main() {
+    // 部署基础注册表
+    const agentRegistry = await deployAgentRegistry();
+    const reputationRegistry = await deployReputationRegistry();
+    
+    // 部署自定义市场合约
+    const marketplace = await deployModelMarketplace(reputationRegistry.address);
+    
+    // 注册演示代理
+    await registerDemoAgents(agentRegistry);
+    
+    // 发布测试模型
+    await publishDemoModels(marketplace);
+    
+    console.log("🎯 模型市场部署完成");
+    console.log("Agent Registry:", agentRegistry.address);
+    console.log("Marketplace:", marketplace.address);
+    
+    return { marketplace, agentRegistry, reputationRegistry };
+}
+
+// 测试支付流程
+async function testModelPurchase() {
+    const modelId = "llama2-7b-chat";
+    const input = "Explain blockchain to a beginner";
+    
+    // 1. 发现模型
+    const models = await fetch('/api/models?type=llama2').then(r => r.json());
+    
+    // 2. 请求推理（应该收到402）
+    const response = await fetch(`/api/inference/${modelId}`, {
+        method: 'POST',
+        body: JSON.stringify({ input })
+    });
+    
+    if (response.status === 402) {
+        const payHeader = response.headers.get('Pay');
+        const paymentParams = parsePayHeader(payHeader);
+        
+        // 3. 支付
+        const tx = await makeAP2Payment(paymentParams);
+        
+        // 4. 重新请求（带支付证明）
+        const finalResponse = await fetch(`/api/inference/${modelId}`, {
+            method: 'POST',
+            headers: { 'Payment-Proof': paymentParams.ref },
+            body: JSON.stringify({ input })
+        });
+        
+        const result = await finalResponse.json();
+        console.log("推理结果:", result);
+        
+        // 5. 提交反馈
+        await submitFeedback(modelId, 95, 90, 92);
+    }
+}
+```
+
+### **7\. 检查清单**
+
+**基础设置**
+
+-   克隆并配置ERC-8004示例仓库
+    
+-   启动本地Anvil链并部署注册表
+    
+-   配置自定义代理元数据
+    
+
+**核心功能**
+
+-   实现模型市场智能合约
+    
+-   集成x402支付墙到推理API
+    
+-   部署自定义信誉事件系统
+    
+-   实现模型发现服务
+    
+
+**高级特性**
+
+-   TEE验证集成
+    
+-   服务质量监控
+    
+-   动态信誉评分
+    
+-   支付证明验证
+    
+
+**测试验证**
+
+-   模型发布和发现流程
+    
+-   x402支付完整流程
+    
+-   信誉反馈系统
+    
+-   区块链审计跟踪生成
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 ## **自主代理经济协议栈：A2A/AP2/x402协议解析**
 
 ### **1\. A2A协议：代理间身份与通信的信任基盘**
@@ -229,6 +632,7 @@ text
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 # **x402 开放支付标准笔记**
 
 ## **一、x402 是什么？**
@@ -393,6 +797,7 @@ getPaidResource();
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 # A2A协议与组件（核心概念）
 
 ## **一、核心参与者：谁在参与 A2A 交互？**
@@ -540,6 +945,7 @@ getPaidResource();
 
 
 
+
 -   **A2A协议**(基础)
     
 
@@ -612,6 +1018,7 @@ _4.A2A 请求生命周期_
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
