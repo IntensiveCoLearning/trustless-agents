@@ -15,8 +15,76 @@ Hi everyone! My name is David, and I’m excited to be part of this programming 
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-19
+<!-- DAILY_CHECKIN_2025-10-19_START -->
+Notes – ERC-8004 (Jinming / HashKey Capital)
+
+ERC-8004 = basically an upgrade of Google’s A2A but for web3.
+
+The idea is to let AI agents talk and work together without having to “trust” each other beforehand. Uses blockchain (Ethereum) for identity + reputation + validation.
+
+Right now, lots of AI agents exist, but they’re all separate. Different frameworks → can’t really verify each other. Google’s A2A helps w/ comms (Agent Card system), but it still assumes trust between both sides → not great for web3.
+
+Ethereum makes sense for this cause it already runs most of DeFi + RWA (like 60%+). So ERC-8004 tries to make it the base for “agent economy” stuff.
+
+Main thing:
+
+3 registries:
+
+identity → gives each agent an ID (domain + address)
+
+reputation → feedback system (ratings stored off-chain, ref on-chain)
+
+validation → checks if the task was done right (either by staking or proofs like zk / TEE)
+
+So in short: who you are, what others think of you, and if your work is valid.
+
+Flow (more or less):
+
+client agent gives task → server agent does it → validator checks result
+
+everything tied to hashes and IDs → so it’s traceable
+
+after validation, payment can be released
+
+client leaves feedback (rating JSON etc.)
+
+payments + incentives not defined yet, that’s up to whoever builds on top.
+
+Why it matters:
+
+makes agents verifiable, not just “connected”
+
+feedback + validation = real accountability
+
+flexible (TEE, zkTLS, staking, etc.)
+
+lighter on-chain data → cheaper
+
+can build reputation systems across platforms
+
+Examples / use cases:
+
+research or data agents
+
+AI hedge funds
+
+on-chain credit scoring
+
+milestone-based gig payments
+
+agent scoring / reputation analytics
+
+Overall feels like ERC-8004 could become the standard “trust layer” for AI agents on Ethereum.
+
+Basically moves from “agents can talk” → “agents can prove things.”
+
+Early stage but could be huge if it actually gets adopted.
+<!-- DAILY_CHECKIN_2025-10-19_END -->
+
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 **Notes – ERC-8004**
 
 ERC-8004 is about letting AI agents interact without needing to trust each other. It uses blockchain for identity, reputation, and validation — so agents can basically work and collaborate on their own. Kind of like a framework for this whole “agent economy” idea everyone’s talking about.
@@ -50,6 +118,7 @@ In the end, ERC-8004 is like the base layer for autonomous AI agents to work tog
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 Notes – ERC-8004 (Trustless Agents)
 
