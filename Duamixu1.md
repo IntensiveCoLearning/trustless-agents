@@ -14,8 +14,66 @@ AI enthusiast and Web3 beginner, I’ve already competed in several hackathons�
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+在完成 "Quickstart for Buyers" 文档中提到的任务时，以下是一些可能的难点和易错点：
+
+### 难点：
+
+1.  **钱包客户端的创建**：
+    
+    -   创建钱包客户端并集成到项目中可能会遇到配置环境变量（如API密钥、钱包密钥）的难度。你需要确保所有密钥正确存储，并且在代码中正确引用。例如，CDP API 密钥、钱包密钥等，如果这些配置不当，可能导致无法正确创建钱包客户端。
+        
+    -   使用 `dotenv` 来加载环境变量时，忘记将 `.env` 文件添加到项目根目录，或者环境变量名称拼写错误，可能导致加载失败。
+        
+2.  **安装依赖和配置环境**：
+    
+    -   安装 `x402` 相关的依赖包时，可能会遇到不同版本的兼容性问题，特别是如果你使用的是不同版本的 Node.js 或 Python，可能会遇到包无法正确安装或启动的情况。
+        
+    -   确保选择正确的客户端库（如 `x402-axios` 或 `x402-fetch`）。如果你在使用 `x402-axios`，而不小心使用了 `x402-fetch`，可能会导致功能不兼容。
+        
+3.  **支付流程的自动处理**：
+    
+    -   自动处理 402 响应和支付请求时，可能会有请求头信息的生成和验证的问题。如果支付请求头 (`payment header`) 生成不正确或响应未被正确处理，支付过程将无法继续。
+        
+    -   使用 `wrapFetchWithPayment` 或 `withPaymentInterceptor` 时，传递的参数（如 `account` 对象）必须正确无误，否则会出现认证失败或支付验证失败的情况。
+        
+4.  **服务发现（x402 Bazaar）**：
+    
+    -   使用 x402 Bazaar 动态发现服务时，需要了解如何正确调用 `list()` 方法，并解析返回的服务列表。如果配置不当，可能导致无法动态发现服务或请求失败。
+        
+
+### 易错点：
+
+1.  **环境变量的配置问题**：
+    
+    -   确保 API 密钥和钱包密钥在 `.env` 文件中配置正确，并且没有忘记在代码中加载环境变量。
+        
+    -   注意确保密钥信息不会被硬编码到代码中，避免安全风险。
+        
+2.  **API 请求时的 URL 和端点路径错误**：
+    
+    -   在发起请求时，确认请求的 URL 和端点路径是正确的。如果路径错误，服务器会返回 404 或其他错误响应。
+        
+3.  **忘记处理 402 错误响应**：
+    
+    -   402 响应需要特别处理，如果没有处理这类错误，可能导致支付流程中断，导致请求无法继续。
+        
+4.  **支付响应头的解码问题**：
+    
+    -   在处理响应时，忘记调用 `decodeXPaymentResponse` 解析支付响应头，可能无法提取支付的详细信息，导致后续操作失败。
+        
+5.  **客户端库的选择和使用错误**：
+    
+    -   `x402-axios` 和 `x402-fetch` 都有不同的实现方式，使用时需要根据项目的实际需求来选择。比如，`x402-axios` 适用于 Axios 请求，`x402-fetch` 则适用于原生 `fetch` API。
+        
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-20-1760966810179-image.png)
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 **1\. 核心定义：AP2 是什么？**
 
 AP2 是一个由谷歌、支付和技术公司（超过60家，包括万事达、Visa、PayPal、Coinbase、Salesforce 等）共同开发的**开放协议**。
@@ -482,6 +540,7 @@ AP2 被设计为“通用协议”，不局限于传统支付（信用卡、银�
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 **1\. 基础概念：定义与核心 (What is A2A? & Core Concepts)**
 
 **学习笔记：**
@@ -596,6 +655,7 @@ AP2 被设计为“通用协议”，不局限于传统支付（信用卡、银�
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-17-1760713550697-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/Duamixu1/images/2025-10-17-1760713579722-image.png)
