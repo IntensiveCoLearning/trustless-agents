@@ -15,8 +15,31 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
+
+笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
+
+Why use the A2A Protocol?
+
+-   Interoperability
+    
+-   Complex Workflows
+    
+-   Secure & Opaque
+    
+
+How does A2A work with MCP?
+
+!\[\]([https://a2a-protocol.org/latest/assets/a2a-mcp-readme.png](https://a2a-protocol.org/latest/assets/a2a-mcp-readme.png))
+
+In a world where agents are built using diverse frameworks and by different vendors, A2A provides a common language, breaking down silos and fostering interoperability.
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 学习主题：[https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879](https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879)
 
 重要笔记：ERC-8004 Proposal and Vision
@@ -67,6 +90,7 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -82,6 +106,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 学习主题：[https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004)
