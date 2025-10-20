@@ -14,19 +14,29 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+完成了 x402 rust 代码的实现，并合并到我的支付系统中了：[https://github.com/ZeroPayDev/ZeroPay/pull/8](https://github.com/ZeroPayDev/ZeroPay/pull/8)
+
+下一步就是使用社区提供的 agent contracts 注册该 payment agent 服务，并思考其中对应的 3 种角色，是否需要。
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 今天时间不多，继续在实现了一小会 x402 协议
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 今天在继续实现 x402 协议，学习内容不多。
 <!-- DAILY_CHECKIN_2025-10-18_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 今天继续在实现 x402 协议，[https://github.com/ZeroPayDev/ZeroPay/pull/8](https://github.com/ZeroPayDev/ZeroPay/pull/8) 准备先只实现 evm，不实现 sol 生态。
@@ -37,6 +47,7 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 
 
+
 明白 8004 协议之后，就得开始寻找具体的 agent 领域，除非是想做通用型的 agent exchange platform。目前结合自身，我开始学习 x402 -> A2A 这条路线，毕竟 payment 是最熟悉的。今天先学习 x402，并开始编码，尝试在我的开源项目中，实现一个，支持它。
 
 更新：已经初步完成了 x402 协议的基本框架。
@@ -44,6 +55,7 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
