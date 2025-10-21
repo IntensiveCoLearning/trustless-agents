@@ -16,8 +16,14 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+Today will start focus ion implementing the ERC-8004
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 **Day 5 A2A handshake & AP2 overview**
 
 **x402協議：**
@@ -46,11 +52,13 @@ AP2定義了Agent而設計的網路支付方式 / 協議。比如說代理者要
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
+
 今日對A2A進行更深入的探討和研究
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 **Day 4 A2A Fundamental**
@@ -89,6 +97,7 @@ AP2定義了Agent而設計的網路支付方式 / 協議。比如說代理者要
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
