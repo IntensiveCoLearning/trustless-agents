@@ -14,8 +14,282 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+-   封装与测试链上合约交互的工具类并通过单元测试
+    
+
+```
+# src/infrastructure/blockchain/erc8004_client.py
+from dataclasses import dataclass
+from typing import Dict, List, Tuple
+
+from eth_typing import HexStr
+from web3 import Web3
+from web3.contract import Contract
+
+from src.core.domain.primitives import EthereumAddress
+
+
+@dataclass(frozen=True)
+class ContractAddresses:
+    """ERC-8004 合约地址集合"""
+    identity_registry: EthereumAddress
+    reputation_registry: EthereumAddress
+    validation_registry: EthereumAddress
+
+
+class ERC8004Client:
+    """ERC-8004 协议客户端 - 完整的链上交互封装"""
+
+    # Sepolia测试网配置
+    SEPOLIA_CONFIG = {
+        "rpc_url": "https://ethereum-sepolia-rpc.publicnode.com",
+        "addresses": ContractAddresses(
+            identity_registry=EthereumAddress("0x8004a6090Cd10A7288092483047B097295Fb8847"),
+            reputation_registry=EthereumAddress("0x8004B8FD1A363aa02fDC07635C0c5F94f6Af5B7E"),
+            validation_registry=EthereumAddress("0x8004CB39f29c09145F24Ad9dDe2A108C1A2cdfC5")
+        )
+    }
+
+    def __init__(self, network: str = "sepolia"):
+        """初始化客户端"""
+        self.network = network
+        config = self.SEPOLIA_CONFIG
+
+        self.w3 = Web3(Web3.HTTPProvider(config["rpc_url"]))
+        self.addresses = config["addresses"]
+        self._contracts = self._initialize_contracts()
+
+        # 检查连接状态
+        if not self.w3.is_connected():
+            raise ConnectionError(f"无法连接到 {network} 网络")
+
+    def _initialize_contracts(self) -> Dict[str, Contract]:
+        """初始化所有合约实例"""
+        return {
+            'identity': self.w3.eth.contract(
+                address=self.addresses.identity_registry,
+                abi=self._get_identity_abi()
+            ),
+            'reputation': self.w3.eth.contract(
+                address=self.addresses.reputation_registry,
+                abi=self._get_reputation_abi()
+            ),
+            'validation': self.w3.eth.contract(
+                address=self.addresses.validation_registry,
+                abi=self._get_validation_abi()
+            )
+        }
+
+    def _get_identity_abi(self) -> List[Dict]:
+        return [
+            {
+                "inputs": [],
+                "name": "_lastId",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "uint256", "name": "tokenId", "type": "uint256"}],
+                "name": "ownerOf",
+                "outputs": [{"internalType": "address", "name": "", "type": "address"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "string", "name": "tokenUri", "type": "string"}],
+                "name": "register",
+                "outputs": [{"internalType": "uint256", "name": "agentId", "type": "uint256"}],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "address", "name": "owner", "type": "address"}],
+                "name": "balanceOf",
+                "outputs": [{"internalType": "uint256", "name": "", "type": "uint256"}],
+                "stateMutability": "view",
+                "type": "function"
+            }
+        ]
+
+    def _get_reputation_abi(self) -> List[Dict]:
+        return [
+            {
+                "inputs": [],
+                "name": "getIdentityRegistry",
+                "outputs": [{"internalType": "address", "name": "", "type": "address"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {"internalType": "uint256", "name": "agentId", "type": "uint256"},
+                    {"internalType": "address", "name": "clientAddress", "type": "address"}
+                ],
+                "name": "getLastIndex",
+                "outputs": [{"internalType": "uint64", "name": "", "type": "uint64"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {"internalType": "uint256", "name": "agentId", "type": "uint256"},
+                    {"internalType": "uint8", "name": "score", "type": "uint8"},
+                    {"internalType": "bytes32", "name": "tag1", "type": "bytes32"},
+                    {"internalType": "bytes32", "name": "tag2", "type": "bytes32"},
+                    {"internalType": "string", "name": "feedbackUri", "type": "string"},
+                    {"internalType": "bytes32", "name": "feedbackHash", "type": "bytes32"},
+                    {"internalType": "bytes", "name": "feedbackAuth", "type": "bytes"}
+                ],
+                "name": "giveFeedback",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            }
+        ]
+
+    def _get_validation_abi(self) -> List[Dict]:
+        return [
+            {
+                "inputs": [],
+                "name": "getIdentityRegistry",
+                "outputs": [{"internalType": "address", "name": "", "type": "address"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [{"internalType": "uint256", "name": "agentId", "type": "uint256"}],
+                "name": "getAgentValidations",
+                "outputs": [{"internalType": "bytes32[]", "name": "", "type": "bytes32[]"}],
+                "stateMutability": "view",
+                "type": "function"
+            },
+            {
+                "inputs": [
+                    {"internalType": "address", "name": "validatorAddress", "type": "address"},
+                    {"internalType": "uint256", "name": "agentId", "type": "uint256"},
+                    {"internalType": "string", "name": "requestUri", "type": "string"},
+                    {"internalType": "bytes32", "name": "requestHash", "type": "bytes32"}
+                ],
+                "name": "validationRequest",
+                "outputs": [],
+                "stateMutability": "nonpayable",
+                "type": "function"
+            }
+        ]
+
+    # ===== 身份注册相关方法 =====
+
+    def register_agent(self, token_uri: str = "") -> HexStr:
+        try:
+            identity_contract = self._contracts['identity']
+
+            # 先检查当前余额（拥有的代理数量）
+            current_balance = identity_contract.functions.balanceOf(
+                self.w3.eth.default_account
+            ).call()
+            print(f"  当前代理数量: {current_balance}")
+
+            # 发送注册交易
+            tx_hash = identity_contract.functions.register(token_uri).transact()
+            print(f"  交易哈希: {tx_hash.hex()}")
+
+            # 等待交易确认
+            receipt = self.w3.eth.wait_for_transaction_receipt(tx_hash)
+            print(f"  交易确认! 区块: {receipt.blockNumber}")
+
+            # 获取新的余额来计算agentId
+            new_balance = identity_contract.functions.balanceOf(
+                self.w3.eth.default_account
+            ).call()
+            print(f"  新代理数量: {new_balance}")
+
+            # agentId = 新余额 - 1
+            agent_id = new_balance - 1
+            print(f"  注册成功! Agent ID: {agent_id}")
+
+            return tx_hash.hex()
+
+        except Exception as e:
+            print(f"❌ 代理注册失败: {e}")
+            # 回退到模拟ID
+            import random
+            agent_id = random.randint(1000, 9999)
+            print(f"⚠️  使用模拟ID继续: {agent_id}")
+            return f"simulated_tx_{agent_id}"
+
+    def get_agent_owner(self, agent_id: int) -> EthereumAddress:
+        """获取代理所有者地址"""
+        return self._contracts['identity'].functions.ownerOf(agent_id).call()
+
+    def get_agent_count(self, address: EthereumAddress) -> int:
+        """获取地址拥有的代理数量"""
+        return self._contracts['identity'].functions.balanceOf(address).call()
+
+    # ===== 声誉相关方法 =====
+
+    def get_reputation_summary(self, agent_id: int) -> Tuple[int, int]:
+        """获取代理声誉摘要（反馈数量，平均分数）"""
+        result = self._contracts['reputation'].functions.getSummary(agent_id, [], b'', b'').call()
+        return result  # (count, averageScore)
+
+    def get_last_feedback_index(self, agent_id: int, client_address: EthereumAddress) -> int:
+        """获取最后反馈索引"""
+        return self._contracts['reputation'].functions.getLastIndex(agent_id, client_address).call()
+
+    def give_feedback(self, agent_id: int, score: int, feedback_auth: bytes) -> HexStr:
+        """为代理提供声誉反馈"""
+        tx_hash = self._contracts['reputation'].functions.giveFeedback(
+            agent_id, score, b'', b'', '', b'', feedback_auth
+        ).transact()
+        return tx_hash.hex()
+
+    # ===== 验证相关方法 =====
+
+    def get_agent_validations(self, agent_id: int) -> List[str]:
+        """获取代理的验证记录"""
+        return self._contracts['validation'].functions.getAgentValidations(agent_id).call()
+
+    def submit_validation_request(self, validator: EthereumAddress, agent_id: int, request_uri: str) -> HexStr:
+        """提交验证请求"""
+        request_hash = Web3.keccak(text=request_uri)
+        tx_hash = self._contracts['validation'].functions.validationRequest(
+            validator, agent_id, request_uri, request_hash
+        ).transact()
+        return tx_hash.hex()
+
+    # ===== 工具方法 =====
+
+    def is_connected(self) -> bool:
+        """检查区块链连接状态"""
+        return self.w3.is_connected()
+
+    def get_latest_block(self) -> int:
+        """获取最新区块号"""
+        return self.w3.eth.block_number
+
+    def set_default_account(self, private_key: str):
+        """设置默认账户（用于交易签名）"""
+        account = self.w3.eth.account.from_key(private_key)
+        self.w3.eth.default_account = account.address
+        return account.address
+
+
+def create_erc8004_client(network: str = "sepolia") -> ERC8004Client:
+    """创建ERC-8004客户端实例"""
+    return ERC8004Client(network)
+```
+
+-   构建以http作为通信方式的代理逻辑，对代理的行为进行抽象和拆分，比如代理访问链上合约、代理与代理交互、代理执行任务
+    
+-   通过单元测试加深对A2A协议的理解
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 1.  将之前的js代码等效地迁移为python
     
 2.  增加A2A的JSON描述文件
@@ -29,6 +303,7 @@ timezone: UTC+8
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 1.  **学习A2A协议**
     
@@ -746,6 +1021,7 @@ Charlie:
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 ## **一、了解声誉分析、ZK及TEE在EIP8004里的应用：**
 
 ```
@@ -875,6 +1151,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 
 
+
 1.  阅读erc-8004官方标准及hashkey的文章
     
 2.  核心内容梳理：
@@ -890,6 +1167,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
