@@ -14,8 +14,774 @@ I am a college student currently studying, aiming to become a DePIN engineer. I 
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+# **EIP-3009与x402协议的集成，是如何构建无Gas支付的AI代理服务？**
+
+## **EIP-3009 核心机制分析**
+
+### **技术架构原理**
+
+![屏幕截图_21-10-2025_184640_.jpeg](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SU-AN-coder/images/2025-10-21-1761043658153-_____21-10-2025_184640_.jpeg)
+
+### **EIP-3009 无Gas支付实现**
+
+solidity
+
+```
+// EIP-3009 核心接口
+interface IEIP3009 {
+    event AuthorizationUsed(address indexed authorizer, bytes32 indexed nonce);
+    event TransferWithAuthorization(
+        address indexed from,
+        address indexed to,
+        uint256 value,
+        bytes32 indexed nonce,
+        uint256 validAfter,
+        uint256 validBefore
+    );
+    
+    function transferWithAuthorization(
+        address from,
+        address to,
+        uint256 value,
+        uint256 validAfter,
+        uint256 validBefore,
+        bytes32 nonce,
+        uint8 v,
+        bytes32 r,
+        bytes32 s
+    ) external;
+    
+    function receiveWithAuthorization(
+        address from,
+        address to,
+        uint256 value,
+        uint256 validAfter,
+        uint256 validBefore,
+        bytes32 nonce,
+        uint8 v,
+        bytes32 r,
+        bytes32 s
+    ) external;
+}
+```
+
+**关键优势：**
+
+-   **Gas抽象**: 用户无需持有原生代币支付Gas费
+    
+-   **单步交易**: 无需先approve再transfer的两步操作
+    
+-   **批量处理**: 促进者可批量处理多个支付请求
+    
+-   **过期控制**: 通过validAfter/validBefore控制授权有效期
+    
+
+## **自动化结算系统设计**
+
+### **支付授权流程**
+
+javascript
+
+```
+class AutomatedPaymentSettlement {
+    constructor(provider, tokenAddress, facilitator) {
+        this.provider = provider;
+        this.token = new ethers.Contract(tokenAddress, EIP3009_ABI, provider);
+        this.facilitator = facilitator;
+        this.paymentRegistry = new Map();
+    }
+    
+    /**
+     * 创建支付授权
+     */
+    async createPaymentAuthorization(params) {
+        const {
+            from,          // 支付方地址
+            to,            // 收款方地址  
+            value,         // 支付金额（wei）
+            validDuration = 3600, // 授权有效期（秒）
+            resourceId,    // 资源标识符
+            metadata = {}  // 附加元数据
+        } = params;
+        
+        // 生成唯一nonce
+        const nonce = await this.generateNonce(from, resourceId);
+        
+        // 设置时间窗口
+        const validAfter = Math.floor(Date.now() / 1000);
+        const validBefore = validAfter + validDuration;
+        
+        // 构造类型化数据签名
+        const domain = {
+            name: await this.token.name(),
+            version: await this.token.version(),
+            chainId: await this.provider.getChainId(),
+            verifyingContract: this.token.address
+        };
+        
+        const types = {
+            TransferWithAuthorization: [
+                { name: 'from', type: 'address' },
+                { name: 'to', type: 'address' },
+                { name: 'value', type: 'uint256' },
+                { name: 'validAfter', type: 'uint256' },
+                { name: 'validBefore', type: 'uint256' },
+                { name: 'nonce', type: 'bytes32' }
+            ]
+        };
+        
+        const message = {
+            from,
+            to, 
+            value,
+            validAfter,
+            validBefore,
+            nonce
+        };
+        
+        return {
+            domain,
+            types,
+            message,
+            nonce,
+            validAfter, 
+            validBefore
+        };
+    }
+    
+    /**
+     * 执行支付结算
+     */
+    async executePayment(authorization, signature) {
+        try {
+            const { domain, types, message } = authorization;
+            const { v, r, s } = signature;
+            
+            // 验证签名有效性
+            const recoveredAddress = ethers.utils.verifyTypedData(
+                domain, types, message, { v, r, s }
+            );
+            
+            if (recoveredAddress.toLowerCase() !== message.from.toLowerCase()) {
+                throw new Error('Invalid signature');
+            }
+            
+            // 通过促进者提交支付
+            const txResponse = await this.facilitator.submitPayment({
+                token: this.token.address,
+                from: message.from,
+                to: message.to,
+                value: message.value,
+                validAfter: message.validAfter,
+                validBefore: message.validBefore,
+                nonce: message.nonce,
+                v, r, s
+            });
+            
+            // 等待交易确认
+            const receipt = await txResponse.wait();
+            
+            // 验证支付事件
+            const transferEvent = receipt.events?.find(
+                e => e.event === 'TransferWithAuthorization'
+            );
+            
+            if (!transferEvent) {
+                throw new Error('Payment event not found');
+            }
+            
+            // 记录支付状态
+            this.paymentRegistry.set(message.nonce, {
+                status: 'completed',
+                transactionHash: receipt.transactionHash,
+                blockNumber: receipt.blockNumber,
+                timestamp: Date.now()
+            });
+            
+            return {
+                success: true,
+                paymentReference: message.nonce,
+                transactionHash: receipt.transactionHash
+            };
+            
+        } catch (error) {
+            console.error('Payment execution failed:', error);
+            return {
+                success: false,
+                error: error.message
+            };
+        }
+    }
+}
+```
+
+### **资源访问控制集成**
+
+javascript
+
+```
+class ResourceAccessController {
+    constructor(paymentVerifier, pricingEngine) {
+        this.verifier = paymentVerifier;
+        this.pricing = pricingEngine;
+        this.accessGrants = new Map();
+        this.resourcePolicies = new Map();
+    }
+    
+    /**
+     * 定义资源访问策略
+     */
+    defineResourcePolicy(resourceId, policy) {
+        this.resourcePolicies.set(resourceId, {
+            requiresPayment: policy.requiresPayment || false,
+            price: policy.price || 0,
+            currency: policy.currency || 'USDC',
+            accessDuration: policy.accessDuration || 3600000, // 1小时
+            maxUsage: policy.maxUsage || 1,
+            ...policy
+        });
+    }
+    
+    /**
+     * 检查并授权资源访问
+     */
+    async checkAndGrantAccess(resourceId, userAddress, paymentProof = null) {
+        const policy = this.resourcePolicies.get(resourceId);
+        
+        if (!policy) {
+            return { granted: true, reason: 'no_policy_defined' };
+        }
+        
+        if (!policy.requiresPayment) {
+            return { granted: true, reason: 'free_resource' };
+        }
+        
+        // 检查现有访问授权
+        const userAccessKey = `${userAddress}-${resourceId}`;
+        const existingGrant = this.accessGrants.get(userAccessKey);
+        
+        if (existingGrant) {
+            if (existingGrant.expiresAt > Date.now() && 
+                existingGrant.usageCount < policy.maxUsage) {
+                
+                existingGrant.usageCount++;
+                return { 
+                    granted: true, 
+                    reason: 'existing_grant',
+                    grant: existingGrant
+                };
+            } else {
+                // 授权已过期或达到使用上限
+                this.accessGrants.delete(userAccessKey);
+            }
+        }
+        
+        // 需要支付验证
+        if (paymentProof) {
+            const verification = await this.verifier.verifyPaymentProof(
+                paymentProof, 
+                resourceId, 
+                userAddress,
+                policy.price
+            );
+            
+            if (verification.valid) {
+                const grant = this.grantAccess(
+                    userAddress, 
+                    resourceId, 
+                    policy
+                );
+                
+                return {
+                    granted: true,
+                    reason: 'payment_verified',
+                    grant,
+                    paymentDetails: verification
+                };
+            }
+        }
+        
+        // 需要支付
+        return {
+            granted: false,
+            reason: 'payment_required',
+            paymentRequired: {
+                resourceId,
+                amount: policy.price,
+                currency: policy.currency,
+                accessDuration: policy.accessDuration,
+                validAfter: Math.floor(Date.now() / 1000),
+                validBefore: Math.floor(Date.now() / 1000) + 3600 // 1小时有效期
+            }
+        };
+    }
+    
+    /**
+     * 授予资源访问权限
+     */
+    grantAccess(userAddress, resourceId, policy) {
+        const userAccessKey = `${userAddress}-${resourceId}`;
+        
+        const grant = {
+            userAddress,
+            resourceId,
+            grantedAt: Date.now(),
+            expiresAt: Date.now() + policy.accessDuration,
+            usageCount: 1,
+            maxUsage: policy.maxUsage,
+            policy
+        };
+        
+        this.accessGrants.set(userAccessKey, grant);
+        
+        // 设置自动过期清理
+        setTimeout(() => {
+            this.revokeAccess(userAddress, resourceId);
+        }, policy.accessDuration);
+        
+        return grant;
+    }
+}
+```
+
+## **增强型x402 MCP服务器**
+
+### **系统架构**
+
+![屏幕截图_21-10-2025_18472_.jpeg](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SU-AN-coder/images/2025-10-21-1761043694988-_____21-10-2025_18472_.jpeg)
+
+### **完整MCP服务器实现**
+
+javascript
+
+```
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { privateKeyToAccount } from "viem/accounts";
+import { createWalletClient, http, parseUnits } from "viem";
+import { baseSepolia } from "viem/chains";
+import { withPaymentInterceptor } from "x402-axios";
+import { ResourceAccessController } from './resource-access.js';
+import { AutomatedPaymentSettlement } from './payment-settlement.js';
+
+class EnhancedX402MCPServer {
+    constructor(config) {
+        this.config = config;
+        this.initializeServer();
+        this.initializePaymentSystem();
+        this.setupTools();
+        this.resourceCache = new Map();
+    }
+    
+    initializeServer() {
+        this.server = new McpServer({
+            name: this.config.name || "x402-enhanced-mcp-server",
+            version: this.config.version || "2.0.0",
+            capabilities: {
+                resources: {},
+                tools: {}
+            }
+        });
+        
+        // 初始化钱包客户端
+        this.wallet = createWalletClient({
+            account: privateKeyToAccount(this.config.privateKey),
+            chain: baseSepolia,
+            transport: http(this.config.rpcUrl)
+        });
+        
+        // 初始化HTTP客户端（集成x402拦截器）
+        this.httpClient = withPaymentInterceptor(
+            axios.create({
+                timeout: 30000,
+                maxRedirects: 0
+            }), 
+            this.wallet.account,
+            {
+                facilitatorUrl: this.config.facilitatorUrl,
+                onPaymentRequired: this.handlePaymentRequired.bind(this),
+                onPaymentCompleted: this.handlePaymentCompleted.bind(this)
+            }
+        );
+    }
+    
+    initializePaymentSystem() {
+        // 初始化支付结算系统
+        this.paymentSettlement = new AutomatedPaymentSettlement(
+            this.config.provider,
+            this.config.usdcAddress,
+            this.config.facilitator
+        );
+        
+        // 初始化资源访问控制器
+        this.accessController = new ResourceAccessController(
+            this.paymentSettlement,
+            this.config.pricingEngine
+        );
+        
+        // 预定义资源策略
+        this.defineResourcePolicies();
+    }
+    
+    defineResourcePolicies() {
+        // 定义各种资源的访问策略
+        this.accessController.defineResourcePolicy('weather-api', {
+            requiresPayment: true,
+            price: parseUnits('0.01', 6), // 0.01 USDC
+            currency: 'USDC',
+            accessDuration: 3600000, // 1小时
+            maxUsage: 10 // 最多使用10次
+        });
+        
+        this.accessController.defineResourcePolicy('financial-data', {
+            requiresPayment: true,
+            price: parseUnits('0.05', 6), // 0.05 USDC
+            currency: 'USDC', 
+            accessDuration: 1800000, // 30分钟
+            maxUsage: 5
+        });
+        
+        this.accessController.defineResourcePolicy('ai-inference', {
+            requiresPayment: true,
+            price: parseUnits('0.10', 6), // 0.10 USDC
+            currency: 'USDC',
+            accessDuration: 7200000, // 2小时
+            maxUsage: 3
+        });
+    }
+    
+    setupTools() {
+        // 注册获取付费数据的工具
+        this.server.tool(
+            "fetch-paid-data",
+            "从付费API获取数据，自动处理支付流程",
+            {
+                endpoint: {
+                    type: "string", 
+                    description: "API端点路径，例如 /weather 或 /financial"
+                },
+                params: {
+                    type: "object",
+                    description: "请求参数"
+                },
+                resourceType: {
+                    type: "string",
+                    description: "资源类型：weather-api, financial-data, ai-inference",
+                    enum: ["weather-api", "financial-data", "ai-inference"]
+                }
+            },
+            this.handlePaidDataRequest.bind(this)
+        );
+        
+        // 注册支付状态查询工具
+        this.server.tool(
+            "check-payment-status", 
+            "查询特定支付的链上状态",
+            {
+                paymentReference: {
+                    type: "string",
+                    description: "支付参考ID"
+                }
+            },
+            this.checkPaymentStatus.bind(this)
+        );
+        
+        // 注册可用API列表工具
+        this.server.tool(
+            "list-available-apis",
+            "获取所有可用的付费API及其价格信息",
+            {},
+            this.listAvailableAPIs.bind(this)
+        );
+        
+        // 注册资源访问状态工具
+        this.server.tool(
+            "check-access-status",
+            "检查对特定资源的当前访问状态",
+            {
+                resourceType: {
+                    type: "string", 
+                    description: "资源类型"
+                }
+            },
+            this.checkAccessStatus.bind(this)
+        );
+    }
+    
+    async handlePaidDataRequest({ endpoint, params, resourceType }) {
+        try {
+            const userAddress = this.wallet.account.address;
+            
+            // 1. 检查资源访问权限
+            const accessCheck = await this.accessController.checkAndGrantAccess(
+                resourceType, 
+                userAddress
+            );
+            
+            if (!accessCheck.granted) {
+                // 需要支付 - 构建支付请求
+                const paymentRequest = await this.buildPaymentRequest(
+                    accessCheck.paymentRequired,
+                    userAddress
+                );
+                
+                return {
+                    content: [{
+                        type: "text",
+                        text: `访问此资源需要支付。\n` +
+                              `资源: ${resourceType}\n` +
+                              `价格: ${ethers.utils.formatUnits(paymentRequest.amount, 6)} USDC\n` +
+                              `支付参考: ${paymentRequest.paymentReference}\n\n` +
+                              `请使用支付工具完成支付后重试。`
+                    }],
+                    isPaymentRequired: true,
+                    paymentRequest
+                };
+            }
+            
+            // 2. 有访问权限 - 获取数据
+            const cacheKey = this.generateCacheKey(endpoint, params, resourceType);
+            const cachedData = this.getCachedData(cacheKey);
+            
+            if (cachedData) {
+                return {
+                    content: [{
+                        type: "text", 
+                        text: `缓存数据（${new Date(cachedData.timestamp).toLocaleString()}）:\n` +
+                              JSON.stringify(cachedData.data, null, 2)
+                    }]
+                };
+            }
+            
+            // 3. 发送API请求
+            const response = await this.httpClient.get(endpoint, { params });
+            
+            // 4. 缓存响应数据
+            this.cacheData(cacheKey, response.data);
+            
+            // 5. 更新使用统计
+            await this.updateUsageStatistics(userAddress, resourceType);
+            
+            return {
+                content: [{
+                    type: "text",
+                    text: `数据获取成功:\n${JSON.stringify(response.data, null, 2)}`
+                }]
+            };
+            
+        } catch (error) {
+            return this.handleRequestError(error);
+        }
+    }
+    
+    async buildPaymentRequest(paymentRequired, userAddress) {
+        const authorization = await this.paymentSettlement.createPaymentAuthorization({
+            from: userAddress,
+            to: this.config.merchantAddress,
+            value: paymentRequired.amount,
+            validDuration: 3600,
+            resourceId: paymentRequired.resourceId,
+            metadata: {
+                resourceType: paymentRequired.resourceType,
+                accessDuration: paymentRequired.accessDuration
+            }
+        });
+        
+        return {
+            amount: paymentRequired.amount,
+            currency: paymentRequired.currency,
+            paymentReference: authorization.nonce,
+            authorization,
+            validUntil: authorization.validBefore
+        };
+    }
+    
+    async checkPaymentStatus({ paymentReference }) {
+        try {
+            const status = await this.paymentSettlement.getPaymentStatus(paymentReference);
+            
+            let statusText = '';
+            if (status.status === 'completed') {
+                statusText = `✅ 支付已完成\n交易哈希: ${status.transactionHash}\n区块: ${status.blockNumber}`;
+            } else if (status.status === 'pending') {
+                statusText = `⏳ 支付处理中\n请稍后查询`;
+            } else {
+                statusText = `❌ 支付未找到或已失败`;
+            }
+            
+            return {
+                content: [{
+                    type: "text",
+                    text: statusText
+                }]
+            };
+        } catch (error) {
+            return {
+                content: [{
+                    type: "text", 
+                    text: `支付状态查询失败: ${error.message}`
+                }]
+            };
+        }
+    }
+    
+    async listAvailableAPIs() {
+        const apis = [
+            {
+                name: "天气数据API",
+                endpoint: "/weather",
+                resourceType: "weather-api",
+                description: "获取实时天气信息和预报",
+                price: "0.01 USDC",
+                accessDuration: "1小时",
+                maxUsage: "10次"
+            },
+            {
+                name: "金融数据API",
+                endpoint: "/financial", 
+                resourceType: "financial-data",
+                description: "获取股票价格、市场数据",
+                price: "0.05 USDC",
+                accessDuration: "30分钟", 
+                maxUsage: "5次"
+            },
+            {
+                name: "AI模型推理",
+                endpoint: "/inference",
+                resourceType: "ai-inference",
+                description: "运行大型语言模型推理",
+                price: "0.10 USDC", 
+                accessDuration: "2小时",
+                maxUsage: "3次"
+            }
+        ];
+        
+        const apiList = apis.map(api => 
+            `📊 ${api.name}\n` +
+            `  描述: ${api.description}\n` +
+            `  价格: ${api.price}\n` +
+            `  访问时长: ${api.accessDuration}\n` +
+            `  最大使用: ${api.maxUsage}\n` +
+            `  资源类型: ${api.resourceType}\n`
+        ).join('\n');
+        
+        return {
+            content: [{
+                type: "text",
+                text: `可用的付费API:\n\n${apiList}`
+            }]
+        };
+    }
+    
+    // 缓存管理方法
+    generateCacheKey(endpoint, params, resourceType) {
+        return `${resourceType}-${endpoint}-${JSON.stringify(params)}`;
+    }
+    
+    getCachedData(cacheKey) {
+        const cached = this.resourceCache.get(cacheKey);
+        if (cached && Date.now() - cached.timestamp < 300000) { // 5分钟缓存
+            return cached;
+        }
+        return null;
+    }
+    
+    cacheData(cacheKey, data) {
+        this.resourceCache.set(cacheKey, {
+            data,
+            timestamp: Date.now()
+        });
+    }
+    
+    async start() {
+        const transport = new StdioServerTransport();
+        await this.server.connect(transport);
+        console.log('🚀 增强型 x402 MCP 服务器已启动');
+    }
+}
+```
+
+### **配置与部署示例**
+
+javascript
+
+```
+// 服务器配置
+const serverConfig = {
+    name: "AI-Assistant-X402-Server",
+    version: "2.1.0",
+    privateKey: process.env.PRIVATE_KEY,
+    rpcUrl: process.env.RPC_URL || "https://base-sepolia.g.alchemy.com/v2/your-key",
+    facilitatorUrl: "https://x402.org/facilitator",
+    usdcAddress: "0x036CbD53842c5426634e7929541eC2318f3dCF7e", // Base Sepolia USDC
+    merchantAddress: "0xYourMerchantAddress",
+    
+    // 资源定价配置
+    pricingEngine: {
+        baseCurrency: 'USDC',
+        defaultAccessDuration: 3600000, // 1小时
+        dynamicPricing: true
+    },
+    
+    // 缓存配置
+    cache: {
+        enabled: true,
+        ttl: 300000, // 5分钟
+        maxSize: 1000
+    },
+    
+    // 监控配置
+    monitoring: {
+        enabled: true,
+        logLevel: 'info',
+        metrics: true
+    }
+};
+
+// Claude Desktop MCP 配置
+const claudeConfig = {
+    "mcpServers": {
+        "x402-enhanced": {
+            "command": "node",
+            "args": ["dist/server.js"],
+            "env": {
+                "PRIVATE_KEY": "0xYourPrivateKey",
+                "RPC_URL": "https://base-sepolia.g.alchemy.com/v2/your-key",
+                "FACILITATOR_URL": "https://x402.org/facilitator"
+            }
+        }
+    }
+};
+```
+
+## **核心工作流程**
+
+### **完整支付与访问流程**
+
+![屏幕截图_21-10-2025_184717_.jpeg](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SU-AN-coder/images/2025-10-21-1761043715854-_____21-10-2025_184717_.jpeg)
+
+## **技术优势总结**
+
+1.  **无缝支付体验**: EIP-3009实现真正的无Gas支付，用户只需签名授权
+    
+2.  **自动化结算**: 支付成功后自动授权资源访问，无需人工干预
+    
+3.  **灵活定价**: 支持按次付费、时段授权、用量限制等多种模式
+    
+4.  **状态持久化**: 完整的支付状态跟踪和访问授权管理
+    
+5.  **缓存优化**: 智能缓存减少重复支付，提升用户体验
+    
+6.  **错误恢复**: 完善的错误处理和重试机制
+    
+7.  **多网络支持**: 通过促进者抽象支持多链环境
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 ## **去中心化AI模型市场演示代理**
 
 ### **核心概念**
@@ -419,6 +1185,7 @@ async function testModelPurchase() {
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
+
 ## **自主代理经济协议栈：A2A/AP2/x402协议解析**
 
 ### **1\. A2A协议：代理间身份与通信的信任基盘**
@@ -633,6 +1400,7 @@ text
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
 
+
 # **x402 开放支付标准笔记**
 
 ## **一、x402 是什么？**
@@ -798,6 +1566,7 @@ getPaidResource();
 
 
 
+
 # A2A协议与组件（核心概念）
 
 ## **一、核心参与者：谁在参与 A2A 交互？**
@@ -946,6 +1715,7 @@ getPaidResource();
 
 
 
+
 -   **A2A协议**(基础)
     
 
@@ -1018,6 +1788,7 @@ _4.A2A 请求生命周期_
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
