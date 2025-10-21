@@ -14,8 +14,50 @@ Keep Buidler
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+x402 is an open payment standard built around the HTTP `402 Payment Required` status code, enabling web services to charge for API and content access directly over HTTP. It leverages crypto-native payments to ensure speed, privacy, and efficiency, allowing clients to make programmatic payments without the need for accounts, sessions, or credential management.
+
+### **Key Advantages**
+
+It addresses critical limitations of existing payment systems, including high fees and friction with traditional credit card/fiat processors, incompatibility with machine-to-machine payments (e.g., AI agents), and lack of support for micropayments, which hinders monetization of usage-based services.
+
+### **Target Users**
+
+-   **Sellers**: Service providers aiming to monetize APIs or content, benefiting from direct, programmatic payments with minimal setup.
+    
+-   **Buyers**: Human developers and AI agents seeking access to paid services without accounts or manual payment processes. Both parties interact directly via HTTP requests, with payments handled transparently through the protocol.
+    
+
+### **Typical Use Cases**
+
+It supports various scenarios such as pay-per-request API services, AI agents that autonomously pay for API access, paywalls for digital content, microservices monetized via microtransactions, and proxy services that aggregate and resell API capabilities.
+
+### **Core Workflow**
+
+1.  A buyer requests a resource from a server.
+    
+2.  If payment is required, the server responds with `402 Payment Required` along with payment instructions.
+    
+3.  The buyer prepares and submits a payment payload.
+    
+4.  The server verifies and settles the payment using an x402 facilitator's `/verify` and `/settle` endpoints.
+    
+5.  Upon valid payment, the server delivers the requested resource.
+    
+
+### **Roadmap Priorities**
+
+Planned developments include solutions guides and templates for easy integration, support for `exact` scheme on Solana (SVM) and `upto` scheme on EVM & SVM, simplified semantics for arbitrary tokens via `permit`, full arbitrary token support, and a production-ready marketplace with a reputation system for x402-compatible endpoints. The overarching goal is to make programmatic commerce accessible, permissionless, and developer-friendly.
+
+### **Resources for Getting Started**
+
+Developers can access quickstarts tailored for sellers and buyers, explore core concepts, and join the community on Discord. The protocol is licensed under Apache-2.0, with its documentation maintained as a credibly neutral resource, currently sponsored by the Coinbase Developer Platform for AI-powered docs during migration to [x402.org](http://x402.org)'s own solution.
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 ## Core Purpose and Solution
 
 The main challenge A2A addresses is the **interoperability challenge** where agents, built using diverse frameworks and by different vendors, are unable to work together because each has its own bespoke development and deployment.
@@ -63,6 +105,7 @@ Do you want to know more about a specific topic, like the **A2A Request Lifecycl
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 Based on the web page content, here is a detailed explanation of the **Agent2Agent (A2A) Protocol** using Markdown:
 
 # Agent2Agent (A2A) Protocol
@@ -97,6 +140,7 @@ A2A and Model Context Protocol (MCP) are **complementary standards**:
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 This is the sequences diagram that I summarize from the official erc 8004 examples:
@@ -171,6 +215,7 @@ sequenceDiagram
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
