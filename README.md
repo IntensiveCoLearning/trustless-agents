@@ -379,7 +379,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ciconia11](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ciconia11.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [kiwifruits686](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/kiwifruits686.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [BiscuitCoder](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BiscuitCoder.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [lehotle](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lehotle.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | |
+| [lehotle](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lehotle.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | |
 | [0xClareYang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xClareYang.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [voidovo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/voidovo.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [weifengHuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/weifengHuang.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ |   | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
