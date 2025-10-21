@@ -14,8 +14,16 @@ Swift Evo
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+Chat with AI for understanding about 8004 and the twitter post about x402 as well
+
+https://x.com/tinyxiong\_eth/status/1980542373018103863?t=DtscjHYs\_BQzH9Gc5ZIOzw&s=19
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 由於新手，在看到不同的佈署編碼時，我都帶有資訊透露的風險。今天查問了以下的問題，為本地模擬以及鏈上佈署做好準備。  
   
 [https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)  
@@ -218,6 +226,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
+
 [https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)
 
 繼續和AI對話，學習 8004 的 coding ；同時嘗試了解 MCP, A2A 與 ADK 的分別  
@@ -227,6 +236,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 [https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)
@@ -248,11 +258,13 @@ bash npm install --save-dev hardhat npx hardhat init
 
 
 
+
 參加了 workshop ，對於 ERC 8004 的整理流程有了進一步理解，也提出了關於注冊的相關問題
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
