@@ -14,8 +14,68 @@ Senior DevOps Engineer with 2 years of exp. in Crypto and 15 years in total.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+**Recap of Days 1–2**
+
+Day 1 focused on understanding what EIP-8004 is and why it matters (identity, reputation, validation).
+
+Day 2 explored the trust layers — how these registries interact and how agents establish credibility.
+
+Now, Day 3 introduces a simple hands-on workflow to simulate trustless agent behavior.
+
+**Step 1 – Register an Agent**
+
+Simulate registration by creating a JSON profile representing an agent’s metadata.
+
+This mimics how an agent would mint an ERC-721 identity token with a tokenURI pointing to off-chain data.
+
+The file defines the agent’s endpoints, description, and supported trust models.
+
+**Step 2 – Discover and Interact**
+
+As another agent, query the registry (or read mock profiles locally) to find potential partners.
+
+Select based on trust preferences and simulate a task request such as data summarization or information retrieval.
+
+Document this as a simple interaction flow.
+
+**Step 3 – Validation Flow**
+
+After a task, create a data hash representing the result.
+
+Post a mock validation request and simulate how validators verify the work by re-execution, proof generation, or attestation.
+
+Then record a response linking the validation request to its outcome.
+
+**Step 4 – Reputation Feedback**
+
+Once validation is complete, submit feedback such as a rating or comment.
+
+Aggregate feedback from multiple clients to track how reputation evolves over time.
+
+This helps illustrate how agents develop credibility through repeated verifiable interactions.
+
+**Reflection**
+
+Identity provides verifiable existence, validation ensures correctness, and reputation builds social trust.
+
+Together they create a layered trust model for autonomous agents.
+
+ERC-8004 does not dictate behavior — it defines the minimal primitives needed for an open agent ecosystem.
+
+**Stretch Goals**
+
+• Build a local mock registry using JSON or a minimal smart contract.
+
+• Run a multi-agent simulation using different reputation or validation strategies.
+
+• Explore how payment or staking logic could be attached to validation results.
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 **Focus:**  
 Understanding _how trust actually forms_ between agents once the ERC-8004 primitives (identity, reputation, validation) are in place.
 
@@ -110,6 +170,7 @@ On-chain layer = minimal & composable → **“Ethereum as trust anchor.”**
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
