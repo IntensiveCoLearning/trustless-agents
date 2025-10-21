@@ -14,8 +14,114 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+# Agent2Agent 协议
+
+Agent2Agent （A2A）协议是 Google 开发的 Agent 互操作协议，是对 Anthropic 模型上下文协议 （MCP） 协议的补充。简而言之，MCP 协议为 Agent 提供了结构化的上下文和工具调用方法，而 A2A 协议主要关心 Agent 之间如何相互沟通的问题。\[^1\]
+
+主要对象：
+
+-   _用户_ User
+    
+-   _客户端_ Client Agent
+    
+-   _远端_ Remote/Server Agent
+    
+
+## 可发现性
+
+远端 Agent 通过发布 Agent Card 介绍自己，本质上是一个 `.json` 文件，A2A协议推荐将其放在 Endpoint 的以下位置：
+
+\`\`\`
+
+.well-known/agent.json
+
+\`\`\`
+
+## 互操作性
+
+### 传输层
+
+A2A 协议的消息封包可选：
+
+\- JSON-RPC 2.0
+
+\- gRPC
+
+\- HTTP+JSON/REST
+
+更多示例请见 [官方标准](https://a2a-protocol.org/latest/specification/#agent2agent-a2a-protocol-official-specification)
+
+### 基于 JSON-RPC2.0 的示例
+
+一个经典 JSON-RPC 可以是：
+
+**请求：**
+
+```
+{
+  "jsonrpc": "2.0",
+  "method": "message/send", // A2A 协议定义的方法名
+  "params": {
+    "taskId": "task-47",
+    "message": {
+      "role": "user",
+      "parts": [
+        {
+          "text": "请帮我预订一张从北京到上海的周五火车票。" // 消息内容
+        }
+      ]
+    }
+  },
+  "id": "req-12345" // 跟踪请求的唯一 ID
+}
+```
+
+**响应：**
+
+```
+// Remote Agent 表示已接受任务
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "status": "SUBMITTED",
+    "taskId": "task-47",
+    "messageId": "msg-001"
+  },
+  "id": "req-12345" // 匹配请求 ID
+}
+
+// Client Agent 想要查看状态，即定义了 `tasks/get` 方法
+{
+  "jsonrpc": "2.0",
+  "method": "tasks/get",
+  "params": {
+    "taskId": "task-47"
+  },
+  "id": "req-54321"
+}
+
+// Remote Agent 返回任务的当前状态信息
+{
+  "jsonrpc": "2.0",
+  "result": {
+    "taskId": "task-47",
+    "status": "COMPLETED",
+    "messages": [
+      // ... 完整的消息历史 ...
+    ]
+  },
+  "id": "req-54321"
+}
+```
+
+\[^1\]: \[Get started with Agent2Agent (A2A) Protocol | Google\]([https://a2a-protocol.org/latest/#what-is-a2a-protocol](https://a2a-protocol.org/latest/#what-is-a2a-protocol))
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 ### 信誉注册表
 
 我们知道在 A2A 协议中，用户侧的 Agent 被称为 _客户端 Agent_ ，当客户端 Agent 在完成服务后可以发布一个反馈证明
@@ -41,6 +147,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 ## 身份注册表
 
@@ -107,6 +214,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -129,6 +237,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -251,6 +360,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
