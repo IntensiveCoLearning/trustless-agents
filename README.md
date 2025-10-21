@@ -360,7 +360,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [peianwang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/peianwang.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Lemonadeccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Lemonadeccc.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [Coooder-Crypto](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Coooder-Crypto.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | |
-| [jeffishjeff](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jeffishjeff.md) | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | |
+| [jeffishjeff](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jeffishjeff.md) | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ✅ | ✅ | | | | | | | |
 | [Duamixu1](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Duamixu1.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ |   | | | | | | | |
 | [jemoker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jemoker.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [zylg-create](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zylg-create.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ |   | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ |   | | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
