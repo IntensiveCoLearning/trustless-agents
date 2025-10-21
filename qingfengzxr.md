@@ -18,7 +18,6 @@ timezone: UTC+8
 <!-- DAILY_CHECKIN_2025-10-21_START -->
 ## 什么是AP2?
 
-  
 **Agent Payments Protocol (AP2)** 是一个由 Google 与领先的支付和技术公司（超过 60 家，包括 Adyen、American Express、Mastercard、Paypal 等）共同开发和宣布的\*\*开放协议\*\*。
 
 它旨在为 **AI 代理（Agent）** 主导的支付提供一个安全的、跨平台的交易启动和执行框架。AP2 可以作为 Agent2Agent (A2A) 协议和 Model Context Protocol (MCP) 的扩展使用。它建立了一个与具体支付方式无关的框架，让用户、商家和支付服务提供商能够通过各种支付方式（如信用卡、借记卡、稳定币和实时银行转账）自信地进行交易。
@@ -33,11 +32,45 @@ AP2 的灵活设计为**新型商业模式提供了基础**，例如：
 
 \- **协调任务**：代理可以同时与多个服务（如航空公司和酒店）的代理进行交互，并在符合用户总预算时，同步执行多项加密签名的预订。
 
-## 什么是x402?
+## 什么是A2A x402?
+
+**A2A x402 支付扩展** 是 **Agent-to-Agent (A2A) 协议** 的一个 **扩展 (Extension)**。
+
+它的核心目的是：
+
+1.  **实现服务变现：** 使 AI 代理能够通过 **链上加密货币支付** 来对其提供的服务进行收费。
+    
+2.  **致敬 HTTP 402：** 重新启用 HTTP 402 “Payment Required”（需要付费）状态码的精神，将其应用于去中心化的代理世界。
+    
+
+该规范定义了在 A2A 框架内 **请求、授权和结算支付** 所需的数据结构、消息流和状态机。
+
+### **x402 的工作机制和角色**
+
+x402 协议定义了 **客户端代理 (Client Agent)** 和 **商家代理 (Merchant Agent)** 之间的交互流程，以完成一次链上支付。
+
+| 角色 | 职责 |
+| --- | --- |
+| 商家代理 (Merchant Agent) | 服务提供者。确定服务何时需要付费，并向客户端代理发送包含可接受的 PaymentRequirements 列表的请求。它负责验证支付授权，并在区块链网络上 结算 (settle) 交易。 |
+| 客户端代理 (Client Agent) | 用户代表。代表用户发起服务请求，接收商家的支付要求。它决定是否继续支付，并协调 签名服务/钱包 对支付授权进行签名。最后，它将签名后的支付授权提交给商家代理。 |
+| 签名服务/钱包 (Signing Service/Wallet) | 安全授权者。安全地对客户端代理选择的支付要求进行签名，生成 PaymentPayload（支付载荷），作为支付授权的证明。 |
+
+**支付流程概要**
+
+1.  **支付请求：** 客户端代理请求服务。商家代理确定需要付费，并返回一个包含支付要求的任务 (`payment-required` 状态)。
+    
+2.  **支付授权：** 客户端代理选择一个支付选项，通过用户的钱包或签名服务进行签名授权，生成 `PaymentPayload`。
+    
+3.  **提交支付：** 客户端代理将签名后的 `PaymentPayload` 提交给商家代理。
+    
+4.  **验证与结算：** 商家代理验证授权的有效性，并在区块链上完成结算（将加密货币转入其钱包）。
+    
+5.  **服务完成：** 商家代理返回最终的任务结果，其中包含服务结果和支付收据 (`payment-completed` 状态)，完成整个流程。
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 观看ERC-8004的Workshop:  
 [https://www.bilibili.com/video/BV1ChWkzvEdf/?vd\_source=a5b3dc7305ae6e3f310852f7273a82a2](https://www.bilibili.com/video/BV1ChWkzvEdf/?vd_source=a5b3dc7305ae6e3f310852f7273a82a2)
@@ -45,6 +78,7 @@ AP2 的灵活设计为**新型商业模式提供了基础**，例如：
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 ## 什么是A2A协议？
@@ -94,6 +128,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 
 
 
+
 ## 1.阅读了其他同学的笔记，获得了对ERC-8004的一些新的想法。
 
 ## **This Protocol Enables**
@@ -121,6 +156,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
