@@ -17,19 +17,47 @@ python, C/C++
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+### Questions
+
+-   For Reputation Registry, what are recorded on-chain, how is the on-chain data connected with off-chain data?
+    
+-   For Validation Registry,
+    
+    -   How many validators can it be for one validation?
+        
+    -   How to prove the validator really does the validation, instead of submitting random result?
+        
+    -   Is there a way to validate the validation from a validator?
+        
+-   In ERC8004, what kind of tasks are we talking about? If validation can be done directly on-chain, what is the purpose of this protocol?
+    
+-   What is the difference between ERC8004 and a oracle?
+    
+-   What is TEE and how does it work?
+    
+-   What is Google's A2A protocol?
+    
+-   What is AP2 protocol?
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 Checked A2A protocol
 <!-- DAILY_CHECKIN_2025-10-20_END -->
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
+
 It is Sunday today.
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 Keep reading the document and check the discussions.
@@ -40,11 +68,13 @@ Keep reading the document and check the discussions.
 
 
 
+
 It's been a busy day, and I only checked others' notes for learning. Nothing more.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -65,6 +95,7 @@ Agents register via the Identity Registry, communicate and exchange tasks using 
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
