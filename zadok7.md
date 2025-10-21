@@ -14,8 +14,58 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-20
+<!-- DAILY_CHECKIN_2025-10-20_START -->
+## MCP Agents as Endpoints
+
+**MCP (Model Context Protocol) Integration with ERC-8004:**
+
+-   **Discovery via Registry**: Agents advertise their MCP endpoint URL in the registration JSON (e.g., `"https://mcp.agent.eth/"`)
+    
+-   **Communication Layer**: MCP handles the protocol for listing capabilities (prompts, resources, tools, completions)
+    
+-   **Capability Advertising**: Optional capabilities field in endpoint shows what the MCP server can do
+    
+-   **Trust Models Apply**: MCP endpoints can be backed by reputation, crypto-economic validation, or TEE attestation
+    
+-   **Standard Versioning**: Endpoints include MCP version (e.g., `"2025-06-18"`) for compatibility
+    
+-   **Multi-Endpoint Support**: Agents can have both MCP and A2A endpoints simultaneously
+    
+-   **Flexible Architecture**: MCP servers can run anywhere - standard hosting, decentralized infrastructure, or inside TEEs for high-trust scenarios
+    
+
+## How x402 Utilizes HTTP 402 for "Gasless" Micro-payments
+
+### The Core Concept
+
+The x402 protocol activates the dormant HTTP 402 "Payment Required" status code to enable instant, blockchain-based payments for web resources and APIs without requiring registration, emails, OAuth, or complex signatures x402.
+
+**The Flow:**
+
+1.  **Client Request** → Makes HTTP request to protected resource
+    
+2.  **402 Response** → Server responds with `402 Payment Required` + payment details in headers
+    
+3.  **Payment Execution** → Client processes blockchain payment
+    
+4.  **Access Granted** → Server provides resource upon confirmation
+    
+
+**Mixing with EIP-3009 Key Benefits:**
+
+-   Allows users to sign messages authorizing token transfers off-chain, which can then be submitted on-chain by anyone
+    
+-   **Random nonces** (not sequential) - enables multiple simultaneous transactions
+    
+-   **Time-bounded** - includes `validAfter` and `validBefore` parameters
+    
+-   **No approve/transferFrom pattern** - direct transfer authorization
+<!-- DAILY_CHECKIN_2025-10-20_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 ### Example of ERC-8004 Agent Using x402
 
 -   Agent **"AlphaAudit"** registers via **ERC-8004 Identity Registry**
@@ -65,6 +115,7 @@ In the 2000's everyone once talked of "everything going online". Now, we know, a
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
+
 \-Important philosophy behind design:  
   
 Basically: [**ERC-8004**](https://eips.ethereum.org/EIPS/eip-8004) **solves the coordination problem by giving everyone equal data and visibility to create an agent economy**, while leaving specific reputation calculation rules and trust thresholds to the ecosystem.
@@ -74,6 +125,7 @@ Key insight.. A2A didn't solve cross organizational trust, ERC-8004 does!
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 **ERC-7701 (Sponsored Interactions)**
@@ -146,6 +198,7 @@ Key insight.. A2A didn't solve cross organizational trust, ERC-8004 does!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
