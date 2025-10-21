@@ -15,8 +15,14 @@ ai转web3，小白捏，希望一起学习
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+x402 is an open payments protocol developed by Coinbase that enables AI agents to complete transactions autonomously. It is powered by onchain technology and digital currencies (primarily stablecoins like USDC) and provides a lightweight, secure, and instantaneous payment system that we hope can help accelerate the adoption of M2M payments and agentic commerce. The x402 protocol utilizes the long-reserved HTTP 402 ”Payment Required” status code to require a payment to complete an API request or load a webpage. If an API request lacks payment, x402 responds with an HTTP 402 Payment Required status, prompting the client to pay and retry. With this simple protocol, x402 removes the need for API keys, accounts, and subscriptions. x402 enables any API or content provider to accept pay-per-use payments through a lightweight middleware that integrates seamlessly into existing infrastructures.
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 ## Core Actors in A2A Interactions[¶](https://a2a-protocol.org/latest/topics/key-concepts/#core-actors-in-a2a-interactions)
 
 -   **User**: The end user, which can be a human operator or an automated service. The user initiates a request or defines a goal that requires assistance from one or more AI agents.
@@ -28,6 +34,7 @@ ai转web3，小白捏，希望一起学习
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 1.  Initialize and register agents to the identity registry. There are 3 types of agents. Client agent assigns task to server agent and provides feedback. Server agent accepts task and feedback. Validator agent validates task, leveraging different trust models.
     
@@ -52,6 +59,7 @@ ai转web3，小白捏，希望一起学习
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 ## EIP-8004 Official Standard
