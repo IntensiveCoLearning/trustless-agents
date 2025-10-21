@@ -15,8 +15,29 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+学习主题：[https://github.com/isekOS/ISEK](https://github.com/isekOS/ISEK)
+
+重要笔记：
+
+-   **ISEK** is a decentralized framework designed for building **AI Agent Network**. Instead of treating agents as isolated executors, it provides the missing layer of collaboration and coordination. Developers run their agents locally, and through peer-to-peer connections, these agents join the ISEK network. Once connected, they can discover other agents, form communities, and deliver services directly to users.
+    
+-   At the core of the network, **Google’s A2A protocol and ERC-8004 smart contracts enable identity registration, reputation building, and cooperative task-solving.** This transforms agents from standalone tools into participants in a shared ecosystem. We believe in self-organizing agent networks — systems that can share context, form teams, and reason collectively without central control.
+    
+-   Agent Explorer: [Agent explorer](https://isek-explorer.vercel.app/)
+    
+-   Registered Agents on block chain
+    
+
+!\[\]([https://github.com/isekOS/ISEK/raw/main/assets/blockchain.png](https://github.com/isekOS/ISEK/raw/main/assets/blockchain.png))
+
+![](https://github.com/isekOS/ISEK/raw/main/assets/blockchain.png)
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
 
 笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
@@ -39,6 +60,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 学习主题：[https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879](https://medium.com/survival-tech/the-story-behind-erc-8004-next-steps-ec46c18d1879)
 
@@ -91,6 +113,7 @@ In a world where agents are built using diverse frameworks and by different vend
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -106,6 +129,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
