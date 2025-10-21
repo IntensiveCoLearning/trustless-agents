@@ -364,7 +364,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [Duamixu1](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Duamixu1.md) | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | | |
 | [jemoker](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/jemoker.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [zylg-create](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zylg-create.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [daxang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/daxang.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   | | | | | | | |
+| [daxang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/daxang.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | | | | | | | |
 | [bilgute](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/bilgute.md) | ⭕️ | ✅ | ⭕️ | ✅ | ❌ | | | | | | | | | |
 | [ekarth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ekarth.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [tikpen](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/tikpen.md) | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ |   | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ |   | | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ |   | | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
