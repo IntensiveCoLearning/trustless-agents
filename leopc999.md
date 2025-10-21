@@ -14,8 +14,14 @@ A web3 enthusiast in AI.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+今天继续复习之前的内容，体会其中的机制。
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 # x402 本地测试
 
 **目标**：在本地暴露一个付费保护的 endpoint（Seller），用 Buyer 触发 **402 → 完成支付 → 返回真实响应**，并在服务端看到成功日志（`402 → success logs`）。
@@ -106,6 +112,7 @@ console.log(await res.json()); // paid response
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 # **A2A → AP2** 协议内容学习
 
@@ -247,6 +254,7 @@ console.log(await res.json()); // paid response
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 今天阅读了 QuillAudits 文章《ERC-8004: Infrastructure for Autonomous AI Agents》。
 
 * * *
@@ -350,6 +358,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 
 
+
 # 构建无信任代理（Trustless Agents）：ERC-8004 Workshop
 
 本次会议围绕“无信任代理（Trustless Agents）”相关的 ERC-8004 标准展开，涵盖标准背景、核心功能、技术实现及后续规划，我参会后，对核心内容进行了总结。
@@ -419,6 +428,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
