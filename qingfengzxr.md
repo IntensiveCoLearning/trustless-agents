@@ -14,14 +14,38 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+## 什么是AP2?
+
+  
+**Agent Payments Protocol (AP2)** 是一个由 Google 与领先的支付和技术公司（超过 60 家，包括 Adyen、American Express、Mastercard、Paypal 等）共同开发和宣布的\*\*开放协议\*\*。
+
+它旨在为 **AI 代理（Agent）** 主导的支付提供一个安全的、跨平台的交易启动和执行框架。AP2 可以作为 Agent2Agent (A2A) 协议和 Model Context Protocol (MCP) 的扩展使用。它建立了一个与具体支付方式无关的框架，让用户、商家和支付服务提供商能够通过各种支付方式（如信用卡、借记卡、稳定币和实时银行转账）自信地进行交易。
+
+**AP2 的核心作用是解决 AI 代理能够代表用户进行交易时所产生的\*\*信任、安全和责任问题\*\*。**
+
+AP2 的灵活设计为**新型商业模式提供了基础**，例如：
+
+\- **更智能的购物**：代理可以根据用户预先设定的条件（如“愿意多付 20% 购买绿色夹克”）自动监控价格和库存，并在条件满足时执行安全购买。
+
+\- **个性化优惠**：代理可以代表用户向商家传达意图（如旅行日期），商家的代理可以据此创建定制的、有时效性的捆绑优惠。
+
+\- **协调任务**：代理可以同时与多个服务（如航空公司和酒店）的代理进行交互，并在符合用户总预算时，同步执行多项加密签名的预订。
+
+## 什么是x402?
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 观看ERC-8004的Workshop:  
 [https://www.bilibili.com/video/BV1ChWkzvEdf/?vd\_source=a5b3dc7305ae6e3f310852f7273a82a2](https://www.bilibili.com/video/BV1ChWkzvEdf/?vd_source=a5b3dc7305ae6e3f310852f7273a82a2)
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 ## 什么是A2A协议？
 
@@ -69,6 +93,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 <!-- DAILY_CHECKIN_2025-10-16_START -->
 
 
+
 ## 1.阅读了其他同学的笔记，获得了对ERC-8004的一些新的想法。
 
 ## **This Protocol Enables**
@@ -96,6 +121,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
