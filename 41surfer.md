@@ -14,8 +14,14 @@ interest in AI and do want to know more about it "+web3"
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-21
+<!-- DAILY_CHECKIN_2025-10-21_START -->
+今天看了一些A2A和MCP的协同应用案例
+<!-- DAILY_CHECKIN_2025-10-21_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 ### **核心思想：一句话概括**
 
 -   **MCP：是“服务器”与“AI助手”之间的通信协议。** 它让AI（如ChatGPT）能安全、标准化地调用外部工具和数据。
@@ -32,6 +38,7 @@ interest in AI and do want to know more about it "+web3"
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 **Agent2Agent (A2A) 协议**是由 Google 开发并捐赠给 Linux 基金会的开放标准，旨在实现 AI 代理之间的无缝通信和协作。
 
@@ -50,6 +57,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 ## ERC-8004 引入了三个轻量级的链上注册表，作为跨组织代理交互的信任支柱。与试图将所有事务都处理在链上的传统区块链协议不同，ERC-8004 采用了一种混合方法，只在链上存储必要的信任相关数据，同时将复杂的操作委托给链下基础设施。
@@ -72,6 +80,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
