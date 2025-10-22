@@ -18,19 +18,48 @@ interest in AI and do want to know more about it "+web3"
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 问了deepseek 第一个问题：
 
-The community debates how much data to put on-chain. If you had to choose between "events only" vs "minimal view functions" vs "full on-chain indexing," which would you pick and why?
+The community debates how much data to put on-chain. If you had to choose between “events only” vs “minimal view functions” vs “full on-chain indexing,” which would you pick and why?
 
-的
+知道了这三者的区别，我会选择full on-chain indexing
+
+这基于对**可扩展性、成本、去中心化原则和开发者体验**的综合考量：
+
+**在成本与功能间取得最佳平衡**：
+
+-   **“仅事件”** 方案成本最低，但数据过于原始。使用它来构建应用就像只用零散的日志来还原整个故事，需要依赖大量复杂的链下基础设施来重构状态，这违背了链上数据可验证性的初衷。
+    
+-   **“完整链上索引”** 提供了最丰富和便捷的数据访问，但这是以极高的Gas成本为代价的。存储和索引数据非常昂贵，会限制协议的广泛应用，并最终将成本转嫁给用户。
+    
+-   **“最小化视图函数”** 恰恰居于两者之间。它通过在链上暴露关键的、计算出的状态，提供了直接且无需信任的数据查询方式，同时又避免了在链上存储庞大的索引数据。这是一种成本可控的“优雅”方案。
+    
+
+**恪守区块链的核心价值——可验证性与无需信任**：
+
+-   视图函数是**可验证的真理来源**。任何人在任何节点上调用它，都会得到基于链上共识状态计算出的相同结果。这完全符合区块链的无需信任精神。
+    
+-   相比之下，“仅事件”方案将信任转移到了链下索引器，而“完整链上索引”虽然无需信任，但代价过于高昂。
+    
+
+**为开发者提供优秀的体验**：
+
+-   对于前端和第三方开发者来说，直接调用一个视图函数来获取关键数据是极其简单和可靠的。这比解析事件日志并自己构建状态要容易得多，也比依赖可能宕机或有延迟的第三方索引服务更稳定。
+    
+
+**面向未来的架构**：
+
+-   随着以太坊L2（如Arbitrum, Optimism）和其他高性能链的成熟，Gas成本问题得到缓解。届时，“最小化视图函数”的策略可以更容易地扩展，有选择地将更多逻辑上链，而无需进行根本性的架构改变。
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 今天看了一些A2A和MCP的协同应用案例
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 ### **核心思想：一句话概括**
@@ -49,6 +78,7 @@ The community debates how much data to put on-chain. If you had to choose betwee
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -73,6 +103,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 
 
+
 ## ERC-8004 引入了三个轻量级的链上注册表，作为跨组织代理交互的信任支柱。与试图将所有事务都处理在链上的传统区块链协议不同，ERC-8004 采用了一种混合方法，只在链上存储必要的信任相关数据，同时将复杂的操作委托给链下基础设施。
 
 预计到 2030 年，全球人工智能市场规模将达到 1.8 万亿美元，其中自主代理交互将占到这一增长的很大一部分。然而，当前的信任瓶颈阻碍了代理进入更广泛的专业服务经济领域。ERC-8004 通过提供标准化的信任机制，打破了这一瓶颈，该机制可适用于从简单任务到关键任务操作的各种场景。
@@ -93,6 +124,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
