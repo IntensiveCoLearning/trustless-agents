@@ -14,8 +14,14 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-22
+<!-- DAILY_CHECKIN_2025-10-22_START -->
+已完成第二个Agent 准备迁移至 LangGraph 再尝试A2A的实践
+<!-- DAILY_CHECKIN_2025-10-22_END -->
+
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 # Agent2Agent 协议
 
 Agent2Agent （A2A）协议是 Google 开发的 Agent 互操作协议，是对 Anthropic 模型上下文协议 （MCP） 协议的补充。简而言之，MCP 协议为 Agent 提供了结构化的上下文和工具调用方法，而 A2A 协议主要关心 Agent 之间如何相互沟通的问题。\[^1\]
@@ -122,6 +128,7 @@ A2A 协议的消息封包可选：
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
 
+
 ### 信誉注册表
 
 我们知道在 A2A 协议中，用户侧的 Agent 被称为 _客户端 Agent_ ，当客户端 Agent 在完成服务后可以发布一个反馈证明
@@ -147,6 +154,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 ## 身份注册表
@@ -215,6 +223,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 
 
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -237,6 +246,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -360,6 +370,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
