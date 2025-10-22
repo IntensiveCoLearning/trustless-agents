@@ -14,8 +14,18 @@ a builder who currently learning and focusing on the research part
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-22
+<!-- DAILY_CHECKIN_2025-10-22_START -->
+I continue finishing blog posts from yesterday. I now kinda get that ERC-8004 was initially the extension of A2A. A2A has a "problem" that it requires "trust" within the system which ERC-8004 is trying to solve through a trustless networks.  
+  
+The goal is making the discovery and "reputation" and also "verification" to be on-chain (not all), so that it can become public and transparent. So there will be many tradeoffs in the process like what to put onchain vs offchain. And also making the ERC-8004 to be very minimal so that people can easily register. And the process later can be improved by protocols or dapps.  
+  
+I feel like running out of the time here. So maybe I won't read much about A2A and the x402. I will just see the overview and get dirty with the code for the remaining days.
+<!-- DAILY_CHECKIN_2025-10-22_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 this note is a diary rather than a informational note, for personal progress and note.  
   
 I just finished reading all the discussion in ethereum magicians for ERC-8004, and I can't summarize things because I feel like the whole discussion is going left and right without any proper way to manage the flow of discussion. Unless I ignore most of the discussions, I can see the focus more on the on-chain data part (I can't go depth into it since I can't understand much).  
@@ -27,6 +37,7 @@ My technical plan if possible is use any existing agent and play with the on-cha
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 almost done with the EIP discussion, few takeaways:  
 \- it's a singleton (I just realized what does it mean), its literally one contract on each chain. so no need to deploy it multiple times  
@@ -41,6 +52,7 @@ hopefully can finish it by tomorrow and then continue on the blog posts and VoD
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
 
+
 slow progress on weekend, will go full on Monday. I just finished 25% of the ERC-8004 discussion. In overview, I could see the concern being discussed like what to put on-chain vs off-chain. also about scoring/reputation modularity. I don't really know much the detail but I think I can keep it up later.  
   
 I would love to see the scoring or reputation in action.
@@ -48,6 +60,7 @@ I would love to see the scoring or reputation in action.
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -66,6 +79,7 @@ Planning to continue on the EIP discussion, that is pretty long. And then on the
 
 
 
+
 I've listed all the resources I need for the upcoming 2 weeks but mostly it's from this page.  
   
 Today I plan to mainly finish the EIP and read the discussion part. Hopefully can manage into the blog posts.
@@ -75,6 +89,7 @@ Also attended the sharing session, so glad to attend because I can see it direct
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
