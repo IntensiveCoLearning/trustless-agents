@@ -299,7 +299,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [JNHFlow21](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JNHFlow21.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [velinussage](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/velinussage.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [NehharShah](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/NehharShah.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ |   | | | | | | |
+| [41surfer](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/41surfer.md) | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | | | | | | |
 | [Sakkana](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Sakkana.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [TAnNbR](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TAnNbR.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Waiting-Chai](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Waiting-Chai.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ |   | | | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ |   | | | | | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
