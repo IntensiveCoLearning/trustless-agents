@@ -14,8 +14,109 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-22
+<!-- DAILY_CHECKIN_2025-10-22_START -->
+# How Much On-Chain Is Enough?
+
+**Must-read**
+
+-   ERC-8004 + Magicians threads: trade-offs of **event-driven vs minimal views vs full indexing**.
+    
+
+* * *
+
+## 1) Bottom line (recommended stance)
+
+-   **Events first, minimal views.**
+    
+    -   **Events** carry auditable facts (who/when/what + evidence pointers) with low cost and high compatibility.
+        
+    -   **Minimal views** only for _high-frequency, gatekeeping_ lookups (e.g., `agentOwner`, `agentURI`, optional tiny `latestReputationSummary`).
+        
+    -   **Everything else via indexers** (The Graph / custom ETL / BigQuery) for rich queries and history playback.
+        
+
+* * *
+
+## 2) Decision rubric (5 quick questions)
+
+1.  **Auditability:** Must this data be **immutable & traceable**? → Put it in **events**.
+    
+2.  **Read frequency/latency:** Is it **high-frequency/low-latency**? → Consider a **tiny view** cache.
+    
+3.  **Volatility:** Does the schema change often? → Prefer **events + off-chain docs (URI+hash)**.
+    
+4.  **Cost sensitivity:** Multi-chain, heavy interactions? → **Events + indexer**; avoid big arrays/strings on-chain.
+    
+5.  **Compatibility:** Different consumers need different rollups? → Keep **raw events**; project different **projections** off-chain.
+    
+
+* * *
+
+## 3) What belongs in **events** vs **views**
+
+-   **Events (do this by default):**
+    
+    -   Identity ops (`AgentRegistered`, `AgentURIUpdated`)
+        
+    -   Reputation writes (`FeedbackGiven`: score, tags, `uri/hash`)
+        
+    -   Validation lifecycle (`ValidationRequested`, `ValidationRecorded`: `methodTag`, `proofUri/hash`)
+        
+    -   Ownership/permissions changes, associations, version switches
+        
+-   **Minimal views (only if truly needed):**
+    
+    -   `agentId → owner`, `agentId → tokenURI`
+        
+    -   `agentId → latestReputationSummary` (tiny, optional)
+        
+    -   `agentId → supportedMethods` (validation method flags)
+        
+    
+    > Rule: if it can be reconstructed from events, it doesn’t need a view—except ultra-hot reads.
+    
+
+* * *
+
+## 4) Minimal provability: URI + Hash
+
+-   **On-chain:** events carry `uri` (IPFS/HTTPS/Arweave) + `hash` (content commitment).
+    
+-   **Off-chain file:** full payload (raw metrics, rationale, model version, input digest).
+    
+-   **Indexer duty:** fetch `uri`, verify `hash`, project to tables/charts.
+    
+
+* * *
+
+## 5) Indexer strategy (three layers)
+
+1.  **Raw layer:** store contract events 1:1.
+    
+2.  **Projection layer:** use-case views (latest reputation, recent validations, radar data).
+    
+3.  **Derived layer:** time-decay weighting, rater weighting, scenario-specific overall scores.
+    
+
+> New question = new projection, not a contract change.
+
+* * *
+
+## 6) Cost & risk
+
+-   **Gas:** avoid big on-chain structures → prefer events + URIs.
+    
+-   **Upgrades:** view schemas are rigid; events let you **rebuild off-chain**.
+    
+-   **Privacy/compliance:** keep PII off-chain; publish **hash commitments** only.
+    
+-   **Replay/consistency:** events are the single source of truth; indexers can **replay** to ensure consistency.
+<!-- DAILY_CHECKIN_2025-10-22_END -->
+
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 # **Analysis of Three Solidity Contracts**
 
 ## **IdentityRegistry.sol - Identity Registration Center**
@@ -448,6 +549,7 @@ Validation ────> How good your work is
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
 
+
 # Run ERC-8004 Example
 
 **Goal:** Read, run, and modify the official example.
@@ -627,6 +729,7 @@ After a job completes, call the Validation Registry (`reexec` / `tee` / `zk`) an
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
 
+
 # Validation Registry (Third-Party Verification Hooks)
 
 ## Why it matters
@@ -741,6 +844,7 @@ function recordResult(
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -878,6 +982,7 @@ function recordResult(
 
 
 
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -985,6 +1090,7 @@ function recordResult(
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1156,6 +1262,7 @@ Sepolia
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
