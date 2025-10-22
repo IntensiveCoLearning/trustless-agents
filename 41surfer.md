@@ -14,13 +14,24 @@ interest in AI and do want to know more about it "+web3"
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-22
+<!-- DAILY_CHECKIN_2025-10-22_START -->
+问了deepseek 第一个问题：
+
+The community debates how much data to put on-chain. If you had to choose between "events only" vs "minimal view functions" vs "full on-chain indexing," which would you pick and why?
+
+的
+<!-- DAILY_CHECKIN_2025-10-22_END -->
+
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 今天看了一些A2A和MCP的协同应用案例
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 ### **核心思想：一句话概括**
 
@@ -40,6 +51,7 @@ interest in AI and do want to know more about it "+web3"
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
 
+
 **Agent2Agent (A2A) 协议**是由 Google 开发并捐赠给 Linux 基金会的开放标准，旨在实现 AI 代理之间的无缝通信和协作。
 
 在代理由不同供应商使用不同框架构建的世界中，A2A 提供了一种通用语言，打破了孤岛并促进了互操作性。
@@ -57,6 +69,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -80,6 +93,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
