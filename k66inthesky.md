@@ -17,133 +17,20 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
-# 2025-10-20
-> 我去玩[ERC-8004的SDK](https://pypi.org/project/chaoschain-sdk/)啦! chaoschain-sdk做的，簡單寫了隻`main.py`。
-> 看SDK架構設計
-<img width="449" height="507" alt="image" src="https://github.com/user-attachments/assets/8c8e1264-e809-4d96-b732-051b365c0450" />
-
-+ 附圖(目前我卡在x402 payment，另外IPFS也不work)
-> <img width="1277" height="1012" alt="image" src="https://github.com/user-attachments/assets/ae004950-1749-4aaf-afdb-2907ad7ae06a" />
-> <img width="1075" height="224" alt="image" src="https://github.com/user-attachments/assets/fcda5248-45d6-489c-9376-70ab8d5b1b4b" />
-
-> 明天再來看程式碼問題在哪
-
-# 2025-10-18
-> 分析程式碼[erc-8004-contracts\]([https://github.com/erc-8004/erc-8004-contracts](https://github.com/erc-8004/erc-8004-contracts)
-```
-erc-8004-contracts/
-├── contracts/                    # 智能合約原始碼
-│   ├── IdentityRegistry.sol
-│   ├── ReputationRegistry.sol
-│   ├── ValidationRegistry.sol
-│   └── upgradeable/              # 可升級版本
-│       ├── IdentityRegistryUpgradeable.sol
-│       ├── ReputationRegistryUpgradeable.sol
-│       └── ValidationRegistryUpgradeable.sol
-├── test/                         # 測試檔案
-│   ├── IdentityRegistry.test.ts
-│   ├── IdentityRegistryUpgradeable.test.ts
-│   ├── ReputationRegistry.test.ts
-│   ├── ReputationRegistryUpgradeable.test.ts
-│   ├── ValidationRegistry.test.ts
-│   └── ValidationRegistryUpgradeable.test.ts
-├── hardhat.config.ts            # Hardhat 設定
-├── package.json                 # 相關依賴
-└── tsconfig.json               # TypeScript 設定
-```
-## 如何運用?
-### **IdentityRegistry.sol**
-1. Agent
-   ```
-   // 代理人註冊自己
-   await identityRegistry.register("ipfs://QmMyProfile");
-   ```
-2. Agent Owner
-   ```
-   // 更新自己的資訊
-    await identityRegistry.setMetadata(agentId, "agentName", "0x416c696365"); // "Alice"
-    await identityRegistry.setAgentUri(agentId, "ipfs://QmNewProfile");
-   ```
-3. 查Agent資訊
-   ```
-    const tokenURI = await identityRegistry.tokenURI(agentId);
-    const agentName = await identityRegistry.getMetadata(agentId, "agentName");
-   ```
-4. 監聽註冊事件
-   ```
-    identityRegistry.on("Registered", (agentId, tokenURI, owner) => {
-        // 將新代理人加入索引
-        indexNewAgent(agentId, tokenURI, owner);
-    });
-   ``` 
-### **ReputationRegistry.sol**
-+ ECDSA橢圓曲線數位簽章
-+ 用訊息雜湊工具用於EIP-191簽章
-+ 驗證走EOA或ERC-1271(ERC-1271智能合約的簽章介面: IERC-1271)
-+ `address private immutable identityRegistry;`: 部署後無法更改的申正註冊表地址
-+ NewFeedback(新回饋事件)、FeedbackRevoked(回饋撤銷事件)、ResponseAppended(回應添加事件)
-+ 值得一提的是: `Feedback`、`FeedbackAuth`的結構，後者還包含`身份註冊表地址`
-
-
-  1. 寫入: `giveFeeback()`、`revokeFeedback(uint256 agentId, uint64 feedbackIndex))`、`appendResponse()`
-  2. 查詢: `getIdentityRegistry`、`getLastIndex(uint256 agentId, address clientAddress)`、`readFeedback`、`getSummary`、`readAllFeedback`、`getResponseCount`、`getClients(uint256 agentId)`
-
-#### 用在哪?
-    + A: Client
-    ```
-    // 場景：使用AI代理服務後給予評分
-    await reputationRegistry.giveFeedback(
-        agentId,           // 代理人ID
-        95,               // 評分
-        "0x616900000...", // tag1: "ai"
-        "0x636f646500...", // tag2: "code"  
-        "ipfs://feedback", // 回饋URI
-        "0x123...",       // 回饋雜湊
-        feedbackAuthBytes  // 授權簽章
-    );
-    ```
-    + A: 代理人/所有者
-      ```/
-      / 場景：代理人預先簽署授權，允許特定客戶給回饋
-    const auth = {
-        agentId: 0,
-        clientAddress: "0x123...",
-        indexLimit: 5,
-        expiry: Math.floor(Date.now() / 1000) + 3600, // 1小時後過期
-        chainId: 1,
-        identityRegistry: registryAddress,
-        signerAddress: agentOwner
-    };
-    ```
-    + 回應者
-    ```
-    // 場景：第三方對回饋提供額外資訊
-    await reputationRegistry.appendResponse(
-        agentId,
-        clientAddress, 
-        feedbackIndex,
-        "ipfs://response",
-        "0xabc..."
-    );
-    ```
-
-### **ValidationRegistry.sol**
-+ 含`身分註冊表介面`、``、``、``、``
-+ `response`、`responseUri`、`tag`
-
-## 為什麼要這樣設計?
-1. 防止Sybil攻擊和刷評機制(例: 防惡意刷好評)
-   > 解法: 多重身份驗證
-2.  gas fee降低(bytes32 取代 string)
-
+# 2025-10-23
+<!-- DAILY_CHECKIN_2025-10-23_START -->
+### 讀[https://www.x402.org/](https://www.x402.org/)
+<!-- DAILY_CHECKIN_2025-10-23_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 ![ERC-8004_ 無信任代理 (1).png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/k66inthesky/images/2025-10-17-1760714327882-ERC-8004_________1_.png)
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 > 閱讀 [https://eips.ethereum.org/EIPS/eip-8004](https://eips.ethereum.org/EIPS/eip-8004)  
 > **目標**：讓 AI 代理能在不同組織之間安全協作，不需要事先信任任何對方，支持自動發現、選擇與互動，推進去中心化的 agent 經濟。
@@ -207,10 +94,122 @@ Q&A
     -   Macro提到IFPS創建者Protocol Labs正為ERC-8004社區提供免費的IFPS託管服務。
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
-# 2025-10-16
+> 我去玩[ERC-8004的SDK](https://pypi.org/project/chaoschain-sdk/)啦! chaoschain-sdk做的，簡單寫了隻`main.py`。
+> 看SDK架構設計
+<img width="449" height="507" alt="image" src="https://github.com/user-attachments/assets/8c8e1264-e809-4d96-b732-051b365c0450" />
 
++ 附圖(目前我卡在x402 payment，另外IPFS也不work)
+> <img width="1277" height="1012" alt="image" src="https://github.com/user-attachments/assets/ae004950-1749-4aaf-afdb-2907ad7ae06a" />
+> <img width="1075" height="224" alt="image" src="https://github.com/user-attachments/assets/fcda5248-45d6-489c-9376-70ab8d5b1b4b" />
 
-# 2025-10-15
+> 明天再來看程式碼問題在哪
+
+> 分析程式碼[erc-8004-contracts\]([https://github.com/erc-8004/erc-8004-contracts](https://github.com/erc-8004/erc-8004-contracts)
+```
+erc-8004-contracts/
+├── contracts/                    # 智能合約原始碼
+│   ├── IdentityRegistry.sol
+│   ├── ReputationRegistry.sol
+│   ├── ValidationRegistry.sol
+│   └── upgradeable/              # 可升級版本
+│       ├── IdentityRegistryUpgradeable.sol
+│       ├── ReputationRegistryUpgradeable.sol
+│       └── ValidationRegistryUpgradeable.sol
+├── test/                         # 測試檔案
+│   ├── IdentityRegistry.test.ts
+│   ├── IdentityRegistryUpgradeable.test.ts
+│   ├── ReputationRegistry.test.ts
+│   ├── ReputationRegistryUpgradeable.test.ts
+│   ├── ValidationRegistry.test.ts
+│   └── ValidationRegistryUpgradeable.test.ts
+├── hardhat.config.ts            # Hardhat 設定
+├── package.json                 # 相關依賴
+└── tsconfig.json               # TypeScript 設定
+```
+## 如何運用?
+### **IdentityRegistry.sol**
+1. Agent
+   ```
+   // 代理人註冊自己
+   await identityRegistry.register("ipfs://QmMyProfile");
+   ```
+2. Agent Owner
+   ```
+   // 更新自己的資訊
+    await identityRegistry.setMetadata(agentId, "agentName", "0x416c696365"); // "Alice"
+    await identityRegistry.setAgentUri(agentId, "ipfs://QmNewProfile");
+   ```
+3. 查Agent資訊
+   ```
+    const tokenURI = await identityRegistry.tokenURI(agentId);
+    const agentName = await identityRegistry.getMetadata(agentId, "agentName");
+   ```
+4. 監聽註冊事件
+   ```
+    identityRegistry.on("Registered", (agentId, tokenURI, owner) => {
+        // 將新代理人加入索引
+        indexNewAgent(agentId, tokenURI, owner);
+    });
+   ``` 
+### **ReputationRegistry.sol**
++ ECDSA橢圓曲線數位簽章
++ 用訊息雜湊工具用於EIP-191簽章
++ 驗證走EOA或ERC-1271(ERC-1271智能合約的簽章介面: IERC-1271)
++ `address private immutable identityRegistry;`: 部署後無法更改的申正註冊表地址
++ NewFeedback(新回饋事件)、FeedbackRevoked(回饋撤銷事件)、ResponseAppended(回應添加事件)
++ 值得一提的是: `Feedback`、`FeedbackAuth`的結構，後者還包含`身份註冊表地址`
+
+  1. 寫入: `giveFeeback()`、`revokeFeedback(uint256 agentId, uint64 feedbackIndex))`、`appendResponse()`
+  2. 查詢: `getIdentityRegistry`、`getLastIndex(uint256 agentId, address clientAddress)`、`readFeedback`、`getSummary`、`readAllFeedback`、`getResponseCount`、`getClients(uint256 agentId)`
+
+#### 用在哪?
+    + A: Client
+    ```
+    // 場景：使用AI代理服務後給予評分
+    await reputationRegistry.giveFeedback(
+        agentId,           // 代理人ID
+        95,               // 評分
+        "0x616900000...", // tag1: "ai"
+        "0x636f646500...", // tag2: "code"  
+        "ipfs://feedback", // 回饋URI
+        "0x123...",       // 回饋雜湊
+        feedbackAuthBytes  // 授權簽章
+    );
+    ```
+    + A: 代理人/所有者
+      ```/
+      / 場景：代理人預先簽署授權，允許特定客戶給回饋
+    const auth = {
+        agentId: 0,
+        clientAddress: "0x123...",
+        indexLimit: 5,
+        expiry: Math.floor(Date.now() / 1000) + 3600, // 1小時後過期
+        chainId: 1,
+        identityRegistry: registryAddress,
+        signerAddress: agentOwner
+    };
+    ```
+    + 回應者
+    ```
+    // 場景：第三方對回饋提供額外資訊
+    await reputationRegistry.appendResponse(
+        agentId,
+        clientAddress, 
+        feedbackIndex,
+        "ipfs://response",
+        "0xabc..."
+    );
+    ```
+
+### **ValidationRegistry.sol**
++ 含`身分註冊表介面`、``、``、``、``
++ `response`、`responseUri`、`tag`
+
+## 為什麼要這樣設計?
+1. 防止Sybil攻擊和刷評機制(例: 防惡意刷好評)
+   > 解法: 多重身份驗證
+2.  gas fee降低(bytes32 取代 string)
+
 ## 名詞摘要(ERC-8004, AP2, A2A, x402, DecentralizedAI, AgentEconomy, Trustless Agents, AI Agents):
 ```
   + ERC-8004: EIP-8004旨在AI agents間的通訊協議。
