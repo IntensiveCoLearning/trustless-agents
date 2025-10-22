@@ -15,8 +15,18 @@ timezone: UTC+8
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-22
+<!-- DAILY_CHECKIN_2025-10-22_START -->
+Portable identity → Attested feedback → Composable validations.
+
+Crypto-Economic Validation (Medium Stakes)
+
+For financial transactions or smart contract operations, validators must stake economic value that can be slashed for incorrect validations. This creates strong incentives for honest behavior
+<!-- DAILY_CHECKIN_2025-10-22_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 ## ERC-8004 + Virtuals
 
 ERC-8004是底层标准，Virtuals则是应用层
@@ -28,6 +38,7 @@ Virtuals Protocol 是一个将人工智能（AI）与区块链技术相结合的
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 ## 什么是x402协议
 
@@ -67,6 +78,7 @@ Pinata是最大的IPFS服务商，计划对存储服务启用x402支付。
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
 
+
 ## 可能的应用场景
 
 ### AI 代理自由市场（ISEK 网络）
@@ -101,6 +113,7 @@ Pinata是最大的IPFS服务商，计划对存储服务启用x402支付。
 
 
 
+
 ERC-8004 协议的**作用**是为人工智能代理（AI Agents）提供一个**去中心化、可验证的信任层（trust layer）**，让不同组织或网络中的智能体能够在**无需预先信任的情况下安全地发现、验证并协作**。
 
 这个协议**为什么 可以解决信任问题** ？ 可能的场景是怎样的 ？
@@ -121,6 +134,7 @@ ERC-8004 提出的**核心机制**，正是用 **去中心化的身份 + 声誉 
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
