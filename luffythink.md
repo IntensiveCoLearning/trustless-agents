@@ -15,8 +15,28 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-22
+<!-- DAILY_CHECKIN_2025-10-22_START -->
+学习主题：[https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview](https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview)
+
+重要笔记：**Technical Architecture**
+
+![TechnicalArchitecture.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/luffythink/images/2025-10-22-1761101651582-TechnicalArchitecture.jpg)
+
+The SISEK token is designed to be the core of an economy for autonomous agents, facilitating collaboration, value exchange, and decentralized governance. It's intended to act as more than just a currency, serving as a medium for trust, reputation, and coordination.
+
+**Key Functions:**
+
+-   **Programmable Incentives:** Used to motivate and coordinate agent behavior.
+    
+-   **Identity & Reputation:** Serves as a carrier for an agent's identity and trustworthiness.
+    
+-   **Governance:** Integrated with modules for decentralized decision-making.
+<!-- DAILY_CHECKIN_2025-10-22_END -->
+
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 学习主题：[https://github.com/isekOS/ISEK](https://github.com/isekOS/ISEK)
 
 重要笔记：
@@ -37,6 +57,7 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
@@ -61,6 +82,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -117,6 +139,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -132,6 +155,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
