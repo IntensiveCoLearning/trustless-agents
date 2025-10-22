@@ -130,11 +130,15 @@ timezone: UTC-5
 ✅ **Planning & Architecture:** Complete  
 🔜 **Next Step:**  
 → Create **UVD V2 token contract**  
-→ Deploy **ERC-8004 registries** to **Avalanche Fuji**
+→ Deploy **ERC-8004 registries** to **Avalanche Fuji**  
+  
+cooking................  
+[https://github.com/UltravioletaDAO/karmacadabra](https://github.com/UltravioletaDAO/karmacadabra)
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 # Day 6 — Notes (Oct 20, 2025)
 
@@ -245,6 +249,7 @@ This file acts as the **entry point** for discovery and compatibility.
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 **October 19 — Bidirectional Trust in ERC-8004 + HashKey Article Analysis**
@@ -360,6 +365,7 @@ It unlocks **new income flows** and enhances user experience through **interoper
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -512,6 +518,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 
 
+
 # Day 3 — Notes (Oct 17, 2025)
 
 ## 📖 Reading
@@ -589,6 +596,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -716,6 +724,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
