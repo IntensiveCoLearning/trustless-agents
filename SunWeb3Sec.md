@@ -14,8 +14,123 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-23
+<!-- DAILY_CHECKIN_2025-10-23_START -->
+# A2A Fast-Track (Discovery / Descriptor / Collaboration)
+
+**Must-read**
+
+-   **Google Developers Blog — A2A launch:** core goals, Agent Card, capability declaration.
+    
+    Link: Google Developers Blog
+    
+-   **A2A upgrade (ADK native support):** generate/consume cards in the Agent Development Kit.
+    
+    Link: Google Cloud
+    
+
+* * *
+
+## 1) TL;DR (one-liner)
+
+**A2A** gives agents a **shared language** (Agent Card + comms flow) so they can find and talk to each other; **ERC-8004** adds the **trust layer** (identity/reputation/validation). Together: **discover → interact → trust**.
+
+* * *
+
+## 2) Technical Interface (what to exchange)
+
+### Agent Card / Descriptor (JSON, minimum)
+
+-   `id` (DID/URN), `name`, `version`
+    
+-   `capabilities` (tools/tasks and I/O schemas)
+    
+-   `auth` (API key / OAuth / HTTP signatures / wallet sig)
+    
+-   `endpoints` & `callbacks` (gRPC/HTTP, webhook shapes)
+    
+-   `rate_limits` (RPM/burst)
+    
+-   _(Optional but recommended)_ `registrations` (where this agent is registered on ERC-8004), `trust_layer` (reputation/validation routes)
+    
+
+**Skeleton**
+
+```json
+{
+  "id": "did:example:MyAgent:v1",
+  "name": "MyAgent",
+  "version": "1.0.0",
+  "capabilities": [
+    {"name":"tx_trace","inputs":["tx_hash"],"outputs":["trace_uri"]}
+  ],
+  "auth": {"type":"httpsig","public_key_jwk": {"kty":"EC","crv":"P-256","x":"...","y":"..."}},
+  "endpoints": {"a2a":"<https://api.example.com/a2a","status":"https://api.example.com/status>"},
+  "callbacks": {"job_result":"<https://api.example.com/cb/job_result>"},
+  "rate_limits": {"requests_per_minute":120,"burst":60},
+  "registrations":[{"standard":"ERC-8004","chain":"eip155:11155111","identityRegistry":"0x...","agentId":1}],
+  "trust_layer":{
+    "reputation":{"reputationRegistry":"0x..."},
+    "validation":{"validationRegistry":"0x...","methods":["reexec","tee","zk"]}
+  }
+}
+
+```
+
+### Discovery (directory + handshake)
+
+-   Register your agent in a **directory/index** (org-owned or platform).
+    
+-   **Exchange and sign** each other’s Agent Cards before collaboration (version pinning to avoid behavior drift).
+    
+-   With **ADK** A2A support, import a partner’s card and wire them as a **sub-agent**.
+    
+
+* * *
+
+## 3) How it connects to ERC-8004 (trust layer)
+
+-   **A2A:** _how_ agents are found and how they talk; **what** they claim to do.
+    
+-   **ERC-8004:** _why_ to trust them—on-chain **Identity** (URI pointer), **Reputation** (multi-dim feedback), **Validation** (re-exec/TEE/ZK results).
+    
+-   Practice: put your ERC-8004 registry addresses in the Card’s `registrations/trust_layer` and route high-risk actions behind **Validation gates**.
+    
+
+MY POC
+
+**\# Google Agent2Agent (A2A) Protocol Implementation**
+
+**\## 🎯 What is This?**
+
+This is a **production-ready implementation** of Google's official **Agent2Agent (A2A) protocol**, enabling seamless communication between AI agents using **JSON-RPC 2.0 over HTTP(S)**.
+
+Think of it as a **standardized phone system for AI agents** - just like how humans use phones to call each other and request help, this protocol allows AI agents to discover, call, and collaborate with other agents to complete complex tasks.
+
+**\## 🌟 Why A2A Protocol?**
+
+**\### The Problem**
+
+In today's AI landscape, different agents use different APIs, making it hard for them to work together. It's like everyone speaking different languages with no common protocol.
+
+**\### The Solution: Google A2A**
+
+Google's A2A protocol provides a **universal standard** for agent communication, similar to how HTTP standardized web communication. With A2A:
+
+\- ✅ **Any agent can discover** what other agents can do
+
+\- ✅ **Any agent can call** other agents using a standard format
+
+\- ✅ **Agents can collaborate** to solve complex problems
+
+\- ✅ **Built on proven standards** (JSON-RPC 2.0, HTTP/S)
+
+![Screenshot 2025-10-23 at 10.16.39 AM.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SunWeb3Sec/images/2025-10-23-1761185835290-Screenshot_2025-10-23_at_10.16.39_AM.png)![Screenshot 2025-10-23 at 10.17.05 AM.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SunWeb3Sec/images/2025-10-23-1761185844478-Screenshot_2025-10-23_at_10.17.05_AM.png)
+<!-- DAILY_CHECKIN_2025-10-23_END -->
+
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 # How Much On-Chain Is Enough?
 
 **Must-read**
@@ -116,6 +231,7 @@ timezone: UTC+8
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 # **Analysis of Three Solidity Contracts**
 
@@ -550,6 +666,7 @@ Validation ────> How good your work is
 <!-- DAILY_CHECKIN_2025-10-20_START -->
 
 
+
 # Run ERC-8004 Example
 
 **Goal:** Read, run, and modify the official example.
@@ -730,6 +847,7 @@ After a job completes, call the Validation Registry (`reexec` / `tee` / `zk`) an
 
 
 
+
 # Validation Registry (Third-Party Verification Hooks)
 
 ## Why it matters
@@ -844,6 +962,7 @@ function recordResult(
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -983,6 +1102,7 @@ function recordResult(
 
 
 
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -1090,6 +1210,7 @@ function recordResult(
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1262,6 +1383,7 @@ Sepolia
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
