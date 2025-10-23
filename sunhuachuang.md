@@ -21,10 +21,13 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 在 Identity 中，可以上传特殊的 key-value 结构作为 onchain 的 metadata，但是有了 off-chain 的之后，这个地方需要存放什么，还有待考虑。在 x402 协议的情况下，我更希望让 payment agent 把支付的 支付方式 上传上去，因为它可能会有变动，如果直接存储在 off-chain 的 ipfs 中的话，有可能导致需要经常更新 ipfs，然后再更新 onchain 的 uri，当然如果 uri 指向 https 也不错，但是可能造成 subgraph 之类的无法访问。
 
 特别是针对 Reputation 的方法，默认链上的参数，都挺复杂的，那么这就要求开发者能够把复杂的东西都封装起来，只保留最简洁的接口给使用者。
+
+在 Reputation 里面，我发现一个 很 tricky 的东西，就是 feedback index，它在 new 的返回值和 event 中都没有出现，但是 revoke 和 append 都要求它，当然它可以通过 getLast 来拿到，但是这个就要求实现的时候，必须统一，否则就对不齐了，有些反直觉，这个东西必须封装起来，否则没人会去懂，这个 index 是哪里来的。
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 今天在实现 [https://github.com/zpaynow/8004](https://github.com/zpaynow/8004) 8004 rust sdk，使用的是 chaoschain 他们的 abi，目前已经完成了基本的架构和合约解析，接下来会把实现过程中遇到的一些想法记录下来。
 
@@ -35,11 +38,13 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 <!-- DAILY_CHECKIN_2025-10-21_START -->
 
 
+
 正在基于 8004 协议的 abi，源自 chaoschain 的实现，来构建一个 rust sdk，用于与 8004 合约进行交互，目前分两个部分，一个是 sdk，第二个会有一个 bianry，用于命令行交互，代码会开源在：[https://github.com/ZeroPayDev/8004](https://github.com/ZeroPayDev/8004)，接下来就是对 8004 进行深度的研究和代码编写了。
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -54,6 +59,7 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 
 
+
 今天时间不多，继续在实现了一小会 x402 协议
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
@@ -64,11 +70,13 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 
 
+
 今天在继续实现 x402 协议，学习内容不多。
 <!-- DAILY_CHECKIN_2025-10-18_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -87,6 +95,7 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 
 
+
 明白 8004 协议之后，就得开始寻找具体的 agent 领域，除非是想做通用型的 agent exchange platform。目前结合自身，我开始学习 x402 -> A2A 这条路线，毕竟 payment 是最熟悉的。今天先学习 x402，并开始编码，尝试在我的开源项目中，实现一个，支持它。
 
 更新：已经初步完成了 x402 协议的基本框架。
@@ -94,6 +103,7 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
