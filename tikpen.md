@@ -15,8 +15,14 @@ Web front-end developer.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-23
+<!-- DAILY_CHECKIN_2025-10-23_START -->
+今天在LXDAO论坛看了关于公共物品大家的理解和观点，还是没搞明白。。。
+<!-- DAILY_CHECKIN_2025-10-23_END -->
+
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 觉得ERC-8004与MCP有些相似，做一些对比
 
 | 项目 | ERC-8004 | MCP（Model Context Protocol） |
@@ -68,6 +74,7 @@ Web front-end developer.
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
+
 # x402协议
 
 ### 使用HTTP与区块链结合，实现internet-native payments
@@ -109,6 +116,7 @@ x402 不与任何特定的区块链或代币绑定，它是一个向所有人开
 <!-- DAILY_CHECKIN_2025-10-17_START -->
 
 
+
 Today, I learned what the A2A and AP2 protocols do.
 
 A2A: Agents can interact with each other.
@@ -118,6 +126,7 @@ AP2: Let the Agent interact on behalf of the user and complete certain operation
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
