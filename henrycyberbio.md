@@ -14,13 +14,73 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-23
+<!-- DAILY_CHECKIN_2025-10-23_START -->
+### 安装依赖
+
+拉下示例库
+
+```
+git clone https://github.com/a2aproject/a2a-samples.git
+```
+
+安装依赖
+
+```
+uv add a2a-sdk[http-server]>=0.3.0
+uv add uvicorn
+uv add dotenv
+```
+
+### 实现 Hello World 本地 Agent 交互
+
+基于教程\[^2\]
+
+`AgentSkill` 和 `AgentCard` 分别封装了 Agent 功能介绍和 Agent 本身的介绍
+
+`DefaultRequestHandler` 这个类会告诉 Client Agent 如何通过 RPC 访问特定函数/方法以及储存状态，这些内容需要调用 `AgentExecutor` 和 `TaskStore` ，应提前实现
+
+`A2AStarletteApplication` 顾名思义是将 Agent 抽象成程序，需要接`agent_cardrequest_handler` 进行实例化。这个类很好，会自动在 endpoint 的 `/.well-known/agent-card.json` 下公开 Agent Card
+
+运行
+
+```
+python samples/python/agents/helloworld/__main__.py
+```
+
+如果提示找不到本地模块，`__main__.py` 里加一行，添加到环境变量就行了：
+
+```
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+```
+
+交互也不难，启动服务器后发送一个 request 就好了：
+
+```
+streaming_request = SendStreamingMessageRequest( 
+    id=str(uuid4()), params=MessageSendParams(**send_message_payload)
+)
+
+stream_response = client.send_message_streaming(streaming_request)
+
+async for chunk in stream_response:
+    print(chunk.model_dump(mode='json', exclude_none=True))
+```
+
+下一步就是怎么联合LangChain或LangGraph去做这个了
+
+\[^2\]: [https://a2a-protocol.org/latest/tutorials/python/5-start-server/#server-setup-in-helloworld](https://a2a-protocol.org/latest/tutorials/python/5-start-server/#server-setup-in-helloworld)
+<!-- DAILY_CHECKIN_2025-10-23_END -->
+
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 已完成第二个Agent 准备迁移至 LangGraph 再尝试A2A的实践
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 # Agent2Agent 协议
 
@@ -129,6 +189,7 @@ A2A 协议的消息封包可选：
 <!-- DAILY_CHECKIN_2025-10-20_START -->
 
 
+
 ### 信誉注册表
 
 我们知道在 A2A 协议中，用户侧的 Agent 被称为 _客户端 Agent_ ，当客户端 Agent 在完成服务后可以发布一个反馈证明
@@ -154,6 +215,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -224,6 +286,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 
 
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -246,6 +309,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -370,6 +434,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
