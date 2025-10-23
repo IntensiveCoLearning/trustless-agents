@@ -14,8 +14,20 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-23
+<!-- DAILY_CHECKIN_2025-10-23_START -->
+-   了解AP2协议与X402协议，站在A2A协议的角度思考如何集成
+    
+-   AP2侧重点：授权，通过加密签名的"意图授权"和"购物车授权"等构建不可篡改的交易链
+    
+-   X402侧重点：支付通道，将支付请求直接嵌入HTTP响应中，如402状态码
+    
+-   排查代理工作流程中的问题
+<!-- DAILY_CHECKIN_2025-10-23_END -->
+
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 -   进一步完成链下声誉计算的逻辑，采用传统算法进行链上链下的数据整合
     
 -   进一步调试与测试链上合约交互的问题
@@ -26,6 +38,7 @@ timezone: UTC+8
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
 
+
 -   封装与测试链上合约交互的工具类并通过单元测试
     
 -   构建以http作为通信方式的代理逻辑，对代理的行为进行抽象和拆分，比如代理访问链上合约、代理与代理交互、代理执行任务
@@ -35,6 +48,7 @@ timezone: UTC+8
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -51,6 +65,7 @@ timezone: UTC+8
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -774,6 +789,7 @@ Charlie:
 
 
 
+
 ## **一、了解声誉分析、ZK及TEE在EIP8004里的应用：**
 
 ```
@@ -906,6 +922,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 
 
+
 1.  阅读erc-8004官方标准及hashkey的文章
     
 2.  核心内容梳理：
@@ -921,6 +938,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
