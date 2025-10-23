@@ -14,8 +14,24 @@ a builder who currently learning and focusing on the research part
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-23
+<!-- DAILY_CHECKIN_2025-10-23_START -->
+I am definitely falling behind, but here is my note for today.
+
+I finished the A2A today through reading the release blog by Google, the video introduction by Google Cloud, and also one from IBM. I started to understand what is A2A, and how A2A complies with MCP. So both MCP, A2A, and ERC-8004 are connected to each other.
+
+Also previously I don't really have any image of how does A2A works. But now I understand that its kinda work like how actual human as a user interact with LLM. It communicates in a "human" way rather than machinery way.
+
+In the A2A web/docs, there is a step-by-step tutorial. I haven't tried it. But definitely is going to read them and maybe implement it using different programming language rather than using Python.
+
+And definitely if possible for the "capstone project" or "hackathon", or literally anything, I don't want to build my own MCP or Agent. I just want to use existing one and focus more on the ERC-8004 infrastructure. Or literally helping what's needed to be build around that part. So maybe it's pretty similar with other, I need more agent to be registered on the singleton so that I can utilize, test them out, and build something on top of it.
+
+Tomorrow I will continue reading on the x402. Honestly I feel like out of the "line" here, like, I am not sure what is the end goal of the colearning. But I have my own goal, from the technical perspective, I want to try running end-to-end so I can understand how does it works. Maybe not playing much on the Verification Registry since it's pretty "complex" and advanced for me.
+<!-- DAILY_CHECKIN_2025-10-23_END -->
+
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 I continue finishing blog posts from yesterday. I now kinda get that ERC-8004 was initially the extension of A2A. A2A has a "problem" that it requires "trust" within the system which ERC-8004 is trying to solve through a trustless networks.  
   
 The goal is making the discovery and "reputation" and also "verification" to be on-chain (not all), so that it can become public and transparent. So there will be many tradeoffs in the process like what to put onchain vs offchain. And also making the ERC-8004 to be very minimal so that people can easily register. And the process later can be improved by protocols or dapps.  
@@ -25,6 +41,7 @@ I feel like running out of the time here. So maybe I won't read much about A2A a
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 this note is a diary rather than a informational note, for personal progress and note.  
   
@@ -37,6 +54,7 @@ My technical plan if possible is use any existing agent and play with the on-cha
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 almost done with the EIP discussion, few takeaways:  
@@ -53,6 +71,7 @@ hopefully can finish it by tomorrow and then continue on the blog posts and VoD
 
 
 
+
 slow progress on weekend, will go full on Monday. I just finished 25% of the ERC-8004 discussion. In overview, I could see the concern being discussed like what to put on-chain vs off-chain. also about scoring/reputation modularity. I don't really know much the detail but I think I can keep it up later.  
   
 I would love to see the scoring or reputation in action.
@@ -60,6 +79,7 @@ I would love to see the scoring or reputation in action.
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -80,6 +100,7 @@ Planning to continue on the EIP discussion, that is pretty long. And then on the
 
 
 
+
 I've listed all the resources I need for the upcoming 2 weeks but mostly it's from this page.  
   
 Today I plan to mainly finish the EIP and read the discussion part. Hopefully can manage into the blog posts.
@@ -89,6 +110,7 @@ Also attended the sharing session, so glad to attend because I can see it direct
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
