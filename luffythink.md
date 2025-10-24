@@ -15,8 +15,26 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+学习主题：[https://www.x402.org/x402-whitepaper.pdf](https://www.x402.org/x402-whitepaper.pdf)
+
+重要笔记：
+
+x402 is an open payment standard that enables AI agents and web services to autonomously pay for API access, data, and digital services.
+
+-   x402 fundamentally rethinks digital payments for an AI-driven economy. It addresses the core problem: legacy systems (subscriptions, credit cards) require human intervention, creating friction for autonomous agents. By utilizing the HTTP 402 status code and stablecoins, x402 embeds payment directly into API calls, enabling real-time, machine-native microtransactions.
+    
+-   Its key advantages are frictionless automation, instant settlement, and near-zero fees, which are crucial for AI agents to access data and services independently.
+    
+-   However, critical challenges exist, including reliance on the volatile crypto regulatory environment, potential security risks from irreversible blockchain transactions, and the need for widespread ecosystem adoption to succeed.
+    
+-   Learn more at: [x402.org](http://x402.org)
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 学习主题：[https://a2a-protocol.org/latest/roadmap/](https://a2a-protocol.org/latest/roadmap/)
 
 重要笔记：Longer-Term Roadmap (3-6 Months)
@@ -32,6 +50,7 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 学习主题：[https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview](https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview)
@@ -53,6 +72,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -81,6 +101,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 
 
+
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
 
 笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
@@ -103,6 +124,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -165,6 +187,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -180,6 +203,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
