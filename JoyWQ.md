@@ -16,7 +16,7 @@ timezone: UTC+8
 <!-- Content_START -->
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
--   完成python版erc8004代理的集成测试
+-   完成erc-8004-journal项目的集成测试
     
 
 结果日志
@@ -304,6 +304,178 @@ tests\integration\erc8004_integration_test.py::TestFullERC8004Workflow::test_ful
 ✅ 测试完成
 ```
 
+-   erc-8004-journal项目说明
+    
+
+````
+# erc-8004-journal 
+
+对接ERC-8004标准，简单实现A2A协议，支持代理注册、基于声誉和能力的服务发现、链上链下融合的声誉计算等基本功能
+
+## 🌟 项目概述
+
+erc-8004-journal项目旨在模拟一个去中心化的AI代理生态系统，其中：
+- **智能代理** 可以在区块链上注册和发现
+- **声誉系统** 基于链上链下数据融合计算
+- **信任机制** 通过交互历史和验证反馈建立
+- **服务市场** 支持AI服务的去中心化交易
+
+## 🏗️ 架构设计
+
+### 核心组件
+
+```
+src/
+├── core/                    # 核心业务逻辑
+│   ├── agent/              # 代理管理
+│   │   ├── agent_service.py          # 代理服务主类
+│   │   └── managers/                # 管理器模块
+│   │       ├── connection_manager.py    # 连接管理
+│   │       ├── blockchain_manager.py    # 区块链交互
+│   │       └── http_request_handler.py   # HTTP API处理
+│   ├── domain/             # 领域模型
+│   │   └── primitives.py           # 基础数据类型
+│   └── reputation/         # 声誉系统
+│       ├── engine.py               # 声誉计算引擎
+│       └── entities.py             # 声誉实体
+├── infrastructure/        # 基础设施
+│   ├── blockchain/                # 区块链集成
+│   │   └── erc8004_client.py      # ERC-8004客户端
+│   └── context/                   # 上下文管理
+└── descriptors/            # 代理描述符
+    ├── provider-agent.json        # 服务提供方配置
+    ├── requester-agent.json       # 服务需求方配置
+    └── validator-agent.json       # 验证方配置
+```
+
+### 技术栈
+
+- **区块链**: Ethereum (Sepolia测试网), Web3.py
+- **网络通信**: aiohttp (异步HTTP)
+- **测试框架**: pytest, pytest-asyncio
+- **开发语言**: Python 3.11+
+
+## 🚀 快速开始
+
+### 环境要求
+
+```bash
+# Python 3.11或更高版本
+python --version
+
+# 安装依赖
+pip install -r requirements.txt
+```
+
+### 配置说明
+
+1. **区块链配置**: 设置Sepolia测试网RPC端点
+2. **代理配置**: 编辑`src/descriptors/`下的JSON配置文件
+3. **端口配置**: 默认端口8001-8003用于代理服务
+
+### 运行示例
+
+```bash
+# 运行集成测试
+pytest tests/integration/erc8004_integration_test.py -v
+
+# 运行单元测试
+pytest tests/unit/ -v
+
+# 启动单个代理
+python src/main.py --config src/descriptors/provider-agent.json
+```
+
+## 🔧 核心功能
+
+### 1. 代理注册与发现
+
+- **链上注册**: 代理在区块链上注册身份和能力
+- **服务发现**: 基于能力和声誉的服务发现机制
+- **端点管理**: 动态端点注册和健康检查
+
+### 2. 连接管理
+
+- **握手协议**: 安全的双向连接建立
+- **会话管理**: 连接状态和活动跟踪
+- **连接清理**: 自动清理不活跃连接
+
+### 3. 声誉系统
+
+- **多维度评分**: 技术信任、财务可靠、社会共识、活跃程度
+- **链上链下融合**: 结合区块链数据和本地交互历史
+- **时间衰减**: 近期交互权重更高
+
+### 4. 服务执行
+
+- **能力调用**: 基于URI的能力调用机制
+- **验证流程**: 第三方验证服务集成
+- **反馈机制**: 声誉反馈和评分系统
+
+### 工作流阶段说明
+
+1. **启动阶段**: 代理初始化，加载配置和描述符
+2. **注册阶段**: 在区块链上完成身份和能力注册
+3. **发现阶段**: 通过服务发现机制寻找其他代理
+4. **连接阶段**: 建立安全的双向通信连接
+5. **执行阶段**: 服务调用和能力执行
+6. **验证阶段**: 第三方验证和结果确认
+7. **反馈阶段**: 声誉评分和链上更新
+8. **维护阶段**: 连接状态监控和资源管理
+
+## 🧪 测试体系
+
+### 集成测试
+
+```bash
+# 完整工作流测试
+pytest tests/integration/erc8004_integration_test.py::TestFullERC8004Workflow::test_full_erc8004_workflow
+
+# 连接测试
+pytest tests/integration/simple_connection_test.py
+
+# 握手调试测试
+pytest tests/integration/debug_handshake_test.py
+```
+
+### 单元测试
+
+- **代理管理**: 连接、区块链、HTTP处理器的单元测试
+- **声誉计算**: 声誉引擎和实体测试
+- **基础设施**: 区块链客户端和上下文管理测试
+
+## 📊 系统特性
+
+- **去中心化声誉系统**: 结合区块链和本地交互的混合声誉模型
+- **智能合约集成**: 完整的链上身份和声誉管理
+- **模块化架构**: 高度可扩展的组件设计
+- **异步通信**: 基于aiohttp的高性能异步通信框架
+
+## 📊 项目状态
+
+### 已完成功能
+
+✅ **代理注册**
+- 链上身份注册
+- 能力描述符管理
+- 端点动态配置
+
+✅ **连接管理**  
+- 双向握手协议
+- 会话状态跟踪
+- 连接健康检查
+
+✅ **声誉计算**
+- 多维度评分算法
+- 时间衰减机制
+- 链上链下数据融合
+
+✅ **测试覆盖**
+- 完整集成测试流程
+- 单元测试覆盖核心组件
+- 调试工具和诊断功能
+````
+
 -   代码地址
     
 
@@ -314,6 +486,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 -   了解AP2协议与X402协议，站在A2A协议的角度思考如何集成
     
@@ -328,6 +501,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
 
+
 -   进一步完成链下声誉计算的逻辑，采用传统算法进行链上链下的数据整合
     
 -   进一步调试与测试链上合约交互的问题
@@ -340,6 +514,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 
 
+
 -   封装与测试链上合约交互的工具类并通过单元测试
     
 -   构建以http作为通信方式的代理逻辑，对代理的行为进行抽象和拆分，比如代理访问链上合约、代理与代理交互、代理执行任务
@@ -349,6 +524,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -367,6 +543,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1094,6 +1271,7 @@ Charlie:
 
 
 
+
 ## **一、了解声誉分析、ZK及TEE在EIP8004里的应用：**
 
 ```
@@ -1228,6 +1406,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 
 
+
 1.  阅读erc-8004官方标准及hashkey的文章
     
 2.  核心内容梳理：
@@ -1243,6 +1422,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
