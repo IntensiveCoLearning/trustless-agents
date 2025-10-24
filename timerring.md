@@ -14,8 +14,14 @@ Keep Buidler
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+HTTP 402, a standard yet rarely used HTTP response status code indicating payment is required to access a resource, has long been reserved for future use—until x402 unlocks it (aiming to "absolve the internet of its original sin"). In the x402 protocol, HTTP 402 is activated to inform clients (buyers or agents) of payment requirements, communicate payment details (e.g., amount, currency, destination address), and provide information for programmatic payment completion. x402 uses HTTP 402 primarily to enable frictionless, API-native payments for accessing web resources—particularly for machine-to-machine (M2M) payments (e.g., AI agents), pay-per-use models (e.g., API calls, paywalled content), and micropayments without account creation or traditional payment rails—while keeping the protocol natively web-compatible and easy to integrate into any HTTP-based service. Overall, HTTP 402 serves as the foundation of the x402 protocol, letting services declare payment requirements directly in HTTP responses by signaling payment needs, sharing necessary payment details, and integrating seamlessly with standard HTTP workflows.
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 x402 is an open payment standard built around the HTTP `402 Payment Required` status code, enabling web services to charge for API and content access directly over HTTP. It leverages crypto-native payments to ensure speed, privacy, and efficiency, allowing clients to make programmatic payments without the need for accounts, sessions, or credential management.
 
 ### **Key Advantages**
@@ -57,6 +63,7 @@ Developers can access quickstarts tailored for sellers and buyers, explore core 
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 ## Core Purpose and Solution
 
@@ -106,6 +113,7 @@ Do you want to know more about a specific topic, like the **A2A Request Lifecycl
 <!-- DAILY_CHECKIN_2025-10-18_START -->
 
 
+
 Based on the web page content, here is a detailed explanation of the **Agent2Agent (A2A) Protocol** using Markdown:
 
 # Agent2Agent (A2A) Protocol
@@ -140,6 +148,7 @@ A2A and Model Context Protocol (MCP) are **complementary standards**:
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -215,6 +224,7 @@ sequenceDiagram
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
