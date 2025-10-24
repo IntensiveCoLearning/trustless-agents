@@ -15,13 +15,28 @@ Web front-end developer.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+**Challenge 1: On-Chain vs Off-Chain Data**
+
+**Question**: The community debates how much data to put on-chain. If you had to choose between "events only" vs "minimal view functions" vs "full on-chain indexing," which would you pick and why?
+
+我会选择minimal view functions，
+
+full on-chain indexing的成本太高,要消耗大量gas，
+
+events only虽然便宜，但事件数据在链上不可直接被合约读取，只能通过链下索引工具（如 The Graph）重建状态，存在一定中心化依赖
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 今天在LXDAO论坛看了关于公共物品大家的理解和观点，还是没搞明白。。。
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 觉得ERC-8004与MCP有些相似，做一些对比
 
@@ -75,6 +90,7 @@ Web front-end developer.
 <!-- DAILY_CHECKIN_2025-10-19_START -->
 
 
+
 # x402协议
 
 ### 使用HTTP与区块链结合，实现internet-native payments
@@ -117,6 +133,7 @@ x402 不与任何特定的区块链或代币绑定，它是一个向所有人开
 
 
 
+
 Today, I learned what the A2A and AP2 protocols do.
 
 A2A: Agents can interact with each other.
@@ -126,6 +143,7 @@ AP2: Let the Agent interact on behalf of the user and complete certain operation
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
