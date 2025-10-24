@@ -14,8 +14,18 @@ ETH x AI: the last economy
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+According to the meeting this afternoon, Unibase is an open infrastructure designed to give AI agents a decentralized long-term memory layer. Instead of losing context after each interaction, agents can store and retrieve their memories across platforms through Unibase’s Membase system. This enables persistent learning, identity continuity, and cooperation among agents.  
+  
+A key component is the AIP (Agent Interoperability Protocol), which allows agents built on different frameworks to communicate and share data securely. Combined with a Data Availability layer, Unibase ensures that memory and state are accessible in real time, even for large-scale autonomous systems.  
+  
+For non-developers, Unibase represents a crucial step in the evolution of the “AI agent economy.” It moves AI from short-lived tools toward networked entities with memory and agency, capable of forming trust, reputation, and value exchange. Understanding Unibase helps bridge technical mechanisms with social and economic implications of autonomous AI systems.
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 1\. Discover – Agents find each other using registries or decentralized identifiers. This step ensures discoverability without relying on centralized intermediaries.  
 2\. Verify – Agents validate the counterpart’s credentials, public keys, or verifiable claims to establish trust before negotiation.  
 3\. Negotiate – Both sides exchange structured intents (offers and terms) following the ERC-8004 event format, which defines how negotiation data is emitted and recorded on-chain.  
@@ -27,11 +37,13 @@ ETH x AI: the last economy
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
+
 Looking forward to the meeting tonight.
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 ERC-8004 and the Trustless Agent Framework — Review Notes  
@@ -63,6 +75,7 @@ Conceptually, this ecosystem represents the double helix of ETH × AI,
 
 
 
+
 The x402 protocol establishes a payment layer for AI-enabled services to interact with wallets programmatically, allowing “buyers” (users or agents) to discover paid endpoints, fulfill on-chain payments, then access the service seamlessly. The Quickstart for Buyers guides the developer in five key steps:  
 1\. Prerequisites: a crypto wallet loaded with USDC (on any EVM chain or Solana), and a target service that returns HTTP 402 (Payment Required).   
 2\. Install dependencies: choose Node.js or Python, then install helper packages (x402-axios or x402-fetch) to intercept a 402 response and wrap it with payment logic.   
@@ -79,11 +92,13 @@ In one sentence: x402 enables programmatic wallet-based payments for AI
 
 
 
+
 The Agent Payments Protocol (AP2) is a fresh open-standard issued by Google LLC (Sept 2025) to enable autonomous AI agents to conduct payments on behalf of users — not just communicate. It extends earlier protocols such as Agent2Agent (A2A) (for agent-to-agent messaging) and Model Context Protocol (MCP) (for tool context) by adding the payment-capable layer. At its core, AP2 introduces cryptographically-signed mandates (Intent & Cart) that verify the user’s instructions and create a tamper-proof audit trail. It is payment-agnostic and supports cards, bank transfers and crypto via the x402 extension. The security analysis emphasises threat models like mandate-spoofing and outlines mitigations including hardware-backed keys and decentralized allowlists. In the emerging stack, A2A → MCP → AP2 maps from agent communication to tool use to financial settlement.
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -96,6 +111,7 @@ On the vistara-apps side, this GitHub organization hosts many auto-gene
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
@@ -122,6 +138,7 @@ Creates a modular, cross-ecosystem trust and registration fabric, enabli
 
 
 
+
 ERC-8004 aims to build a trust and discovery layer for autonomous AI agents on Ethereum. The core idea is that each agent can have a chain-verifiable identity (e.g. via an AgentCard), reputation history, and validation proofs, all built on a shared set of on-chain registries (Identity, Reputation, Validation). By separating these trust primitives from the application logic, ERC-8004 allows multiple verification modes—TEE attestation, staking, zk proofs—without locking into a single payment or routing protocol.  
   
 A key insight from the community discussion is that reputation is contextual: Alice’s trust in Bob may differ from Charlie’s, depending on domain and past interactions. Therefore, ERC-8004 emphasizes modularity—let different reputation providers or oracles run independently—and resists attempting to collapse all trust into one universal score. Also, the protocol deliberately does not mandate a specific payment or escrow mechanism, to avoid coupling trust infrastructure with payment systems; such logic is left to higher layers or applications.  
@@ -131,6 +148,7 @@ In practice, a useful workflow might be: use ERC-8004 to discover age
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
