@@ -14,8 +14,24 @@ Learning web3
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+Moving on to x402:
+
+x402 is an open-internet payment protocol built around the HTTP status code 402 “Payment Required”. With this standard, when a client (which could be a human or an autonomous agent) requests access to a resource (API endpoint, content, data service), the server can respond with HTTP 402 and embed payment instructions in the response. The client then submits a signed payment payload (often a stablecoin transfer) and retries the request; once verified, the server grants access. 
+
+The key design goals are:
+
+-   Seamless integration into existing HTTP workflows (no heavy SDKs or credentialing required). 
+    
+-   Chain- and token-agnosticism, allowing payments across multiple networks and tokens (though currently many implementations focus on EVM + USDC via EIP-3009). 
+    
+-   Enabling machine-to-machine (M2M) or agent-driven commerce (e.g., AI agents paying for API calls) without the friction of traditional payments (accounts, API keys, subscriptions).
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 More on A2A’s task model:
 
 **Task Creation:**
@@ -40,6 +56,7 @@ Optionally, validation or reputation logic—like ERC-8004’s Validation Regist
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
 
+
 Moving on to A2A
 
 The A2A protocol is an open standard developed to enable autonomous AI agents—potentially built by different vendors or operating on different platforms—to _discover each other_, _communicate securely_, and _collaborate on tasks_ in a unified way. It introduces the concept of an “Agent Card” (a JSON profile that describes an agent’s capabilities, endpoints and security requirements), and defines a task-lifecycle model in which a “client” agent issues a task and a “remote” agent performs it, with real-time updates, streaming modality support (text, audio, video) and well-defined message schemas. 
@@ -49,6 +66,7 @@ A2A is built with five key principles: leveraging existing web standards (HTTP, 
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 More on ERC8004, watched the 1st community call and ETH Panda call.
@@ -67,6 +85,7 @@ Points on deployment / operational side:
 
 
 
+
 ### Learning ERC-8004
 
 ERC-8004, also known as **“Trustless Agents,”** is a proposed Ethereum standard designed to enable autonomous or AI-driven agents to safely interact, transact, and collaborate with each other **without requiring pre-established trust**. It builds on the earlier Agent-to-Agent (A2A) protocol by introducing a **lightweight on-chain trust framework**, allowing agents from different domains or organizations to coordinate in an open ecosystem.
@@ -78,6 +97,7 @@ The motivation behind ERC-8004 is the rise of the **machine economy**—a world 
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
