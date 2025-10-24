@@ -14,8 +14,121 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+参照Google A2A 做了一个 PubMed Agent 目前只支持一轮问答 给出最新论文摘要，代码开源于[GitHub](https://github.com/henrycyberbio/initAgent)
+
+示例问答：
+
+```
+=======User=======
+给我关于合成生物学的最新研究
+=======AI=======
+根据我在 PubMed 上的搜索（Synthetic Biology），以下是我找到的最新研究摘要：
+1. Acta Pharm Sin B. 2025 Oct;15(10):5231-5243. doi: 10.1016/j.apsb.2025.06.025.
+    Epub 2025 Jun 30.
+
+    Divergent activation patterns of BRS3 revealed by two Chinese herb-derived agonists.
+
+    Li J(1), Li C(2)(3)(4), Zhou Q(5), Han W(5), Fang M(6), Xu Y(2), Mai Y(7), Zhang Y(1), Cui J(8), Xu HE(2)(3)(5)(9), Zhang Y(6), Yin W(2)(9)(10), Wang MW(1)(5)(7)(11)(12).
+
+    摘要：本研究通过高分辨率冷冻电子显微镜（cryo-EM）解析了人BRS3-Gq复合物在两种草药衍生物（DSO-5a和紫草素）结合状态下的结构。研究揭示了这两种化合物
+不同的配体识别模式，并阐明了它们如何差异性地影响BRS3的相互作用网络。这些发现加深了对BRS3激活机制的理解，并为开发具有治疗潜力的小分子BRS3调节剂提供了
+宝贵的见解。
+
+2. Front Immunol. 2025 Oct 8;16:1662238. doi: 10.3389/fimmu.2025.1662238.
+    eCollection 2025.
+
+    Chimeric switch and inverted cytokine receptors in T cell therapy: reprogramming T cells to overcome immune suppression in the solid tumor microenvironment.
+
+    Rane R(1)(2), Li F(1)(2), Williams A(1)(2), Jayadev A(1)(2), Tran NL(3)(4), Winkles JA(5)(6), Kim GB(1)(2).
+
+    摘要：本综述重点介绍了嵌合开关受体（CSRs）和倒置细胞因子受体（ICRs）作为CAR T细胞疗法在实体瘤中的辅助策略。文章讨论了这些新型受体的设计原理、机 
+制功能和治疗潜力，旨在克服实体瘤免疫抑制微环境的挑战，提高T细胞的浸润、持久性和功能。
+
+3. Extracell Vesicles Circ Nucl Acids. 2025 Sep 2;6(3):522-546. doi: 10.20517/evcna.2025.35.
+    eCollection 2025.
+
+    Harnessing artificial intelligence for engineering extracellular vesicles.
+
+    Lu H(1)(2)(3)(4)(5)(6), Zhang J(1)(2)(3)(4)(5)(6), Shen T(1)(2)(3)(4)(5)(6), Jiang W(7), Liu H(1)(2)(3)(4)(8)(9), Su J(1)(2)(3)(4)(10).
+
+    摘要：文章探讨了人工智能（AI）在细胞外囊泡（EVs）研究中的应用，包括靶点识别、药物递送系统设计、细胞通讯网络绘制、多组学数据分析以及基于合成生物 
+学的EVs研究。AI技术为EVs的研究和应用提供了新的视角和工具，有望促进EVs在疾病诊断和治疗中的应用。
+
+4. Acta Biochim Biophys Sin (Shanghai). 2025 Oct 23. doi: 10.3724/abbs.2025190.
+    Online ahead of print.
+
+    Decoding signaling architectures: CAR versus TCR dynamics in solid tumor immunotherapy.
+
+    Chen Z(1)(2), Zhou X(1)(2).
+
+    摘要：本文总结了CAR信号传导动力学的最新进展，并重点介绍了为克服实体瘤治疗挑战而设计的策略，包括增强CAR-T细胞的浸润能力、提高信号传导效率、增强T 
+细胞的活化和持久性，以及利用合成生物学工具实现可调控的CAR激活。
+
+5. J Integr Plant Biol. 2025 Oct 23. doi: 10.1111/jipb.70058.
+    Online ahead of print.
+
+    CRY2 interacts with PRR5 in a blue light-dependent manner to mediate blue light-regulated circadian period.
+
+    Shi C(1)(2)(3), Yuan X(1)(2)(3), Ma L(2)(3), Wen T(1), Jia X(1)(4), Li X(1)(2), Liu H(1)(2)(5).
+
+    摘要：该研究揭示了CRY2在蓝光依赖性下与PRR5相互作用，介导蓝光调控的昼夜节律周期。这些发现阐明了蓝光通过CRY2-PRR5模块影响昼夜节律的通路。
+
+6. Angew Chem Int Ed Engl. 2025 Oct 23:e202424955. doi: 10.1002/anie.202424955.
+    Online ahead of print.
+
+    A Photoswitchable HaloTag for Spatiotemporal Control of Fluorescence in Living Cells.
+
+    Walterspiel F(#)(1), Ugarte-Uribe B(#)(1), Weidenhausen J(1), Vincent M(1), Narayanasamy KK(1), Dimitriadi A(1), Khan AUM(1), Fritsch M(1), Müller CW(1), Zimmermann T(1), Deo C(1).
+
+    摘要：本研究介绍了一种可光开关的HaloTag，它能够利用光精确控制荧光信号的时空动态。这种新型的化学遗传学光敏荧光探针在活细胞中表现出优异的性能，为 
+动态成像提供了新的可能性。
+
+7. Plant Physiol. 2025 Oct 23:kiaf518. doi: 10.1093/plphys/kiaf518.
+    Online ahead of print.
+
+    Diverse triggers, common outcome: Senescence in Fix⁻ Medicago truncatula nodules.
+
+    Pál A(1)(2), Lima RM(1), Tiricz H(1), Ayaydin F(3), Kereszt A(1), Kondorosi É(1), Ábrahám E(4).
+
+    摘要：该研究探讨了三种不同的触发因素如何导致苜蓿根瘤过早衰老，并发现所有触发因素都导致了相似的衰老特征，包括固氮相关基因表达下降、细菌体降解、根
+瘤内共生细胞过早死亡以及衰老标志物基因的上调。
+
+8. J Agric Food Chem. 2025 Oct 23. doi: 10.1021/acs.jafc.5c06105.
+    Online ahead of print.
+
+    Quorum Sensing-Based Detection and Biodegradation of Phthalate Esters by Engineered Escherichia coli and Pseudomonas aeruginosa.
+
+    Huanca Nina MR(1), Zhang X(1), Fan D(2), Bai Y(1)(2).
+
+    摘要：本研究利用蛋白质工程和群体感应（QS）系统，构建了能够高效检测和降解邻苯二甲酸酯的工程菌株。这些菌株在降解多种邻苯二甲酸酯方面表现出优异的性
+能和稳定性。
+
+9. Nat Biotechnol. 2025 Oct 23. doi: 10.1038/s41587-025-02879-3.
+    Online ahead of print.
+
+    Discovery and engineering of retrons for precise genome editing.
+
+    Buffington JD(#)(1), Kuo HC(#)(1), Hu K(#)(1), Chang YC(#)(1), Javanmardi K(1), Voigt B(2), Li YR(1), Little ME(1), Devanathan SK(1), Xhemalçe B(1)(3), Gray RS(2), Finkelstein IJ(4)(5).
+
+    摘要：本研究报道了发现和工程化用于哺乳动物细胞和脊椎动物精确基因编辑的重组酶（retrons）。这些重组酶编辑器具有高效性，可用于基因整合，并支持DNA修
+复和RNA递送策略，为基因编辑提供了新的工具。
+
+10. Annu Rev Microbiol. 2025 Oct;79(1):547-572. doi: 10.1146/annurev-micro-082024-094943.
+
+    Decoding Microbial Community Assembly: Insights on Vectors of Infectious Diseases.
+
+    Obregon D(1), Maitre A(2)(3)(4), Piloto-Sardiñas E(2)(5), Wu-Chuang A(2), Abuin-Denis L(2)(6), Cano-Argüelles AL(7), Aželytė J(8), Corona-Guerrero I(9)(10), Mateos-Hernández L(2), Kratou M(11), Skičková Š(12), Svobodová K(13), Cabezas-Cruz A(2).
+
+    摘要：该综述探讨了影响病媒微生物群落组装的因素，网络分析在揭示微生物相互作用中的作用，以及抗微生物疫苗和共生寄生等新型控制策略。研究强调了标准化
+方法和利用新兴技术对于有效和可持续控制病媒传播疾病的重要性。
+```
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 ### 安装依赖
 
 拉下示例库
@@ -75,11 +188,13 @@ async for chunk in stream_response:
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
+
 已完成第二个Agent 准备迁移至 LangGraph 再尝试A2A的实践
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 # Agent2Agent 协议
@@ -190,6 +305,7 @@ A2A 协议的消息封包可选：
 
 
 
+
 ### 信誉注册表
 
 我们知道在 A2A 协议中，用户侧的 Agent 被称为 _客户端 Agent_ ，当客户端 Agent 在完成服务后可以发布一个反馈证明
@@ -215,6 +331,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -287,6 +404,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 
 
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -309,6 +427,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -434,6 +553,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
