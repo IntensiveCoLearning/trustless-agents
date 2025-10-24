@@ -14,13 +14,20 @@ web3初学，对web3和AI有浓厚兴趣，十分看好AI的前景，特别是AI
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+今天时间不多，复习了一下x402相关内容
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 阅读x402白皮书
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 学习了ArenaSDK
 <!-- DAILY_CHECKIN_2025-10-22_END -->
@@ -29,11 +36,13 @@ web3初学，对web3和AI有浓厚兴趣，十分看好AI的前景，特别是AI
 <!-- DAILY_CHECKIN_2025-10-21_START -->
 
 
+
 学习了ERC-8004实例
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -67,11 +76,13 @@ X402支持的用例：
 
 
 
+
 通过学习完成了python环境的配置，着手准备ERC-8004的交互
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -107,6 +118,7 @@ A2A协议专注于使不同代理之间相互协作
 
 
 
+
 A2A是一种标准化协议，为不同代理之间的相互通信提供了标准方法和数据结构。
 
 核心优势：
@@ -132,11 +144,13 @@ A2A是一种标准化协议，为不同代理之间的相互通信提供了标�
 
 
 
+
 通过对**Identity Registry、Reputation Registry、Validation Registry**进一步的的学习，对ERC-8004的了解更加深入。
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
