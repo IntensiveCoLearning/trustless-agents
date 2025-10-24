@@ -14,8 +14,18 @@ a builder who currently learning and focusing on the research part
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-24
+<!-- DAILY_CHECKIN_2025-10-24_START -->
+I finished reading whitepaper of x402 today, I got the concept and would love to try it directly. I want to focus more on the agentic use case of x402 rather than the human user one.
+
+after finally finished reading ERC-8004, A2A, and x402. I decided to start a repository where I put everything there [https://github.com/0xhirugohan/all-about-erc-8004](https://github.com/0xhirugohan/all-about-erc-8004)
+
+and now I am starting to developing. I was planning to working on the onchain of identity and reputation registry. But then I think like, what if I pulled back a bit. So I want to have a list of all identities and reputations. That way, when I registered a new identity and a new reputation, I can see it directly from the web view. It will takes a lot of time but I feel its more enjoyable if I have the explorer or visual interface to do it.
+<!-- DAILY_CHECKIN_2025-10-24_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 I am definitely falling behind, but here is my note for today.
 
 I finished the A2A today through reading the release blog by Google, the video introduction by Google Cloud, and also one from IBM. I started to understand what is A2A, and how A2A complies with MCP. So both MCP, A2A, and ERC-8004 are connected to each other.
@@ -32,6 +42,7 @@ Tomorrow I will continue reading on the x402. Honestly I feel like out of the "l
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
+
 I continue finishing blog posts from yesterday. I now kinda get that ERC-8004 was initially the extension of A2A. A2A has a "problem" that it requires "trust" within the system which ERC-8004 is trying to solve through a trustless networks.  
   
 The goal is making the discovery and "reputation" and also "verification" to be on-chain (not all), so that it can become public and transparent. So there will be many tradeoffs in the process like what to put onchain vs offchain. And also making the ERC-8004 to be very minimal so that people can easily register. And the process later can be improved by protocols or dapps.  
@@ -41,6 +52,7 @@ I feel like running out of the time here. So maybe I won't read much about A2A a
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 this note is a diary rather than a informational note, for personal progress and note.  
@@ -54,6 +66,7 @@ My technical plan if possible is use any existing agent and play with the on-cha
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -72,6 +85,7 @@ hopefully can finish it by tomorrow and then continue on the blog posts and VoD
 
 
 
+
 slow progress on weekend, will go full on Monday. I just finished 25% of the ERC-8004 discussion. In overview, I could see the concern being discussed like what to put on-chain vs off-chain. also about scoring/reputation modularity. I don't really know much the detail but I think I can keep it up later.  
   
 I would love to see the scoring or reputation in action.
@@ -79,6 +93,7 @@ I would love to see the scoring or reputation in action.
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -101,6 +116,7 @@ Planning to continue on the EIP discussion, that is pretty long. And then on the
 
 
 
+
 I've listed all the resources I need for the upcoming 2 weeks but mostly it's from this page.  
   
 Today I plan to mainly finish the EIP and read the discussion part. Hopefully can manage into the blog posts.
@@ -110,6 +126,7 @@ Also attended the sharing session, so glad to attend because I can see it direct
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
