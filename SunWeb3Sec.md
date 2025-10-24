@@ -14,8 +14,20 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-25
+<!-- DAILY_CHECKIN_2025-10-25_START -->
+POC
+
+Exploring X402 and the A2A Protocol — built a prototype that integrates on-the-fly AML Risk Scoring.
+
+Flow: User → X402 Payment → AML Risk Score
+
+[https://x.com/1nf0s3cpt/status/1980921183492268359](https://x.com/1nf0s3cpt/status/1980921183492268359)
+<!-- DAILY_CHECKIN_2025-10-25_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 # A2A Fast-Track (Discovery / Descriptor / Collaboration)
 
 **Must-read**
@@ -131,6 +143,7 @@ Google's A2A protocol provides a **universal standard** for agent communication,
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
+
 # How Much On-Chain Is Enough?
 
 **Must-read**
@@ -231,6 +244,7 @@ Google's A2A protocol provides a **universal standard** for agent communication,
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 # **Analysis of Three Solidity Contracts**
@@ -667,6 +681,7 @@ Validation ────> How good your work is
 
 
 
+
 # Run ERC-8004 Example
 
 **Goal:** Read, run, and modify the official example.
@@ -848,6 +863,7 @@ After a job completes, call the Validation Registry (`reexec` / `tee` / `zk`) an
 
 
 
+
 # Validation Registry (Third-Party Verification Hooks)
 
 ## Why it matters
@@ -962,6 +978,7 @@ function recordResult(
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1103,6 +1120,7 @@ function recordResult(
 
 
 
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -1210,6 +1228,7 @@ function recordResult(
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1383,6 +1402,7 @@ Sepolia
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
