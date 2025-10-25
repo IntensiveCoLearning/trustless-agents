@@ -88,4 +88,10 @@ everyone can submit reputation is not good
 
 client did is required
 <!-- DAILY_CHECKIN_2025-10-19_END -->
+
+
+# 2025.10.25
+<!-- DAILY_CHECKIN_2025-10-25_START -->
+reputation design is most important
+<!-- DAILY_CHECKIN_2025-10-25_END -->
 <!-- Content_END -->
