@@ -14,13 +14,20 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-25
+<!-- DAILY_CHECKIN_2025-10-25_START -->
+今天繼續看了erc-8004的example源代碼，還有work show
+<!-- DAILY_CHECKIN_2025-10-25_END -->
+
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 跑了erc-8004的示例实现。
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 ## 什么是AP2?
 
@@ -79,12 +86,14 @@ x402 协议定义了 **客户端代理 (Client Agent)** 和 **商家代理 (Merc
 
 
 
+
 观看ERC-8004的Workshop:  
 [https://www.bilibili.com/video/BV1ChWkzvEdf/?vd\_source=a5b3dc7305ae6e3f310852f7273a82a2](https://www.bilibili.com/video/BV1ChWkzvEdf/?vd_source=a5b3dc7305ae6e3f310852f7273a82a2)
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -138,6 +147,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 
 
 
+
 ## 1.阅读了其他同学的笔记，获得了对ERC-8004的一些新的想法。
 
 ## **This Protocol Enables**
@@ -165,6 +175,7 @@ Agent are not tools 文章：[https://discuss.google.dev/t/agents-are-not-tools/
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
