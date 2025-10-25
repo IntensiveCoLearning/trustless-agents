@@ -21,19 +21,20 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 
 重要笔记：**Tiered Trust Models 💡**
 
-One of ERC-8004's most sophisticated features is its tiered security architecture, where trust mechanisms scale with the value at risk. This addresses the fundamental insight that ordering pizza requires different security guarantees than medical diagnosis.
+One of ERC-8004’s most sophisticated features is its tiered security architecture, where trust mechanisms scale with the value at risk. This addresses the fundamental insight that ordering pizza requires different security guarantees than medical diagnosis.
 
 !\[\]([https://www.quillaudits.com/\_next/image?url=https%3A%2F%2Fambitious-kindness-505c138052.media.strapiapp.com%2FBlank\_1\_17ecc28b4a.webp&w=1920&q=75](https://www.quillaudits.com/_next/image?url=https%3A%2F%2Fambitious-kindness-505c138052.media.strapiapp.com%2FBlank_1_17ecc28b4a.webp&w=1920&q=75))
 
-ERC-8004 marks a transformative step toward realizing the Agentic Economy, seamlessly blending blockchain's trustless infrastructure with AI's autonomous potential. 
+ERC-8004 marks a transformative step toward realizing the Agentic Economy, seamlessly blending blockchain’s trustless infrastructure with AI’s autonomous potential.
 
--   By introducing lightweight, scalable registries for identity, reputation, and validation, it addresses critical trust gaps in cross-organizational agent interactions and promises to unlock a trillion-dollar market. 
+-   By introducing lightweight, scalable registries for identity, reputation, and validation, it addresses critical trust gaps in cross-organizational agent interactions and promises to unlock a trillion-dollar market.
     
 -   Yet, for this future to be sustainable, the underlying smart contracts powering ERC-8004 must remain free from vulnerabilities. That’s where Smart Contract Audits play a pivotal role, ensuring every layer of this innovation is secure, reliable, and ready to support truly autonomous economic collaboration.⚠️
 <!-- DAILY_CHECKIN_2025-10-25_END -->
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 学习主题：[https://www.x402.org/x402-whitepaper.pdf](https://www.x402.org/x402-whitepaper.pdf)
 
@@ -54,6 +55,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
 
+
 学习主题：[https://a2a-protocol.org/latest/roadmap/](https://a2a-protocol.org/latest/roadmap/)
 
 重要笔记：Longer-Term Roadmap (3-6 Months)
@@ -69,6 +71,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -92,6 +95,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -124,6 +128,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 
 
+
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
 
 笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
@@ -146,6 +151,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -212,6 +218,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -227,6 +234,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
