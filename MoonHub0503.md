@@ -14,8 +14,34 @@ Be a web3 builder~
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-25
+<!-- DAILY_CHECKIN_2025-10-25_START -->
+A2A capabilities
+
+Discovery
+
+Agents must advertise theircapabilities so clients know when andhow to utilize them for specific tasks.
+
+Negotiation
+
+Clients and agents need to agree oncommunication methods like text,forms, iframe, or audio/video toensure proper user interaction.
+
+Task and StateManagement
+
+Clients and agents need mechanismsto communicate task status,changes, and dependenciesthroughout task execution.
+
+Collaboration
+
+Clients and agents must supportdynamic interaction, enabling agentsto request clarifications, information,or sub-actions from client, otheragents, or users.
+
+Collaboration
+
+Clients and agents must supportdynamic interaction, enabling agentsto request clarifications, information,or sub-actions from client, otheragents, or users.
+<!-- DAILY_CHECKIN_2025-10-25_END -->
+
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 **ERC-8004：免信任代理协议**
 
 **核心目标**  
@@ -96,6 +122,7 @@ ERC-8004 旨在成为开放代理经济的基石，通过提供一套标准的�
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
+
 -   区块链定义了游戏规则，AI 可以成为参与者。随着 AI Agent 的兴起，它们能自主发币、参与应用与治理，开启大量实验空间，未来应进一步思考如何赋能生态发展。但AI 不应替代人，而应成为人的工具。安全性仍是关键问题，包括 Agent 的黑客风险。V神进一步提到 ZK ID（零知识身份）在防范 AI 滥用方面的潜力。ZK ID 可以帮助区分真人与机器人，在保护隐私的同时，可以支持例如低风险 DeFi 等赛道的发展。
     
 -   区块链可以大致分为两类，一类以比特币为代表，主要是货币发行系统，通过简单的数学公式实现高速运算，不允许进行复杂的外部部署，从而在全球范围内快速达成共识，因此被视为“数字黄金”；另一类以以太坊为代表，以应用为中心，沿着白皮书初衷逐步发展，目前占据了 60%–70% 的应用市场份额。
@@ -166,6 +193,7 @@ ERC-8004 旨在成为开放代理经济的基石，通过提供一套标准的�
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 **Agent2Agent (A2A) 协议：开启智能体互操作新时代**
@@ -266,6 +294,7 @@ A2A协调“客户端”智能体与“远程”智能体之间的通信：
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -602,6 +631,7 @@ A2A架构中的自主发现和通信是一个复杂但强大的范式，它通�
 
 
 
+
 **背景**  
 随着大语言模型（LLM）在推理和工具使用方面日益强大，由智能体框架、工具和LLM驱动的**智能体经济**正在兴起，对企业提升效率和自动化至关重要。然而，众多智能体和框架导致它们之间难以验证和交互。
 
@@ -682,6 +712,7 @@ ERC-8004通过建立在EVM网络上用于AI智能体协调的**无需信任层**
 
 
 
+
 **ERC-8004 的诞生与愿景：为AI打造去中心化公共语言**
 
 我们的“无需信任AI代理”提案在以太坊生态中引起了巨大反响。本文将讲述ERC-8004的诞生故事与下一步计划。
@@ -715,6 +746,7 @@ ERC-8004通过建立在EVM网络上用于AI智能体协调的**无需信任层**
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -804,6 +836,7 @@ ERC-8004通过将区块链的无需信任基础设施与AI的自主潜力相结�
 
 
 
+
 （ERC-8004）为以太坊的智能代理（Agent）间协议引入了**去中心化信任层**，使不同组织间的代理能够**在没有预先建立信任的情况下**进行发现、选择和交互。它通过三个**轻量级链上注册表（身份、声誉、验证）** 实现信任锚定，而将具体的应用逻辑留给**链下组件**处理。
 
 在公开讨论中，有开发者提出关键改进建议：**当前标准过于侧重链下读取，而忽略了链上可组合性的巨大价值**。建议增强链上智能合约对注册表数据（如验证结果、声誉分数）的读取能力，以实现更复杂的链上权限逻辑和模块化执行（例如罚没机制）。
@@ -847,6 +880,7 @@ ERC-8004通过将区块链的无需信任基础设施与AI的自主潜力相结�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
