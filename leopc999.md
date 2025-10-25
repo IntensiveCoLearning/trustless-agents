@@ -14,8 +14,14 @@ A web3 enthusiast in AI.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-25
+<!-- DAILY_CHECKIN_2025-10-25_START -->
+复习之前的学习内容
+<!-- DAILY_CHECKIN_2025-10-25_END -->
+
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 参加了 Workshop。
 
 # Unibase 核心技术讲解
@@ -49,6 +55,7 @@ A web3 enthusiast in AI.
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 阅读了 Medium 文章 **“The Story Behind ERC-8004 & Next Steps”** 的总结与个人理解：
 
@@ -140,11 +147,13 @@ A web3 enthusiast in AI.
 <!-- DAILY_CHECKIN_2025-10-21_START -->
 
 
+
 今天继续复习之前的内容，体会其中的机制。
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -238,6 +247,7 @@ console.log(await res.json()); // paid response
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -385,6 +395,7 @@ console.log(await res.json()); // paid response
 
 
 
+
 今天阅读了 QuillAudits 文章《ERC-8004: Infrastructure for Autonomous AI Agents》。
 
 * * *
@@ -491,6 +502,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 
 
+
 # 构建无信任代理（Trustless Agents）：ERC-8004 Workshop
 
 本次会议围绕“无信任代理（Trustless Agents）”相关的 ERC-8004 标准展开，涵盖标准背景、核心功能、技术实现及后续规划，我参会后，对核心内容进行了总结。
@@ -560,6 +572,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
