@@ -14,8 +14,16 @@ Swift Evo
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-25
+<!-- DAILY_CHECKIN_2025-10-25_START -->
+在建立aurracloud AI前，先要想好實際的應用場景。而不是為做而做。
+
+[https://aurracloud.com/dashboard/agents/create/wizard](https://aurracloud.com/dashboard/agents/create/wizard)
+<!-- DAILY_CHECKIN_2025-10-25_END -->
+
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 今天開始手動嘗試 Aurracloud 看能否無痛建立一個AI agent 再結合 x402  
   
 [https://aurracloud.com/dashboard](https://aurracloud.com/dashboard)
@@ -24,6 +32,7 @@ Swift Evo
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
+
 [https://www.youtube.com/watch?v=pL5LxhZ8iCY](https://www.youtube.com/watch?v=pL5LxhZ8iCY)  
   
 繼續學習 x402 coinbase
@@ -31,6 +40,7 @@ Swift Evo
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 [https://www.youtube.com/watch?v=pL5LxhZ8iCY](https://www.youtube.com/watch?v=pL5LxhZ8iCY)  
@@ -43,6 +53,7 @@ Swift Evo
 
 
 
+
 Chat with AI for understanding about 8004 and the twitter post about x402 as well
 
 https://x.com/tinyxiong\_eth/status/1980542373018103863?t=DtscjHYs\_BQzH9Gc5ZIOzw&s=19
@@ -50,6 +61,7 @@ https://x.com/tinyxiong\_eth/status/1980542373018103863?t=DtscjHYs\_BQzH9Gc5ZIOz
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -260,6 +272,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 
 
+
 [https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)
 
 繼續和AI對話，學習 8004 的 coding ；同時嘗試了解 MCP, A2A 與 ADK 的分別  
@@ -269,6 +282,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -298,11 +312,13 @@ bash npm install --save-dev hardhat npx hardhat init
 
 
 
+
 參加了 workshop ，對於 ERC 8004 的整理流程有了進一步理解，也提出了關於注冊的相關問題
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
