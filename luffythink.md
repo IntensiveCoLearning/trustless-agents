@@ -19,71 +19,9 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 <!-- DAILY_CHECKIN_2025-10-26_START -->
 学习主题: [https://github.com/vistara-apps/erc-8004-example](https://github.com/vistara-apps/erc-8004-example)
 
-重要笔记：
+重要笔记：Project Structure
 
-**Project Structure：**
-
-\`\`\`
-
-erc-8004-example/
-
-├── [README.md](http://README.md) # This file
-
-├── requirements.txt # Python dependencies
-
-├── .env.example # Environment configuration template
-
-├── [demo.py](http://demo.py) # Main demonstration script
-
-├── [setup.sh](http://setup.sh) # Automated setup script
-
-├── [SUMMARY.md](http://SUMMARY.md) # Project summary
-
-├── ERC-XXXX Trustless Agents [v0.3.md](http://v0.3.md) # ERC specification
-
-│
-
-├── contracts/ # Smart contracts
-
-│ ├── src/ # Contract source code
-
-│ │ ├── IdentityRegistry.sol
-
-│ │ ├── ReputationRegistry.sol
-
-│ │ ├── ValidationRegistry.sol
-
-│ │ └── interfaces/ # Contract interfaces
-
-│ ├── out/ # Compiled artifacts (ABIs)
-
-│ ├── script/ # Deployment scripts
-
-│ └── foundry.toml # Foundry configuration
-
-│
-
-├── agents/ # AI agent implementations
-
-│ ├── **init**.py
-
-│ ├── base\_[agent.py](http://agent.py) # Base ERC-8004 agent class
-
-│ ├── server\_[agent.py](http://agent.py) # Market analysis server agent
-
-│ └── validator\_[agent.py](http://agent.py) # Analysis validation agent
-
-│
-
-├── scripts/ # Utility scripts
-
-│ └── [deploy.py](http://deploy.py) # Contract deployment script
-
-├── data/ # Generated analysis data (created at runtime)
-
-└── validations/ # Generated validation data (created at runtime)
-
-\`\`\`
+![Project Structure.jpg](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/luffythink/images/2025-10-26-1761451757680-Project_Structure.jpg)
 
 At the core of this demo is the construction of a decentralized, trustworthy AI service marketplace, where AI agents (understood as “smart bots”) collaborate through blockchain technology to complete analysis, validation, and reputation management:
 
@@ -117,6 +55,7 @@ At the core of this demo is the construction of a decentralized, trustworthy AI 
 
 
 
+
 学习主题：[https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
 
 重要笔记：**Tiered Trust Models 💡**
@@ -141,6 +80,7 @@ ERC-8004 marks a transformative step toward realizing the Agentic Economy, seaml
 
 
 
+
 学习主题：[https://www.x402.org/x402-whitepaper.pdf](https://www.x402.org/x402-whitepaper.pdf)
 
 重要笔记：
@@ -158,6 +98,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 
@@ -191,6 +132,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 
 
+
 学习主题：[https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview](https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview)
 
 重要笔记：**Technical Architecture**
@@ -210,6 +152,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -254,6 +197,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 
 
+
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
 
 笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
@@ -276,6 +220,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -354,6 +299,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -369,6 +315,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
