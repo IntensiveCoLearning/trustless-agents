@@ -483,8 +483,9 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [YarenTang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/YarenTang.md) | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | |
 | [heyheyitsnma](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/heyheyitsnma.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
-| [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | | | |
+| [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
