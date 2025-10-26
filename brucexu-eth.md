@@ -26,7 +26,7 @@ At a high level, the flow is simple:
     
 3.  The buyer prepares and submits a payment payload.
     
-4.  The server verifies and settles the payment using an x402 facilitator's /verify and /settle endpoints.
+4.  The server verifies and settles the payment using an x402 facilitator’s /verify and /settle endpoints.
     
 5.  If payment is valid, the server provides the requested resource.
     
@@ -38,10 +38,53 @@ For more detail, see:
 -   Facilitator
     
 -   HTTP 402
+    
+
+Seems the **facilitator, SDK, API are all bond to Coinbase and base, we might need to build some opensource facilitators on Ethereum.**
+
+The Facilitator URL or Facilitator object. For testing, use `https://x402.org/facilitator` which works on Base Sepolia and Solana devnet.
+
+```
+app.use(paymentMiddleware(
+  "0xYourAddress", // your receiving wallet address
+  {  // Route configurations for protected endpoints
+      "GET /weather": {
+        // USDC amount in dollars
+        price: "$0.001",
+        network: "base-sepolia",
+      },
+    },
+  {
+    url: "https://x402.org/facilitator", // Facilitator URL for Base Sepolia testnet.
+  }
+));
+```
+
+add a middleware to the backend code to implement the paywalls.
+
+### **Test Your Integration**
+
+To verify:
+
+1.  Make a request to your endpoint (e.g., `curl http://localhost:3000/your-endpoint`).
+    
+2.  The server responds with a 402 Payment Required, including payment instructions in the body.
+    
+3.  Complete the payment using a compatible client, wallet, or automated agent. This typically involves signing a payment payload, which is handled by the client SDK detailed in the Quickstart for Buyers.
+    
+4.  Retry the request, this time including the `X-PAYMENT` header containing the cryptographic proof of payment (payment payload).
+    
+5.  The server verifies the payment via the facilitator and, if valid, returns your actual API response (e.g., `{ "data": "Your paid API response." }`).
+    
+
+It's better to integrate with shopify or e-commence website.
+
+x402 provides more features and extensions for HTTP 402, and build smooth experience for payments.
 <!-- DAILY_CHECKIN_2025-10-26_END -->
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 今天主要是跟 tomasz 做了个专访，聊了一下 ai x eth
 <!-- DAILY_CHECKIN_2025-10-23_END -->
@@ -50,11 +93,13 @@ For more detail, see:
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
 
+
 Today I will be joining ETHShanghai and have a fireside chat with Tomasz
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -166,6 +211,7 @@ TODO check [https://github.com/coinbase/x402/blob/main/README.md](https://github
 
 
 
+
 [https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 To maximize the benefits from agentic AI, it is critical for these agents to be able to collaborate in a dynamic, multi-agent ecosystem across siloed data systems and applications.
@@ -232,6 +278,7 @@ The following table describes the fundamental communication elements in A2A:
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -394,6 +441,7 @@ zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、�
 
 
 
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -440,11 +488,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -515,6 +565,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
