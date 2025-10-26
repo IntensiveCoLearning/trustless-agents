@@ -14,19 +14,48 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-26
+<!-- DAILY_CHECKIN_2025-10-26_START -->
+### **How Does It Work?**
+
+At a high level, the flow is simple:
+
+1.  A buyer requests a resource from a server.
+    
+2.  If payment is required, the server responds with `402 Payment Required`, including payment instructions.
+    
+3.  The buyer prepares and submits a payment payload.
+    
+4.  The server verifies and settles the payment using an x402 facilitator's /verify and /settle endpoints.
+    
+5.  If payment is valid, the server provides the requested resource.
+    
+
+For more detail, see:
+
+-   Client / Server
+    
+-   Facilitator
+    
+-   HTTP 402
+<!-- DAILY_CHECKIN_2025-10-26_END -->
+
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 今天主要是跟 tomasz 做了个专访，聊了一下 ai x eth
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
+
 Today I will be joining ETHShanghai and have a fireside chat with Tomasz
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 [https://www.x402.org/](https://www.x402.org/)
@@ -136,6 +165,7 @@ TODO check [https://github.com/coinbase/x402/blob/main/README.md](https://github
 
 
 
+
 [https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 To maximize the benefits from agentic AI, it is critical for these agents to be able to collaborate in a dynamic, multi-agent ecosystem across siloed data systems and applications.
@@ -202,6 +232,7 @@ The following table describes the fundamental communication elements in A2A:
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -362,6 +393,7 @@ zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、�
 
 
 
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -407,11 +439,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -481,6 +515,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
