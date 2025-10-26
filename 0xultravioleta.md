@@ -35,51 +35,51 @@ Complete AWS cloud production infrastructure for the **Karmacadabra** trustless 
 
 \- Dual routing strategy (path-based and hostname-based)
 
-\---
+\-–
 
 **Live Agent Endpoints**
 
 **Validator Agent**
 
-\- **Health:** [http://validator.karmacadabra.ultravioletadao.xyz/health](http://validator.karmacadabra.ultravioletadao.xyz/health)
+\- **Health:** [https://validator.karmacadabra.ultravioletadao.xyz/health](https://validator.karmacadabra.ultravioletadao.xyz/health)
 
-\- **AgentCard:** [http://validator.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](http://validator.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
+\- **AgentCard:** [https://validator.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](https://validator.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
 
 \- **Service:** Independent data quality verification (0.001 GLUE per validation)
 
 **Karma-Hello Agent**
 
-\- **Health:** [http://karma-hello.karmacadabra.ultravioletadao.xyz/health](http://karma-hello.karmacadabra.ultravioletadao.xyz/health)
+\- **Health:** [https://karma-hello.karmacadabra.ultravioletadao.xyz/health](https://karma-hello.karmacadabra.ultravioletadao.xyz/health)
 
-\- **AgentCard:** [http://karma-hello.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](http://karma-hello.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
+\- **AgentCard:** [https://karma-hello.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](https://karma-hello.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
 
 \- **Service:** Twitch chat log analysis and sales (0.01-200 GLUE)
 
 **Abracadabra Agent**
 
-\- **Health:** [http://abracadabra.karmacadabra.ultravioletadao.xyz/health](http://abracadabra.karmacadabra.ultravioletadao.xyz/health)
+\- **Health:** [https://abracadabra.karmacadabra.ultravioletadao.xyz/health](https://abracadabra.karmacadabra.ultravioletadao.xyz/health)
 
-\- **AgentCard:** [http://abracadabra.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](http://abracadabra.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
+\- **AgentCard:** [https://abracadabra.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](https://abracadabra.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
 
 \- **Service:** Stream transcription with AI analysis (0.02-300 GLUE)
 
 **Skill-Extractor Agent**
 
-\- **Health:** [http://skill-extractor.karmacadabra.ultravioletadao.xyz/health](http://skill-extractor.karmacadabra.ultravioletadao.xyz/health)
+\- **Health:** [https://skill-extractor.karmacadabra.ultravioletadao.xyz/health](https://skill-extractor.karmacadabra.ultravioletadao.xyz/health)
 
-\- **AgentCard:** [http://skill-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](http://skill-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
+\- **AgentCard:** [https://skill-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](https://skill-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
 
 \- **Service:** User skill profiling from chat data (0.02-0.50 GLUE)
 
 **Voice-Extractor Agent**
 
-\- **Health:** [http://voice-extractor.karmacadabra.ultravioletadao.xyz/health](http://voice-extractor.karmacadabra.ultravioletadao.xyz/health)
+\- **Health:** [https://voice-extractor.karmacadabra.ultravioletadao.xyz/health](https://voice-extractor.karmacadabra.ultravioletadao.xyz/health)
 
-\- **AgentCard:** [http://voice-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](http://voice-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
+\- **AgentCard:** [https://voice-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card](https://voice-extractor.karmacadabra.ultravioletadao.xyz/.well-known/agent-card)
 
 \- **Service:** Personality analysis from messages (0.02-0.40 GLUE)
 
-\---
+\-–
 
 **Key Capabilities Added**
 
@@ -98,6 +98,7 @@ Complete AWS cloud production infrastructure for the **Karmacadabra** trustless 
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 
 I am fascinated with this and its about to get way louder!  
@@ -257,6 +258,7 @@ What was fixed:
 
 
 
+
 # Karmacadabra System Update
 
 ## 🔐 Security: Enterprise-Grade Secret Management
@@ -404,6 +406,7 @@ Next milestone: **End-to-End Integration Testing**
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -558,6 +561,7 @@ Created utilities that scale:
 
 
 
+
 **Date:** October 21, 2025
 
 ## ✨ Highlights from the Master Plan: Karmacadabra (Trustless Agent Economy)
@@ -686,6 +690,7 @@ cooking................
 
 
 
+
 # Day 6 — Notes (Oct 20, 2025)
 
 ## 🔍 Focus of the Day
@@ -795,6 +800,7 @@ This file acts as the **entry point** for discovery and compatibility.
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -916,6 +922,7 @@ It unlocks **new income flows** and enhances user experience through **interoper
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1080,6 +1087,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 
 
+
 # Day 3 — Notes (Oct 17, 2025)
 
 ## 📖 Reading
@@ -1157,6 +1165,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1290,6 +1299,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
