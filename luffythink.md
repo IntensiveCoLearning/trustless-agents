@@ -21,99 +21,100 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 
 重要笔记：
 
-**Architecture Overview:**
-
-Architecture Overview:
+**Project Structure：**
 
 \`\`\`
 
-┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐
+erc-8004-example/
 
-│ Server Agent │ │ Validator Agent │ │ Client Agent │
+├── [README.md](http://README.md) # This file
 
-│ (Alice) │ │ (Bob) │ │ (Charlie) │
+├── requirements.txt # Python dependencies
 
-│ │ │ │ │ │
+├── .env.example # Environment configuration template
 
-│ • Market │ │ • Valdidation │ │ • Feedback │
+├── [demo.py](http://demo.py) # Main demonstration script
 
-│ Analysis │ │ │ Authorization │
+├── [setup.sh](http://setup.sh) # Automated setup script
 
-│ • Multi-agent │ │ • Quality │ │ • Reputation │
+├── [SUMMARY.md](http://SUMMARY.md) # Project summary
 
-│ workflows │ │ Assessment │ │ Management │
-
-└─────────────────┘ └─────────────────┘ └─────────────────┘
-
-│ │ │
-
-└───────────────────────┼───────────────────────┘
+├── ERC-XXXX Trustless Agents [v0.3.md](http://v0.3.md) # ERC specification
 
 │
 
-┌─────────────────────┐
+├── contracts/ # Smart contracts
 
-│ ERC-8004 Registries│
+│ ├── src/ # Contract source code
 
-│ │
+│ │ ├── IdentityRegistry.sol
 
-│ • Identity Registry │
+│ │ ├── ReputationRegistry.sol
 
-│ • Reputation Registry│
+│ │ ├── ValidationRegistry.sol
 
-│ • Validation Registry│
+│ │ └── interfaces/ # Contract interfaces
 
-└─────────────────────┘
+│ ├── out/ # Compiled artifacts (ABIs)
+
+│ ├── script/ # Deployment scripts
+
+│ └── foundry.toml # Foundry configuration
+
+│
+
+├── agents/ # AI agent implementations
+
+│ ├── **init**.py
+
+│ ├── base\_[agent.py](http://agent.py) # Base ERC-8004 agent class
+
+│ ├── server\_[agent.py](http://agent.py) # Market analysis server agent
+
+│ └── validator\_[agent.py](http://agent.py) # Analysis validation agent
+
+│
+
+├── scripts/ # Utility scripts
+
+│ └── [deploy.py](http://deploy.py) # Contract deployment script
+
+├── data/ # Generated analysis data (created at runtime)
+
+└── validations/ # Generated validation data (created at runtime)
 
 \`\`\`
 
-At the core of this demo is the construction of a **decentralized, trustworthy AI service marketplace**, where AI agents (understood as “smart bots”) collaborate through blockchain technology to complete analysis, validation, and reputation management:
+At the core of this demo is the construction of a decentralized, trustworthy AI service marketplace, where AI agents (understood as “smart bots”) collaborate through blockchain technology to complete analysis, validation, and reputation management:
 
 **Basic Components:**
 
-\- **Blockchain:** Acts like a public ledger, recording all transactions and operations – immutable and transparent.
+\- Blockchain: Acts like a public ledger, recording all transactions and operations – immutable and transparent.
 
-\- **Smart Contracts:** Self-executing code rules deployed on the blockchain, ensuring processes run without human intervention.
+\- Smart Contracts: Self-executing code rules deployed on the blockchain, ensuring processes run without human intervention.
 
-\- **AI Agents:** Specialized software programs capable of performing specific tasks (e.g., market analysis, validation).
+\- AI Agents: Specialized software programs capable of performing specific tasks (e.g., market analysis, validation).
 
-\- **ERC-8004 Registry:** An identity management standard that gives each agent a unique on-chain ID.
+\- ERC-8004 Registry: An identity management standard that gives each agent a unique on-chain ID.
 
 **Simplified Workflow:**
 
-1\. **Build Infrastructure:** First, deploy smart contracts to create a decentralized platform.
+1\. Build Infrastructure: First, deploy smart contracts to create a decentralized platform.
 
-2\. **Agent Initialization:** Three agents (Alice, Bob, Charlie) are set up with specific roles: Alice analyzes the market, Bob checks Alice’s work, and Charlie manages feedback and reputation.
+2\. Agent Initialization: Three agents (Alice, Bob, Charlie) are set up with specific roles: Alice analyzes the market, Bob checks Alice’s work, and Charlie manages feedback and reputation.
 
-3\. **Identity Registration:** All agents register on the blockchain, receiving unique IDs to ensure clarity about who is doing what.
+3\. Identity Registration: All agents register on the blockchain, receiving unique IDs to ensure clarity about who is doing what.
 
-4\. **Analysis & Validation:** After Alice analyzes the BTC market, she submits her report to Bob for validation. Bob uses AI to check the report’s quality and assigns a score (0-100).
+4\. Analysis & Validation: After Alice analyzes the BTC market, she submits her report to Bob for validation. Bob uses AI to check the report’s quality and assigns a score (0-100).
 
-5\. **Recording & Feedback:** Bob’s score is permanently recorded on the chain. Charlie then authorizes feedback, helping Alice build her reputation.
+5\. Recording & Feedback: Bob’s score is permanently recorded on the chain. Charlie then authorizes feedback, helping Alice build her reputation.
 
-6\. **Audit Trail:** Every step leaves a trace on the blockchain, viewable by anyone, ensuring transparency.
-
-**Disadvantages & Challenges:**
-
-\- **Technical Complexity:** Deploying and maintaining blockchain and AI systems requires expertise and is costly. Ordinary users may find it difficult to operate.
-
-\- **Scalability Issues:** Blockchain transactions can be slow and expensive (e.g., Ethereum gas fees). If many agents join, the system could become sluggish or costs could surge.
-
-\- **AI Reliability Risks:** AI analysis can be erroneous or biased (e.g., incorrect market analysis leading to investment losses). Bob’s validation might also be limited by the AI model’s constraints, unable to fully guarantee quality.
-
-\- **Security Vulnerabilities:** Smart contracts might have bugs exploitable by hackers; AI agents could be maliciously attacked (e.g., fed incorrect data to mislead the AI).
-
-\- **Privacy Concerns:** Analysis data might be sensitive (e.g., trading strategies). Even if only hashes are stored on-chain, data could potentially be leaked through other means.
-
-\- **Regulation & Compliance:** Regulations for blockchain and AI are immature, posing potential legal risks (e.g., data protection laws like GDPR).
-
-\- **Dependency on Initial Setup:** If the agent initialization is unfair (e.g., Bob is biased), the entire system might fail.
-
-This demo is feasible in an ideal environment, but in practice, it might encounter the “garbage in, garbage out” problem – if Alice’s analysis quality is poor, Bob’s validation cannot fully remedy it. Furthermore, the system assumes all agents are honest, but in reality, malicious agents might try to game the system.
+6\. Audit Trail: Every step leaves a trace on the blockchain, viewable by anyone, ensuring transparency.
 <!-- DAILY_CHECKIN_2025-10-26_END -->
 
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 
 
 学习主题：[https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
@@ -139,6 +140,7 @@ ERC-8004 marks a transformative step toward realizing the Agentic Economy, seaml
 
 
 
+
 学习主题：[https://www.x402.org/x402-whitepaper.pdf](https://www.x402.org/x402-whitepaper.pdf)
 
 重要笔记：
@@ -156,6 +158,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 
@@ -187,6 +190,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 
 
+
 学习主题：[https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview](https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview)
 
 重要笔记：**Technical Architecture**
@@ -206,6 +210,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -248,6 +253,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 
 
+
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
 
 笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
@@ -270,6 +276,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -346,6 +353,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -361,6 +369,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
