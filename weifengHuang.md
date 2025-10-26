@@ -14,8 +14,14 @@ I’m a software engineer with a strong interest in Web3, AI, and automation. I�
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-26
+<!-- DAILY_CHECKIN_2025-10-26_START -->
+Today, I initialized a project framework using **Coinbase’s AgentKit**. The main technical stack is based on **Vercel** for deployment, with **OpenRouter** providing the API layer. I integrated **Gemini** through a **BYOK (Bring Your Own Key)** setup. Additionally, I registered a **developer account and wallet** on **Coinbase Developer Platform**, and successfully tested the agent’s flow to **request and receive test tokens**.
+<!-- DAILY_CHECKIN_2025-10-26_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 Today I studied the **Coinbase Developer documentation**, focusing on [https://docs.cdp.coinbase.com/x402/welcome](https://docs.cdp.coinbase.com/x402/welcome).
 
 Key takeaways:
@@ -31,6 +37,7 @@ Key takeaways:
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 ### **x402 Payment Protocol**
 
@@ -57,6 +64,7 @@ For AI agents, x402 enables either:
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
 
+
 study ISEK ，[https://github.com/isekOS/ISEK](https://github.com/isekOS/ISEK)
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/weifengHuang/images/2025-10-23-1761233360744-image.png)
@@ -67,6 +75,7 @@ study ISEK ，[https://github.com/isekOS/ISEK](https://github.com/isekOS/ISEK)
 
 
 
+
 I continued reading the A2A protocol and ran **a2a-samples-js**. I found an issue: the default model **gemini-2.5-pro-exp-03-25** is unavailable, so I switched it to **gemini-2.5-flash**.
 
 ![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/weifengHuang/images/2025-10-21-1761059480750-image.png)![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/weifengHuang/images/2025-10-21-1761059411492-image.png)
@@ -74,6 +83,7 @@ I continued reading the A2A protocol and ran **a2a-samples-js**. I found an issu
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -192,6 +202,7 @@ Today I continued studying the A2A protocol, focusing on **Agent Cards**, and ex
 
 
 
+
 Today, I continued reading the MCP-related protocols and examined their implementation in the official **Chrome DevTools MCP** repository.
 
 In addition, I successfully ran the local environment for the repository [**vistara-apps/erc-8004-example**](https://github.com/vistara-apps/erc-8004-example), although the **agent** component still requires further review and understanding.
@@ -199,6 +210,7 @@ In addition, I successfully ran the local environment for the repository [**vist
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -220,6 +232,7 @@ This is achieved through the **client layer**, which interprets the model’s in
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -287,6 +300,7 @@ ERC-8004 defines **three roles**, not three mandatory components to build:
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
