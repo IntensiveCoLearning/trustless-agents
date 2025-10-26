@@ -14,8 +14,20 @@ An idealist, programmer, cryptographer. Hacking for Freedom!
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-26
+<!-- DAILY_CHECKIN_2025-10-26_START -->
+在产品中完成了 8004 中的 Feedback auth 功能，让每次 支付都能提供一个 auth 给 client，当然 client 需要给一个 index limit，这个值，我为什么不在 server 端自动从合约中读取呢，因为它太 tricky 了，还是交给 client 去定义。
+
+接下来得思考这种支付 agent 是否存在 validation ？目前的第一感觉是不存在，因为它支持 agent 协议，满足 a2a 协议，但是本质上只是一个 支付服务，它并没有常见的 agent 调用 llm 的过程，而且也无法 重现 它的执行步骤，因为完全没有必要，因为是上链操作，如果不上链，也不需要 validation 的参与，毕竟一下子就看出来了。
+
+在 支付场景中，唯一有可能与 validation 相关的，反而是 支付所提供的 服务/产品的 体验？这个跟 reputation 的 feedback 可能有些重合，但是它确实是实际需求，但是它跟 8004 协议所想要的 validation 可能有所不同，但是确实是个法子，validation 要做的事情就是：agent 预付给 validator 一笔资金，然后 validator 用这个 资金去体验 agent 的支付流程（和所获得的服务效果）。写到这儿，发现有道理！哈哈哈！！！
+
+让我来实践写点代码测试一下。最后的几天，我要写一个 online 的 playground，让大家能够在 UI 上 体验 注册 agent，与 我们的 payment agent 进行 feedback 交互，进行 validation 交互。
+<!-- DAILY_CHECKIN_2025-10-26_END -->
+
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 今天开始调试将x402的 payment service 通过 8004 注册到 onchain 中。
 
 首先完成注册：
@@ -31,6 +43,7 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 
@@ -50,6 +63,7 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 
 
+
 今天在实现 [https://github.com/zpaynow/8004](https://github.com/zpaynow/8004) 8004 rust sdk，使用的是 chaoschain 他们的 abi，目前已经完成了基本的架构和合约解析，接下来会把实现过程中遇到的一些想法记录下来。
 
 第一点：x402 payment agent 可以有 identity 和 reputation 部分，是否值得有 validation，因为它的验证（重现）的意义不大。
@@ -63,11 +77,13 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 
 
+
 正在基于 8004 协议的 abi，源自 chaoschain 的实现，来构建一个 rust sdk，用于与 8004 合约进行交互，目前分两个部分，一个是 sdk，第二个会有一个 bianry，用于命令行交互，代码会开源在：[https://github.com/ZeroPayDev/8004](https://github.com/ZeroPayDev/8004)，接下来就是对 8004 进行深度的研究和代码编写了。
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -90,6 +106,7 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 
 
+
 今天时间不多，继续在实现了一小会 x402 协议
 <!-- DAILY_CHECKIN_2025-10-19_END -->
 
@@ -104,11 +121,13 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 
 
+
 今天在继续实现 x402 协议，学习内容不多。
 <!-- DAILY_CHECKIN_2025-10-18_END -->
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -135,6 +154,7 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 
 
+
 明白 8004 协议之后，就得开始寻找具体的 agent 领域，除非是想做通用型的 agent exchange platform。目前结合自身，我开始学习 x402 -> A2A 这条路线，毕竟 payment 是最熟悉的。今天先学习 x402，并开始编码，尝试在我的开源项目中，实现一个，支持它。
 
 更新：已经初步完成了 x402 协议的基本框架。
@@ -142,6 +162,7 @@ Tx   : [0x7529b115dc2e8dad68da7b3d3843505afa91a4e5b3af5b272ab4a16bfc474c54](htt
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
