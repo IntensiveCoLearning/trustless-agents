@@ -14,8 +14,18 @@ Learning web3
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-26
+<!-- DAILY_CHECKIN_2025-10-26_START -->
+Moving on to AP2:
+
+AP2 (Agent Payments Protocol) is an open standard for letting autonomous agents make purchases or payments on a user’s behalf with clear authorization and auditability. It introduces mandates—digitally signed, verifiable credentials that encode the user’s intent and the agent’s permission (e.g., “buy X under $150 when it’s 20% off”). Merchants and payment networks can verify these mandates to know the request reflects the user’s authorized intent, addressing core problems of authorization, authenticity, and accountability in agent-initiated transactions.
+
+AP2 is payment-method agnostic (cards, bank, or crypto via extensions like x402) and complements agent interoperability stacks such as A2A/MCP by adding a standardized value-transfer layer. In practice, it enables agent workflows like delegated shopping, pay-per-use APIs, or coordinated travel bookings, while giving issuers/merchants consistent signals for risk, compliance, and disputes. The upshot: safer, auditable delegation for users, standardized integrations for merchants, and a path to real machine-to-machine commerce.
+<!-- DAILY_CHECKIN_2025-10-26_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 x402 spec:
 
 **HTTP flow sequence**: Client requests resource → if payment needed server returns 402 Payment Required with payment instructions → client prepares payment payload → client re-sends request with X-PAYMENT header (or similar) containing the payment payload → server verifies payment (via “facilitator” or direct) → server settles payment → server returns resource (200 OK) with optional X-PAYMENT-RESPONSE header. 
@@ -44,6 +54,7 @@ x402 use cases:
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
 
+
 Moving on to x402:
 
 x402 is an open-internet payment protocol built around the HTTP status code 402 “Payment Required”. With this standard, when a client (which could be a human or an autonomous agent) requests access to a resource (API endpoint, content, data service), the server can respond with HTTP 402 and embed payment instructions in the response. The client then submits a signed payment payload (often a stablecoin transfer) and retries the request; once verified, the server grants access. 
@@ -59,6 +70,7 @@ The key design goals are:
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 More on A2A’s task model:
@@ -87,6 +99,7 @@ Optionally, validation or reputation logic—like ERC-8004’s Validation Regist
 
 
 
+
 Moving on to A2A
 
 The A2A protocol is an open standard developed to enable autonomous AI agents—potentially built by different vendors or operating on different platforms—to _discover each other_, _communicate securely_, and _collaborate on tasks_ in a unified way. It introduces the concept of an “Agent Card” (a JSON profile that describes an agent’s capabilities, endpoints and security requirements), and defines a task-lifecycle model in which a “client” agent issues a task and a “remote” agent performs it, with real-time updates, streaming modality support (text, audio, video) and well-defined message schemas. 
@@ -96,6 +109,7 @@ A2A is built with five key principles: leveraging existing web standards (HTTP, 
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -118,6 +132,7 @@ Points on deployment / operational side:
 
 
 
+
 ### Learning ERC-8004
 
 ERC-8004, also known as **“Trustless Agents,”** is a proposed Ethereum standard designed to enable autonomous or AI-driven agents to safely interact, transact, and collaborate with each other **without requiring pre-established trust**. It builds on the earlier Agent-to-Agent (A2A) protocol by introducing a **lightweight on-chain trust framework**, allowing agents from different domains or organizations to coordinate in an open ecosystem.
@@ -129,6 +144,7 @@ The motivation behind ERC-8004 is the rise of the **machine economy**—a world 
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
