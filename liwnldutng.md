@@ -14,8 +14,29 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-26
+<!-- DAILY_CHECKIN_2025-10-26_START -->
+**#A2A 协议**
+
+**A2A\\（Agent-to-Agent Protocol\\）** 是一个开放标准，用于让不同来源、不同框架的 AI 智能体可以彼此发现、通信、协作与执行任务。
+
+  
+\*\*A2A = 智能体之间的\\“HTTP 标准 + JSON-RPC 通信协议\\”\*\*
+
+##A2A 协议的核心组成
+
+| 模块 | 功能说明 |
+| Agent Card（智能体卡片） | JSON 文件，描述智能体的能力、接口、安全机制等（相当于“数字名片”）。 |
+| Discovery（发现机制） | 通过访问 https://{agent_domain}/.well-known/agent-card 来发现 Agent。 |
+| Authentication（身份认证） | 采用 OpenID Connect 或 JWT 令牌机制。 |
+| sendMessage / sendMessageStream | 标准 API，用于发送任务或流式请求（支持异步任务与长连接）。 |
+| Artifacts（产物） | 任务执行后生成的结果对象，如文档、图片、数据流等。 |
+| Context ID | 用于维持多轮对话或任务上下文的标识符。 |
+<!-- DAILY_CHECKIN_2025-10-26_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 #ERC\\-8004
 
 基于以太坊\\（Ethereum\\）的新标准，用于为\*\*AI 智能体\\（Agent\\）\*\* 建立一个\*\*去信任的协调层\\（trustless coordination layer\\）\*\*。它在Google 提出的\*\*Agent-to-Agent\\（A2A\\）\*\* 协议基础上进行了扩展，引入了 **链上身份注册、信誉注册与验证注册机制**，从而使自主智能体能够在没有预先信任关系的情况下，跨组织安全、可验证地进行交互与协作。 
@@ -44,6 +65,7 @@ timezone: UTC+8
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
+
 **#A2A 协议**
 
 **A2A\\（Agent-to-Agent Protocol\\）** 是一个开放标准，用于让不同来源、不同框架的 AI 智能体可以彼此发现、通信、协作与执行任务。
@@ -64,6 +86,7 @@ timezone: UTC+8
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 #ERC\\-8004
@@ -113,6 +136,7 @@ timezone: UTC+8
 
 
 
+
 **#A2A 协议**
 
 **A2A\\（Agent-to-Agent Protocol\\）** 是一个开放标准，用于让不同来源、不同框架的 AI 智能体可以彼此发现、通信、协作与执行任务。
@@ -133,6 +157,7 @@ timezone: UTC+8
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -169,6 +194,7 @@ timezone: UTC+8
 
 
 
+
 #ERC\\-8004
 
 基于以太坊\\（Ethereum\\）的新标准，用于为\*\*AI 智能体\\（Agent\\）\*\* 建立一个\*\*去信任的协调层\\（trustless coordination layer\\）\*\*。它在Google 提出的\*\*Agent-to-Agent\\（A2A\\）\*\* 协议基础上进行了扩展，引入了 **链上身份注册、信誉注册与验证注册机制**，从而使自主智能体能够在没有预先信任关系的情况下，跨组织安全、可验证地进行交互与协作。 
@@ -196,6 +222,7 @@ timezone: UTC+8
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -253,6 +280,7 @@ timezone: UTC+8
 
 
 
+
 **#A2A 协议**
 
 **A2A\\（Agent-to-Agent Protocol\\）** 是一个开放标准，用于让不同来源、不同框架的 AI 智能体可以彼此发现、通信、协作与执行任务。
@@ -273,6 +301,7 @@ timezone: UTC+8
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
