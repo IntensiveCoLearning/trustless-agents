@@ -294,7 +294,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [ShawnX-F](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/ShawnX-F.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ |   | | |
 | [t19971104](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/t19971104.md) | ⭕️ | ✅ | ⭕️ | ❌ | | | | | | | | | | |
 | [sparkyish](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sparkyish.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [liwnldutng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/liwnldutng.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ |   | | |
+| [liwnldutng](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/liwnldutng.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | | |
 | [yhzhongc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/yhzhongc.md) | ⭕️ | ⭕️ | ✅ | ✅ | ❌ | | | | | | | | | |
 | [JNHFlow21](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JNHFlow21.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [velinussage](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/velinussage.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ |   | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
