@@ -14,13 +14,22 @@ interest in AI and do want to know more about it "+web3"
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-26
+<!-- DAILY_CHECKIN_2025-10-26_START -->
+TEE 证明、ZK 证明，抽样/重新执行都是为了验证一个计算（比如一笔复杂的交易）是否正确
+
+前者需要硬件支持，后者需要大量的样品支撑，最近刚好学习了zk verify ，所以目前还是倾向于相信ZK。
+<!-- DAILY_CHECKIN_2025-10-26_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 今天回答第四个问题：
 <!-- DAILY_CHECKIN_2025-10-25_END -->
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 回答第三个问题：
 
@@ -52,6 +61,7 @@ interest in AI and do want to know more about it "+web3"
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
 
+
 通过回答第二个问题，Question: Should ERC-8004 use domains, URLs, ENS, or DIDs for agent identity? What are the trade-offs of each approach?**我们该用什么作为AI智能体在区块链世界里的“身份证”？** 理解了 URLs, ENS, or DIDs
 
 如果必须为 **ERC-8004** 选择一个方案，我会推荐 **ENS**。
@@ -69,6 +79,7 @@ interest in AI and do want to know more about it "+web3"
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -113,11 +124,13 @@ The community debates how much data to put on-chain. If you had to choose betwee
 
 
 
+
 今天看了一些A2A和MCP的协同应用案例
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -140,6 +153,7 @@ The community debates how much data to put on-chain. If you had to choose betwee
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -172,6 +186,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 
 
+
 ## ERC-8004 引入了三个轻量级的链上注册表，作为跨组织代理交互的信任支柱。与试图将所有事务都处理在链上的传统区块链协议不同，ERC-8004 采用了一种混合方法，只在链上存储必要的信任相关数据，同时将复杂的操作委托给链下基础设施。
 
 预计到 2030 年，全球人工智能市场规模将达到 1.8 万亿美元，其中自主代理交互将占到这一增长的很大一部分。然而，当前的信任瓶颈阻碍了代理进入更广泛的专业服务经济领域。ERC-8004 通过提供标准化的信任机制，打破了这一瓶颈，该机制可适用于从简单任务到关键任务操作的各种场景。
@@ -192,6 +207,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
