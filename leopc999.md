@@ -14,13 +14,105 @@ A web3 enthusiast in AI.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-27
+<!-- DAILY_CHECKIN_2025-10-27_START -->
+# Trustless Agents — Colearning Wrap-up notes
+
+## 1\. High-level recap of study modules & key takeaways
+
+### Module 1 — **The Trust Foundation (ERC-8004)**
+
+-   Three registries: **Identity (ERC-721 identities + metadata)**, **Reputation (feedback hooks)**, **Validation (verification requests & responses)**.
+    
+-   Design principle: _minimal on-chain, rich off-chain, pluggable trust models_ (reputation, staking/crypto-economic, TEE/attestation, zk proofs).
+    
+-   Practical aim: register an on-chain agent identity and prototype a simple off-chain feedback workflow.
+    
+
+### Module 2 — **The Collaboration Language (A2A) & AP2**
+
+-   **A2A**: agent cards, discovery, capability negotiation and interoperable agent messaging.
+    
+-   **AP2**: payment extension — _mandates_ (VC-style authorizations), attestation/SCA considerations, and rails abstraction (card/PSP or on-chain rails).
+    
+-   Practical aim: extend Agent Card with AP2 fields and simulate discovery → intent → mandate flow.
+    
+
+### Module 3 — **The Value Engine (x402)**
+
+-   x402 standardizes paywalled endpoints using HTTP **402 Payment Required**; clients follow facilitator flow to pay and retry.
+    
+-   Tooling: `x402-express` (seller middleware) and `x402-fetch` (buyer wrapper).
+    
+-   Practical aim: run local seller + buyer to verify `402 → paid → resource` flow.
+    
+
+* * *
+
+## 2\. My learning approach
+
+1.  **Interest-driven focus**
+    
+    -   Curiosity about _AI + Ethereum_ guided daily study and prioritized what to build.
+        
+2.  **AI as an active reading & synthesizing tool**
+    
+    -   Use LLMs to summarize specs, paraphrase dense English text, and generate starter code — reduced language friction and accelerated comprehension.
+        
+3.  **Capture & annotate**
+    
+    -   Keep a living Markdown notebook with links, extracts, commands, and expected outputs (daily check-in notes).
+        
+    -   Use meeting transcription/summary tools to capture workshop notes and action items.
+        
+4.  **Hands-on, iterative practice**
+    
+    -   Read → implement small runnable examples → debug → document.
+        
+    -   Prefer minimal prototypes (local x402 seller/buyer, ERC-8004 identity sketch) over theory-only study.
+        
+
+* * *
+
+## 3\. Current gaps & planned next steps
+
+### Gaps
+
+-   Need stronger, production-grade **Solidity & testing** skills (contracts, Foundry/Hardhat).
+    
+-   Integration gap: stitching identity (8004) + A2A messaging + AP2/x402 payments + verifiable receipts end-to-end.
+    
+-   UX & discoverability: no polished Agent Card viewer / marketplace UI yet.
+    
+
+### Concrete next steps (2–6 weeks)
+
+1.  **Build a demo marketplace (code-first)**
+    
+    -   Register two ERC-8004 testnet identities, expose a pay-per-call endpoint with x402, have another agent discover and pay, then write a minimal receipt on-chain (POC).
+        
+2.  **Solidify tooling & tests**
+    
+    -   Implement unit tests for identity contract (Foundry/Hardhat). Automate local devflow.
+        
+3.  **Small frontend for demos**
+    
+    -   Simple React viewer for Agent Cards + payment flow to make discovery & mandate initiation clear.
+        
+4.  **Share & iterate**
+    
+    -   Share demo on GitHub; solicit code review and collaborators (frontend, infra, security).
+<!-- DAILY_CHECKIN_2025-10-27_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 复习之前的学习内容
 <!-- DAILY_CHECKIN_2025-10-25_END -->
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 参加了 Workshop。
 
@@ -55,6 +147,7 @@ A web3 enthusiast in AI.
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 阅读了 Medium 文章 **“The Story Behind ERC-8004 & Next Steps”** 的总结与个人理解：
@@ -148,11 +241,13 @@ A web3 enthusiast in AI.
 
 
 
+
 今天继续复习之前的内容，体会其中的机制。
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -247,6 +342,7 @@ console.log(await res.json()); // paid response
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -396,6 +492,7 @@ console.log(await res.json()); // paid response
 
 
 
+
 今天阅读了 QuillAudits 文章《ERC-8004: Infrastructure for Autonomous AI Agents》。
 
 * * *
@@ -503,6 +600,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 
 
+
 # 构建无信任代理（Trustless Agents）：ERC-8004 Workshop
 
 本次会议围绕“无信任代理（Trustless Agents）”相关的 ERC-8004 标准展开，涵盖标准背景、核心功能、技术实现及后续规划，我参会后，对核心内容进行了总结。
@@ -572,6 +670,7 @@ QuillAudits 的这些补充是非常实用的“落地建议 /安全提醒”，
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
