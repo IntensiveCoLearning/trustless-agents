@@ -21,7 +21,7 @@ A eco-lifelong learner. To surf🏄‍♀️ better in the Web3 world. Enjoy thi
 
 重要笔记：
 
-Should ERC-8004 include payment mechanisms in the core standard, or keep them as external extensions?Should ERC-8004 have a limited supply of agents? 
+Should ERC-8004 include payment mechanisms in the core standard, or keep them as external extensions?Should ERC-8004 have a limited supply of agents?
 
 核心标准应保持极简主义，专注于身份与声誉系统。支付流程的复杂性应当被解耦，以确保互操作性和系统灵活性。虽然 ERC-8004本身采用无限供应模式（最利于无许可发现和全球扩展），但通过 ERC-8041 等上层协议可构建限量系列。差异化竞争可通过声誉系统、质押机制和独特身份来实现💡
 
@@ -30,6 +30,7 @@ The philosophy behind ERC-8004 is to provide a minimal, robust foundation for tr
 
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
+
 
 学习主题: [https://github.com/vistara-apps/erc-8004-example](https://github.com/vistara-apps/erc-8004-example)
 
@@ -73,6 +74,7 @@ At the core of this demo is the construction of a decentralized, trustworthy AI 
 
 
 
+
 学习主题：[https://www.quillaudits.com/blog/smart-contract/erc-8004](https://www.quillaudits.com/blog/smart-contract/erc-8004)
 
 重要笔记：**Tiered Trust Models 💡**
@@ -100,6 +102,7 @@ ERC-8004 marks a transformative step toward realizing the Agentic Economy, seaml
 
 
 
+
 学习主题：[https://www.x402.org/x402-whitepaper.pdf](https://www.x402.org/x402-whitepaper.pdf)
 
 重要笔记：
@@ -117,6 +120,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 
@@ -156,6 +160,7 @@ x402 is an open payment standard that enables AI agents and web services to auto
 
 
 
+
 学习主题：[https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview](https://drive.google.com/file/d/1lKMti0UdzpO2PRIHSYafKRwwIIHzdjad/preview)
 
 重要笔记：**Technical Architecture**
@@ -175,6 +180,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -225,6 +231,7 @@ The SISEK token is designed to be the core of an economy for autonomous agents, 
 
 
 
+
 学习主题：[https://a2a-protocol.org/latest/](https://a2a-protocol.org/latest/)
 
 笔记：The Agent2Agent (A2A) Protocol is an open standard developed by Google and donated to the Linux Foundation designed to enable seamless communication and collaboration between AI agents.
@@ -247,6 +254,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -331,6 +339,7 @@ In a world where agents are built using diverse frameworks and by different vend
 
 
 
+
 学习主题：[https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d](https://medium.com/hashkey-capital-insights/erc-8004-and-the-agent-economy-a9b9eee9fa8d)
 
 重要笔记：
@@ -346,6 +355,7 @@ The recent proposal of ERC-8004, which acts as an extension of A2A protocol, aim
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
