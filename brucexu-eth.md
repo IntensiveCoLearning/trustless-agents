@@ -14,8 +14,76 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-27
+<!-- DAILY_CHECKIN_2025-10-27_START -->
+The facilitator is an optional but recommended service that simplifies the process of verifying and settling payments between clients (buyers) and servers (sellers).
+
+-   CDP's facilitator offers fee-free USDC settlement on Base mainnet
+    
+
+1.  `Resource server` verifies the `Payment Payload` is valid either via local verification or by POSTing the `Payment Payload` and `Payment Details` to the `/verify` endpoint of the `facilitator server`.
+    
+2.  `Facilitator server` performs verification of the object based on the `scheme` and `networkId` of the `Payment Payload` and returns a `Verification Response`
+    
+
+the facilitator is a centralized point, it should be trustless.
+
+The x402 Bazaar is the discovery layer for the x402 ecosystem - a machine-readable catalog that helps developers and AI agents find and integrate with x402-compatible API endpoints. Think of it as a search index for payable APIs, enabling the autonomous discovery and consumption of services.
+
+The Bazaar solves a critical problem in the x402 ecosystem: **discoverability**. Without it, x402-compatible endpoints are like hidden stalls in a vast market. The Bazaar provides:
+
+-   **For Buyers (API Consumers)**: Programmatically discover available x402-enabled services, understand their capabilities, pricing, and schemas
+    
+-   **For Sellers (API Providers)**: Automatic visibility for your x402-enabled services to a global audience of developers and AI agents
+    
+-   **For AI Agents**: Dynamic service discovery without pre-baked integrations - query, find, pay, and use
+    
+
+The Bazaar currently provides a simple `/list` endpoint that returns all x402-compatible services registered with the CDP facilitator. Services are automatically opted-in when they use the CDP facilitator, making discovery frictionless for sellers.
+
+This is centralized, why should facilitators register on CDP and become an official discovery service? It should be something like ERC-8004, create a transparent registry on Ethereum.
+
+### **Token Support**
+
+x402 supports tokens on both EVM and Solana networks:
+
+-   **EVM**: Any ERC-20 token that implements the EIP-3009 standard
+    
+-   **Solana**: Any SPL or token-2022 token
+    
+
+**EVM: EIP-3009 Requirement**
+
+Tokens must implement the `transferWithAuthorization` function from the EIP-3009 standard. This enables:
+
+-   **Gasless transfers**: The facilitator sponsors gas fees
+    
+-   **Signature-based authorization**: Users sign transfer authorizations off-chain
+    
+-   **Secure payments**: Transfers are authorized by cryptographic signatures
+    
+
+TODO, facilitator will sponsor gas fee? yes, facilitator will sponsor the gas
+
+**Why EIP-3009?**
+
+The EIP-3009 standard is essential for x402 because it enables:
+
+1.  **Gas abstraction**: Buyers don't need native tokens (ETH, MATIC, etc.) for gas
+    
+2.  **One-step payments**: No separate approval transactions required
+    
+3.  **Universal facilitator support**: Any EIP-3009 token works with any facilitator
+    
+
+From my understanding of facilitator, I think it is a bad design, too coupling. I’d refactor the flow to: HTTP 402 → client payment → server → trustless validator verifies → server fulfils the order → complete. Payments are standard transactions; with AA, gas can be sponsored. This keeps components loosely coupled and more composable.
+
+[https://eips.ethereum.org/EIPS/eip-3009](https://eips.ethereum.org/EIPS/eip-3009)
+<!-- DAILY_CHECKIN_2025-10-27_END -->
+
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
+
 ### **How Does It Work?**
 
 At a high level, the flow is simple:
@@ -86,6 +154,7 @@ x402 provides more features and extensions for HTTP 402, and build smooth experi
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
 
+
 今天主要是跟 tomasz 做了个专访，聊了一下 ai x eth
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
@@ -94,11 +163,13 @@ x402 provides more features and extensions for HTTP 402, and build smooth experi
 
 
 
+
 Today I will be joining ETHShanghai and have a fireside chat with Tomasz
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -212,6 +283,7 @@ TODO check [https://github.com/coinbase/x402/blob/main/README.md](https://github
 
 
 
+
 [https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 To maximize the benefits from agentic AI, it is critical for these agents to be able to collaborate in a dynamic, multi-agent ecosystem across siloed data systems and applications.
@@ -278,6 +350,7 @@ The following table describes the fundamental communication elements in A2A:
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -442,6 +515,7 @@ zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、�
 
 
 
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -489,11 +563,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -565,6 +641,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
