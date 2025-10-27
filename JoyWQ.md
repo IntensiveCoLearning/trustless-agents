@@ -14,8 +14,64 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-27
+<!-- DAILY_CHECKIN_2025-10-27_START -->
+-   X402协议逻辑链路
+    
+
+```
+1. 服务发现与定价阶段
+- AI代理通过标准HTTP请求访问目标服务
+- 服务端检查请求合法性，确定服务定价
+- 返回HTTP 402状态码，包含PaymentRequirements结构体
+2. 支付构造与验证阶段
+- 代理解析PaymentRequirements，选择支付方案（scheme、网络、资产、金额）
+- 构造PaymentPayload，包含支付签名和交易数据
+- 通过X-PAYMENT头发送支付载荷
+3. 结算执行阶段
+- 服务端调用facilitator服务的/verify接口验证支付
+- 验证成功后，通过/settle接口执行链上结算
+- 资产从代理钱包转移到服务方钱包
+4. 服务交付阶段
+- 支付验证成功后，服务端执行实际业务逻辑
+- 返回HTTP 200状态码，业务结果在响应体中
+- 通过X-PAYMENT-RESPONSE头返回支付确认信息
+关键特性 ：整个流程在单个HTTP请求-响应周期内完成，实现"调用即支付"的原子操作
+```
+
+-   AP2协议逻辑链路
+    
+
+```
+1. 授权契约建立阶段
+- 用户为AI代理创建授权契约(Mandate)，定义支付权限边界
+- 契约包含：最大支付金额、有效期限、允许的服务类型
+- 契约通过数字签名确保不可篡改
+2. 可验证凭证生成阶段
+- 代理在每次交易前生成可验证凭证(Verifiable Credential)
+- 凭证包含：交易详情、时间戳、代理身份证明
+- 凭证通过密码学证明确保交易的可审计性
+3. 交易执行与审计阶段
+- 代理在支付时同时提交授权契约和可验证凭证
+- 服务方验证凭证的有效性和契约的合规性
+- 交易记录进入审计系统，确保商业合规
+4. 争议解决与追溯阶段
+- 系统支持交易争议的快速解决机制
+- 通过完整的审计轨迹追溯交易全过程
+- 提供法律和技术双重保障
+```
+
+-   X402与AP2可能的协作逻辑链路
+    
+
+```
+用户授权 → AP2契约建立 → 代理发现服务 → X402支付构造 → AP2凭证验证 → X402支付执行 → 服务交付 → 审计记录
+```
+<!-- DAILY_CHECKIN_2025-10-27_END -->
+
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 -   完成erc-8004-journal项目的集成测试
     
 
@@ -488,6 +544,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
 
+
 -   了解AP2协议与X402协议，站在A2A协议的角度思考如何集成
     
 -   AP2侧重点：授权，通过加密签名的"意图授权"和"购物车授权"等构建不可篡改的交易链
@@ -502,6 +559,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 
 
+
 -   进一步完成链下声誉计算的逻辑，采用传统算法进行链上链下的数据整合
     
 -   进一步调试与测试链上合约交互的问题
@@ -511,6 +569,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -530,6 +589,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 
 
+
 1.  将之前的js代码等效地迁移为python
     
 2.  增加A2A的JSON描述文件
@@ -543,6 +603,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1272,6 +1333,7 @@ Charlie:
 
 
 
+
 ## **一、了解声誉分析、ZK及TEE在EIP8004里的应用：**
 
 ```
@@ -1407,6 +1469,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 
 
+
 1.  阅读erc-8004官方标准及hashkey的文章
     
 2.  核心内容梳理：
@@ -1422,6 +1485,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
