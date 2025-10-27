@@ -14,8 +14,14 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-27
+<!-- DAILY_CHECKIN_2025-10-27_START -->
+今天实践MCP 不知道能了解多少
+<!-- DAILY_CHECKIN_2025-10-27_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 **Langgraph、MCP和 A2A 之间的关系**
 
 -   MCP 使单个 Agent 能够以**统一、安全**的方式调用其本地环境或私有网络中的数据和工具
@@ -30,6 +36,7 @@ timezone: UTC+8
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 参照Google A2A 做了一个 PubMed Agent 目前只支持一轮问答 给出最新论文摘要，代码开源于[GitHub](https://github.com/henrycyberbio/initAgent)
 
@@ -145,6 +152,7 @@ timezone: UTC+8
 <!-- DAILY_CHECKIN_2025-10-23_START -->
 
 
+
 ### 安装依赖
 
 拉下示例库
@@ -206,11 +214,13 @@ async for chunk in stream_response:
 
 
 
+
 已完成第二个Agent 准备迁移至 LangGraph 再尝试A2A的实践
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -325,6 +335,7 @@ A2A 协议的消息封包可选：
 
 
 
+
 ### 信誉注册表
 
 我们知道在 A2A 协议中，用户侧的 Agent 被称为 _客户端 Agent_ ，当客户端 Agent 在完成服务后可以发布一个反馈证明
@@ -350,6 +361,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -426,6 +438,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 
 
+
 **ERC-8004 无需信任的代理**
 
 2025年 Google 发布 Agent2Agent 协议 (A2A)并捐赠给 Linux 基金会，这个协议只回答了AI Agent 之间的通信与协作问题，即不同模型之间的互操作问题，但没有回答开放网络的信任问题。ERC-8004 正是在这个基础上被提出\[^1\]，作为 A2A 协议的扩展\[^2\]\[^3\]。
@@ -448,6 +461,7 @@ function revokeFeedback(uint256 agentId, uint64 feedbackIndex) external
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -575,6 +589,7 @@ User: 那我该吃点什么？
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
