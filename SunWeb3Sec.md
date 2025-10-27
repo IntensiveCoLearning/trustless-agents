@@ -14,8 +14,32 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-27
+<!-- DAILY_CHECKIN_2025-10-27_START -->
+X402
+
+How x402 Works
+
+[https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works](https://docs.cdp.coinbase.com/x402/core-concepts/how-it-works)
+
+[https://www.youtube.com/watch?v=iaIxRxvp9Vk](https://www.youtube.com/watch?v=iaIxRxvp9Vk)
+
+[https://docs.cdp.coinbase.com/x402/welcome](https://docs.cdp.coinbase.com/x402/welcome)
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SunWeb3Sec/images/2025-10-27-1761543807810-image.png)
+
+* * *
+
+AI Agent
+
+I’m experimenting with building a Crypto AML AI Agent. Using n8n, I created a TG Bot with an AI Agent that can check whether a wallet or domain carries any risk. Wallet checks are done through MistTrackMCP, and it’s also possible to create additional related query APIs as MCPs, such as checking approvals.
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/SunWeb3Sec/images/2025-10-27-1761543887989-image.png)
+<!-- DAILY_CHECKIN_2025-10-27_END -->
+
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 POC
 
 Exploring X402 and the A2A Protocol — built a prototype that integrates on-the-fly AML Risk Scoring.
@@ -27,6 +51,7 @@ Flow: User → X402 Payment → AML Risk Score
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 # A2A Fast-Track (Discovery / Descriptor / Collaboration)
 
@@ -144,6 +169,7 @@ Google's A2A protocol provides a **universal standard** for agent communication,
 <!-- DAILY_CHECKIN_2025-10-22_START -->
 
 
+
 # How Much On-Chain Is Enough?
 
 **Must-read**
@@ -244,6 +270,7 @@ Google's A2A protocol provides a **universal standard** for agent communication,
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -682,6 +709,7 @@ Validation ────> How good your work is
 
 
 
+
 # Run ERC-8004 Example
 
 **Goal:** Read, run, and modify the official example.
@@ -864,6 +892,7 @@ After a job completes, call the Validation Registry (`reexec` / `tee` / `zk`) an
 
 
 
+
 # Validation Registry (Third-Party Verification Hooks)
 
 ## Why it matters
@@ -978,6 +1007,7 @@ function recordResult(
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1121,6 +1151,7 @@ function recordResult(
 
 
 
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -1228,6 +1259,7 @@ function recordResult(
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1402,6 +1434,7 @@ Sepolia
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
