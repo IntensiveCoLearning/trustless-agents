@@ -14,8 +14,14 @@ I am a college student currently studying, aiming to become a DePIN engineer. I 
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-27
+<!-- DAILY_CHECKIN_2025-10-27_START -->
+准备明日的会议笔记分享
+<!-- DAILY_CHECKIN_2025-10-27_END -->
+
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
+
 # **ChaosChain SDK 技术架构分析**
 
 ## **核心定位**
@@ -226,6 +232,7 @@ python examples/basic_agent.py
 
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 
 # **ERC-8004 协议栈技术架构总览**
 
@@ -502,6 +509,7 @@ ps:做了一个技术架构总览，但是还没有解决之前两天的问题�
 <!-- DAILY_CHECKIN_2025-10-24_START -->
 
 
+
 遇到了点技术问题，看样子今天是做不完了。幸好会议有回放，还能再看一遍。请假一天
 <!-- DAILY_CHECKIN_2025-10-24_END -->
 
@@ -510,11 +518,13 @@ ps:做了一个技术架构总览，但是还没有解决之前两天的问题�
 
 
 
+
 阅读了编码挑战内容，设置了大致框架，不过具体细节有待完善。休息一天
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -747,6 +757,7 @@ ps：如有不到之处，欢迎各位一起探讨
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -1523,6 +1534,7 @@ const claudeConfig = {
 
 
 
+
 ## **去中心化AI模型市场演示代理**
 
 ### **核心概念**
@@ -1932,6 +1944,7 @@ async function testModelPurchase() {
 
 
 
+
 ## **自主代理经济协议栈：A2A/AP2/x402协议解析**
 
 ### **1\. A2A协议：代理间身份与通信的信任基盘**
@@ -2152,6 +2165,7 @@ text
 
 
 
+
 # **x402 开放支付标准笔记**
 
 ## **一、x402 是什么？**
@@ -2323,6 +2337,7 @@ getPaidResource();
 
 
 
+
 # A2A协议与组件（核心概念）
 
 ## **一、核心参与者：谁在参与 A2A 交互？**
@@ -2477,6 +2492,7 @@ getPaidResource();
 
 
 
+
 -   **A2A协议**(基础)
     
 
@@ -2549,6 +2565,7 @@ _4.A2A 请求生命周期_
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
