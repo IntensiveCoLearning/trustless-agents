@@ -278,7 +278,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | Name | 10.15 | 10.16 | 10.17 | 10.18 | 10.19 | 10.20 | 10.21 | 10.22 | 10.23 | 10.24 | 10.25 | 10.26 | 10.27 | 10.28 |
 | ------------- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 | [muxin-web3](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/muxin-web3.md) | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ❌ | | | | | | | | |
-| [brucexu-eth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/brucexu-eth.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ | |
+| [brucexu-eth](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/brucexu-eth.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |   |
 | [diandian42](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/diandian42.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [cmu-ruoyan-lgl](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/cmu-ruoyan-lgl.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [debugzhao](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/debugzhao.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | |
@@ -304,7 +304,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [TAnNbR](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/TAnNbR.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [Waiting-Chai](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Waiting-Chai.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [internetofaiagent](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/internetofaiagent.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [sunhuachuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sunhuachuang.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | |
+| [sunhuachuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/sunhuachuang.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ |   |
 | [thenameisdevair](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/thenameisdevair.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [k66inthesky](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/k66inthesky.md) | ⭕️ | ✅ | ✅ | ⭕️ | ❌ | | | | | | | | | |
 | [MRzzz-cyber](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MRzzz-cyber.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
@@ -322,7 +322,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [KamisAyaka](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/KamisAyaka.md) | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | |
 | [Failover97](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Failover97.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [huaigu](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/huaigu.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [MoonHub0503](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MoonHub0503.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |   | |
+| [MoonHub0503](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/MoonHub0503.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | |
 | [buzhidaoa8848-hash](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/buzhidaoa8848-hash.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [nocb](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/nocb.md) | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |   | |
 | [linghuccc](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/linghuccc.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
@@ -485,6 +485,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [BrKDDD](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/BrKDDD.md) | ✅ | ✅ | ⭕️ | ✅ | ⭕️ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | | | |
 | [zadok7](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/zadok7.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ❌ | | |
 <!-- END_COMMIT_TABLE -->
+
 
 
 
