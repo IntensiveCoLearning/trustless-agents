@@ -14,8 +14,27 @@ Swift Evo
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+目前希望的AI 能︰  
+  
+\- 在 Telegram 當中作為一個 bot ，記錄不同社群的貢獻、更新或成就
+
+-   TG bot token 已拿到
+    
+-   但目前未找到一個可以儲存資訊的地方，究竟應該怎樣儲存經過 tg 輸入的資料。目前 AI 的回覆是  
+      
+    1\. Relational Database (e.g., PostgreSQL, MySQL)  
+    2\. NoSQL Database (e.g., MongoDB, Firebase Firestore)  
+    3\. File-Based Storage (e.g., JSON/CSV Files)  
+    4\. Blockchain (e.g., Ethereum, Solana) for Public Curation
+    
+-   以上四種方法究竟哪一種更適合，仍然需要研究。
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
+
 [https://aurracloud.com/showcase/6b4c844b-4976-4183-9889-c684a1a30b70](https://aurracloud.com/showcase/6b4c844b-4976-4183-9889-c684a1a30b70)  
   
 A Telegram bot to record and evaluate decentralized science project achievements and store them on Google Drive or IPFS. Future plans include rewards distribution and DeSci agent registration in Asia.
@@ -24,6 +43,7 @@ A Telegram bot to record and evaluate decentralized science project achievements
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
 
+
 在建立aurracloud AI前，先要想好實際的應用場景。而不是為做而做。
 
 [https://aurracloud.com/dashboard/agents/create/wizard](https://aurracloud.com/dashboard/agents/create/wizard)
@@ -31,6 +51,7 @@ A Telegram bot to record and evaluate decentralized science project achievements
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 
 今天開始手動嘗試 Aurracloud 看能否無痛建立一個AI agent 再結合 x402  
@@ -43,6 +64,7 @@ A Telegram bot to record and evaluate decentralized science project achievements
 
 
 
+
 [https://www.youtube.com/watch?v=pL5LxhZ8iCY](https://www.youtube.com/watch?v=pL5LxhZ8iCY)  
   
 繼續學習 x402 coinbase
@@ -50,6 +72,7 @@ A Telegram bot to record and evaluate decentralized science project achievements
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -66,6 +89,7 @@ A Telegram bot to record and evaluate decentralized science project achievements
 
 
 
+
 Chat with AI for understanding about 8004 and the twitter post about x402 as well
 
 https://x.com/tinyxiong\_eth/status/1980542373018103863?t=DtscjHYs\_BQzH9Gc5ZIOzw&s=19
@@ -73,6 +97,7 @@ https://x.com/tinyxiong\_eth/status/1980542373018103863?t=DtscjHYs\_BQzH9Gc5ZIOz
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -287,6 +312,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 
 
+
 [https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51](https://chatgpt.com/g/g-68da14310f6c81918d088bd729edefce-erc-8004-qa/c/68f27943-1578-8330-9759-8e76a6c21a51)
 
 繼續和AI對話，學習 8004 的 coding ；同時嘗試了解 MCP, A2A 與 ADK 的分別  
@@ -296,6 +322,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY;
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -329,11 +356,13 @@ bash npm install --save-dev hardhat npx hardhat init
 
 
 
+
 參加了 workshop ，對於 ERC 8004 的整理流程有了進一步理解，也提出了關於注冊的相關問題
 <!-- DAILY_CHECKIN_2025-10-16_END -->
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
