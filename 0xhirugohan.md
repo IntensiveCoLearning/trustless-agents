@@ -14,8 +14,26 @@ a builder who currently learning and focusing on the research part
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+I guess it's the final day? honestly, nothing much compared to yesterday. I continue on the explorer page but no huge improvement. I rewrite it using React because somehow Astro is a bit weird on my end for pagination.
+
+What's next? even if the Colearning for ERC-8004 is ended, I will still continue this project. An explorer to help myself to understand the landscape of "on-chain agents". I guess many people are working on it. But with many perspective working on different explorer, I expect that we could bring out some unique perspective that one day we could build a single explorer that represent all those perspectives and needs.
+
+First, metadata is important, both for human and for agent. Those should be able to queried. Anyone (human and agent) should be able to find other agent based on their skills. And by using Reputation Registry, they should be able to filter the reputation based on certain parameters. Since I haven't dive deep into it, I still have no clue on what kind of reputation we can store both on-chain and off-chain, also how to retrieve them.
+
+Of course x402 and Verification Registry are interesting but I am lacking a lot of time to research all of these stuff together. Because these are massive!
+
+very amazing experience
+
+here is my progress on the explorer. you can filter if the token URI is empty or not. I haven't stored the metadata from the tokenURI and from the A2A cards. also I included a statistics on like total agents, and the total agents with URI. and also unique owner address that I haven't done in the backend part.
+
+![image.png](https://raw.githubusercontent.com/IntensiveCoLearning/trustless-agents/main/assets/0xhirugohan/images/2025-10-28-1761662970124-image.png)
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 today I continue on the technical implementation part. I just finished an indexer for the identity registry because I want to list all the agent identities rather than like querying them one-by-one using tokenId (agent ID)  
   
 when building it, I started to questioning like, how the agent supposed to use it? will the agent use on-chain directly to find another agent that could fulfill the task? but I don't think currently we can do that, because the only parameter accepted in the identity registry is through token id. which normally agent couldn't use it unless someone provide for this specific task use this agent id.
@@ -36,6 +54,7 @@ This is the interface I am working with. Someone shared an explorer already in t
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
 
+
 I took a day off yesterday, and I don't think I can take a day off again today, so I continue for a bit.
 
 Not much changes, I focuses on the agent explorer and just finished decoding the metadata from the NFT. Next up I will spin up indexer so it can be dynamically listen to new agent entries and changes. idk how many day left, 2 days? 1 day? I'll focus on the agent explorer first, then interacting with them on-chain. Then making the A2A interactions between 2 agents or more. Then playing with the reputation registries. And finally playing with x402.  
@@ -47,6 +66,7 @@ I think verification registry need a dedicated research time since I have zero i
 <!-- DAILY_CHECKIN_2025-10-24_START -->
 
 
+
 I finished reading whitepaper of x402 today, I got the concept and would love to try it directly. I want to focus more on the agentic use case of x402 rather than the human user one.
 
 after finally finished reading ERC-8004, A2A, and x402. I decided to start a repository where I put everything there [https://github.com/0xhirugohan/all-about-erc-8004](https://github.com/0xhirugohan/all-about-erc-8004)
@@ -56,6 +76,7 @@ and now I am starting to developing. I was planning to working on the onchain of
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 
@@ -78,6 +99,7 @@ Tomorrow I will continue reading on the x402. Honestly I feel like out of the "l
 
 
 
+
 I continue finishing blog posts from yesterday. I now kinda get that ERC-8004 was initially the extension of A2A. A2A has a "problem" that it requires "trust" within the system which ERC-8004 is trying to solve through a trustless networks.  
   
 The goal is making the discovery and "reputation" and also "verification" to be on-chain (not all), so that it can become public and transparent. So there will be many tradeoffs in the process like what to put onchain vs offchain. And also making the ERC-8004 to be very minimal so that people can easily register. And the process later can be improved by protocols or dapps.  
@@ -87,6 +109,7 @@ I feel like running out of the time here. So maybe I won't read much about A2A a
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -103,6 +126,7 @@ My technical plan if possible is use any existing agent and play with the on-cha
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -127,6 +151,7 @@ hopefully can finish it by tomorrow and then continue on the blog posts and VoD
 
 
 
+
 slow progress on weekend, will go full on Monday. I just finished 25% of the ERC-8004 discussion. In overview, I could see the concern being discussed like what to put on-chain vs off-chain. also about scoring/reputation modularity. I don't really know much the detail but I think I can keep it up later.  
   
 I would love to see the scoring or reputation in action.
@@ -134,6 +159,7 @@ I would love to see the scoring or reputation in action.
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
@@ -162,6 +188,7 @@ Planning to continue on the EIP discussion, that is pretty long. And then on the
 
 
 
+
 I've listed all the resources I need for the upcoming 2 weeks but mostly it's from this page.  
   
 Today I plan to mainly finish the EIP and read the discussion part. Hopefully can manage into the blog posts.
@@ -171,6 +198,7 @@ Also attended the sharing session, so glad to attend because I can see it direct
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
