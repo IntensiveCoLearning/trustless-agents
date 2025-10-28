@@ -14,8 +14,22 @@ ETH x AI: the last economy
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+Emerging from the cutting-edge convergence of cryptography and AI, the next phase centers on Agentic Commerce—where AI agents independently execute economic actions. Core components include:
+
+1\. ERC-8004: Agent Discovery → Building a censorship-resistant, verifiable agent registry.
+
+2\. x402 + Google A2A/AP2: Agent Communication → Establishing standardized cross-agent communication and payment frameworks.
+
+3\. EigenCompute & EigenAI: Verifiable Computing → Ensuring trustworthy, transparent, and verifiable agent behavior.
+
+Significance of ERC-8004: It enables agents to register and discover each other in a trustless, censorship-resistant manner, laying the groundwork for the upcoming x402 communication protocol competition.
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 Review Notes  
   
 The Agent2Agent (A2A) protocol is an open standard (originated by Google and now under Linux Foundation) to allow heterogeneous AI agents to securely discover, communicate, and coordinate tasks across systems.  
@@ -32,6 +46,7 @@ Related protocols expand this foundation:
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
 
+
 During the learning phase, I’d like to explore how AI agents can participate in economic systems using open protocols like ERC-8004 and x402. My idea is to build a “Trustless Service Agent”, capable of negotiating tasks, verifying payments, and executing micro-contracts autonomously. The goal is to make AI interactions verifiable and composable across different networks.  
   
 Another idea is to design a reputation visualization layer that logs each transaction or negotiation event, helping agents build credibility over time. This could integrate with Unibase’s memory layer, allowing agents to retain social context and past cooperation records.  
@@ -43,6 +58,7 @@ These projects would bridge technical infrastructure and real-world mean
 <!-- DAILY_CHECKIN_2025-10-24_START -->
 
 
+
 According to the meeting this afternoon, Unibase is an open infrastructure designed to give AI agents a decentralized long-term memory layer. Instead of losing context after each interaction, agents can store and retrieve their memories across platforms through Unibase’s Membase system. This enables persistent learning, identity continuity, and cooperation among agents.  
   
 A key component is the AIP (Agent Interoperability Protocol), which allows agents built on different frameworks to communicate and share data securely. Combined with a Data Availability layer, Unibase ensures that memory and state are accessible in real time, even for large-scale autonomous systems.  
@@ -52,6 +68,7 @@ For non-developers, Unibase represents a crucial step in the evolution�
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 
@@ -69,11 +86,13 @@ For non-developers, Unibase represents a crucial step in the evolution�
 
 
 
+
 Looking forward to the meeting tonight.
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -111,6 +130,7 @@ Conceptually, this ecosystem represents the double helix of ETH × AI,
 
 
 
+
 The x402 protocol establishes a payment layer for AI-enabled services to interact with wallets programmatically, allowing “buyers” (users or agents) to discover paid endpoints, fulfill on-chain payments, then access the service seamlessly. The Quickstart for Buyers guides the developer in five key steps:  
 1\. Prerequisites: a crypto wallet loaded with USDC (on any EVM chain or Solana), and a target service that returns HTTP 402 (Payment Required).   
 2\. Install dependencies: choose Node.js or Python, then install helper packages (x402-axios or x402-fetch) to intercept a 402 response and wrap it with payment logic.   
@@ -123,6 +143,7 @@ In one sentence: x402 enables programmatic wallet-based payments for AI
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -143,6 +164,7 @@ The Agent Payments Protocol (AP2) is a fresh open-standard issued by 
 
 
 
+
 The Agent2Agent (A2A) protocol is an open standard (originated by Google and now under Linux Foundation) to allow heterogeneous AI agents to securely discover, communicate, and coordinate tasks across systems. It defines key abstractions like Agent Cards (metadata about agent capabilities, endpoint, authentication) and Tasks / Messages / Artifacts for structured communication. A2A supports asynchronous interactions, streaming updates, long-running tasks, and real-time collaboration via HTTP, JSON-RPC, and server-sent events. In the roadmap, they plan to build governance, agent registries, validation tools, and richer SDK support (Python, JS, Java, .NET, etc.)  
   
 On the vistara-apps side, this GitHub organization hosts many auto-generated AI app repos and includes example projects like erc-8004-example, which demonstrates how AI agents can interact across organizations using the ERC-8004 identity, reputation, and validation registries. This implies that Vistara is actively building tools and demos around these emerging AI + blockchain agent standards.
@@ -150,6 +172,7 @@ On the vistara-apps side, this GitHub organization hosts many auto-gene
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
@@ -182,6 +205,7 @@ Creates a modular, cross-ecosystem trust and registration fabric, enabli
 
 
 
+
 ERC-8004 aims to build a trust and discovery layer for autonomous AI agents on Ethereum. The core idea is that each agent can have a chain-verifiable identity (e.g. via an AgentCard), reputation history, and validation proofs, all built on a shared set of on-chain registries (Identity, Reputation, Validation). By separating these trust primitives from the application logic, ERC-8004 allows multiple verification modes—TEE attestation, staking, zk proofs—without locking into a single payment or routing protocol.  
   
 A key insight from the community discussion is that reputation is contextual: Alice’s trust in Bob may differ from Charlie’s, depending on domain and past interactions. Therefore, ERC-8004 emphasizes modularity—let different reputation providers or oracles run independently—and resists attempting to collapse all trust into one universal score. Also, the protocol deliberately does not mandate a specific payment or escrow mechanism, to avoid coupling trust infrastructure with payment systems; such logic is left to higher layers or applications.  
@@ -191,6 +215,7 @@ In practice, a useful workflow might be: use ERC-8004 to discover age
 
 # 2025-10-17
 <!-- DAILY_CHECKIN_2025-10-17_START -->
+
 
 
 
