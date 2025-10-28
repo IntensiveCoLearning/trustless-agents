@@ -14,8 +14,26 @@ All in ETH x AI. Exploring the real world use cases on this direction.
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+[https://eips.ethereum.org/EIPS/eip-3009](https://eips.ethereum.org/EIPS/eip-3009)
+
+A set of functions to enable meta-transactions and atomic interactions with [ERC-20](https://eips.ethereum.org/EIPS/eip-20) token contracts via signatures conforming to the [EIP-712](https://eips.ethereum.org/EIPS/eip-712) typed message signing specification.
+
+[https://smartcontract.tips/en/post/understanding-erc20-token-approvals](https://smartcontract.tips/en/post/understanding-erc20-token-approvals)
+
+In the ERC20 standard, the `approve` function enables token holders to authorize another address—typically a smart contract—to spend a specified amount of their tokens.
+
+This permission mechanism is pivotal for executing various decentralized operations without transferring token ownership.
+
+Token holder grants permission -> Smart Contract receives approval -> Token transfer execution
+
+ERC20 -> Token registery -> allowance will be recorded in the smart contract state -> when transfer, smart contract will check if there is a valid allowance and then update the token state
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 The facilitator is an optional but recommended service that simplifies the process of verifying and settling payments between clients (buyers) and servers (sellers).
 
 -   CDP's facilitator offers fee-free USDC settlement on Base mainnet
@@ -83,6 +101,7 @@ From my understanding of facilitator, I think it is a bad design, too coupling. 
 
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
+
 
 ### **How Does It Work?**
 
@@ -155,6 +174,7 @@ x402 provides more features and extensions for HTTP 402, and build smooth experi
 
 
 
+
 今天主要是跟 tomasz 做了个专访，聊了一下 ai x eth
 <!-- DAILY_CHECKIN_2025-10-23_END -->
 
@@ -164,11 +184,13 @@ x402 provides more features and extensions for HTTP 402, and build smooth experi
 
 
 
+
 Today I will be joining ETHShanghai and have a fireside chat with Tomasz
 <!-- DAILY_CHECKIN_2025-10-22_END -->
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -284,6 +306,7 @@ TODO check [https://github.com/coinbase/x402/blob/main/README.md](https://github
 
 
 
+
 [https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/](https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/)
 
 To maximize the benefits from agentic AI, it is critical for these agents to be able to collaborate in a dynamic, multi-agent ecosystem across siloed data systems and applications.
@@ -350,6 +373,7 @@ The following table describes the fundamental communication elements in A2A:
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -516,6 +540,7 @@ zkTLS proof 是把一次 **TLS 会话** 的关键安全性（服务器身份、�
 
 
 
+
 [https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098](https://ethereum-magicians.org/t/erc-8004-trustless-agents/25098)
 
 Some notes from forum, credits from their authors:
@@ -564,11 +589,13 @@ TODO make a fake hotel booking demo with validation logic, and protect the priva
 
 
 
+
 Yesterday's recording has been uploaded.
 <!-- DAILY_CHECKIN_2025-10-17_END -->
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -641,6 +668,7 @@ TODO Validator need to re-executes the model, cost twice tokens. And the model m
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
