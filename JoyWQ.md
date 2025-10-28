@@ -14,8 +14,14 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+第二阶段黑客松的规划及准备
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 -   X402协议逻辑链路
     
 
@@ -71,6 +77,7 @@ timezone: UTC+8
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 -   完成erc-8004-journal项目的集成测试
     
@@ -545,6 +552,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 
 
+
 -   了解AP2协议与X402协议，站在A2A协议的角度思考如何集成
     
 -   AP2侧重点：授权，通过加密签名的"意图授权"和"购物车授权"等构建不可篡改的交易链
@@ -560,6 +568,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 
 
+
 -   进一步完成链下声誉计算的逻辑，采用传统算法进行链上链下的数据整合
     
 -   进一步调试与测试链上合约交互的问题
@@ -569,6 +578,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -590,6 +600,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 
 
+
 1.  将之前的js代码等效地迁移为python
     
 2.  增加A2A的JSON描述文件
@@ -603,6 +614,7 @@ https://gitee.com/joy_wq/erc-8004-journal.git
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1334,6 +1346,7 @@ Charlie:
 
 
 
+
 ## **一、了解声誉分析、ZK及TEE在EIP8004里的应用：**
 
 ```
@@ -1470,6 +1483,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 
 
+
 1.  阅读erc-8004官方标准及hashkey的文章
     
 2.  核心内容梳理：
@@ -1485,6 +1499,7 @@ def complete_reputation_update(task_data, client_feedback, processing_proof):
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
