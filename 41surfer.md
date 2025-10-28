@@ -14,8 +14,35 @@ interest in AI and do want to know more about it "+web3"
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+ERC-8004 **就是 AI Agent 在链上世界的“工商局+征信系统+资质认证中心”。**它让每个 AI Agent 都有身份证、信用记录和能力认证，而这一切都记录在区块链上，任何人都可以查询，没有人可以篡改。
+
+简单来说，ERC 8004 为谷歌的 A2A 增加了一个**信任层**。用以太坊基金会的话说，这是要建立 AI Agent 的“可信中立轨道”。
+
+ERC-8004 的设计极其精简，只包含三个链上注册表：
+
+-   **身份注册表（Identity Registry）** 每个 AI Agent 获得一个 ERC-721 代币作为身份证。是的，你没看错，**AI Agent 被 NFT 化了。**这意味着 Agent 的身份可以在任何支持 NFT 的钱包中查看、转让，甚至交易。**——你是谁？**
+    
+
+这个 NFT 指向一个标准化的"Agent 卡片"，描述了这个 Agent 的名称、技能、端点和元数据。因为遵循开放标准，任何浏览器或市场都可以索引它，实现跨平台的无许可发现。
+
+-   **声誉注册表（Reputation Registry）** 这是 AI Agent 世界的“大众点评”。客户和其他 Agent 可以提交结构化的反馈，按技能或任务打标签。更重要的是，可以附加 x402 支付证明。只有真正付过钱的客户才能评价，避免刷单。**——你靠谱吗**
+    
+
+所有的声誉信号都是公共品。这意味着任何人都可以基于这些数据构建自己的信誉评分系统。
+
+-   **验证注册表（Validation Registry）** 对于高价值任务，光有评价还不够。验证注册表允许 Agent 请求第三方验证——可以是 TEE（可信执行环境）预言机、质押担保推理，或者 zkML 验证。**——你真的能做吗**
+    
+
+整个过程无需人工干预，三个 AI Agent 基于 ERC-8004 的信任体系自主完成了一次商业交易。
+
+**x402解决了AI Agent 的支付问题，ERC-8004解决了信任问题，**而真正的自主AI经济两者缺一不可
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 通过学习第五个问题：
 
 建议ERC-8004的支付机制不要作为核心标准之一
@@ -39,6 +66,7 @@ interest in AI and do want to know more about it "+web3"
 <!-- DAILY_CHECKIN_2025-10-26_START -->
 
 
+
 TEE 证明、ZK 证明，抽样/重新执行都是为了验证一个计算（比如一笔复杂的交易）是否正确
 
 前者需要硬件支持，后者需要大量的样品支撑，最近刚好学习了zk verify ，所以目前还是倾向于相信ZK。
@@ -49,11 +77,13 @@ TEE 证明、ZK 证明，抽样/重新执行都是为了验证一个计算（比
 
 
 
+
 今天回答第四个问题：
 <!-- DAILY_CHECKIN_2025-10-25_END -->
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 
 
@@ -91,6 +121,7 @@ TEE 证明、ZK 证明，抽样/重新执行都是为了验证一个计算（比
 
 
 
+
 通过回答第二个问题，Question: Should ERC-8004 use domains, URLs, ENS, or DIDs for agent identity? What are the trade-offs of each approach?**我们该用什么作为AI智能体在区块链世界里的“身份证”？** 理解了 URLs, ENS, or DIDs
 
 如果必须为 **ERC-8004** 选择一个方案，我会推荐 **ENS**。
@@ -108,6 +139,7 @@ TEE 证明、ZK 证明，抽样/重新执行都是为了验证一个计算（比
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -158,11 +190,13 @@ The community debates how much data to put on-chain. If you had to choose betwee
 
 
 
+
 今天看了一些A2A和MCP的协同应用案例
 <!-- DAILY_CHECKIN_2025-10-21_END -->
 
 # 2025-10-20
 <!-- DAILY_CHECKIN_2025-10-20_START -->
+
 
 
 
@@ -188,6 +222,7 @@ The community debates how much data to put on-chain. If you had to choose betwee
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -226,6 +261,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 
 
+
 ## ERC-8004 引入了三个轻量级的链上注册表，作为跨组织代理交互的信任支柱。与试图将所有事务都处理在链上的传统区块链协议不同，ERC-8004 采用了一种混合方法，只在链上存储必要的信任相关数据，同时将复杂的操作委托给链下基础设施。
 
 预计到 2030 年，全球人工智能市场规模将达到 1.8 万亿美元，其中自主代理交互将占到这一增长的很大一部分。然而，当前的信任瓶颈阻碍了代理进入更广泛的专业服务经济领域。ERC-8004 通过提供标准化的信任机制，打破了这一瓶颈，该机制可适用于从简单任务到关键任务操作的各种场景。
@@ -246,6 +282,7 @@ A2A 和[模型上下文协议 (MCP)](https://modelcontextprotocol.io/)是构建�
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
