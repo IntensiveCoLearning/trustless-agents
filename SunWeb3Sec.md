@@ -14,8 +14,230 @@ timezone: UTC+8
 
 ## Notes
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+# x402 into Your Agent Service (Pay-Per-Call)
+
+**Must-read**
+
+-   x402 GitBook — integration steps & canonical API response shapes.
+    
+
+* * *
+
+## TL;DR
+
+Return **402 Payment Required** with a payment request on first call → client (or its agent) pays (e.g., **EIP-3009** stablecoin pull) → server verifies → return **200 OK** with resource → emit a **receipt summary** into **ERC-8004 Reputation/Validation** events.
+
+* * *
+
+## Reference Flow (4 steps)
+
+1.  **Unpaid request → 402**
+    
+    Your endpoint returns 402 with a machine-readable `payment_request` the client (or agent) can fulfill.
+    
+    ```
+    HTTP/1.1 402 Payment Required
+    Content-Type: application/json
+    
+    ```
+    
+    ```json
+    {
+      "code": "PAYMENT_REQUIRED",
+      "resourceId": "trace:0xabc...123",
+      "price": { "amount": "0.50", "currency": "USDC", "chain": "eip155:1" },
+      "payment_request": {
+        "method": "x402",
+        "eip3009": {
+          "token": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+          "to": "0xSERVICE_TREASURY",
+          "value": "500000",   // 0.50 USDC (6 decimals)
+          "validBefore": 1730000000,
+          "nonce": "0x…"
+        }
+      },
+      "hint": "Sign EIP-3009 transferWithAuthorization and POST /x402/settle"
+    }
+    
+    ```
+    
+2.  **Client/agent pays (off-chain sign, on-chain submit)**
+    
+    -   Client signs **EIP-3009** typed-data and POSTs to your **settlement endpoint**, or you accept a tx hash proving payment.
+        
+    -   Optional: accept alternative rails (wallet-sig, OAuth-metered, etc.).
+        
+3.  **Server verifies → 200**
+    
+    On success, respond with the actual resource or job handle.
+    
+    ```
+    HTTP/1.1 200 OK
+    Content-Type: application/json
+    
+    ```
+    
+    ```json
+    {
+      "resourceId": "trace:0xabc...123",
+      "result_uri": "ipfs://bafy.../trace.json",
+      "receipt": {
+        "payer": "0xPAYER",
+        "amount": "0.50",
+        "currency": "USDC",
+        "ts": "2025-10-27T05:10:00Z",
+        "requestHash": "0xREQ_HASH"
+      }
+    }
+    
+    ```
+    
+4.  **Emit receipt summary → ERC-8004**
+    
+    -   **Reputation**: emit `FeedbackGiven` (e.g., `dim:settlement`, score 100, tags `paid`, `usdc`).
+        
+    -   **Validation**: emit `ValidationRecorded` with `methodTag="payment"`, `proofUri/hash` = on-chain tx or receipt JSON.
+        
+
+* * *
+
+## Minimal Server Endpoints (sketch)
+
+-   `POST /agent/trace` → returns **402** if unpaid; **200** if already settled.
+    
+-   `POST /x402/settle` → receives EIP-3009 payload or tx hash, verifies payment, binds it to `resourceId`, and unlocks access.
+    
+-   _(Optional)_ `GET /agent/trace/:id` → idempotent fetch once paid.
+    
+
+**Idempotency keys**: use `resourceId` + `requestHash` to ensure **exactly-once** fulfillment and safe retries.
+
+* * *
+
+## EIP-3009 Client Payload (example)
+
+```json
+{
+  "domain": {
+    "name": "USD Coin",
+    "version": "2",
+    "chainId": 1,
+    "verifyingContract": "0xA0b8...eB48"
+  },
+  "types": {
+    "TransferWithAuthorization": [
+      {"name":"from","type":"address"},
+      {"name":"to","type":"address"},
+      {"name":"value","type":"uint256"},
+      {"name":"validAfter","type":"uint256"},
+      {"name":"validBefore","type":"uint256"},
+      {"name":"nonce","type":"bytes32"}
+    ]
+  },
+  "message": {
+    "from": "0xPAYER",
+    "to": "0xSERVICE_TREASURY",
+    "value": "500000",
+    "validAfter": 0,
+    "validBefore": 1730000000,
+    "nonce": "0xRANDOM32B"
+  },
+  "signature": "0xSIG..."
+}
+
+```
+
+* * *
+
+## Event Shapes (ERC-8004 style, illustrative)
+
+**Reputation (paid event as feedback)**
+
+```json
+{
+  "dimension": "settlement",
+  "event": "Paid",
+  "score": 100,
+  "tags": ["paid","usdc","x402"],
+  "uri": "ipfs://.../receipt.json",
+  "hash": "0xRECEIPT_SHA256",
+  "agentId": 123,
+  "client": "0xPAYER",
+  "timestamp": "2025-10-27T05:10:00Z"
+}
+
+```
+
+**Validation (payment proof recorded)**
+
+```json
+{
+  "requestId": 777,
+  "verdict": 1,
+  "method": "payment",
+  "proofUri": "eip155:1/tx:0xPAYMENT_TX",
+  "proofHash": "0x...",
+  "tag": "usdc@eip3009"
+}
+
+```
+
+* * *
+
+## Security & Ops Notes
+
+-   **Verify domain strictly** (`name/version/chainId/verifyingContract`) for EIP-3009.
+    
+-   **Clock skew**: add buffer to `validBefore`; return `TRANSIENT` with retry hints if mempool delay.
+    
+-   **Double-spend**: check token’s `authorizationState`/tx receipts; enforce idempotency using `resourceId`.
+    
+-   **Pricing**: include `price` and `unit` (e.g., per call, per 1k tokens).
+    
+-   **Observability**: log `payer/amount/ts/resourceId/requestHash` for audits; export to your indexer.
+    
+-   **Fallbacks**: allow **202 Accepted** for async jobs; poll `GET /status/:id`.
+    
+
+* * *
+
+REF
+
+Demos and starter code for building agentic finance apps with Crossmint
+
+[https://github.com/Crossmint/crossmint-agentic-finance/](https://github.com/Crossmint/crossmint-agentic-finance/)
+
+Agentic Commerce Use Cases: 5 Examples That Work Today
+
+[https://blog.crossmint.com/agentic-commerce-use-cases/](https://blog.crossmint.com/agentic-commerce-use-cases/)
+
+SDK for building verifiable, monetizable AI agents with on-chain identity
+
+[https://github.com/ChaosChain/chaoschain-sdk-ts](https://github.com/ChaosChain/chaoschain-sdk-ts)
+
+With ChaosChain SDK:
+
+-   pip install chaoschain-sdk
+    
+-   30 seconds to running 8004 agent
+    
+-   ERC-8004 v1.0 compliant
+    
+-   x402 payments built-in
+    
+-   Agent wallet built-in
+    
+
+[https://x.com/\_sumeetc/status/1979137258461508004](https://x.com/_sumeetc/status/1979137258461508004)
+
+Implementing the x402 Payment Protocol with KiteAI's CTO Scott on Kite AI Network [https://www.youtube.com/watch?v=fylv-WsWPfQ](https://www.youtube.com/watch?v=fylv-WsWPfQ)
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 X402
 
 How x402 Works
@@ -40,6 +262,7 @@ I’m experimenting with building a Crypto AML AI Agent. Using n8n, I created a 
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
 
+
 POC
 
 Exploring X402 and the A2A Protocol — built a prototype that integrates on-the-fly AML Risk Scoring.
@@ -51,6 +274,7 @@ Flow: User → X402 Payment → AML Risk Score
 
 # 2025-10-23
 <!-- DAILY_CHECKIN_2025-10-23_START -->
+
 
 
 # A2A Fast-Track (Discovery / Descriptor / Collaboration)
@@ -170,6 +394,7 @@ Google's A2A protocol provides a **universal standard** for agent communication,
 
 
 
+
 # How Much On-Chain Is Enough?
 
 **Must-read**
@@ -270,6 +495,7 @@ Google's A2A protocol provides a **universal standard** for agent communication,
 
 # 2025-10-21
 <!-- DAILY_CHECKIN_2025-10-21_START -->
+
 
 
 
@@ -710,6 +936,7 @@ Validation ────> How good your work is
 
 
 
+
 # Run ERC-8004 Example
 
 **Goal:** Read, run, and modify the official example.
@@ -893,6 +1120,7 @@ After a job completes, call the Validation Registry (`reexec` / `tee` / `zk`) an
 
 
 
+
 # Validation Registry (Third-Party Verification Hooks)
 
 ## Why it matters
@@ -1007,6 +1235,7 @@ function recordResult(
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1152,6 +1381,7 @@ function recordResult(
 
 
 
+
 # Identity Registry Learning Notes
 
 ## Today’s Goals
@@ -1259,6 +1489,7 @@ function recordResult(
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1434,6 +1665,7 @@ Sepolia
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
