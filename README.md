@@ -1301,15 +1301,16 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 
 
 
+
 <!-- STATISTICALDATA_START -->
 ## Statistics
 
-- Total Participants: 0
-- Completed Participants: 0
-- Completed Users: 
-- Perfect Attendance Users: 
-- Failed Participants: 0
-- Failed Rate: 0.00%
+- Total Participants: 207
+- Completed Participants: 16
+- Completed Users: brucexu-eth, ShawnX-F, 41surfer, sunhuachuang, hanksfanAI, MoonHub0503, luffythink, SU-AN-coder, GitWoody, Swiftevo, 0xhirugohan, lehotle, JoyWQ, henrycyberbio, SunWeb3Sec, 0xultravioleta
+- Perfect Attendance Users: SU-AN-coder, 0xultravioleta
+- Failed Participants: 191
+- Failed Rate: 92.27%
 <!-- STATISTICALDATA_END -->
 
 
