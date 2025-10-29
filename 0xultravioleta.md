@@ -15,8 +15,188 @@ timezone: UTC-5
 ## Notes
 
 <!-- Content_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
+# 🌟 Last Day of the Course – Reflections and Achievements
+
+Today is the last day of the course… and what a ride it’s been!  
+This has easily been the **best course I’ve taken in years**, and I want to give a huge shout-out to **Bruce**, **LX DAO**, and the **ETH Panda** team for making it all happen. I'm proud to be one of only **two participants** who completed every single check-in.
+
+* * *
+
+## 🚀 Discoveries and Technical Milestones
+
+I started diving into **ERC‑8004**, and that’s when I realized something was missing — **bidirectional reputation**. I’ve been working on proper testing and documentation to make an official proposal that introduces this feature:
+
+🔗 [https://github.com/0xultravioleta/erc-8004-example/tree/bidirectional](https://github.com/0xultravioleta/erc-8004-example/tree/bidirectional)
+
+Then came **A2A protocol**, and finally **x402**. Within days, the topic exploded on X — suddenly dozens of people were talking about **x402** and **ERC-8004**.
+
+* * *
+
+## 🧪 Experimenting and Building Beyond the Scope
+
+The course recommended building on **Base testnet**, but I decided to go native — I used **Avalanche Fuji**, which led me to create my own **x402 facilitator** so agents could transact on testnet.  
+To make this work, I created the **$GLUE token (GasLessUltravioletaExtended)**, purpose-built to enable gasless agent transactions.  
+And yes… **I got it working.**
+
+Today, the facilitator supports **Avalanche**, **Celo**, and **Base**, both mainnets and testnets. It’s **load-balanced**, **auto-scalable**, **fast**, **free**, and now **community operated**:
+
+🌐 [https://facilitator.ultravioletadao.xyz/](https://facilitator.ultravioletadao.xyz/)
+
+There’s also an open PR to bring it into **x402scan.com**:
+
+🔗 [https://github.com/Merit-Systems/x402scan/pulls](https://github.com/Merit-Systems/x402scan/pulls)
+
+* * *
+
+## 🤖 My Final Project – Karmacadabra
+
+To practice what I was learning, I built my own project by merging two of my previous agentic experiments — **Karma-Hello** and **Abracadabra** — into one new ecosystem where agents sell and buy data from each other.
+
+The result is **Karmacadabra**, and here’s how it performed in the course:
+
+* * *
+
+## Challenge 1: Interact with an Agent on Testnet
+
+**Status: PARTIAL PASS ⚠️**
+
+### What I Did:
+
+-   ✅ Registered 48+ agents (IDs 7–54)
+    
+-   ✅ Verified agents on-chain using `resolveByAddress`, `resolveByDomain`
+    
+-   ✅ Built my own Python SDK (`shared/base_agent.py`, `shared/a2a_protocol.py`)
+    
+-   ✅ Completed full interaction flows
+    
+
+### The Issue:
+
+-   ❌ Wrong testnet — course required Sepolia, I used Avalanche Fuji
+    
+
+My Fuji Contracts:
+
+-   Identity: `0xB0a405a7345599267CDC0dD16e8e07BAB1f9B618`
+    
+-   Reputation: `0x40DB63f4a94f89BdBD7e6E34B7a78c32dFF426c5`
+    
+-   Validation: `0x0EEf0bDB5DD57a27Cc15FB861ed04D5d6Df60f6B`
+    
+
+Course expects Sepolia versions:
+
+-   Identity: `0x8004a6090Cd10A7288092483047B097295Fb8847`
+    
+-   Reputation: `0x8004B8FD1A363aa02fDC07635C0c5F94f6Af5B7E`
+    
+-   Validation: `0x8004CB39f29c09145F24Ad9dDe2A108C1A2cdfC5`
+    
+
+**Fix:**  
+Just deploy a single agent to Sepolia using canonical singleton contracts and update `.env` accordingly.
+
+* * *
+
+## Challenge 2: Trustless Agent "Hello World"
+
+**Status: ✅✅✅ FULL PASS + EXCEEDS EXPECTATIONS**
+
+### ✅ Requirements Completed
+
+-   4 servers deployed: `karma-hello`, `abracadabra`, `skill-extractor`, `voice-extractor`
+    
+-   Independent validator on port 9001
+    
+-   Fully functioning client
+    
+-   Identity, Verification, and Reputation Registries
+    
+-   48 AgentCards and profiles
+    
+-   End-to-end flow using A2A and x402 protocols
+    
+-   Full EIP‑712 signature receipts
+    
+-   Verified outputs via demo scripts
+    
+
+### ✅ Optional Features Delivered
+
+| Feature | Status |
+| --- | --- |
+| Token pay-per-call | ✅✅ GLUE token (EIP‑3009) |
+| Tag-based discovery | ✅✅ Marketplace with skill search |
+| Reputation tracking | ✅✅ Full on-chain scores |
+
+* * *
+
+## 🌐 What I Built Beyond Expectations
+
+1.  **Production-ready infra** on AWS ECS Fargate
+    
+2.  **48+ agents** (course expected 3)
+    
+3.  **Multi-tier economy** with pricing from 0.01–200 $GLUE
+    
+4.  **Live data sources** (MongoDB, SQLite, Cognee)
+    
+5.  **CrewAI workflows** for agent validation
+    
+6.  **Public endpoint**: [https://marketplace.karmacadabra.ultravioletadao.xyz](https://marketplace.karmacadabra.ultravioletadao.xyz)
+    
+7.  **Extensive testing**: `scripts/test_all_endpoints.py`
+    
+8.  **Bilingual docs**: `README.md` + `README.es.md`
+    
+9.  **Rust-based x402 facilitator**
+    
+
+* * *
+
+## 🎓 Final Grade
+
+-   **Challenge 1**: ⚠️ 80/100 (functional, but wrong testnet)
+    
+-   **Challenge 2**: ✅ 120/100 (exceeds all expectations)
+    
+-   **Overall**: ✅ **PASS with distinction** — built a production-ready, multi-agent data economy far beyond “Hello World”.
+    
+
+* * *
+
+## 🧠 About Karmacadabra
+
+📦 GitHub: [https://github.com/UltravioletaDAO/karmacadabra](https://github.com/UltravioletaDAO/karmacadabra)
+
+**Karmacadabra** is a living ecosystem of autonomous AI agents that buy and sell data without human intervention, using:
+
+-   🧭 **ERC-8004 (Extended)** – with bidirectional reputation
+    
+-   🔁 **A2A Protocol** – based on Pydantic for agent communication
+    
+-   ⚡ **x402 + EIP‑3009** – for HTTP micropayments (gasless)
+    
+-   🧠 **CrewAI** – multi-agent orchestration
+    
+-   🏔️ **Avalanche** – home chain of Ultravioleta DAO
+    
+
+* * *
+
+I don’t know if I’ll be joining the hackathon... but I’d love the chance to **demo all of this during Trustless Agent Day in Buenos Aires**. That would be a dream come true.
+
+Infinite thanks again to everyone who made this possible — for the knowledge, the space, and your patience.
+
+**Saúl**
+<!-- DAILY_CHECKIN_2025-10-28_END -->
+
 # 2025-10-27
 <!-- DAILY_CHECKIN_2025-10-27_START -->
+
 Today, I worked on in this:  
   
 **🎯 Bidirectional Trust Pattern**
@@ -48,6 +228,7 @@ Latest code: [https://github.com/UltravioletaDAO/karmacadabra](https://github.co
 
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
+
 
 This is the progress I have done since last night!!  
   
@@ -96,6 +277,7 @@ Bottom line: Karmacadabra is now a publicly-listed, production-grade x402 facili
 
 # 2025-10-25
 <!-- DAILY_CHECKIN_2025-10-25_START -->
+
 
 
 **What I worked on today:**
@@ -179,6 +361,7 @@ Complete AWS cloud production infrastructure for the **Karmacadabra** trustless 
 
 # 2025-10-24
 <!-- DAILY_CHECKIN_2025-10-24_START -->
+
 
 
 
@@ -344,6 +527,7 @@ What was fixed:
 
 
 
+
 # Karmacadabra System Update
 
 ## 🔐 Security: Enterprise-Grade Secret Management
@@ -491,6 +675,7 @@ Next milestone: **End-to-End Integration Testing**
 
 # 2025-10-22
 <!-- DAILY_CHECKIN_2025-10-22_START -->
+
 
 
 
@@ -651,6 +836,7 @@ Created utilities that scale:
 
 
 
+
 **Date:** October 21, 2025
 
 ## ✨ Highlights from the Master Plan: Karmacadabra (Trustless Agent Economy)
@@ -782,6 +968,7 @@ cooking................
 
 
 
+
 # Day 6 — Notes (Oct 20, 2025)
 
 ## 🔍 Focus of the Day
@@ -891,6 +1078,7 @@ This file acts as the **entry point** for discovery and compatibility.
 
 # 2025-10-19
 <!-- DAILY_CHECKIN_2025-10-19_START -->
+
 
 
 
@@ -1015,6 +1203,7 @@ It unlocks **new income flows** and enhances user experience through **interoper
 
 # 2025-10-18
 <!-- DAILY_CHECKIN_2025-10-18_START -->
+
 
 
 
@@ -1185,6 +1374,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 
 
+
 # Day 3 — Notes (Oct 17, 2025)
 
 ## 📖 Reading
@@ -1262,6 +1452,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 # 2025-10-16
 <!-- DAILY_CHECKIN_2025-10-16_START -->
+
 
 
 
@@ -1398,6 +1589,7 @@ Basically we can ask: is Charlie authorized to review Alice? → Yes!
 
 # 2025-10-15
 <!-- DAILY_CHECKIN_2025-10-15_START -->
+
 
 
 
