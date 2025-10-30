@@ -382,7 +382,7 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 | [lehotle](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/lehotle.md) | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |
 | [0xClareYang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/0xClareYang.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
 | [voidovo](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/voidovo.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
-| [weifengHuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/weifengHuang.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ❌ |
+| [weifengHuang](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/weifengHuang.md) | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ |
 | [Floydwish](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/Floydwish.md) | ✅ | ⭕️ | ⭕️ | ❌ | | | | | | | | | | |
 | [JoyWQ](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/JoyWQ.md) | ✅ | ✅ | ✅ | ✅ | ⭕️ | ✅ | ✅ | ✅ | ✅ | ✅ | ⭕️ | ⭕️ | ✅ | ✅ |
 | [xiaodongQ](https://github.com/IntensiveCoLearning/trustless-agents/blob/main/xiaodongQ.md) | ⭕️ | ⭕️ | ❌ | | | | | | | | | | | |
@@ -1307,15 +1307,16 @@ More partners to be announced. For partnership inquiries, reach out on Telegram 
 
 
 
+
 <!-- STATISTICALDATA_START -->
 ## Statistics
 
 - Total Participants: 207
-- Completed Participants: 16
-- Completed Users: brucexu-eth, ShawnX-F, 41surfer, sunhuachuang, hanksfanAI, MoonHub0503, luffythink, SU-AN-coder, GitWoody, Swiftevo, 0xhirugohan, lehotle, JoyWQ, henrycyberbio, SunWeb3Sec, 0xultravioleta
+- Completed Participants: 17
+- Completed Users: brucexu-eth, ShawnX-F, 41surfer, sunhuachuang, hanksfanAI, MoonHub0503, luffythink, SU-AN-coder, GitWoody, Swiftevo, 0xhirugohan, lehotle, weifengHuang, JoyWQ, henrycyberbio, SunWeb3Sec, 0xultravioleta
 - Perfect Attendance Users: SU-AN-coder, 0xultravioleta
-- Failed Participants: 191
-- Failed Rate: 92.27%
+- Failed Participants: 190
+- Failed Rate: 91.79%
 <!-- STATISTICALDATA_END -->
 
 
