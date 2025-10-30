@@ -14,10 +14,10 @@ I’m a software engineer with a strong interest in Web3, AI, and automation. I�
 
 ## Notes
 <!-- Content_START -->
-# 2025-10-29
-<!-- DAILY_CHECKIN_2025-10-29_START -->
+# 2025-10-28
+<!-- DAILY_CHECKIN_2025-10-28_START -->
 Today was the **final day** of this phase. I went through the remaining materials on [**Trustless Agents**](https://intensivecolearn.ing/programs/trustless-agents) quite quickly. Most of the current progress still focuses on **theoretical understanding**, while the **coding implementation** is still ongoing. This feels like just the **beginning** — the real learning will come from **hands-on practice** and building through experience.
-<!-- DAILY_CHECKIN_2025-10-29_END -->
+<!-- DAILY_CHECKIN_2025-10-28_END -->
 
 # 2025-10-26
 <!-- DAILY_CHECKIN_2025-10-26_START -->
